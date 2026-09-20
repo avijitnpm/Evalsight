@@ -23,7 +23,7 @@ import { formatErrorForUser } from "../core/error-formatting";
 import type { ServerContext } from "../types";
 import type { ToolDefinition } from "../core/define-tool";
 import { toolRegistry } from "./registry";
-import { contextWithLangfuseProps, logger } from "@langfuse/shared/src/server";
+import { contextWithLangfuseProps, logger } from "@evalsight/shared/src/server";
 import { context as otelContext } from "@opentelemetry/api";
 
 const MCP_SERVER_NAME = "langfuse";

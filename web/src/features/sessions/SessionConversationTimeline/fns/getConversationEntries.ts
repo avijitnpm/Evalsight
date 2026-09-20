@@ -1,4 +1,4 @@
-import { type NormalizedMessage } from "@langfuse/shared/src/utils/normalized-io";
+import { type NormalizedMessage } from "@evalsight/shared/src/utils/normalized-io";
 
 export type ConversationEntry = {
   key: string;

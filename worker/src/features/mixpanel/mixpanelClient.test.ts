@@ -4,7 +4,7 @@ const { fetchWithSecureRedirects } = vi.hoisted(() => ({
   fetchWithSecureRedirects: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   logger: { info: vi.fn(), warn: vi.fn(), error: vi.fn(), debug: vi.fn() },
   fetchWithSecureRedirects,
 }));

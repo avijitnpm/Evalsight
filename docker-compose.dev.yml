@@ -6,14 +6,14 @@ services:
     # -redis-cluster exercises the newest release.
     image: docker.io/clickhouse/clickhouse-server:26.2
     user: "101:101"
-    container_name: ${CLICKHOUSE_CONTAINER_NAME:-langfuse-clickhouse}
+    container_name: ${CLICKHOUSE_CONTAINER_NAME:-evalsight-clickhouse}
     environment:
       CLICKHOUSE_DB: default
       CLICKHOUSE_USER: ${CLICKHOUSE_USER:-clickhouse}
       CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:-clickhouse}
     volumes:
-      - langfuse_clickhouse_data:/var/lib/clickhouse
-      - langfuse_clickhouse_logs:/var/log/clickhouse-server
+      - evalsight_clickhouse_data:/var/lib/clickhouse
+      - evalsight_clickhouse_logs:/var/log/clickhouse-server
     ports:
       - ${HOST_IP:-127.0.0.1}:${CLICKHOUSE_HTTP_PORT:-8123}:8123
       - ${HOST_IP:-127.0.0.1}:${CLICKHOUSE_NATIVE_PORT:-9000}:9000
@@ -30,10 +30,10 @@ services:
 
   minio:
     image: cgr.dev/chainguard/minio
-    container_name: ${MINIO_CONTAINER_NAME:-langfuse-minio}
+    container_name: ${MINIO_CONTAINER_NAME:-evalsight-minio}
     entrypoint: sh
-    # create the 'langfuse' bucket before starting the service
-    command: -c 'mkdir -p /data/langfuse && minio server --address ":9000" --console-address ":9001" /data'
+    # create the 'evalsight' bucket before starting the service
+    command: -c 'mkdir -p /data/evalsight && minio server --address ":9000" --console-address ":9001" /data'
     environment:
       MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minio}
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-miniosecret}
@@ -41,7 +41,7 @@ services:
       - ${HOST_IP:-127.0.0.1}:${MINIO_API_PORT:-9090}:9000
       - ${HOST_IP:-127.0.0.1}:${MINIO_CONSOLE_PORT:-9091}:9001
     volumes:
-      - langfuse_minio_data:/data
+      - evalsight_minio_data:/data
     healthcheck:
       test: ["CMD", "mc", "ready", "local"]
       interval: 1s
@@ -56,7 +56,7 @@ services:
       - worker-tests
     image: docker.io/floci/floci:1.5.17-compat
     user: "0"
-    container_name: ${FLOCI_CONTAINER_NAME:-langfuse-floci}
+    container_name: ${FLOCI_CONTAINER_NAME:-evalsight-floci}
     environment:
       FLOCI_HOSTNAME: floci
       FLOCI_INIT_HOOKS_TIMEOUT_SECONDS: 120
@@ -74,7 +74,7 @@ services:
 
   redis:
     image: docker.io/redis:7.2.4
-    container_name: ${REDIS_CONTAINER_NAME:-langfuse-redis}
+    container_name: ${REDIS_CONTAINER_NAME:-evalsight-redis}
     restart: always
     command: >
       --requirepass ${REDIS_AUTH:-myredissecret}
@@ -86,7 +86,7 @@ services:
 
   postgres:
     image: docker.io/postgres:${POSTGRES_VERSION:-17}
-    container_name: ${POSTGRES_CONTAINER_NAME:-langfuse-postgres}
+    container_name: ${POSTGRES_CONTAINER_NAME:-evalsight-postgres}
     restart: always
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
@@ -103,25 +103,25 @@ services:
     ports:
       - ${HOST_IP:-127.0.0.1}:${POSTGRES_HOST_PORT:-5432}:5432
     volumes:
-      - langfuse_postgres_data:/var/lib/postgresql/data
+      - evalsight_postgres_data:/var/lib/postgresql/data
     networks:
       - default
 
 volumes:
-  langfuse_postgres_data:
-    name: ${POSTGRES_VOLUME_NAME:-langfuse_postgres_data}
+  evalsight_postgres_data:
+    name: ${POSTGRES_VOLUME_NAME:-evalsight_postgres_data}
     driver: local
-  langfuse_clickhouse_data:
-    name: ${CLICKHOUSE_DATA_VOLUME_NAME:-langfuse_clickhouse_data}
+  evalsight_clickhouse_data:
+    name: ${CLICKHOUSE_DATA_VOLUME_NAME:-evalsight_clickhouse_data}
     driver: local
-  langfuse_clickhouse_logs:
-    name: ${CLICKHOUSE_LOGS_VOLUME_NAME:-langfuse_clickhouse_logs}
+  evalsight_clickhouse_logs:
+    name: ${CLICKHOUSE_LOGS_VOLUME_NAME:-evalsight_clickhouse_logs}
     driver: local
-  langfuse_minio_data:
-    name: ${MINIO_VOLUME_NAME:-langfuse_minio_data}
+  evalsight_minio_data:
+    name: ${MINIO_VOLUME_NAME:-evalsight_minio_data}
     driver: local
 
 networks:
   default:
-    name: ${DOCKER_NETWORK_NAME:-langfuse-network}
+    name: ${DOCKER_NETWORK_NAME:-evalsight-network}
     driver: bridge

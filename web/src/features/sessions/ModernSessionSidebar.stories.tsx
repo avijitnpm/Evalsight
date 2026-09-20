@@ -8,7 +8,7 @@ import {
 } from "@/src/features/sessions/ModernSessionSidebar";
 import { type EventSessionTrace } from "@/src/features/sessions/sessionDetailPageTypes";
 import { computeIdleGapSeconds } from "@/src/features/sessions/sessionIdleGap";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 const traces = [
   {

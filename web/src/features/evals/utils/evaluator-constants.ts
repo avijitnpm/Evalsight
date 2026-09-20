@@ -1,7 +1,7 @@
 import {
   LangfuseInternalTraceEnvironment,
   observationEvalVariableColumns,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Constant for observation-based evaluators (event/experiment).

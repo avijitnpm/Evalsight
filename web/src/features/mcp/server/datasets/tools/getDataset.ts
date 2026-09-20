@@ -1,6 +1,6 @@
 import { GetDatasetV2Response } from "@/src/features/public-api/server";
 import { defineTool } from "../../../core/define-tool";
-import { buildDatasetUrl } from "@langfuse/shared/src/server";
+import { buildDatasetUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { getDatasetByIdForApi } from "@/src/features/datasets/server";
 import { GetDatasetMcpInput } from "../schema";

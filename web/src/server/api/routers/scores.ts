@@ -32,7 +32,7 @@ import {
   ScoreSourceEnum,
   ScoreDataTypeEnum,
   CORRECTION_NAME,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getScoresGroupedByNameSourceType,
   getScoresUiCount,
@@ -60,7 +60,7 @@ import {
   deleteScores,
   getTracesIdentifierForSession,
   validateConfigAgainstBody,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 import { throwIfNoEntitlement } from "@/src/features/entitlements/server/hasEntitlement";
 import { createBatchActionJob } from "@/src/features/table/server/createBatchActionJob";

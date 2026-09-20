@@ -1,4 +1,4 @@
-import { type Plan } from "@langfuse/shared";
+import { type Plan } from "@evalsight/shared";
 
 // Entitlements: Binary feature access
 // eslint-disable-next-line @typescript-eslint/no-unused-vars -- Used via typeof

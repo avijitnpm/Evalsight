@@ -3,7 +3,7 @@ import { type AppRouter } from "@/src/server/api/root";
 
 // unreachable code check
 
-export { assertUnreachable } from "@langfuse/shared";
+export { assertUnreachable } from "@evalsight/shared";
 
 // primitive type checks
 

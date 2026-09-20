@@ -1,5 +1,5 @@
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { type NextApiRequest, type NextApiResponse } from "next";
 import {
   CreateBlobStorageIntegrationRequest,
@@ -10,7 +10,7 @@ import {
 import {
   type ObservationFieldGroupFull,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { upsertBlobStorageIntegration } from "@/src/features/blobstorage-integration/service";
 import { resolveExportSource } from "@/src/features/analytics-integrations/server/exportSource";
 import { auditLog } from "@/src/features/audit-logs/auditLog";

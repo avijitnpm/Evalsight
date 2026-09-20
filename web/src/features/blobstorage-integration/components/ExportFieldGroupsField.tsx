@@ -13,7 +13,7 @@ import {
   BlobStorageIntegrationFileType,
   EXPORT_FIELD_GROUP_OPTIONS,
   type ObservationFieldGroupFull,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type BlobStorageFormControl } from "@/src/features/blobstorage-integration/components/formValues";
 
 // Field-group checkboxes; descriptions and available groups depend on the

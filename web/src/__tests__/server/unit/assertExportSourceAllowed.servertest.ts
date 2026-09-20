@@ -9,7 +9,7 @@ import {
   LEGACY_BLOB_EXPORTER_CUTOFF,
   type V4WriteMode,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Thin composition tests only — the policy matrix lives with the policy
 // (packages/shared/.../export-source-policy.test.ts).

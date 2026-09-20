@@ -23,7 +23,7 @@ import {
   validateFieldAgainstSchema,
   type JsonPathMissInfo,
   type JsonPathErrorInfo,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 type MappingPreviewPanelProps = {
   fieldLabel: string;

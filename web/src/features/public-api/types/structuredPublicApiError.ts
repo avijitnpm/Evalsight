@@ -1,4 +1,4 @@
-import { BaseError } from "@langfuse/shared";
+import { BaseError } from "@evalsight/shared";
 import type {
   StructuredPublicApiErrorCodeType,
   StructuredPublicApiErrorDetailsType,

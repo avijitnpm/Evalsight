@@ -44,7 +44,7 @@ import {
   type TableViewPresetState,
   buildCurrentPageSavedViewPermalink,
   tableViewPresetPermalinkUsesCurrentPath,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ReactNode, useCallback, useMemo, useState } from "react";
 import {
   DropdownMenuItem,

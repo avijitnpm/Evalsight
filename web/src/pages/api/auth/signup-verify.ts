@@ -3,11 +3,11 @@ import { isEmailVerificationRequired } from "@/src/features/auth-credentials/lib
 import { validateSignupEligibility } from "@/src/features/auth-credentials/server/signupApiHandler";
 import { createProjectMembershipsOnSignup } from "@/src/features/auth/lib/createProjectMembershipsOnSignup";
 import { getAdClickIdsFromRequest } from "@/src/features/auth/lib/signupAttribution";
-import { prisma } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { z } from "zod/v4";
-import { noUrlCheck, StringNoHTMLNonEmpty } from "@langfuse/shared";
+import { noUrlCheck, StringNoHTMLNonEmpty } from "@evalsight/shared";
 
 const signupVerifySchema = z.object({
   email: z.email(),

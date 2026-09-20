@@ -1,10 +1,10 @@
 import { JobExecutionStatus } from "@prisma/client";
-import type { EvalExecutionContext } from "@langfuse/shared";
+import type { EvalExecutionContext } from "@evalsight/shared";
 import {
   logger,
   traceException,
   type CodeEvalScoreWithName,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { buildEvalScoreWritePayloads } from "./evalScoreEvent";
 import { type EvalExecutionDeps } from "./evalExecutionDeps";
 

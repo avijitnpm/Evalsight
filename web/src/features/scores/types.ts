@@ -10,7 +10,7 @@ import {
   type ScoreConfigDomain,
   type ScoreDomain,
   type ScoreConfigDataType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type z } from "zod";
 
 export type CategoryCounts = Record<string, number>;
@@ -77,7 +77,7 @@ export type AnnotationScoreSchemaType = z.infer<
 
 export type AnnotationScoreDataType = ScoreConfigDataType;
 // Client-safe mirror of the Prisma enum. Vite/Storybook resolve
-// `@langfuse/shared` from source and cannot turn `export * from "@prisma/client"`
+// `@evalsight/shared` from source and cannot turn `export * from "@prisma/client"`
 // into named ESM exports, so browser code must not value-import Prisma enums.
 export const ANNOTATION_SCORE_DATA_TYPES_ARRAY = [
   "NUMERIC",

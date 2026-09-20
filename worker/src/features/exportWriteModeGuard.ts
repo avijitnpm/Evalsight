@@ -3,7 +3,7 @@ import {
   areLegacyWritesActive,
   validateExportSource,
   type AnalyticsIntegrationExportSource,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { env } from "../env";
 
 /**

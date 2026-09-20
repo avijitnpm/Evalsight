@@ -3,4 +3,4 @@ export {
   qualifiedClickhouseTableName,
   quoteClickhouseIdentifier,
   quoteClickhouseString,
-} from "@langfuse/shared/src/server/clickhouse/clickhouseIdentifiers";
+} from "@evalsight/shared/src/server/clickhouse/clickhouseIdentifiers";

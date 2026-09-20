@@ -1,5 +1,5 @@
 import type { Session } from "next-auth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import {
@@ -7,7 +7,7 @@ import {
   createObservationsCh,
   createTrace,
   createTracesCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 
 describe("traces trpc", () => {

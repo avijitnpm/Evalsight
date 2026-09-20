@@ -9,7 +9,7 @@ import {
   getScoresGroupedByNameSourceType,
   queryClickhouse,
   convertDateToClickhouseDateTime,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { buildEstimateQuery } from "./buildEstimateQuery";
 import { buildScoreComparisonQuery } from "./buildScoreComparisonQuery";
 

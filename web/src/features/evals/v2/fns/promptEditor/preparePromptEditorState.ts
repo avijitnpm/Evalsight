@@ -1,4 +1,4 @@
-import { extractValueFromObjectAsString } from "@langfuse/shared";
+import { extractValueFromObjectAsString } from "@evalsight/shared";
 
 import type { VariableFieldState } from "@/src/features/evals/v2/types/variableMapping";
 import { buildEvaluatorVariableMappings } from "@/src/features/evals/v2/fns/variableMapping/buildEvaluatorVariableMappings";

@@ -17,7 +17,7 @@ import {
   isGenerationLike,
   LangfuseInternalTraceEnvironment,
   type ScoreDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ObservationReturnTypeWithMetadata } from "@/src/server/api/routers/traces";
 import { ItemBadge } from "@/src/components/ItemBadge";
 import {

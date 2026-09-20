@@ -1,7 +1,7 @@
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { type Prisma, prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { type Prisma, prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import { v4 } from "uuid";
 import {
@@ -11,12 +11,12 @@ import {
   TriggerEventSource,
   type WebhookActionConfigWithSecrets,
   isWebhookAction,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   encrypt,
   decrypt,
   generateWebhookSecret,
-} from "@langfuse/shared/encryption";
+} from "@evalsight/shared/encryption";
 import { TRPCError } from "@trpc/server";
 
 const __orgIds: string[] = [];

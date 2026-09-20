@@ -2,12 +2,12 @@ import { aggregateScores } from "@/src/features/scores/lib/aggregateScores";
 import {
   filterAndValidateDbScoreList,
   LISTABLE_SCORE_TYPES,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getObservationsTableWithModelData,
   getScoresForObservations,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { type GetAllGenerationsInput } from "../getAllQueries";
 
 export async function getAllGenerations({

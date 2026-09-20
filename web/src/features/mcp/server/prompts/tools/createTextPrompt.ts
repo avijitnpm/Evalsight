@@ -12,9 +12,9 @@ import {
   PromptNameSchema,
   COMMIT_MESSAGE_MAX_LENGTH,
   PROMPT_NAME_MAX_LENGTH,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createPromptForApi } from "@/src/features/prompts/server/prompt-api-service";
-import { buildPromptUrl } from "@langfuse/shared/src/server";
+import { buildPromptUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { ParamCreatePromptLabels } from "../validation";
 

@@ -10,7 +10,7 @@ import {
   DatasetItemFieldToolbar,
   insertMediaReferenceAtCursor,
 } from "./DatasetItemMediaAttachments";
-import type { Prisma } from "@langfuse/shared";
+import type { Prisma } from "@evalsight/shared";
 import {
   FormControl,
   FormItem,

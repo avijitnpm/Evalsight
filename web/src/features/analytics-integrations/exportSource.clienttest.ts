@@ -7,7 +7,7 @@ import {
   LEGACY_BLOB_EXPORTER_CUTOFF,
   type V4WriteMode,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import {
   buildExportSourceContext,

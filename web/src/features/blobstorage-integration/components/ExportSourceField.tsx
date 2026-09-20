@@ -19,7 +19,7 @@ import {
   validateExportSource,
   type AnalyticsIntegrationExportSource,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getExportSourceOptions,
   getExportSourceUnavailableMessage,

@@ -1,10 +1,10 @@
-import { createFilterFromFilterState } from "@langfuse/shared/src/server";
+import { createFilterFromFilterState } from "@evalsight/shared/src/server";
 import {
   InvalidRequestError,
   type UiColumnMapping,
   type ColumnDefinition,
   type EventsTableFilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("createFilterFromFilterState filter type validation", () => {
   const mappings: Record<string, UiColumnMapping> = {

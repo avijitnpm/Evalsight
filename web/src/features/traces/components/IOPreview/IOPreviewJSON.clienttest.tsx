@@ -93,7 +93,7 @@ vi.mock(
 
 // deepParseJson is the only runtime import from the shared barrel here; stub it
 // to identity so the test stays light and deterministic.
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   deepParseJson: (value: unknown) => value,
 }));
 

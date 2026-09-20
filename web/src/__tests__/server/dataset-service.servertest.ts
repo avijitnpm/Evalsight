@@ -15,9 +15,9 @@ import {
   createObservation,
   createTraceScore,
   createTrace,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   enrichAndMapToDatasetItemId,
   getRunItemsByRunIdOrItemId,

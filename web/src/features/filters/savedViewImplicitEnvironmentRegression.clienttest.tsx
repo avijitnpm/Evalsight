@@ -10,7 +10,7 @@ import {
   type FilterState,
   DEFAULT_SIDEBAR_HIDDEN_ENVIRONMENTS,
   encodeFiltersGeneric,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useState } from "react";
 import { useSidebarFilterState } from "./hooks/useSidebarFilterState";
 import type { FilterConfig } from "./lib/filter-config";

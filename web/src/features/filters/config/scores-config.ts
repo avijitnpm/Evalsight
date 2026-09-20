@@ -1,7 +1,7 @@
 import { scoresTableCols } from "@/src/server/api/definitions/scoresTable";
 import type { FilterConfig } from "@/src/features/filters/lib/filter-config";
 import type { ColumnToBackendKeyMap } from "@/src/features/filters/lib/filter-transform";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 // Maps frontend column IDs to backend-expected column IDs
 // Frontend uses "tags" but backend CH mapping expects "trace_tags" for trace tags on scores table

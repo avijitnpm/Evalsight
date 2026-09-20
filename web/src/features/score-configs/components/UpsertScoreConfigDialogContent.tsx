@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ScoreDataTypeEnum, type ScoreConfigDataType } from "@langfuse/shared";
+import { ScoreDataTypeEnum, type ScoreConfigDataType } from "@evalsight/shared";
 import { useState } from "react";
 import { type UseFormReturn, useFieldArray, useForm } from "react-hook-form";
 

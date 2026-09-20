@@ -1,8 +1,8 @@
 /* eslint-disable no-nested-ternary */
 import pLimit from "p-limit";
-import { prisma } from "@langfuse/shared/src/db";
-import { BatchActionStatus, observationForEvalSchema } from "@langfuse/shared";
-import { logger, traceException } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { BatchActionStatus, observationForEvalSchema } from "@evalsight/shared";
+import { logger, traceException } from "@evalsight/shared/src/server";
 import {
   createObservationEvalSchedulerDeps,
   scheduleObservationEvals,

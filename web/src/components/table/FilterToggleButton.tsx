@@ -5,7 +5,7 @@ import { useDataTableControls } from "@/src/components/table/data-table-controls
 import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import { cn } from "@/src/utils/tailwind";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 /** FilterToggleButton shows / hides the table's sidebar filter panel and exposes the active filter count.
  *  On desktop the sidebar carries its own collapse toggle and collapses to a

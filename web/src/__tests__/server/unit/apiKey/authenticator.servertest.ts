@@ -1,17 +1,17 @@
 import { type Redis } from "ioredis";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { type ApiKey, type PrismaClient } from "@langfuse/shared/src/db";
+import { type ApiKey, type PrismaClient } from "@evalsight/shared/src/db";
 import {
   ForbiddenError,
   InternalServerError,
   UnauthorizedError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   AUTHZ_CONTEXT_CACHE_KEY_PREFIX,
   API_KEY_CACHE_KEY_PREFIX,
   createShaHash,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { Authenticator } from "@/src/features/apiKey/authenticator";
 import { AuthenticatorCache } from "@/src/features/apiKey/authenticatorCache";

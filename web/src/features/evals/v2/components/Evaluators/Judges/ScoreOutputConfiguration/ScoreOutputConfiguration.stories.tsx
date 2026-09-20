@@ -1,4 +1,4 @@
-import { ScoreDataTypeEnum } from "@langfuse/shared";
+import { ScoreDataTypeEnum } from "@evalsight/shared";
 import { fn } from "storybook/test";
 
 import preview from "../../../../../../../../.storybook/preview";

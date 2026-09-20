@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
-import { QueryBuilder, executeQuery } from "@langfuse/shared/query/server";
-import { type QueryType } from "@langfuse/shared/query";
-import { InvalidRequestError } from "@langfuse/shared";
+import { QueryBuilder, executeQuery } from "@evalsight/shared/query/server";
+import { type QueryType } from "@evalsight/shared/query";
+import { InvalidRequestError } from "@evalsight/shared";
 
 /**
  * Test suite for testing SQL injection vulnerabilities in the QueryBuilder

@@ -1,10 +1,10 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   logger,
   type ApiAccessScope,
   invalidateCachedOrgApiKeys,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { projectNameSchema } from "@/src/features/auth/lib/projectNameSchema";
 import { projectRetentionSchema } from "@/src/features/auth/lib/projectRetentionSchema";
 import { hasEntitlementBasedOnPlan } from "@/src/features/entitlements/server";

@@ -3,7 +3,7 @@
 import {
   OpenAIContentSchema,
   type OpenAIOutputAudioType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Button } from "@/src/components/ui/button";
 import { PrettyJsonView } from "@/src/components/ui/PrettyJsonView";
 import { MarkdownView } from "@/src/components/ui/MarkdownViewer";

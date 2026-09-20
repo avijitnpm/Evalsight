@@ -1,5 +1,5 @@
-vi.mock("@langfuse/shared/src/server", async () => ({
-  ...(await vi.importActual("@langfuse/shared/src/server")),
+vi.mock("@evalsight/shared/src/server", async () => ({
+  ...(await vi.importActual("@evalsight/shared/src/server")),
   logger: {
     info: vi.fn(),
     warn: vi.fn(),
@@ -11,7 +11,7 @@ vi.mock("@langfuse/shared/src/server", async () => ({
 import type { Session } from "next-auth";
 import { TRPCError } from "@trpc/server";
 import * as z from "zod";
-import { ClickHouseResourceError, logger } from "@langfuse/shared/src/server";
+import { ClickHouseResourceError, logger } from "@evalsight/shared/src/server";
 import {
   createInnerTRPCContext,
   createTRPCRouter,

@@ -14,8 +14,8 @@ import {
   createDatasetRunItem,
   queryClickhouse,
   redis,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "../env";
 import type { RedisLock } from "../utils/RedisLock";
 

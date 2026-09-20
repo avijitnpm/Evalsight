@@ -3,7 +3,7 @@ import type {
   EvalTemplateType,
   EvaluatorPromptMessage,
   ModelConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export type EvaluatorVersion = {
   id: string;

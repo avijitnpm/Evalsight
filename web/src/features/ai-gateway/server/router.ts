@@ -12,8 +12,8 @@ import {
   GatewayConnectionStatus,
   GatewayIngestionMode,
   GatewayProvider,
-} from "@langfuse/shared/src/db";
-import { redis } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/db";
+import { redis } from "@evalsight/shared/src/server";
 
 import { GatewayApiKeyService } from "./apiKey/gatewayApiKeyService";
 import { requireGatewayEnabledForOrganization } from "./availability";

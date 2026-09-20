@@ -2,7 +2,7 @@ import {
   logger,
   recordDistribution,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { NextApiResponse } from "next";
 
 import {

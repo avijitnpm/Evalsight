@@ -3,7 +3,7 @@ import {
   HOME_DASHBOARD_PRESET_IDS,
   type HomeDashboardPresetId,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   buildWidgetExport,
   parseImportedWidgetJson,

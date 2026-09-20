@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { type ViewVersion } from "@langfuse/shared/query";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { DataTable } from "@/src/components/table/data-table";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";
 import { DataTableToolbar } from "@/src/components/table/data-table-toolbar";
@@ -41,7 +41,7 @@ import {
   BatchActionType,
   TableViewPresetTableName,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { transformFiltersForBackend } from "@/src/features/filters/lib/filter-transform";
 import { sortOptionValues } from "@/src/features/filters/lib/option-sort";
 import { isNumericDataType } from "@/src/features/scores/lib/helpers";

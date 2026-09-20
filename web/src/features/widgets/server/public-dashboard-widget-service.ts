@@ -1,5 +1,5 @@
 import type { z } from "zod";
-import { DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import {
   DashboardService,
   dashboardWidgetViewToQueryView,
@@ -7,12 +7,12 @@ import {
   resolveDashboardWidgetMinVersion,
   type WidgetDomain,
   type ApiAccessScope,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   getValidAggregationsForMeasureType,
   getViewDeclaration,
   type ViewVersion,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import { auditLog } from "@/src/features/audit-logs/server";
 import { createStructuredPublicApiError } from "@/src/features/public-api";
 import {
@@ -20,7 +20,7 @@ import {
   type DashboardWidgetViewOutputType,
   type PostUnstableDashboardWidgetBodyType,
 } from "@/src/features/public-api/server";
-import { ChartConfigSchema, LangfuseNotFoundError } from "@langfuse/shared";
+import { ChartConfigSchema, LangfuseNotFoundError } from "@evalsight/shared";
 import {
   getWidgetImportFilterConfig,
   partitionStoredUiTableFiltersToView,

@@ -6,9 +6,9 @@ import {
 import { backOff } from "exponential-backoff";
 
 import { env } from "@/src/env.mjs";
-import { parseDbOrg } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { logger, recordIncrement } from "@langfuse/shared/src/server";
+import { parseDbOrg } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger, recordIncrement } from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 
 /**

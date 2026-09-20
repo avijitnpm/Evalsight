@@ -13,7 +13,7 @@ import {
   createTraceScore,
   createDatasetRunScore,
   createScoresCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const projectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";
 

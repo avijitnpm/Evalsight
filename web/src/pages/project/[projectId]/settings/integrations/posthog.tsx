@@ -14,7 +14,7 @@ import {
   LEGACY_ANALYTICS_EXPORTER_CUTOFF,
   type V4WriteMode,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 // Shared export-source UI adapters; policy in export-source-policy.ts.
 import {
   buildExportSourceContext,

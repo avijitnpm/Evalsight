@@ -5,8 +5,8 @@ import {
   parseClickhouseUTCDateTimeFormat,
   scoreDomainToV3,
   type ScoreRecordReadType,
-} from "@langfuse/shared/src/server";
-import { type APIScoreV3 } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { type APIScoreV3 } from "@evalsight/shared";
 
 import {
   encodeExperimentCursor,

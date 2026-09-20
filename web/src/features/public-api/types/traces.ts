@@ -8,18 +8,18 @@ import {
   optionalJsonParam,
   publicApiPaginationZod,
   singleFilterList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   stringDateTime,
   TraceBody,
   TRACE_FIELD_GROUPS,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { z } from "zod";
-import { useEventsTableSchema } from "@langfuse/shared/query";
+import { useEventsTableSchema } from "@evalsight/shared/query";
 export {
   TRACE_FIELD_GROUPS,
   type TraceFieldGroup,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * Objects

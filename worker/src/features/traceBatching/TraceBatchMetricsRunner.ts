@@ -3,7 +3,7 @@ import {
   recordGauge,
   redis,
   TraceBatchQueue,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { recordTraceBatchActiveReads } from "../../queues/traceBatchQueue";
 import { PeriodicRunner } from "../../utils/PeriodicRunner";

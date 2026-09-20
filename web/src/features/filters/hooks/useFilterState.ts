@@ -15,7 +15,7 @@ import {
   splitOnUnescapedPipe,
   unescapePipeInValue,
   normalizeLegacySessionPositionInTraceKey,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { scoresTableCols } from "@/src/server/api/definitions/scoresTable";
 import {
   useQueryParam,

@@ -8,7 +8,7 @@ import type {
 import type { ColumnOrderState, VisibilityState } from "@tanstack/react-table";
 import { type Dispatch, type SetStateAction, type ComponentProps } from "react";
 import type { RowHeight } from "@/src/components/table/data-table-row-height-switch";
-import type { FilterState, OrderByState } from "@langfuse/shared";
+import type { FilterState, OrderByState } from "@evalsight/shared";
 
 export function RulesTableToolbar({
   columns,

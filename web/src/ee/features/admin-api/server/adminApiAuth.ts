@@ -1,7 +1,7 @@
 import crypto from "crypto";
 
 import { env } from "@/src/env.mjs";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { type IncomingHttpHeaders } from "http";
 import { type NextApiRequest, type NextApiResponse } from "next";
 

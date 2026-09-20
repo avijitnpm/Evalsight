@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 const DATASET_NAME_COLUMN = "experimentDatasetName";
 const DATASET_ID_COLUMN = "experimentDatasetId";

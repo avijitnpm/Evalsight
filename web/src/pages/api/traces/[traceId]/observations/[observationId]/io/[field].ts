@@ -4,13 +4,13 @@ import {
   InvalidRequestError,
   LangfuseNotFoundError,
   UnauthorizedError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getObservationIOFieldByteLengthFromEventsTable,
   logger,
   OBSERVATION_IO_STREAM_FIELDS,
   streamObservationIOFieldFromEventsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import {
   getAuthorizedTrace,

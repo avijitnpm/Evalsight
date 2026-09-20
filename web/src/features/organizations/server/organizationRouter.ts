@@ -16,7 +16,7 @@ import {
   getLastTraceTimestampsByProjects,
   isLangfuseAITracingConfigured,
   redis,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { resolveBillingService } from "@/src/ee/features/billing/server/resolveBillingService";
 import { isCloudBillingEnabled } from "@/src/ee/features/billing/utils/isCloudBilling";
 import { shouldAutoEnableV4 } from "@/src/features/events/lib/v4Rollout";

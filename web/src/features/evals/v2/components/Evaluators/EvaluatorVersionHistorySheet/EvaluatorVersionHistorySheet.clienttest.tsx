@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 
 import { TooltipProvider } from "@/src/components/ui/tooltip";
 import { EvaluatorVersionHistorySheet } from "./EvaluatorVersionHistorySheet";

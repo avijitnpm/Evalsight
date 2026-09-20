@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { validateFieldAgainstSchema, type Prisma } from "@langfuse/shared";
+import { validateFieldAgainstSchema, type Prisma } from "@evalsight/shared";
 import {
   isDatasetJsonParseFailure,
   parseDatasetJson,

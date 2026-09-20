@@ -1,6 +1,6 @@
 import { type LoggerInstance } from "next-auth";
 
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 // NextAuth error metadata embeds caller-controlled values (e.g. the raw
 // `input` of an ERR_INVALID_URL thrown for a malformed callback URL), so cap

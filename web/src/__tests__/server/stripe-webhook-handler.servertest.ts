@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
 import { v4 } from "uuid";
 import type Stripe from "stripe";
-import type * as SharedServer from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+import type * as SharedServer from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { handleSubscriptionChanged } from "@/src/ee/features/billing/server/stripe/stripeWebhookHandler";
 import { env } from "@/src/env.mjs";
 
@@ -13,7 +13,7 @@ const mocks = vi.hoisted(() => ({
 
 // traceException is what marks the webhook span as an error in APM, so it is
 // the assertion target for "does this miss deserve a human's attention?".
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<typeof SharedServer>()),
   traceException: mocks.traceException,
 }));

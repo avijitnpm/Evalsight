@@ -2,13 +2,13 @@ import { z } from "zod";
 import { SpanKind } from "@opentelemetry/api";
 
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
-import { cloudConfigPlans, planLabels, type Plan } from "@langfuse/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { cloudConfigPlans, planLabels, type Plan } from "@evalsight/shared";
 import {
   instrumentAsync,
   logger,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * SFDC sync via Mulesoft (Langfuse Cloud only).

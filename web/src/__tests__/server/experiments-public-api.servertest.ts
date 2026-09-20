@@ -4,7 +4,7 @@ import {
   createEventsCh,
   createOrgProjectAndApiKey,
   createScoresCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 
 import {

@@ -5,7 +5,7 @@
  * and how many spans were lost.
  */
 import { describe, it, expect, afterEach, vi } from "vitest";
-import { logger, OtelIngestionProcessor } from "@langfuse/shared/src/server";
+import { logger, OtelIngestionProcessor } from "@evalsight/shared/src/server";
 
 const FILE_KEY = "events/otel/test-project/2026/07/13/batch.json";
 

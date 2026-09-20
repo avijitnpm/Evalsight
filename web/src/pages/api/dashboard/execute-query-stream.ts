@@ -8,21 +8,21 @@ import {
   ClickHouseResourceError,
   queryClickhouseWithProgress,
   logger,
-} from "@langfuse/shared/src/server";
-import { RESOURCE_LIMIT_ERROR_MESSAGE } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { RESOURCE_LIMIT_ERROR_MESSAGE } from "@evalsight/shared";
 
 import { getServerAuthSession } from "@/src/server/auth";
 import { sendAdminAccessWebhook } from "@/src/server/adminAccessWebhook";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   prepareExecuteQuery,
   toClickhouseQueryOpts,
-} from "@langfuse/shared/query/server";
+} from "@evalsight/shared/query/server";
 import {
   query as customQuery,
   validateQuery,
   viewVersions,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 export type SSEEvent =
   | { type: "progress"; progress: object }
   | { type: "row"; row: Record<string, unknown> }

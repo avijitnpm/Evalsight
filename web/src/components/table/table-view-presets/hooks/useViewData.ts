@@ -1,5 +1,5 @@
 import { api } from "@/src/utils/api";
-import { type TableViewPresetTableName } from "@langfuse/shared";
+import { type TableViewPresetTableName } from "@evalsight/shared";
 
 export const useViewData = ({
   tableName,

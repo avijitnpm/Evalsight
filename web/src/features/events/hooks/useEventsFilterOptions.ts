@@ -1,7 +1,7 @@
 /* eslint-disable @repo/no-exotic-operators */
 import { api, type RouterInputs, type RouterOutputs } from "@/src/utils/api";
 import { useCallback, useMemo, useState } from "react";
-import { type FilterState, type TimeFilter } from "@langfuse/shared";
+import { type FilterState, type TimeFilter } from "@evalsight/shared";
 import {
   planEventFacetQueries,
   splitFacetFilter,

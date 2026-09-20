@@ -1,5 +1,5 @@
-import { buildSelectColumns } from "@langfuse/shared/src/server";
-import { GetScoresQueryV3 } from "@langfuse/shared";
+import { buildSelectColumns } from "@evalsight/shared/src/server";
+import { GetScoresQueryV3 } from "@evalsight/shared";
 
 describe("GetScoresQueryV3 enum case-insensitivity", () => {
   it("accepts lowercase source values and normalizes to uppercase", () => {

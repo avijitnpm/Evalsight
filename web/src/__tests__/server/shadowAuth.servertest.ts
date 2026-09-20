@@ -2,13 +2,13 @@ import { randomUUID } from "crypto";
 
 import { type NextApiRequest } from "next";
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createBasicAuthHeader,
   createOrgProjectAndApiKey,
   createShaHash,
   getDisplaySecretKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import { authorize } from "@/src/features/auth/policy/authorize";

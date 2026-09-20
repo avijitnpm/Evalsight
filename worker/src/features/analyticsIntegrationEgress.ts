@@ -9,7 +9,7 @@ import {
   whitelistFromEnv,
   type OutboundUrlValidationWhitelist,
   type RedirectOptions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { UnrecoverableError } from "../errors/UnrecoverableError";
 import {
   describeOutboundFailure,

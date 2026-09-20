@@ -1,7 +1,7 @@
 import { encoding_for_model } from "tiktoken";
 import { afterAll, describe, expect, it } from "vitest";
 
-import { type Model } from "@langfuse/shared";
+import { type Model } from "@evalsight/shared";
 
 import { tokenCount } from "../features/tokenisation/usage";
 

@@ -1,4 +1,4 @@
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import { describe, expect, it, vi } from "vitest";
 
 import { GatewayApiKeyAuthenticator } from "@/src/features/ai-gateway/server/auth/gatewayApiKeyAuthenticator";
@@ -26,7 +26,7 @@ vi.mock("@/src/server/utils/jwt", () => ({
   createEs256JwtVerifier: vi.fn(() => ({ verify: vi.fn() })),
 }));
 
-vi.mock("@langfuse/shared/encryption", () => ({
+vi.mock("@evalsight/shared/encryption", () => ({
   decrypt: vi.fn(() => "sk-test"),
 }));
 

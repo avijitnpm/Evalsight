@@ -6,7 +6,7 @@ const mocks = vi.hoisted(() => ({
   instanceEnabled: true,
 }));
 
-vi.mock("@langfuse/shared/in-app-agent/server/modelProvider", () => ({
+vi.mock("@evalsight/shared/in-app-agent/server/modelProvider", () => ({
   isInAppAgentInstanceEnabled: () => mocks.instanceEnabled,
 }));
 

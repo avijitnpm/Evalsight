@@ -5,12 +5,12 @@ import {
   JobConfigState,
   TriggerEventSource,
   PromptType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   createOrgProjectAndApiKey,
   EntityChangeEventType,
-} from "@langfuse/shared/src/server";
-import { ActionType, prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { ActionType, prisma } from "@evalsight/shared/src/db";
 import { promptVersionProcessor } from "../features/entityChange/promptVersionProcessor";
 
 describe("promptVersionChangeWorker", () => {

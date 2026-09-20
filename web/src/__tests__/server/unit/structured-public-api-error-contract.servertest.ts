@@ -1,5 +1,5 @@
-import type { RateLimitResult } from "@langfuse/shared";
-import { ClickHouseResourceError } from "@langfuse/shared/src/server";
+import type { RateLimitResult } from "@evalsight/shared";
+import { ClickHouseResourceError } from "@evalsight/shared/src/server";
 import { EvaluatorVersionConflictError } from "@/src/features/evals/v2/server/evaluators/evaluatorErrors";
 import {
   createStructuredPublicApiRateLimitError,

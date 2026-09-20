@@ -1,3 +1,3 @@
-import { scoresTableCols } from "@langfuse/shared";
+import { scoresTableCols } from "@evalsight/shared";
 
 export { scoresTableCols };

@@ -1,9 +1,9 @@
-import { LangfuseNotFoundError, SCORE_FIELD_GROUPS_V3 } from "@langfuse/shared";
+import { LangfuseNotFoundError, SCORE_FIELD_GROUPS_V3 } from "@evalsight/shared";
 import { z } from "zod";
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { listScoresV3ForPublicApi } from "@/src/features/public-api/server";
-import { buildScoreSubjectUrl } from "@langfuse/shared/src/server";
+import { buildScoreSubjectUrl } from "@evalsight/shared/src/server";
 
 const GetScoreInputSchema = z.object({ scoreId: z.string() }).strict();
 

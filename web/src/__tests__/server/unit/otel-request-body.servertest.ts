@@ -21,10 +21,10 @@ vi.mock("@/src/features/public-api/server/withMiddlewares", () => ({
 vi.mock("@/src/features/public-api/server/createAuthedProjectAPIRoute", () => ({
   createAuthedProjectAPIRoute: ({ fn }: { fn: unknown }) => fn,
 }));
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   ForbiddenError: class ForbiddenError extends Error {},
 }));
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   ClickHouseClientManager: {
     getInstance: () => ({ closeAllConnections: vi.fn() }),
   },

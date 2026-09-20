@@ -27,7 +27,7 @@ import {
   DatasetNameSchema,
   isValidJSONSchema,
   type Prisma,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import { useRouter } from "next/router";
 import { useUniqueNameValidation } from "@/src/hooks/useUniqueNameValidation";

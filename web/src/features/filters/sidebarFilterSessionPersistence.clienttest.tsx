@@ -6,7 +6,7 @@ import {
   screen,
   waitFor,
 } from "@testing-library/react";
-import { type FilterState, encodeFiltersGeneric } from "@langfuse/shared";
+import { type FilterState, encodeFiltersGeneric } from "@evalsight/shared";
 import { useSidebarFilterState } from "./hooks/useSidebarFilterState";
 import { omitFilterFacets, type FilterConfig } from "./lib/filter-config";
 import { buildSidebarFilterQueryStorageKey } from "./lib/persistedSidebarFilterQuery";

@@ -34,7 +34,7 @@ import {
   type ActionTypes,
   type AutomationDomain,
   TriggerEventSource,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /** actionLabel maps each automation action type to its display name. */
 const actionLabel: Record<ActionTypes, string> = {

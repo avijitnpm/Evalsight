@@ -2,7 +2,7 @@
 
 import { describe, expect, it } from "vitest";
 
-import { filterOperators, type FilterState } from "@langfuse/shared";
+import { filterOperators, type FilterState } from "@evalsight/shared";
 
 import {
   getMetricsColumnsWithCustomSelect,

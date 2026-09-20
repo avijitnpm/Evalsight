@@ -20,7 +20,7 @@ import {
   usersFilterConfig,
 } from "@/src/features/filters/config/users-config";
 import type { FilterConfig } from "@/src/features/filters/lib/filter-config";
-import { type ColumnDefinition, type FilterState } from "@langfuse/shared";
+import { type ColumnDefinition, type FilterState } from "@evalsight/shared";
 import {
   createEvent,
   createEventsCh,
@@ -34,7 +34,7 @@ import {
   getUserMetricsFromEventsTable,
   getUsersCountFromEventsTable,
   getUsersFromEventsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const projectId = randomUUID();
 const userId = `facet-coverage-${randomUUID()}`;

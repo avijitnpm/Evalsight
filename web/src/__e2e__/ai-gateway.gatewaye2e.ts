@@ -15,20 +15,20 @@ import type { GatewayProviderName } from "@/src/features/ai-gateway/server/provi
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { signHmacSha256 } from "@/src/server/utils/hmac";
-import { encrypt } from "@langfuse/shared/encryption";
+import { encrypt } from "@evalsight/shared/encryption";
 import {
   GatewayConnectionStatus,
   GatewayIngestionMode,
   GatewayProvider,
   prisma,
   Role,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import {
   getObservationByIdFromEventsTable,
   getTraceByIdFromEventsTable,
   redis,
-} from "@langfuse/shared/src/server";
-import { getDisplaySecretKey } from "@langfuse/shared/src/server/auth/apiKeys";
+} from "@evalsight/shared/src/server";
+import { getDisplaySecretKey } from "@evalsight/shared/src/server/auth/apiKeys";
 
 const BASE_URL = (
   process.env.LANGFUSE_AI_GATEWAY_E2E_BASE_URL ?? "http://localhost:3000"

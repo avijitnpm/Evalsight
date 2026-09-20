@@ -1,10 +1,10 @@
 import { monitorEventLoopDelay } from "node:perf_hooks";
 import { env } from "@/src/env.mjs";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import {
   flushMetricsToCloudWatch,
   recordGauge,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 let stopMonitoring: (() => void) | undefined;
 

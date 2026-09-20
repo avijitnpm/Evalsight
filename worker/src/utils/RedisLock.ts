@@ -1,5 +1,5 @@
 import { randomUUID } from "crypto";
-import { logger, redis } from "@langfuse/shared/src/server";
+import { logger, redis } from "@evalsight/shared/src/server";
 
 export type LockAcquireResult = "acquired" | "held_by_other" | "skipped";
 

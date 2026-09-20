@@ -13,7 +13,7 @@ import { syntaxTree } from "@codemirror/language";
 import { setDiagnostics, type Diagnostic } from "@codemirror/lint";
 import { javascript } from "@codemirror/lang-javascript";
 import { python } from "@codemirror/lang-python";
-import { EvalTemplateSourceCodeLanguageEnum } from "@langfuse/shared";
+import { EvalTemplateSourceCodeLanguageEnum } from "@evalsight/shared";
 import { useTheme } from "next-themes";
 import {
   type ReactNode,

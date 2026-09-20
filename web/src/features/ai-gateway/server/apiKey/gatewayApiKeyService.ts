@@ -1,9 +1,9 @@
-import { InternalServerError, LangfuseNotFoundError } from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import { InternalServerError, LangfuseNotFoundError } from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import {
   createAndAddApiKeysToDb,
   deleteApiKeyFromDb,
-} from "@langfuse/shared/src/server/auth/apiKeys";
+} from "@evalsight/shared/src/server/auth/apiKeys";
 import type { Cluster, Redis } from "ioredis";
 
 import { auditLog } from "@/src/features/audit-logs/server";

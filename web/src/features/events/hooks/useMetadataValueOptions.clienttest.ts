@@ -1,7 +1,7 @@
 // @vitest-environment node
 
 import { describe, expect, it } from "vitest";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 import { __test } from "./useMetadataValueOptions";
 

@@ -24,7 +24,7 @@ import {
   dropUnpairedAssistantToolCalls,
   type AgUiMessage,
   type InAppAgentToolApprovalRequest,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import { isActiveInAppAgentRunStatus } from "../watchFrames";
 import type {
   InAppAgentMessageFeedback,

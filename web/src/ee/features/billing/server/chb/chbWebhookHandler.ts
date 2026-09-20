@@ -10,8 +10,8 @@ import {
   CloudConfigSchema,
   parseDbOrg,
   type ParsedOrganization,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   invalidateCachedOrgApiKeys,
   logger,
@@ -19,7 +19,7 @@ import {
   redis,
   startOfDayUTC,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { type ChbAttachedPlan, getChbApiClient } from "./chbApiClient";
 import { sendChbProjectEvent } from "./chbProjectEvents";

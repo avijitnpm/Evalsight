@@ -2,8 +2,8 @@ import { randomUUID } from "crypto";
 import type { Session } from "next-auth";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 
-import { prisma } from "@langfuse/shared/src/db";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { prisma } from "@evalsight/shared/src/db";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import { env } from "@/src/env.mjs";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";

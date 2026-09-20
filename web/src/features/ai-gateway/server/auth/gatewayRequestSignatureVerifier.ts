@@ -5,7 +5,7 @@ import { z } from "zod/v4";
 
 import { env } from "@/src/env.mjs";
 import { verifyHmacSha256 } from "@/src/server/utils/hmac";
-import { createShaHash } from "@langfuse/shared/src/server/auth/apiKeys";
+import { createShaHash } from "@evalsight/shared/src/server/auth/apiKeys";
 
 import { GatewayApiFormatSchema, type GatewayApiFormat } from "../provider";
 import { GatewayControlPlaneError } from "@/src/features/ai-gateway/server/gatewayControlPlaneError";

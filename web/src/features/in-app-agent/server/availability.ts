@@ -1,12 +1,12 @@
 import type { Session } from "next-auth";
 
-import { BaseError, ForbiddenError } from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import { BaseError, ForbiddenError } from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import {
   getInAppAgentModelConfig,
   isInAppAgentInstanceEnabled,
   LANGFUSE_AI_MODEL_UNCONFIGURED_MESSAGE,
-} from "@langfuse/shared/in-app-agent/server/modelProvider";
+} from "@evalsight/shared/in-app-agent/server/modelProvider";
 
 import { hasEntitlement } from "@/src/features/entitlements/server";
 

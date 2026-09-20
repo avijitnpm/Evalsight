@@ -1,6 +1,6 @@
-import type { GatewayIngestionMode } from "@langfuse/shared/src/db";
-import { decrypt } from "@langfuse/shared/encryption";
-import { instrumentAsync } from "@langfuse/shared/src/server";
+import type { GatewayIngestionMode } from "@evalsight/shared/src/db";
+import { decrypt } from "@evalsight/shared/encryption";
+import { instrumentAsync } from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import {

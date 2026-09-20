@@ -1,6 +1,6 @@
 import { z } from "zod";
-import type { AgUiContext, AgUiMessage } from "@langfuse/shared/in-app-agent";
-import { InAppAgentToolApprovalRequestSchema } from "@langfuse/shared/in-app-agent";
+import type { AgUiContext, AgUiMessage } from "@evalsight/shared/in-app-agent";
+import { InAppAgentToolApprovalRequestSchema } from "@evalsight/shared/in-app-agent";
 
 type AgUiTool = {
   name: string;

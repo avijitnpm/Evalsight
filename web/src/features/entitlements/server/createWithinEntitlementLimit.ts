@@ -3,7 +3,7 @@ import {
   throwIfExceedsLimit,
 } from "@/src/features/entitlements/server/hasEntitlementLimit";
 import { type EntitlementLimit } from "@/src/features/entitlements/constants/entitlements";
-import { Prisma, type PrismaClient } from "@langfuse/shared/src/db";
+import { Prisma, type PrismaClient } from "@evalsight/shared/src/db";
 import { type Session } from "next-auth";
 
 /**

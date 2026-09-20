@@ -5,8 +5,8 @@ import {
   AnnotationQueueObjectType,
   type TracingSearchType,
   type ScoreAggregate,
-} from "@langfuse/shared";
-import { type FullEventsObservations } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { type FullEventsObservations } from "@evalsight/shared/src/server";
 import { showSuccessToast } from "@/src/features/notifications";
 import { joinTableCoreAndMetrics } from "@/src/components/table/utils/joinTableCoreAndMetrics";
 import { usePendingRowIds } from "@/src/components/table/hooks/usePendingRowIds";

@@ -1,8 +1,8 @@
 import { randomUUID } from "crypto";
 import { z } from "zod";
 import { JobExecutionStatus } from "@prisma/client";
-import type { EvalExecutionContext } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import type { EvalExecutionContext } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   buildEventBucketPrefix,
   compileLangfuseMediaMessages,
@@ -16,7 +16,7 @@ import {
   ScoreEventType,
   UNKNOWN_INGESTION_SDK_VALUE,
   type ChatMessage,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { getEvalS3StorageClient } from "./s3StorageClient";
 import { createInternalEventsWriter } from "../internal-tracing/createInternalEventsWriter";
 import { recordExportVolume } from "../../services/exportVolumeMetric";

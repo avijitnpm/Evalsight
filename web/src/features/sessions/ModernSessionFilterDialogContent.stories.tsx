@@ -1,4 +1,4 @@
-import { type ColumnDefinition, type FilterState } from "@langfuse/shared";
+import { type ColumnDefinition, type FilterState } from "@evalsight/shared";
 import { type ComponentProps } from "react";
 import { fn } from "storybook/test";
 

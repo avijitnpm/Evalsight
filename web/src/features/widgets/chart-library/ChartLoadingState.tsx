@@ -2,7 +2,7 @@
 /* eslint-disable @repo/no-style-props, @repo/no-null-render */
 import { useEffect, useState } from "react";
 import { cn } from "@/src/utils/tailwind";
-import { SLOW_QUERY_HINT_TEXT } from "@langfuse/shared";
+import { SLOW_QUERY_HINT_TEXT } from "@evalsight/shared";
 import { type QueryProgress } from "@/src/hooks/useSSEDashboardQuery";
 import { QueryProgressBar } from "@/src/features/widgets/chart-library/QueryProgressBar";
 import { Button } from "@/src/components/ui/button";

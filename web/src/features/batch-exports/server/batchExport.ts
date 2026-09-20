@@ -19,13 +19,13 @@ import {
   InvalidRequestError,
   LangfuseNotFoundError,
   paginationZod,
-} from "@langfuse/shared";
-import { type Prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { type Prisma } from "@evalsight/shared/src/db";
 import {
   BatchExportQueue,
   logger,
   QueueJobs,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { assertLegacyTracingIoSearchCanCreateBatchJob } from "@/src/features/traces/server/legacyIoSearch";

@@ -22,7 +22,7 @@ import {
   PRODUCTION_LABEL,
   PromptLabelSchema,
   type Prompt,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { LabelCommandItem } from "./LabelCommandItem";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import { isReservedPromptLabel } from "@/src/features/prompts/utils";

@@ -6,8 +6,8 @@ import {
   type BillingProvider,
   getBillingProvider,
   parseDbOrg,
-} from "@langfuse/shared";
-import { logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { logger } from "@evalsight/shared/src/server";
 
 import { getChbApiClient } from "./chb/chbApiClient";
 import { ChbBillingService } from "./chb/chbBillingService";

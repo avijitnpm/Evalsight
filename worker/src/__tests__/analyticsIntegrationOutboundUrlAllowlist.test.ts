@@ -28,7 +28,7 @@ vi.mock("../env", () => ({
   v4WritesToEventsTable: () => false,
 }));
 
-import { whitelistFromEnv } from "@langfuse/shared/src/server";
+import { whitelistFromEnv } from "@evalsight/shared/src/server";
 import { MixpanelClient } from "../features/mixpanel/mixpanelClient";
 import type { MixpanelEvent } from "../features/mixpanel/transformers";
 

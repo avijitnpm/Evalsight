@@ -1,4 +1,4 @@
-import { EvalTemplateType, type ColumnDefinition } from "@langfuse/shared";
+import { EvalTemplateType, type ColumnDefinition } from "@evalsight/shared";
 import type { FilterConfig } from "@/src/features/filters";
 
 const evaluatorStatusOptions = [

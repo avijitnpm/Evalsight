@@ -13,14 +13,14 @@ import {
   type FilterState,
   type metricAggregations,
   RESOURCE_LIMIT_ERROR_MESSAGE,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   monitorEvaluationOffsetMs,
   type MonitorThresholdOperator,
   type MonitorView,
   type MonitorWindow,
   windowToMs,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 import { renderChartSubtitle } from "../helpers/renderMonitorLabels";
 import { getMonitorPreviewRange } from "../helpers/monitorTimeRanges";

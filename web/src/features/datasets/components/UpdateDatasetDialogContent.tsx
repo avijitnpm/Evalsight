@@ -4,7 +4,7 @@ import {
   DialogTitle,
 } from "@/src/components/ui/dialog";
 import { DatasetForm } from "@/src/features/datasets/components/DatasetForm";
-import { type Prisma } from "@langfuse/shared";
+import { type Prisma } from "@evalsight/shared";
 
 export interface UpdateDatasetDialogProps {
   projectId: string;

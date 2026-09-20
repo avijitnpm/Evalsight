@@ -3,8 +3,8 @@ import {
   type ScoreSourceType,
   type FilterState,
   type ScoreDataTypeType,
-} from "@langfuse/shared";
-import { type ViewVersion } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { createTracesTimeFilter } from "@/src/features/dashboard/lib/dashboard-utils";
 import React from "react";
 import { NoDataOrLoading } from "@/src/components/NoDataOrLoading";

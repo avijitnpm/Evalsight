@@ -9,7 +9,7 @@ import {
   parseOutboundUrl,
   validateOutboundUrlHost,
   type ValidateOutboundUrlHostOptions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const MAX_IMAGE_URL_REDIRECTS = 5;
 const IMAGE_URL_VALIDATION_OPTIONS = {

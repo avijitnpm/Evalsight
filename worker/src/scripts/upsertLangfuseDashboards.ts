@@ -1,12 +1,12 @@
 import { z } from "zod";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import langfuseDashboards from "../constants/langfuse-dashboards.json";
-import { LANGFUSE_HOME_DASHBOARD } from "@langfuse/shared";
+import { LANGFUSE_HOME_DASHBOARD } from "@evalsight/shared";
 import {
   logger,
   WidgetDomainSchema,
   DashboardDomainSchema,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * JSON STRUCTURE & SCHEMAS
@@ -59,7 +59,7 @@ export const upsertLangfuseDashboards = async (force = false) => {
 
     const parsed = FileSchema.parse(langfuseDashboards);
 
-    // The curated Home dashboard lives in @langfuse/shared (the web app falls
+    // The curated Home dashboard lives in @evalsight/shared (the web app falls
     // back to the same constant when this row does not exist yet). Its
     // placements are presets, so it brings no widgets of its own.
     const homeDashboard = RawDashboardSchema.parse({

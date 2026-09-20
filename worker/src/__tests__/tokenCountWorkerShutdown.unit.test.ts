@@ -1,5 +1,5 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
-import { type Model } from "@langfuse/shared";
+import { type Model } from "@evalsight/shared";
 
 // Stand in for a real worker_threads Worker so the pool spins up without
 // spawning threads. postMessage echoes a successful result synchronously
@@ -32,7 +32,7 @@ const { workerInstances, FakeWorker, control, recordIncrement } = vi.hoisted(
 );
 
 vi.mock("worker_threads", () => ({ Worker: FakeWorker }));
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   logger: { error: vi.fn(), warn: vi.fn(), info: vi.fn() },
   recordIncrement,
 }));

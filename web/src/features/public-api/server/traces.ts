@@ -5,12 +5,12 @@ import {
   deriveFilters,
   tracesTableUiColumnDefinitions,
   type TraceQueryType,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   tracesTableCols,
   type FilterState,
   type OrderByState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const publicApiTracesFilterParams = createPublicApiTracesColumnMapping(
   "traces",

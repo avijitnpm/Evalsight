@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
-import { InAppAgentRateLimitErrorResponseSchema } from "@langfuse/shared/in-app-agent";
-import { logger, recordIncrement } from "@langfuse/shared/src/server";
+import { InAppAgentRateLimitErrorResponseSchema } from "@evalsight/shared/in-app-agent";
+import { logger, recordIncrement } from "@evalsight/shared/src/server";
 
 /** Total time a single MCP operation may spend waiting out rate limits. */
 const IN_APP_AGENT_MCP_RATE_LIMIT_WAIT_BUDGET_MS = 60_000;

@@ -5,13 +5,13 @@ import {
   ForbiddenError,
   InternalServerError,
   InvalidRequestError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { authorizeRequestOrThrow } from "./authorizeRequest";
 import { validateChatCompletionBody } from "./validateChatCompletionBody";
 
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   LLMApiKeySchema,
   createLLMOutput,
@@ -23,7 +23,7 @@ import {
   contextWithLangfuseProps,
   mapLegacyLLMCompletionParams,
   streamLLMText,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import * as opentelemetry from "@opentelemetry/api";
 
 export default async function chatCompletionHandler(req: NextRequest) {

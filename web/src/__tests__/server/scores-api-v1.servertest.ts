@@ -10,7 +10,7 @@ import {
   createScoresCh,
   createTracesCh,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,
@@ -19,8 +19,8 @@ import {
   DeleteScoreResponseV1,
   GetScoreResponseV1,
   GetScoresResponseV1,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { v4 } from "uuid";
 import { z } from "zod";
 import waitForExpect from "wait-for-expect";

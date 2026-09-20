@@ -1,4 +1,4 @@
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { type RouterInputs } from "@/src/utils/api";
 import { type ChartViewConfig } from "../types";
 import {

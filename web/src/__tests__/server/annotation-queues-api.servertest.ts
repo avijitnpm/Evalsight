@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   makeZodVerifiedAPICall,
   makeAPICall,
@@ -16,8 +16,8 @@ import {
 import {
   AnnotationQueueObjectType,
   AnnotationQueueStatus,
-} from "@langfuse/shared";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { v4 as uuidv4 } from "uuid";
 
 const TOTAL_TEST_QUEUES = 10; // Create enough queues to test pagination

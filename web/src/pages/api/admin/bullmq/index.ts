@@ -14,7 +14,7 @@ import {
   IngestionEvent,
   OtelIngestionQueue,
   SecondaryOtelIngestionQueue,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { AdminApiAuthService } from "@/src/ee/features/admin-api/server/adminApiAuth";
 
 /* 

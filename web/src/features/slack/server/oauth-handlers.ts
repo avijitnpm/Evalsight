@@ -4,10 +4,10 @@ import {
   SLACK_BOT_SCOPES,
   parseSlackInstallationMetadata,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { getServerAuthSession } from "@/src/server/auth";
 import { auditLog } from "@/src/features/audit-logs/server";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { getSafeRedirectPath } from "@/src/utils/redirect";
 import { getProductBaseUrl } from "@/src/utils/base-url";
 

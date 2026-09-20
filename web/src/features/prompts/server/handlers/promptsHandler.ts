@@ -9,7 +9,7 @@ import {
   RateLimitService,
 } from "@/src/features/public-api/server";
 import { authorizePromptRequestOrThrow } from "../utils/authorizePromptRequest";
-import { CreatePromptSchema, GetPromptsMetaSchema } from "@langfuse/shared";
+import { CreatePromptSchema, GetPromptsMetaSchema } from "@evalsight/shared";
 
 const getPromptsHandler = async (req: NextApiRequest, res: NextApiResponse) => {
   const authCheck = await authorizePromptRequestOrThrow(req);

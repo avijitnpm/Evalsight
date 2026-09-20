@@ -1,5 +1,5 @@
 import type { Session } from "next-auth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { createScoreAnalyticsRouter } from "@/src/features/score-analytics/server/scoreAnalyticsRouter";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
@@ -8,7 +8,7 @@ import {
   createScoresCh,
   createSessionScore,
   createDatasetRunScore,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 describe("Score Comparison Analytics tRPC", () => {

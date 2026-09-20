@@ -7,7 +7,7 @@
  * allowlist cannot make these assertions vacuous.
  */
 import { describe, expect, it } from "vitest";
-import { OutboundUrlValidationError } from "@langfuse/shared/src/server";
+import { OutboundUrlValidationError } from "@evalsight/shared/src/server";
 import {
   hostnameForLog,
   validateAnalyticsIntegrationUrl,

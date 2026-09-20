@@ -1,4 +1,4 @@
-import { recordDistribution } from "@langfuse/shared/src/server";
+import { recordDistribution } from "@evalsight/shared/src/server";
 
 export const EXPORT_FRESHNESS_LAG_METRIC =
   "langfuse.export.freshness_lag_seconds";

@@ -1,5 +1,5 @@
-import { projectRoleAccessRights, type ProjectScope } from "@langfuse/shared";
-import { type Role } from "@langfuse/shared/src/db";
+import { projectRoleAccessRights, type ProjectScope } from "@evalsight/shared";
+import { type Role } from "@evalsight/shared/src/db";
 import { TRPCError } from "@trpc/server";
 import { type Session } from "next-auth";
 import { useSession } from "next-auth/react";

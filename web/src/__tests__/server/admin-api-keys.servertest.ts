@@ -3,12 +3,12 @@ import { vi } from "vitest";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { createMocks } from "node-mocks-http";
 import { env } from "@/src/env.mjs";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import {
   API_KEY_CACHE_PATTERN,
   createApiKeyCacheKey,
   redis,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import handler from "../../pages/api/admin/api-keys";
 import {
   clearRedisKeysByPatternSafely,
@@ -19,7 +19,7 @@ import {
   type RedisTestClient,
 } from "@/src/__tests__/server/redis-test-utils";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
   const { randomUUID } = await import("node:crypto");
   return {
@@ -66,7 +66,7 @@ describe("Admin API keys route", () => {
     (env as any).NEXT_PUBLIC_LANGFUSE_CLOUD_REGION = originalCloudRegion;
     redis?.disconnect();
     const actual = await vi.importActual<typeof SharedServer>(
-      "@langfuse/shared/src/server",
+      "@evalsight/shared/src/server",
     );
     actual.redis?.disconnect();
   });

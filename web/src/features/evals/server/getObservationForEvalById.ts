@@ -2,12 +2,12 @@ import {
   DEFAULT_TRACE_ENVIRONMENT,
   getEventsStreamForEval,
   getObservationByIdFromObservationsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   LangfuseNotFoundError,
   observationForEvalSchema,
   type ObservationForEval,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 
 export async function getObservationForEvalById(params: {

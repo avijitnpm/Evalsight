@@ -3,7 +3,7 @@ import {
   getCodeEvalVariableMapping,
   observationVariableMappingList,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export type ModernRuleVariableMapping = {
   defaultVariableMapping: ObservationVariableMapping[];

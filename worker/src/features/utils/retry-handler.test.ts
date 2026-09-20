@@ -13,7 +13,7 @@ const mockEnv = vi.hoisted(() => ({
   LANGFUSE_LLM_AS_JUDGE_QUEUE_RETRY_MAX_AGE_SECONDS: 120 * 60,
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   convertQueueNameToMetricName: vi.fn().mockImplementation((name) => name),
   logger: {
     info: vi.fn(),
@@ -23,7 +23,7 @@ vi.mock("@langfuse/shared/src/server", () => ({
   recordDistribution: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     datasetRuns: {
       findFirstOrThrow: vi.fn(),
@@ -42,8 +42,8 @@ vi.mock("../../env", () => ({
   env: mockEnv,
 }));
 
-import { prisma } from "@langfuse/shared/src/db";
-import { logger, recordDistribution } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger, recordDistribution } from "@evalsight/shared/src/server";
 import { retryLLMRateLimitError } from "./retry-handler";
 
 describe("retryLLMRateLimitError", () => {

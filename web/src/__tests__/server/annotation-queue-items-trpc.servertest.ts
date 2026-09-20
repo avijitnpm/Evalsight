@@ -1,8 +1,8 @@
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { AnnotationQueueObjectType, type Plan } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { AnnotationQueueObjectType, type Plan } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import { v4 as uuidv4 } from "uuid";
 

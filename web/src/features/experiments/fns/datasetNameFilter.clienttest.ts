@@ -1,6 +1,6 @@
 import { getExperimentsFilterConfig } from "@/src/features/experiments/components/table/filter-config";
 import { describe, expect, it } from "vitest";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 import { withDatasetNamesResolved } from "./datasetNameFilter";
 

@@ -2,7 +2,7 @@ import { astToFilterState } from "@/src/features/search-bar/lib/adapter";
 import { filterStateToQueryText } from "@/src/features/search-bar/lib/filter-state-to-query";
 import { parse } from "@/src/features/search-bar/lib/langQ";
 import { validateQuery } from "@/src/features/search-bar/lib/validate";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { createFieldRegistry, EVENTS_FIELD_REGISTRY } from "./fields";
 import { planCommit } from "./commit";
 import {

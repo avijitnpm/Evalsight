@@ -17,7 +17,7 @@ import {
   type ScoreDomain,
   AnnotationQueueObjectType,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 import { ItemBadge } from "@/src/components/ItemBadge";
 import { DetailHeaderActionsMenuController } from "@/src/features/traces/components/DetailHeaderActionsMenuController";

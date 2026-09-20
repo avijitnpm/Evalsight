@@ -1,13 +1,13 @@
 /* eslint-disable no-nested-ternary */
-import { InvalidRequestError } from "@langfuse/shared";
-import { executeQuery } from "@langfuse/shared/query/server";
+import { InvalidRequestError } from "@evalsight/shared";
+import { executeQuery } from "@evalsight/shared/query/server";
 import {
   dimension,
   metric,
   validateQuery,
   viewDeclarations,
   viewsV2,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import {
   MetricsQueryObjectV2,
   publicGranularities,

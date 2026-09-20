@@ -12,7 +12,7 @@ import {
   UNKNOWN_INGESTION_SDK_VALUE,
   type QueueName,
   type TQueueJobTypes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { AdminApiAuthService } from "@/src/ee/features/admin-api/server/adminApiAuth";
 
 const IngestionReplayBody = z.object({

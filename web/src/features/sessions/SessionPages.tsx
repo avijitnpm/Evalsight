@@ -54,7 +54,7 @@ import {
   type ScoreDomain,
   TableViewPresetTableName,
   normalizeLegacySessionPositionInTraceFilters,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { AnnotationQueueItemDropdownMenuController } from "@/src/features/annotation-queues/components/AnnotationQueueItemDropdownMenuController";
 import { AnnotationQueueItemCountBadge } from "@/src/features/annotation-queues/components/AnnotationQueueItemCountBadge";
 import {

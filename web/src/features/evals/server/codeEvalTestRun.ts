@@ -10,7 +10,7 @@ import {
   writeInternalTraceViaOtelIngestion,
   type CodeEvalUserVisibleError,
   type DispatchResult,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import {
   observationForEvalSchema,
@@ -18,8 +18,8 @@ import {
   type FilterCondition,
   type ObservationForEval,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
-import { EvalTemplateType, type PrismaClient } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { EvalTemplateType, type PrismaClient } from "@evalsight/shared/src/db";
 import { getObservationForEvalById } from "@/src/features/evals/server/getObservationForEvalById";
 import { getExperimentEvalPreviewFilters } from "@/src/features/evals/utils/experiment-eval-preview-utils";
 import {

@@ -5,7 +5,7 @@ import {
   observationEvalVariableColumns,
   ObservationEvalVariableColumn,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Test-only superset: extends the production columns with fields that are not
 // mappable in the product today, to cover extractObservationVariables'

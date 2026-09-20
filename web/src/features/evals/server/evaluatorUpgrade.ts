@@ -7,7 +7,7 @@ import {
   observationVariableMappingList,
   variableMappingList,
   getCodeEvalVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // accepts both stored templates and createTemplate inputs (CODE inputs carry no vars)
 export const getEvalTemplateVariables = (template: {

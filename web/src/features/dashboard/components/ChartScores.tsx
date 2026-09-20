@@ -1,7 +1,7 @@
 /* eslint-disable @repo/no-style-props */
 import { useMemo } from "react";
 import { DashboardCard } from "@/src/features/dashboard/components/cards/DashboardCard";
-import { type ScoreDataTypeType, type FilterState } from "@langfuse/shared";
+import { type ScoreDataTypeType, type FilterState } from "@evalsight/shared";
 import {
   extractTimeSeriesData,
   fillMissingValuesAndTransform,
@@ -13,7 +13,7 @@ import {
 } from "@/src/utils/date-range-utils";
 import { getScoreDataTypeIcon } from "@/src/features/scores";
 import { NoDataOrLoading } from "@/src/components/NoDataOrLoading";
-import { type QueryType, type ViewVersion } from "@langfuse/shared/query";
+import { type QueryType, type ViewVersion } from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import { type DatabaseRow } from "@/src/server/api/services/sqlInterface";
 import { Chart } from "@/src/features/widgets";

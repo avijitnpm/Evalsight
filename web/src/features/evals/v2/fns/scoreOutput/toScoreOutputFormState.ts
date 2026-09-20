@@ -2,7 +2,7 @@ import {
   PersistedEvalOutputDefinitionSchema,
   resolvePersistedEvalOutputDefinition,
   ScoreDataTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { type ScoreOutputFormState } from "@/src/features/evals/v2/scoreOutputTypes";
 

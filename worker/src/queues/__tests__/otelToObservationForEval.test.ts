@@ -12,13 +12,13 @@
  * ResourceSpan -> processToEvent() -> createEventRecord() -> convertEventRecordToObservationForEval()
  */
 import { describe, it, expect, beforeEach, vi } from "vitest";
-import { OtelIngestionProcessor } from "@langfuse/shared/src/server";
+import { OtelIngestionProcessor } from "@evalsight/shared/src/server";
 import {
   convertEventRecordToObservationForEval,
   observationForEvalSchema,
   type ObservationForEval,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { IngestionService } from "../../services/IngestionService";
 import * as clickhouseWriterExports from "../../services/ClickhouseWriter";
 

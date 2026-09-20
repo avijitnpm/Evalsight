@@ -4,7 +4,7 @@ import {
   type FilterState,
   LangfuseInternalTraceEnvironment,
   encodeFiltersGeneric,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export function evaluatorScoresUrl(
   projectId: string,

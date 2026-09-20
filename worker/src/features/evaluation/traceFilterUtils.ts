@@ -2,8 +2,8 @@ import {
   FilterState,
   matchesUiColumnMapping,
   TraceDomain,
-} from "@langfuse/shared";
-import { tracesTableUiColumnDefinitions } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { tracesTableUiColumnDefinitions } from "@evalsight/shared/src/server";
 
 const _inMemoryTraceFilterColumns = [
   "id",

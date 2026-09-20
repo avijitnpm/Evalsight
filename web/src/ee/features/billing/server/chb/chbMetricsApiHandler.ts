@@ -4,14 +4,14 @@ import { type NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   getObservationCountsByProjectInCreationInterval,
   getScoreCountsByProjectInCreationInterval,
   getTraceCountsByProjectInCreationInterval,
   logger,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * Billing metrics API for ClickHouse Billing (CHB).

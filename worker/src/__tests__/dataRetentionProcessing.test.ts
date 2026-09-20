@@ -16,8 +16,8 @@ import {
   StorageService,
   StorageServiceFactory,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { handleDataRetentionProcessingJob } from "../ee/dataRetention/handleDataRetentionProcessingJob";
 import { Job } from "bullmq";
 

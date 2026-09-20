@@ -24,8 +24,8 @@ import {
   TraceBatchEventSchema,
   TraceBatchQueue,
   type TQueueJobTypes,
-} from "@langfuse/shared/src/server";
-import * as shared from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
+import * as shared from "@evalsight/shared/src/server";
 import { env } from "../env";
 import { TraceBatchMetricsRunner } from "../features/traceBatching/TraceBatchMetricsRunner";
 import {
@@ -39,9 +39,9 @@ import { otelIngestionQueueProcessorBuilder } from "../queues/otelIngestionQueue
 import { traceBatchQueueProcessor } from "../queues/traceBatchQueue";
 import { ClickhouseWriter } from "../services/ClickhouseWriter";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const original =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...original,
     redis: original.createNewRedisInstance({

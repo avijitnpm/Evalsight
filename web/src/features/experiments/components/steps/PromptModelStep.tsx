@@ -33,7 +33,7 @@ import {
   hasPromptToolStructuredOutputConflict,
   PROMPT_TOOL_STRUCTURED_OUTPUT_CONFLICT_MESSAGE,
   type LlmSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Switch } from "@/src/components/design-system/Switch/Switch";
 import { api } from "@/src/utils/api";
 import { CardDescription } from "@/src/components/ui/card";

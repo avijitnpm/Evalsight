@@ -1,4 +1,4 @@
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 import { ObjectParam, useQueryParam, withDefault } from "use-query-params";
 import { usePeekTableState } from "@/src/components/table/peek/contexts/PeekTableStateContext";
 

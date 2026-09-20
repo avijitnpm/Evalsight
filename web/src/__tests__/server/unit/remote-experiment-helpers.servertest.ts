@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import crypto from "crypto";
-import { decrypt, encrypt } from "@langfuse/shared/encryption";
-import { LangfuseUserAgent } from "@langfuse/shared";
-import { fetchWithSecureRedirects } from "@langfuse/shared/src/server";
+import { decrypt, encrypt } from "@evalsight/shared/encryption";
+import { LangfuseUserAgent } from "@evalsight/shared";
+import { fetchWithSecureRedirects } from "@evalsight/shared/src/server";
 import {
   buildRemoteExperimentRequest,
   ensureRemoteExperimentSecret,

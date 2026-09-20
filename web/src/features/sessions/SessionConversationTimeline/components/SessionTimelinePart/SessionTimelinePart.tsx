@@ -1,10 +1,10 @@
 /* eslint-disable no-nested-ternary */
 import { FileIcon } from "lucide-react";
-import { assertUnreachable } from "@langfuse/shared";
+import { assertUnreachable } from "@evalsight/shared";
 import {
   type FilePart,
   type ReasoningPart,
-} from "@langfuse/shared/src/utils/normalized-io";
+} from "@evalsight/shared/src/utils/normalized-io";
 
 import { type SessionTimelineConversationMessage } from "@/src/features/sessions/SessionConversationTimeline/fns/processTimelineMessages";
 import { SessionTimelineCollapsiblePart } from "@/src/features/sessions/SessionConversationTimeline/components/SessionTimelineCollapsiblePart/SessionTimelineCollapsiblePart";

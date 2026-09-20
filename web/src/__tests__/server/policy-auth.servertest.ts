@@ -2,8 +2,8 @@ import {
   createBasicAuthHeader,
   createOrgProjectAndApiKey,
   hashSecretKey,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 
 import { Authenticator } from "@/src/features/apiKey/authenticator";
 import { authorize } from "@/src/features/auth/policy/authorize";

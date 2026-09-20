@@ -4,7 +4,7 @@ import {
   type ForbiddenError,
   type InternalServerError,
   type UnauthorizedError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { env } from "@/src/env.mjs";
 import { ContextResolver } from "@/src/features/auth/policy/contextResolver";

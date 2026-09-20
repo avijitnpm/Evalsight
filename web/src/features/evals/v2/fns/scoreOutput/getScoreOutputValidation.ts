@@ -2,7 +2,7 @@
 import {
   getMinimumCategoricalCategoriesMessage,
   ScoreDataTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import {
   DUPLICATE_CATEGORY_NAMES_MESSAGE,

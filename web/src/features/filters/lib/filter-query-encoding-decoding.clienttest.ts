@@ -4,7 +4,7 @@ import {
   encodeFiltersGeneric,
   decodeFiltersGeneric,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Wrapper functions for tests
 const encodeFilters = (filters: FilterState) => encodeFiltersGeneric(filters);

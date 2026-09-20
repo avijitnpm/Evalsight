@@ -2,7 +2,7 @@ import {
   type MonitorThresholdOperator,
   type MonitorView,
   type MonitorWindow,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 /** windowLabels maps each MonitorWindow enum value to a human label. */
 export const windowLabels: Record<MonitorWindow, string> = {

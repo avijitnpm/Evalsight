@@ -12,10 +12,10 @@ import {
   type QueryType,
   type metricAggregations,
   type views,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import { type z } from "zod";
 import { Chart } from "@/src/features/widgets/chart-library/Chart";
-import { type FilterState, type OrderByState } from "@langfuse/shared";
+import { type FilterState, type OrderByState } from "@evalsight/shared";
 import { isTimeSeriesChart } from "@/src/features/widgets/chart-library/utils";
 import {
   PencilIcon,

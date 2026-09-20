@@ -62,7 +62,7 @@ import {
 } from "@/src/features/v4-migration/useV4UpgradeAssistantSupport";
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { api } from "@/src/utils/api";
-import { encodeFiltersGeneric, type FilterState } from "@langfuse/shared";
+import { encodeFiltersGeneric, type FilterState } from "@evalsight/shared";
 import { EvaluatorMigrationDialog } from "@/src/features/v4-migration/EvaluatorMigrationDialog";
 import { buildDeprecatedRulesUrl } from "@/src/features/v4-migration/evaluatorMigrationUrls";
 import {
@@ -1310,7 +1310,7 @@ export function V4MigrationHeaderContent({
             href={LANGFUSE_ASSISTANT_URL}
             analytics={{ section: "header", link: "langfuse_assistant_docs" }}
           >
-            Langfuse Assistant
+            EvalSight Assistant
           </ExternalLink>
           .
           {actionNeeded

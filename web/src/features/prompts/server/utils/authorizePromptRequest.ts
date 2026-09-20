@@ -1,11 +1,11 @@
 import { ApiAuthService } from "@/src/features/public-api/server";
 import { type NextApiRequest } from "next";
-import { UnauthorizedError, ForbiddenError } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { UnauthorizedError, ForbiddenError } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   type AuthHeaderValidVerificationResult,
   redis,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export async function authorizePromptRequestOrThrow(req: NextApiRequest) {
   const authCheck = await new ApiAuthService(

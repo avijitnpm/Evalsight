@@ -8,8 +8,8 @@ import {
   LangfuseNotFoundError,
   optionalPaginationZod,
   Prisma,
-} from "@langfuse/shared";
-import { getUserProjectRoles } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { getUserProjectRoles } from "@evalsight/shared/src/server";
 import partition from "lodash/partition";
 import z from "zod";
 

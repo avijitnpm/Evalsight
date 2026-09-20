@@ -1,6 +1,6 @@
 /** Which table column can filter each attribute. */
 
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 export type AttributeTarget = "observations" | "traces";
 

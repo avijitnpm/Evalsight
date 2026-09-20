@@ -1,6 +1,6 @@
 import { env } from "@/src/env.mjs";
-import { InvalidRequestError } from "@langfuse/shared";
-import { isForceV3ExperienceProject } from "@langfuse/shared/src/server";
+import { InvalidRequestError } from "@evalsight/shared";
+import { isForceV3ExperienceProject } from "@evalsight/shared/src/server";
 import { isLegacyEvalTarget } from "@/src/features/evals/utils/typeHelpers";
 import { isNewLegacyEvalAllowed } from "@/src/features/evals/utils/legacyEvalGate";
 

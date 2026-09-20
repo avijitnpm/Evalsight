@@ -1,4 +1,4 @@
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 
 import preview from "../../../../../../../../../.storybook/preview";
 import { EvaluatorDefinitionView } from "./EvaluatorDefinitionView";

@@ -8,13 +8,13 @@ import {
   LangfuseNotFoundError,
   MethodNotAllowedError,
   UnauthorizedError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   logger,
   traceException,
   contextWithLangfuseProps,
   ClickHouseResourceError,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import * as opentelemetry from "@opentelemetry/api";
 import {
   sendStructuredPublicApiErrorResponse,

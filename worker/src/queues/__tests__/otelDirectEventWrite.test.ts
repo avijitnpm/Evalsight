@@ -7,7 +7,7 @@ import {
   type QueueName,
   recordDistribution,
   type TQueueJobTypes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { IngestionService } from "../../services/IngestionService";
 import { ClickhouseWriter } from "../../services/ClickhouseWriter";
@@ -26,8 +26,8 @@ import {
   type SdkInfo,
 } from "../otelIngestionQueue";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@langfuse/shared/src/server")>()),
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@evalsight/shared/src/server")>()),
   getS3EventStorageClient: vi.fn(),
   recordDistribution: vi.fn(),
 }));

@@ -8,7 +8,7 @@ import {
   PricingTierConditionSchema,
   PricingTierInputSchema,
   type PricingTierCondition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import { type Decimal } from "decimal.js";
 

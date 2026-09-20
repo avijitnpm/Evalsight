@@ -8,10 +8,10 @@ import {
   getExperimentMetricsFromEvents,
   createTraceScore,
   type EventRecordInsertType,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import { env } from "@/src/env.mjs";
-import { type FilterCondition } from "@langfuse/shared";
+import { type FilterCondition } from "@evalsight/shared";
 
 /**
  * Helper to create an experiment event with experiment-specific fields populated.

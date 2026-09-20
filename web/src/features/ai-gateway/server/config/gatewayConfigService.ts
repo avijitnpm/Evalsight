@@ -1,8 +1,8 @@
-import { InvalidRequestError } from "@langfuse/shared";
+import { InvalidRequestError } from "@evalsight/shared";
 import type {
   GatewayIngestionMode,
   PrismaClient,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import { auditLog } from "@/src/features/audit-logs/server";
 import type { OrgAuthedContext } from "@/src/server/api/trpc";
 import { invalidateGatewayResolveCacheForOrganization } from "@/src/features/ai-gateway/server/resolve/gatewayResolveCache";

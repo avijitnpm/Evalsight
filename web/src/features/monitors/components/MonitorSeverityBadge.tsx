@@ -1,7 +1,7 @@
 /* eslint-disable @repo/no-style-props */
 import { Badge, type BadgeProps } from "@/src/components/ui/badge";
 import { cn } from "@/src/utils/tailwind";
-import { type MonitorSeverity } from "@langfuse/shared/monitors";
+import { type MonitorSeverity } from "@evalsight/shared/monitors";
 
 /** severityVariant maps each MonitorSeverity to the underlying Badge variant. */
 const severityVariant: Record<MonitorSeverity, BadgeProps["variant"]> = {

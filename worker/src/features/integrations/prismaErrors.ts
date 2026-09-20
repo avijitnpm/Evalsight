@@ -1,4 +1,4 @@
-import { Prisma } from "@langfuse/shared/src/db";
+import { Prisma } from "@evalsight/shared/src/db";
 
 // An integration can be deleted while one of its runs is still in flight; a row
 // write racing that delete throws P2025. Integration handlers treat that as

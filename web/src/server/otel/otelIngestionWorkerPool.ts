@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import PQueue from "p-queue";
 import Piscina from "piscina";
 

@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { useMemo } from "react";
 import type { FilterConfig } from "@/src/features/filters/lib/filter-config";
 import { TableSearchBar } from "@/src/features/search-bar/components/TableSearchBar";

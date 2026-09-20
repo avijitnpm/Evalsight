@@ -16,7 +16,7 @@ import {
   type FilterState,
   LANGFUSE_HOME_DASHBOARD_ID,
   type HomeDashboardPresetId,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Button } from "@/src/components/ui/button";
 import {
   PlusIcon,

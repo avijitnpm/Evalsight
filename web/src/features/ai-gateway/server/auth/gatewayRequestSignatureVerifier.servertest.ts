@@ -5,7 +5,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { signHmacSha256 } from "@/src/server/utils/hmac";
-import { createShaHash } from "@langfuse/shared/src/server/auth/apiKeys";
+import { createShaHash } from "@evalsight/shared/src/server/auth/apiKeys";
 
 import {
   withGatewayModelsSignatureVerification,

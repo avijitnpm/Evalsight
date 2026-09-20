@@ -1,8 +1,8 @@
 import { startCase } from "lodash";
 import type { z } from "zod";
 
-import { type metricAggregations } from "@langfuse/shared";
-import type { MonitorThresholdOperator } from "@langfuse/shared/monitors";
+import { type metricAggregations } from "@evalsight/shared";
+import type { MonitorThresholdOperator } from "@evalsight/shared/monitors";
 
 const operatorSymbol: Record<MonitorThresholdOperator, string> = {
   GT: ">",

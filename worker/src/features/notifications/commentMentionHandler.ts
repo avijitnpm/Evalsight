@@ -3,11 +3,11 @@ import {
   logger,
   sendCommentMentionEmail,
   getObservationById,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
-import { Prisma } from "@langfuse/shared";
-import { getUserProjectRoles } from "@langfuse/shared/src/server";
-import { type NotificationEventType } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { Prisma } from "@evalsight/shared";
+import { getUserProjectRoles } from "@evalsight/shared/src/server";
+import { type NotificationEventType } from "@evalsight/shared/src/server";
 
 type CommentMentionPayload = Omit<
   Extract<NotificationEventType, { type: "COMMENT_MENTION" }>,

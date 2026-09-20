@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { defineTool } from "../../../core/define-tool";
-import { buildEvaluatorUrl } from "@langfuse/shared/src/server";
+import { buildEvaluatorUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { createMcpEvaluatorService } from "../evaluator-service";
 

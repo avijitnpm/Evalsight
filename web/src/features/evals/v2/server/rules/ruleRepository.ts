@@ -2,19 +2,19 @@ import {
   JobConfigState,
   Prisma,
   type PrismaClient,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import {
   coerceLegacyEmptyMetadataFilters,
   EvalTargetObject,
   type FilterState,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   compilePrismaFilters,
   stringFilterToPrisma,
   stringOptionsFilterToPrisma,
   type PrismaFilterColumnHandlers,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type {
   CreateRuleInput,
   ListRulesInput,

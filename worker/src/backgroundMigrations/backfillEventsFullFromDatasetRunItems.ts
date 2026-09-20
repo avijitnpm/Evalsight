@@ -7,8 +7,8 @@ import {
   queryClickhouse,
   sleep,
   TupleParam,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { parseArgs } from "node:util";
 import {
   buildSpanMaps,

@@ -1,10 +1,10 @@
 /* eslint-disable no-nested-ternary */
 import { useMemo, useState } from "react";
-import { type FilterState, type QueryType } from "@langfuse/shared";
+import { type FilterState, type QueryType } from "@evalsight/shared";
 import {
   SCORES_LISTABLE_COUNT_VIEW,
   type ViewVersion,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import { api } from "@/src/utils/api";
 import { useElementSize } from "@/src/hooks/useElementSize";
 import {

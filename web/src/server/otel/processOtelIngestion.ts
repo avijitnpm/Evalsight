@@ -6,7 +6,7 @@ import {
   OtelIngestionProcessor,
   recordIncrement,
   validateOtelSpanIds,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 type OtelIngestionConfig = {
   projectId: string;

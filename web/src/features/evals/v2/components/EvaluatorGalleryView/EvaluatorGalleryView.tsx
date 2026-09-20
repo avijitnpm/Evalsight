@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { useCallback, type RefObject } from "react";
 import { Code2, Search, Sparkles } from "lucide-react";
-import { EvalTemplateTypeEnum, type EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateTypeEnum, type EvalTemplateType } from "@evalsight/shared";
 
 import { Button } from "@/src/components/ui/button";
 import { Input } from "@/src/components/ui/input";

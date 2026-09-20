@@ -2,7 +2,7 @@ import { EventEmitter } from "node:events";
 
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { QueueName } from "@langfuse/shared/src/server";
+import { QueueName } from "@evalsight/shared/src/server";
 
 import {
   getQueueConsumptionHealth,
@@ -38,9 +38,9 @@ vi.mock("bullmq", async (importOriginal) => {
   return { ...mod, Worker: FakeWorker };
 });
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const mod =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...mod,
     createBullMQWorkerOptionsWithRedis: () => ({

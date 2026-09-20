@@ -4,7 +4,7 @@ import {
   BatchActionQuerySchema,
   BatchEvalEvaluatorMappingSchema,
   BatchEvalSourceTableSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /** Matches the evaluator options page size used by the run-evaluation dialog. */
 export const BATCH_EVAL_EVALUATOR_LIMIT = 100;

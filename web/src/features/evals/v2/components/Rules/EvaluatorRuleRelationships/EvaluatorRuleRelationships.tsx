@@ -1,5 +1,5 @@
 import { useHasProjectAccess } from "@/src/features/rbac";
-import { EvalTargetObject, EvalTemplateType } from "@langfuse/shared";
+import { EvalTargetObject, EvalTemplateType } from "@evalsight/shared";
 import { Link2, Plus, Unlink } from "lucide-react";
 import { useRouter } from "next/router";
 import { useState } from "react";

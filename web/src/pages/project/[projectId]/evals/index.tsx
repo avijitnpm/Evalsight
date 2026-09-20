@@ -1,5 +1,5 @@
 import type { GetServerSideProps } from "next";
-import { isForceV3ExperienceProject } from "@langfuse/shared/src/server";
+import { isForceV3ExperienceProject } from "@evalsight/shared/src/server";
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const projectId = params?.projectId;

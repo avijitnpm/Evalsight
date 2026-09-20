@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
 const recordDistribution = vi.fn();
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   recordDistribution: (...args: unknown[]) => recordDistribution(...args),
 }));
 

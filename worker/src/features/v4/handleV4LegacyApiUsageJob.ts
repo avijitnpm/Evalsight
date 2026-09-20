@@ -30,8 +30,8 @@ import {
   type PreferredClickhouseService,
   type V4LegacyApiCaller,
   type V4LegacyApiHourBucket,
-} from "@langfuse/shared/src/server";
-import { env } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
 import { RedisLock } from "../../utils/RedisLock";
 
 /**
@@ -41,7 +41,7 @@ import { RedisLock } from "../../utils/RedisLock";
  * `POST /api/public/dataset-run-items` calls, environment-wide (one scan
  * serves every project), and materializes the results in Redis so the v4
  * transition UI never has to run this scan from a web request. See
- * `@langfuse/shared/src/server` (`v4/legacyApiUsage`) for the data contracts.
+ * `@evalsight/shared/src/server` (`v4/legacyApiUsage`) for the data contracts.
  *
  * Steady state each hourly run scans only the trailing re-scan margin
  * (~3 hours; 24 hours once a day for late query_log flushes) instead of the

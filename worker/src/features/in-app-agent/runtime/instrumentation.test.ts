@@ -6,7 +6,7 @@ import {
   getInAppAgentInstrumentationTraceId,
   getInAppAgentLlmCallObservationId,
   IN_APP_AGENT_TOOL_APPROVAL_EVENT_NAME,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import type { AgUiRunAgentInput } from "./types";
 import { InAppAgentInstrumentation } from "./instrumentation";
 
@@ -37,7 +37,7 @@ const mocks = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   getInternalTracingHandler: mocks.getInternalTracingHandler,
   redis: undefined,
   ClickHouseClientManager: {

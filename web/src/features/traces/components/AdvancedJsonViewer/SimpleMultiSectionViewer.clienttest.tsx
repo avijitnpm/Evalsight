@@ -3,7 +3,7 @@
  * animate. Smooth scrolling makes Input/Output/Metadata hops feel slow.
  *
  * Row/header internals are stubbed so this file does not pull the media
- * viewer (and `@langfuse/shared`) just to assert scroll behavior.
+ * viewer (and `@evalsight/shared`) just to assert scroll behavior.
  */
 import { createRef, type RefObject } from "react";
 import { render } from "@testing-library/react";

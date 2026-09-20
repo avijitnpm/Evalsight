@@ -3,7 +3,7 @@ import {
   extractVariables,
   InvalidRequestError,
   observationVariableMappingList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { getEvaluatorDefinitionConfigurationError } from "@/src/features/evals/server/evaluator-preflight";
 import { getPromptMessagesValidationError } from "@/src/features/evals/v2/fns/promptMessages/hasInvalidSystemPromptMessage";
 import {

@@ -7,7 +7,7 @@ import {
   type OpenAIContentSchema,
   type OpenAIOutputAudioType,
   type ParsedMediaReferenceType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type MediaReturnType } from "@/src/features/media/validation";
 import { type z } from "zod";
 

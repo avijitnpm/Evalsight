@@ -9,7 +9,7 @@ import { Badge } from "@/src/components/ui/badge";
 import {
   type ScoreAggregate,
   type AggregatedScoreData,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useMemo, Fragment, useState } from "react";
 import {
   type BaselineDiff,

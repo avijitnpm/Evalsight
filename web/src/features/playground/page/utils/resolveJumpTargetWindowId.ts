@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-import { type ChatMessage, type PlaceholderMessage } from "@langfuse/shared";
+import { type ChatMessage, type PlaceholderMessage } from "@evalsight/shared";
 
 import { getMessagesFingerprint } from "./messagesFingerprint";
 

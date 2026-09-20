@@ -1,6 +1,6 @@
 import type { FilterConfig } from "@/src/features/filters";
 import { renderLevelIcon } from "@/src/components/level-colors";
-import type { ColumnDefinition, ObservationLevelType } from "@langfuse/shared";
+import type { ColumnDefinition, ObservationLevelType } from "@evalsight/shared";
 
 /**
  * Column definitions for experiment items table.

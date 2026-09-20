@@ -1,17 +1,17 @@
 import { v4 as uuidv4 } from "uuid";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   MonitorService,
   type SessionContext,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 import {
   MonitorNoDataModeSchema,
   MonitorSeveritySchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
-import { prisma } from "@langfuse/shared/src/db";
-import { LangfuseNotFoundError } from "@langfuse/shared";
+} from "@evalsight/shared/monitors";
+import { prisma } from "@evalsight/shared/src/db";
+import { LangfuseNotFoundError } from "@evalsight/shared";
 
 const baseMonitorInput = (projectId: string) => ({
   projectId,

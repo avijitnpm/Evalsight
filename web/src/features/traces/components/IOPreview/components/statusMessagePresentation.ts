@@ -1,4 +1,4 @@
-import { deepParseJson, type ObservationLevelType } from "@langfuse/shared";
+import { deepParseJson, type ObservationLevelType } from "@evalsight/shared";
 import { assertUnreachable } from "@/src/utils/types";
 
 // Status messages do not use the async I/O parser. Keep shallow structured

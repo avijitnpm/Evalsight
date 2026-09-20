@@ -10,10 +10,10 @@ import { z } from "zod";
 import { defineTool } from "../../../core/define-tool";
 import { ParamPromptName, ParamNewLabels } from "../validation";
 import { updatePromptLabelsForApi } from "@/src/features/prompts/server/prompt-api-service";
-import { buildPromptUrl } from "@langfuse/shared/src/server";
+import { buildPromptUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 
-import { PROMPT_NAME_MAX_LENGTH } from "@langfuse/shared";
+import { PROMPT_NAME_MAX_LENGTH } from "@evalsight/shared";
 
 /**
  * Base schema for JSON Schema generation (MCP client display)

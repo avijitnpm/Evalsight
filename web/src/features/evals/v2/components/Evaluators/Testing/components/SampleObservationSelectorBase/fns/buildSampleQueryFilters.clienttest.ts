@@ -1,4 +1,4 @@
-import type { ColumnDefinition, FilterState } from "@langfuse/shared";
+import type { ColumnDefinition, FilterState } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 
 import {

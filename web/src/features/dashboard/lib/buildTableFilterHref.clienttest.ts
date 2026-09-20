@@ -6,7 +6,7 @@ import {
   tracesTableCols,
   decodeFiltersGeneric,
   MAX_URL_FILTER_QUERY_LENGTH,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   buildTableFilterHref,
   buildViewAsTableHint,

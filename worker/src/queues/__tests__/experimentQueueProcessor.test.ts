@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi, type Mock } from "vitest";
 import { Job } from "bullmq";
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   ExperimentCreateQueue: {
     getInstance: vi.fn().mockReturnValue({
       add: vi.fn(),
@@ -36,7 +36,7 @@ vi.mock("../../errors/UnrecoverableError", async () => {
   };
 });
 
-import { classifyEvaluatorLlmError } from "@langfuse/shared/src/server";
+import { classifyEvaluatorLlmError } from "@evalsight/shared/src/server";
 import { createExperimentJobClickhouse } from "../../features/experiments/experimentServiceClickhouse";
 import { retryLLMRateLimitError } from "../../features/utils";
 import { experimentCreateQueueProcessor } from "../experimentQueue";

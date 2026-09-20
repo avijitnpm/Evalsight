@@ -2,7 +2,7 @@ import { act, fireEvent, render, screen } from "@testing-library/react";
 import { StrictMode } from "react";
 
 import type { InAppAgentPendingToolApproval } from "./InAppAiAgentProvider";
-import type { AgUiMessage } from "@langfuse/shared/in-app-agent";
+import type { AgUiMessage } from "@evalsight/shared/in-app-agent";
 import { useSmoothStreamingMessages } from "./useSmoothStreamingMessages";
 
 const userMessage = {

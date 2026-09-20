@@ -1,4 +1,4 @@
-import type { EvalTemplateType } from "@langfuse/shared";
+import type { EvalTemplateType } from "@evalsight/shared";
 import type { ReactNode } from "react";
 
 import { EvaluationTypeConfiguration } from "@/src/features/evals/v2/components/Evaluators/EvaluationTypeConfiguration/EvaluationTypeConfiguration";

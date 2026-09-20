@@ -1,12 +1,12 @@
 import { vi, type Mock } from "vitest";
 import { randomUUID } from "crypto";
-import { type Prisma } from "@langfuse/shared/src/db";
+import { type Prisma } from "@evalsight/shared/src/db";
 import {
   EvalTemplateSourceCodeLanguage,
   EvalTemplateType,
   type ObservationForEval,
   EvalTargetObject,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   type LegacyObservationEvalConfig,
   type ObservationEvalSchedulerDeps,

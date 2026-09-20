@@ -2,7 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   validateExportSource,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ExternalLink } from "lucide-react";
 import { useMemo } from "react";
 import { useWatch } from "react-hook-form";

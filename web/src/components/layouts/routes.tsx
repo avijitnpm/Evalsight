@@ -1,5 +1,5 @@
 import { type Flag } from "@/src/features/feature-flags/types";
-import { type ProjectScope } from "@langfuse/shared";
+import { type ProjectScope } from "@evalsight/shared";
 import {
   BellRing,
   LayoutDashboard,

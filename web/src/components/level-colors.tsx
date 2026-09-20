@@ -1,5 +1,5 @@
 import type React from "react";
-import { type ObservationLevelType } from "@langfuse/shared";
+import { type ObservationLevelType } from "@evalsight/shared";
 import { cn } from "@/src/utils/tailwind";
 
 const observationLevelToStatus = {

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { LLMAdapter, type PromptContent } from "@langfuse/shared";
-import { compileLangfuseMediaMessages } from "@langfuse/shared/src/server";
+import { LLMAdapter, type PromptContent } from "@evalsight/shared";
+import { compileLangfuseMediaMessages } from "@evalsight/shared/src/server";
 import { replaceVariablesInPrompt } from "./utils";
 
 const imageRef =

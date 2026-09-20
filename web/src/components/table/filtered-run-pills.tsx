@@ -8,7 +8,7 @@ import {
 import { api } from "@/src/utils/api";
 import { ListFilter } from "lucide-react";
 import React, { useMemo } from "react";
-import { type FilterCondition, type FilterState } from "@langfuse/shared";
+import { type FilterCondition, type FilterState } from "@evalsight/shared";
 
 interface FilteredRunPillsProps {
   projectId: string;

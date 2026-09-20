@@ -1,12 +1,12 @@
 import { type Redis, type Cluster } from "ioredis";
 
-import { UnauthorizedError } from "@langfuse/shared";
+import { UnauthorizedError } from "@evalsight/shared";
 import {
   redis as defaultRedis,
   createShaHash,
   createAuthzContextCacheKey,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import { type Credential } from "@/src/features/apiKey/helpers/parseAuthorizationHeader";

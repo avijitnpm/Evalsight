@@ -4,7 +4,7 @@ import {
   type ScoreDataTypeType,
   TracingSearchType,
   tracesTableCols,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getDistinctScoreNames,
   queryClickhouseStream,
@@ -16,7 +16,7 @@ import {
   parseClickhouseUTCDateTimeFormat,
   scoreBooleansAggregation,
   StringFilter,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { Readable } from "stream";
 import { env } from "../../env";
 import {

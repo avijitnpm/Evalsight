@@ -2,11 +2,11 @@
 import { randomUUID } from "crypto";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { createOrgProjectAndApiKey, logger } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
-import { IN_APP_AGENT_TOOL_APPROVAL_EVENT_NAME } from "@langfuse/shared/in-app-agent";
-import { createAndAddApiKeysToDb } from "@langfuse/shared/src/server/auth/apiKeys";
+import { createOrgProjectAndApiKey, logger } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
+import { IN_APP_AGENT_TOOL_APPROVAL_EVENT_NAME } from "@evalsight/shared/in-app-agent";
+import { createAndAddApiKeysToDb } from "@evalsight/shared/src/server/auth/apiKeys";
 import { ResumeForwardedPropsSchema } from "./runtime/types";
 import { env } from "../../env";
 
@@ -80,9 +80,9 @@ const observabilityRef = vi.hoisted(() => ({
   traceException: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...actual,
     traceException: (...args: unknown[]) =>
@@ -123,21 +123,21 @@ vi.mock("./runtime/agent", async (importOriginal) => {
 });
 
 vi.mock(
-  "@langfuse/shared/in-app-agent/server/tunables",
+  "@evalsight/shared/in-app-agent/server/tunables",
   async (importOriginal) => ({
     ...(await importOriginal<
-      typeof import("@langfuse/shared/in-app-agent/server/tunables")
+      typeof import("@evalsight/shared/in-app-agent/server/tunables")
     >()),
     IN_APP_AGENT_HEARTBEAT_INTERVAL_MS: 50,
   }),
 );
 
 vi.mock(
-  "@langfuse/shared/in-app-agent/server/modelProvider",
+  "@evalsight/shared/in-app-agent/server/modelProvider",
   async (importOriginal) => {
     const actual =
       await importOriginal<
-        typeof import("@langfuse/shared/in-app-agent/server/modelProvider")
+        typeof import("@evalsight/shared/in-app-agent/server/modelProvider")
       >();
 
     return {
@@ -148,11 +148,11 @@ vi.mock(
 );
 
 vi.mock(
-  "@langfuse/shared/in-app-agent/server/runLifecycle",
+  "@evalsight/shared/in-app-agent/server/runLifecycle",
   async (importOriginal) => {
     const actual =
       await importOriginal<
-        typeof import("@langfuse/shared/in-app-agent/server/runLifecycle")
+        typeof import("@evalsight/shared/in-app-agent/server/runLifecycle")
       >();
 
     return {
@@ -169,10 +169,10 @@ vi.mock(
   },
 );
 
-vi.mock("@langfuse/shared/src/server/auth/apiKeys", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server/auth/apiKeys", async (importOriginal) => {
   const actual =
     await importOriginal<
-      typeof import("@langfuse/shared/src/server/auth/apiKeys")
+      typeof import("@evalsight/shared/src/server/auth/apiKeys")
     >();
 
   return {

@@ -2,7 +2,7 @@ import {
   createNewRedisInstance,
   safeMultiDel,
   scanKeys,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { RedisOptions } from "ioredis";
 
 export type RedisTestClient = NonNullable<

@@ -5,8 +5,8 @@ import {
   DimensionSchema,
   MetricSchema,
   singleFilterList,
-} from "@langfuse/shared";
-import { metricAggregations } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { metricAggregations } from "@evalsight/shared/query";
 
 export const PostUnstableDashboardWidgetView = z.enum([
   "observations",

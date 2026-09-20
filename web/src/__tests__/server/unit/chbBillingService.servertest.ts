@@ -1,5 +1,5 @@
-import type { CloudConfigSchema } from "@langfuse/shared";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type { CloudConfigSchema } from "@evalsight/shared";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -17,7 +17,7 @@ vi.mock("@/src/features/audit-logs/auditLog", () => ({
 
 // Only the logger is stubbed: getBillingCycleStart/End are the real cached-cycle
 // fallback this service shares with the Stripe path.
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
   return { ...actual, logger: mocks.logger };
 });

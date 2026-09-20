@@ -29,7 +29,7 @@ import {
   createOrganizationRoute,
   createProjectRoute,
 } from "@/src/features/setup/setupRoutes";
-import { isCloudPlan, planLabels } from "@langfuse/shared";
+import { isCloudPlan, planLabels } from "@evalsight/shared";
 import ContainerPage from "@/src/components/layouts/container-page";
 import { type Session } from "next-auth";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";

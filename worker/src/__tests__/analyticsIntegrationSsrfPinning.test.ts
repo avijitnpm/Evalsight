@@ -82,7 +82,7 @@ const h = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     posthogIntegration: {
       findFirst: vi.fn(async () => h.db.integration),
@@ -94,9 +94,9 @@ vi.mock("@langfuse/shared/src/db", () => ({
 
 // Keep the REAL secure-outbound egress helpers; override only the data-stream
 // sources, the logger, and validateWebhookURL.
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...actual,
     logger: { info: vi.fn(), warn: vi.fn(), error: vi.fn(), debug: vi.fn() },
@@ -126,7 +126,7 @@ vi.mock("../features/posthog/transformers", () => {
   };
 });
 
-vi.mock("@langfuse/shared/encryption", () => ({
+vi.mock("@evalsight/shared/encryption", () => ({
   decrypt: vi.fn(() => "phc_decrypted"),
 }));
 
@@ -176,7 +176,7 @@ import {
   OutboundUrlValidationError,
   RedirectValidationError,
   validateWebhookURL,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { rethrowIfOutboundValidationFailure } from "../features/analyticsIntegrationEgress";
 import { MixpanelClient } from "../features/mixpanel/mixpanelClient";
 import type { MixpanelEvent } from "../features/mixpanel/transformers";
@@ -273,8 +273,8 @@ describe("PostHog integration project job — SSRF block on a redirect hop", () 
   // a genuine OutboundUrlValidationError and not a shape invented here.
   async function useRealValidatorForRedirectTargets() {
     const actual = await vi.importActual<
-      typeof import("@langfuse/shared/src/server")
-    >("@langfuse/shared/src/server");
+      typeof import("@evalsight/shared/src/server")
+    >("@evalsight/shared/src/server");
     const exporterOrigin = new URL(exporterHost).origin;
     vi.mocked(validateWebhookURL).mockImplementation(async (url, whitelist) => {
       // Origin equality, not a prefix: exporter.analytics.example.evil.test
@@ -316,8 +316,8 @@ describe("PostHog integration project job — SSRF block on a redirect hop", () 
   // and stays off the enumerable surface a logger serializes.
   it("keeps the inner validation error reachable as a non-enumerable cause", async () => {
     const actual = await vi.importActual<
-      typeof import("@langfuse/shared/src/server")
-    >("@langfuse/shared/src/server");
+      typeof import("@evalsight/shared/src/server")
+    >("@evalsight/shared/src/server");
     redirectOnce();
 
     const thrown = await fetchWithSecureRedirects(

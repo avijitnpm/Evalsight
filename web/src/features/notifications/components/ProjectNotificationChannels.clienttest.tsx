@@ -1,4 +1,4 @@
-import { ProjectNotificationEventTypeSchema } from "@langfuse/shared";
+import { ProjectNotificationEventTypeSchema } from "@evalsight/shared";
 
 import { NOTIFIED_EVENTS } from "@/src/features/notifications/components/ProjectNotificationChannels";
 

@@ -6,7 +6,7 @@ import {
   isJsonPath,
   testJsonPath,
   generateJsonPathSuggestions,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("applyFieldMapping", () => {
   // Sample observation data for testing

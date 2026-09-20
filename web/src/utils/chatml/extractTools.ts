@@ -2,7 +2,7 @@ import {
   extractAdditionalInput,
   normalizeToolDefinitionsForChatMl,
   parseJsonIfString as parseIfString,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { PlaygroundTool } from "@/src/features/playground/page/types";
 
 const EMPTY_TOOL_PARAMETERS = {

@@ -27,7 +27,7 @@ import { evalLogFilterConfig } from "@/src/features/filters/config/eval-logs-con
 import { useSidebarFilterState } from "@/src/features/filters";
 import { type RouterOutputs, api } from "@/src/utils/api";
 import { safeExtract } from "@/src/utils/map-utils";
-import { JobExecutionStatus, type Prisma } from "@langfuse/shared";
+import { JobExecutionStatus, type Prisma } from "@evalsight/shared";
 import { createColumnHelper } from "@tanstack/react-table";
 import { useQueryParams, withDefault, NumberParam } from "use-query-params";
 import { type Status } from "@/src/components/ui/StatusBadge/StatusBadge";

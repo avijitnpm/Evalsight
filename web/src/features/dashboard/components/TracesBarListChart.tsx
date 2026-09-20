@@ -1,10 +1,10 @@
 /* eslint-disable @repo/no-style-props */
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { DashboardCard } from "@/src/features/dashboard/components/cards/DashboardCard";
 import { TotalMetric } from "@/src/features/dashboard/components/TotalMetric";
 import { compactNumberFormatter } from "@/src/utils/numbers";
 import { NoDataOrLoading } from "@/src/components/NoDataOrLoading";
-import { type QueryType, type ViewVersion } from "@langfuse/shared/query";
+import { type QueryType, type ViewVersion } from "@evalsight/shared/query";
 import { formatMetric } from "@/src/features/widgets";
 import { BarListChartArea } from "@/src/features/dashboard/components/cards/BarListChartArea";
 import { traceViewQuery } from "@/src/features/dashboard/lib/dashboard-utils";

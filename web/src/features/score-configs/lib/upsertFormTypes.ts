@@ -1,4 +1,4 @@
-import { ScoreConfigCategory } from "@langfuse/shared";
+import { ScoreConfigCategory } from "@evalsight/shared";
 import { z } from "zod";
 
 export const createConfigSchema = z.object({

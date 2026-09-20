@@ -8,7 +8,7 @@ import {
   recordGauge,
   recordIncrement,
   removeIngestionEventsFromS3AndDeleteClickhouseRefsForProject,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { PeriodicExclusiveRunner } from "../../utils/PeriodicExclusiveRunner";
 

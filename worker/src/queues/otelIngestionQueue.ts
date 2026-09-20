@@ -25,11 +25,11 @@ import {
   type IngestionAttribution,
   UNKNOWN_INGESTION_SDK_VALUE,
   LocalCache,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   applyIngestionMasking,
   isIngestionMaskingEnabled,
-} from "@langfuse/shared/src/server/ee/ingestionMasking";
+} from "@evalsight/shared/src/server/ee/ingestionMasking";
 import {
   env,
   v4ForceDirectOtelWrite,
@@ -38,12 +38,12 @@ import {
 } from "../env";
 import { IngestionService } from "../services/IngestionService";
 import { trackTraceBatchActivity } from "../features/traceBatching/traceBatching";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { ClickhouseWriter } from "../services/ClickhouseWriter";
 import {
   ForbiddenError,
   convertEventRecordToObservationForEval,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   fetchObservationEvalRules,
   isObservationAllowedForQueuedObservationEvals,

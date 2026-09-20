@@ -8,7 +8,7 @@ import {
   filterAndValidateDbScoreList,
   type timeFilter,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getObservationsCountsFromEventsTable,
   getObservationsWithModelDataFromEventsTable,
@@ -28,7 +28,7 @@ import {
   EVENTS_APPROX_TOTAL_COUNT_MARKER,
   type EventBatchIOResult,
   type EventFilterOptionColumn,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { aggregateScores } from "@/src/features/scores/lib/aggregateScores";
 
 type TimeFilter = z.infer<typeof timeFilter>;

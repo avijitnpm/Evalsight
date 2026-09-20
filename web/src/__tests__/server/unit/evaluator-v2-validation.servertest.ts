@@ -1,4 +1,4 @@
-import { EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateType } from "@evalsight/shared";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({

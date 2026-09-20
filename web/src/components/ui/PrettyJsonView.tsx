@@ -9,7 +9,7 @@ import React, {
   memo,
 } from "react";
 import { cn } from "@/src/utils/tailwind";
-import { deepParseJson } from "@langfuse/shared";
+import { deepParseJson } from "@evalsight/shared";
 import { decodeUnicodeInJson } from "@/src/utils/decodeUnicodeInJson";
 import { Skeleton } from "@/src/components/ui/skeleton";
 import { type MediaReturnType } from "@/src/features/media/validation";

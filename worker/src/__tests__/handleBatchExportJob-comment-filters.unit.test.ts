@@ -4,7 +4,7 @@ import {
   BatchExportStatus,
   BatchExportTableName,
   type FilterCondition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const mocks = vi.hoisted(() => ({
   applyCommentFilters: vi.fn(),
@@ -13,7 +13,7 @@ const mocks = vi.hoisted(() => ({
   updateBatchExport: vi.fn().mockResolvedValue(undefined),
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     batchExport: {
       findFirst: mocks.findBatchExport,
@@ -22,7 +22,7 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   applyCommentFilters: mocks.applyCommentFilters,
   getCurrentSpan: vi.fn(() => undefined),
   logger: { info: vi.fn(), warn: vi.fn(), error: vi.fn() },
@@ -39,7 +39,7 @@ vi.mock("../features/database-read-stream/event-stream", () => ({
   getEventsStream: mocks.getEventsStream,
 }));
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { handleBatchExportJob } from "../features/batchExport/handleBatchExportJob";
 
 const rawCommentFilter: FilterCondition[] = [

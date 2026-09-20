@@ -5,8 +5,8 @@ import {
   deriveFilters,
   StringFilter,
   observationsTableUiColumnDefinitions,
-} from "@langfuse/shared/src/server";
-import { observationsTableCols, type FilterState } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { observationsTableCols, type FilterState } from "@evalsight/shared";
 
 type ObservationsApiQueryProps = {
   page: number;

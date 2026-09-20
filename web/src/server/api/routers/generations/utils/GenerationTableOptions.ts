@@ -5,7 +5,7 @@ import {
   TRACING_SEARCH_TYPE_REQUIRED_MESSAGE,
   TracingSearchType,
   orderBy,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const GenerationTableOptions = z
   .object({

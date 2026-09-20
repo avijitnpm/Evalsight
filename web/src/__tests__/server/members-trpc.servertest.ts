@@ -1,8 +1,8 @@
 import { vi } from "vitest";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
-import { Role, type Plan } from "@langfuse/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { Role, type Plan } from "@evalsight/shared";
 import { entitlementAccess } from "@/src/features/entitlements/constants/entitlements";
 import type { Session } from "next-auth";
 

@@ -1,9 +1,9 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   logger,
   invalidateCachedOrgApiKeys,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { OrgUpdateData } from "./thresholdProcessing";
 
 /**

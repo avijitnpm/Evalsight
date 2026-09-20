@@ -9,19 +9,19 @@ import {
   LangfuseNotFoundError,
   UnauthorizedError,
   ServiceUnavailableError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   ClickHouseResourceError,
   logger,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { createMocks } from "node-mocks-http";
 import { z } from "zod";
 import { Prisma } from "@prisma/client";
 
 // Mock the logger and traceException
-vi.mock("@langfuse/shared/src/server", async () => ({
-  ...(await vi.importActual("@langfuse/shared/src/server")),
+vi.mock("@evalsight/shared/src/server", async () => ({
+  ...(await vi.importActual("@evalsight/shared/src/server")),
   logger: {
     info: vi.fn(),
     warn: vi.fn(),

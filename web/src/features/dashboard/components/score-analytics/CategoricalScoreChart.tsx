@@ -1,4 +1,4 @@
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { createTracesTimeFilter } from "@/src/features/dashboard/lib/dashboard-utils";
 import {
   type DashboardDateRangeAggregationOption,
@@ -9,7 +9,7 @@ import {
   DashboardCategoricalScoreAdapter,
   type ScoreData,
 } from "@/src/features/scores";
-import { type QueryType, type ViewVersion } from "@langfuse/shared/query";
+import { type QueryType, type ViewVersion } from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import { type DatabaseRow } from "@/src/server/api/services/sqlInterface";
 import { Chart } from "@/src/features/widgets";

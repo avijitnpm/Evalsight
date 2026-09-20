@@ -1,14 +1,14 @@
 import type { Session } from "next-auth";
-import { prisma, Prisma } from "@langfuse/shared/src/db";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   LEGACY_ANALYTICS_EXPORTER_CUTOFF,
   LEGACY_EXPORT_PROJECT_CUTOFF,
   LEGACY_BLOB_EXPORTER_CUTOFF,
-} from "@langfuse/shared";
-import { decrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared";
+import { decrypt } from "@evalsight/shared/encryption";
 import { env } from "@/src/env.mjs";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;

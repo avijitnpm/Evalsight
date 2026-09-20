@@ -1,7 +1,7 @@
 /* eslint-disable @repo/no-exotic-operators */
 import { EventType } from "@ag-ui/core";
 import { Buffer } from "node:buffer";
-import { getInternalTracingHandler, logger } from "@langfuse/shared/src/server";
+import { getInternalTracingHandler, logger } from "@evalsight/shared/src/server";
 
 import {
   getInAppAgentInstrumentationObservationId,
@@ -9,18 +9,18 @@ import {
   getInAppAgentLlmCallObservationId,
   parseInAppAgentToolApprovalEvent,
   type InAppAgentToolApprovalSource,
-} from "@langfuse/shared/in-app-agent";
-import type { AgUiEvent, AgUiMessage } from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
+import type { AgUiEvent, AgUiMessage } from "@evalsight/shared/in-app-agent";
 import {
   getToolFailureMessage,
   isRecord,
   normalizeToolOutput,
   parseJsonOrString,
-} from "@langfuse/shared/in-app-agent/server/toolErrors";
+} from "@evalsight/shared/in-app-agent/server/toolErrors";
 import { ResumeForwardedPropsSchema, type AgUiRunAgentInput } from "./types";
-import { compactTextMessageChunks } from "@langfuse/shared/in-app-agent/server/eventCompaction";
-import type { InAppAgentUserAccess } from "@langfuse/shared/in-app-agent/server/mcpPolicy";
-import { assertUnreachable } from "@langfuse/shared";
+import { compactTextMessageChunks } from "@evalsight/shared/in-app-agent/server/eventCompaction";
+import type { InAppAgentUserAccess } from "@evalsight/shared/in-app-agent/server/mcpPolicy";
+import { assertUnreachable } from "@evalsight/shared";
 
 export type InAppAgentTracingConfig = {
   environment: string;

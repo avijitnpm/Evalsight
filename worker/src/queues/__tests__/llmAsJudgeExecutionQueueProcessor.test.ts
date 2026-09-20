@@ -25,7 +25,7 @@ const JobExecutionStatus = {
   ERROR: "ERROR",
 } as const;
 
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   removeEmptyEnvVariables: <T>(value: T) => value,
   EvalTemplateType: {
     LLM_AS_JUDGE: "LLM_AS_JUDGE",
@@ -37,7 +37,7 @@ vi.mock("@langfuse/shared", () => ({
 }));
 
 // Mock prisma
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     jobExecution: {
       update: vi.fn(),
@@ -51,7 +51,7 @@ vi.mock("../../features/evaluation/observationEval", () => ({
 }));
 
 // Mock logger and span
-vi.mock("@langfuse/shared/src/server", async () => {
+vi.mock("@evalsight/shared/src/server", async () => {
   const getQueueInstance = vi.fn().mockReturnValue({
     add: vi.fn(),
   });
@@ -111,7 +111,7 @@ vi.mock("../../errors/UnrecoverableError", async () => {
   };
 });
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { processObservationEval } from "../../features/evaluation/observationEval";
 import {
   LLMAsJudgeExecutionQueue,
@@ -119,7 +119,7 @@ import {
   recordDistribution,
   recordIncrement,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { retryLLMRateLimitError } from "../../features/utils";
 import { isUnrecoverableError } from "../../errors/UnrecoverableError";
 
@@ -210,7 +210,7 @@ describe("llmAsJudgeExecutionQueueProcessor", () => {
 
     it("should set span attributes for tracing", async () => {
       const mockSpan = { setAttribute: vi.fn() };
-      const { getCurrentSpan } = await import("@langfuse/shared/src/server");
+      const { getCurrentSpan } = await import("@evalsight/shared/src/server");
       (getCurrentSpan as Mock).mockReturnValue(mockSpan);
       const job = createMockJob();
       await llmAsJudgeExecutionQueueProcessor(job);
@@ -573,7 +573,7 @@ describe("llmAsJudgeExecutionQueueProcessor", () => {
   describe("retry baggage tracking", () => {
     it("should track retry attempt in span attributes", async () => {
       const mockSpan = { setAttribute: vi.fn() };
-      const { getCurrentSpan } = await import("@langfuse/shared/src/server");
+      const { getCurrentSpan } = await import("@evalsight/shared/src/server");
       (getCurrentSpan as Mock).mockReturnValue(mockSpan);
       const job = createMockJob({
         data: { retryBaggage: { attempt: 3 } },
@@ -588,7 +588,7 @@ describe("llmAsJudgeExecutionQueueProcessor", () => {
 
     it("should default to 0 when retry baggage is missing", async () => {
       const mockSpan = { setAttribute: vi.fn() };
-      const { getCurrentSpan } = await import("@langfuse/shared/src/server");
+      const { getCurrentSpan } = await import("@evalsight/shared/src/server");
       (getCurrentSpan as Mock).mockReturnValue(mockSpan);
       const job = createMockJob();
       delete (job.data as { retryBaggage?: unknown }).retryBaggage;
@@ -604,7 +604,7 @@ describe("llmAsJudgeExecutionQueueProcessor", () => {
 
   describe("null span handling", () => {
     it("should handle null span gracefully", async () => {
-      const { getCurrentSpan } = await import("@langfuse/shared/src/server");
+      const { getCurrentSpan } = await import("@evalsight/shared/src/server");
       (getCurrentSpan as Mock).mockReturnValue(null);
       const job = createMockJob();
 

@@ -4,7 +4,7 @@
 import { useRouter } from "next/router";
 import { Copy, Filter, FilterX } from "lucide-react";
 import { type Row } from "@tanstack/react-table";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 import {
   DropdownMenuItem,

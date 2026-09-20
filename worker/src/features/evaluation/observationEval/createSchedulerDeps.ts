@@ -1,4 +1,4 @@
-import { EvalTemplateType, prisma } from "@langfuse/shared/src/db";
+import { EvalTemplateType, prisma } from "@evalsight/shared/src/db";
 import {
   CodeEvalExecutionQueue,
   LLMAsJudgeExecutionQueue,
@@ -6,7 +6,7 @@ import {
   QueueName,
   safeBlobFilenameStem,
   safeBlobKeySegment,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../../env";
 import { getEvalS3StorageClient } from "../s3StorageClient";
 import { type ObservationEvalSchedulerDeps } from "./types";

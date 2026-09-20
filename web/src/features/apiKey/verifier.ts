@@ -1,11 +1,11 @@
 import crypto from "node:crypto";
 
-import { type ApiKey } from "@langfuse/shared/src/db";
+import { type ApiKey } from "@evalsight/shared/src/db";
 import {
   type InternalServerError,
   type UnauthorizedError,
-} from "@langfuse/shared";
-import { createShaHash, verifySecretKey } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { createShaHash, verifySecretKey } from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import { type Credential } from "@/src/features/apiKey/helpers/parseAuthorizationHeader";

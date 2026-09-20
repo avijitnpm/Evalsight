@@ -1,4 +1,4 @@
-import { LangfuseInternalTraceEnvironment } from "@langfuse/shared/src/server";
+import { LangfuseInternalTraceEnvironment } from "@evalsight/shared/src/server";
 
 // Public ingestion strips the reserved `langfuse-` prefix from environments
 // originating outside Langfuse, including OpenRouter Broadcast callbacks.

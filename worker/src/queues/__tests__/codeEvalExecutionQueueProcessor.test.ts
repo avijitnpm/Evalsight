@@ -19,7 +19,7 @@ const JobExecutionStatus = {
   ERROR: "ERROR",
 } as const;
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     jobExecution: {
       update: vi.fn(),
@@ -35,9 +35,9 @@ vi.mock("../../features/evaluation/codeBased", () => ({
   executeCodeBasedEvaluation: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   const { CodeEvalExecutionError } =
     await import("../../../../packages/shared/src/server/evals/codeEvalExecution");
 
@@ -72,13 +72,13 @@ vi.mock("../../errors/UnrecoverableError", async () => {
   };
 });
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { processObservationEval } from "../../features/evaluation/observationEval";
 import {
   recordDistribution,
   recordIncrement,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { CodeEvalDispatcherErrorCodes } from "../../../../packages/shared/src/server/evals/codeEvalDispatcherTypes";
 import { CodeEvalExecutionError } from "../../../../packages/shared/src/server/evals/codeEvalExecution";
 import { isUnrecoverableError } from "../../errors/UnrecoverableError";

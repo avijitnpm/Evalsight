@@ -22,9 +22,9 @@ const mocks = vi.hoisted(() => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   const { CodeEvalExecutionError, runCodeBasedEvaluationDispatch } =
     await import("../../../../../packages/shared/src/server/evals/codeEvalExecution");
 

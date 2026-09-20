@@ -1,4 +1,4 @@
-import { eventsEvalFilterColumns } from "@langfuse/shared";
+import { eventsEvalFilterColumns } from "@evalsight/shared";
 
 import { fieldRegistryFromColumns } from "@/src/features/search-bar";
 

@@ -8,7 +8,7 @@ import {
 } from "@/src/components/ui/MarkdownJsonView";
 import { ToolCallInvocationsView } from "@/src/features/traces/components/ToolCallInvocationsView";
 import { ListChevronsDownUp, ListChevronsUpDown } from "lucide-react";
-import { stringify } from "@langfuse/shared";
+import { stringify } from "@evalsight/shared";
 import { copyTextToClipboard } from "@/src/utils/clipboard";
 import {
   type ChatMlMessage,

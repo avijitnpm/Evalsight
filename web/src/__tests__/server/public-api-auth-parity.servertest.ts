@@ -5,12 +5,12 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { createMocks } from "node-mocks-http";
 
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createAndAddApiKeysToDb,
   createBasicAuthHeader,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 // Pins the public-API authorization seam to legacy: sweeps every route across
 // migration modes and key kinds, recording each cell's status. Shadow and

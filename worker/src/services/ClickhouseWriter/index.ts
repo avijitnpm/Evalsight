@@ -16,13 +16,13 @@ import {
   DatasetRunItemRecordInsertType,
   EventRecordInsertType,
   buildClickHouseLogComment,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { Decimal } from "decimal.js";
 
 import { env } from "../../env";
-import { logger } from "@langfuse/shared/src/server";
-import { instrumentAsync } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
+import { instrumentAsync } from "@evalsight/shared/src/server";
 import { backOff } from "exponential-backoff";
 
 // Decimal64(12): valid range is (-10^6, 10^6), i.e. 18 total digits with 12 fractional.

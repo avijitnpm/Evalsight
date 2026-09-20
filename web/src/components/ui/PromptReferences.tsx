@@ -5,7 +5,7 @@ import {
   PromptDependencyRegex,
   isValidVariableName,
   type ParsedPromptDependencyTag,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Badge } from "@/src/components/ui/badge";
 import { Button } from "@/src/components/ui/button";
 import { cn } from "@/src/utils/tailwind";

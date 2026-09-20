@@ -1,6 +1,6 @@
 import type { Mock, Mocked } from "vitest";
 import { type PrismaClient, type Prompt } from "@prisma/client";
-import { PromptService, type redis } from "@langfuse/shared/src/server"; // Adjust the import path as needed
+import { PromptService, type redis } from "@evalsight/shared/src/server"; // Adjust the import path as needed
 
 type Redis = NonNullable<typeof redis>;
 

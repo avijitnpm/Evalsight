@@ -2,7 +2,7 @@ import { act, renderHook } from "@testing-library/react";
 import { useState } from "react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { FilterState, TracingSearchType } from "@langfuse/shared";
+import type { FilterState, TracingSearchType } from "@evalsight/shared";
 
 import { DEFAULT_SEARCH_TYPE } from "@/src/features/search-bar/lib/commit";
 import { useEventsSearchBar } from "@/src/features/search-bar/hooks/useEventsSearchBar";

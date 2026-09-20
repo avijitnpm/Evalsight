@@ -6,7 +6,7 @@ import {
   recordGauge,
   updateActiveIngestFailureProjectsMetric,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { PeriodicRunner } from "../../utils/PeriodicRunner";
 import { env } from "../../env";

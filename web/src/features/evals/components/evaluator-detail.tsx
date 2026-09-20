@@ -11,7 +11,7 @@ import { EvaluatorPausedCallout } from "@/src/features/evals/components/evaluato
 import {
   type EvalTargetObject,
   validateEvaluatorFiltersForTarget,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useLazyEvaluatorExecutionCounts } from "@/src/features/evals/hooks/useLazyEvaluatorExecutionCounts";
 import { Alert } from "@/src/components/design-system/Alert/Alert";
 import { AlertTriangle } from "lucide-react";

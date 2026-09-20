@@ -12,7 +12,7 @@ import {
   TriggerEventSource,
   TriggerEventSourceSchema,
   ProjectNotificationEventTypeSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { throwIfNoProjectAccess } from "@/src/features/rbac";
 import { v4 } from "uuid";
 import {
@@ -21,8 +21,8 @@ import {
   getAutomationById,
   getConsecutiveAutomationFailures,
   logger,
-} from "@langfuse/shared/src/server";
-import { generateWebhookSecret, encrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared/src/server";
+import { generateWebhookSecret, encrypt } from "@evalsight/shared/encryption";
 import { processWebhookActionConfig } from "./webhookHelpers";
 import { processGitHubDispatchActionConfig } from "./githubDispatchHelpers";
 import { updateTriggerEventActions } from "./automationService";

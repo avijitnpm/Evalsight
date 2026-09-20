@@ -1,17 +1,17 @@
 /** @jest-environment node */
 
-import { prisma, type Prisma } from "@langfuse/shared/src/db";
+import { prisma, type Prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   DefaultViewService,
   getSystemTableViewPresets,
   TableViewService,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import {
   LangfuseConflictError,
   TableViewPresetTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const createTableViewPreset = async ({
   projectId,

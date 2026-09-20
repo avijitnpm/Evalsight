@@ -3,7 +3,7 @@ import {
   QueueName,
   shouldSkipDeletionFor,
   TQueueJobTypes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { processClickhouseScoreDelete } from "../features/scores/processClickhouseScoreDelete";
 

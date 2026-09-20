@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { useEffect, useMemo, useRef } from "react";
-import { type Prisma, type ScoreDomain, deepParseJson } from "@langfuse/shared";
+import { type Prisma, type ScoreDomain, deepParseJson } from "@evalsight/shared";
 import { PrettyJsonView } from "@/src/components/ui/PrettyJsonView";
 import { type MetadataFilterActions } from "@/src/components/table/ValueCell";
 import { useMarkdownRenderCharacterLimit } from "@/src/hooks/useMarkdownRenderCharacterLimit";

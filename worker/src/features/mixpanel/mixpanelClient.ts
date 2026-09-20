@@ -1,4 +1,4 @@
-import { logger, fetchWithSecureRedirects } from "@langfuse/shared/src/server";
+import { logger, fetchWithSecureRedirects } from "@evalsight/shared/src/server";
 import { gzipSync } from "zlib";
 import { env } from "../../env";
 import {

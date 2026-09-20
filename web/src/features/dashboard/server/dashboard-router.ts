@@ -20,14 +20,14 @@ import {
   getObservationUsageByTypeByTime,
   DashboardService,
   DashboardDefinitionSchema,
-} from "@langfuse/shared/src/server";
-import { executeQuery } from "@langfuse/shared/query/server";
+} from "@evalsight/shared/src/server";
+import { executeQuery } from "@evalsight/shared/query/server";
 import {
   query as customQuery,
   validateQuery,
   viewVersions,
   type QueryType,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import {
   paginationZod,
@@ -37,7 +37,7 @@ import {
   singleFilterList,
   LANGFUSE_HOME_DASHBOARD_ID,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { throwIfNoProjectAccess } from "@/src/features/rbac";
 
 // Define the dashboard list input schema

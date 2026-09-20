@@ -1,4 +1,4 @@
-import { type LastUserScore } from "@langfuse/shared";
+import { type LastUserScore } from "@evalsight/shared";
 import { expect } from "storybook/test";
 
 import preview from "../../../.storybook/preview";

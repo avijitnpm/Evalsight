@@ -7,7 +7,7 @@ import {
 import {
   DatasetJSONSchema,
   buildDatasetUrl,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 

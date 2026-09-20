@@ -1,12 +1,12 @@
 import { randomUUID } from "node:crypto";
 import type { Session } from "next-auth";
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createEvent,
   createEventsCh,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 

@@ -12,7 +12,7 @@ import {
   type FilterState,
   type TimeFilter,
   type TracingSearchType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createDateTableColumn } from "@/src/components/design-system/table/columns/createDateTableColumn";
 import { createIOTableColumn } from "@/src/components/design-system/table/columns/createIOTableColumn";
 import { createTextTableColumn } from "@/src/components/design-system/table/columns/createTextTableColumn";

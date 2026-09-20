@@ -6,7 +6,7 @@ import {
   WEB_CALLOUT_BLOCKED_HEADER_NAMES,
   WEB_CALLOUT_HEADER_NAME_PATTERN,
 } from "@/src/features/web-callouts/headerRules";
-import { decrypt, encrypt } from "@langfuse/shared/encryption";
+import { decrypt, encrypt } from "@evalsight/shared/encryption";
 
 const WEB_CALLOUT_MAX_HEADER_COUNT = 20;
 const WEB_CALLOUT_MAX_HEADER_NAME_BYTES = 128;

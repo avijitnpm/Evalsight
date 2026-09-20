@@ -1,4 +1,4 @@
-import type { ApiAccessScope } from "@langfuse/shared/src/server";
+import type { ApiAccessScope } from "@evalsight/shared/src/server";
 
 import type { AuthorizationContext } from "@/src/features/auth/policy/types";
 import type { McpToolName } from "./server/bootstrap";

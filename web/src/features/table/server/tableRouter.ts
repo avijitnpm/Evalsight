@@ -7,9 +7,9 @@ import {
   ActionId,
   BatchActionStatus,
   GetIsBatchActionInProgressSchema,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { BatchActionQueue, logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { BatchActionQueue, logger } from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 
 const WAITING_JOBS = ["waiting", "delayed", "active"];

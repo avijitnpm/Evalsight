@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 import {
   APP_ROOT_OBSERVATION_FILTER,

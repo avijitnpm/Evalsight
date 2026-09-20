@@ -2,7 +2,7 @@ import { z } from "zod";
 import { addMinutes, format } from "date-fns";
 
 // Time-range presets, table aggregation options, and the TimeRange type
-// moved to @langfuse/shared (utils/dateRanges); re-exported here for the
+// moved to @evalsight/shared (utils/dateRanges); re-exported here for the
 // existing web import surface.
 export {
   TIME_RANGES,
@@ -12,7 +12,7 @@ export {
   type TimeRange,
   getAbbreviatedTimeRange,
   rangeToString,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   TIME_RANGES,
   TABLE_AGGREGATION_OPTIONS,
@@ -20,7 +20,7 @@ import {
   type TimeRange,
   type TimeRangeDefinition,
   type AbsoluteTimeRange,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const ABBREVIATION_TO_KEY = new Map(
   Object.entries(TIME_RANGES).map(([key, def]) => [def.abbreviation, key]),

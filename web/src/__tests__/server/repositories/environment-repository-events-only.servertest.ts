@@ -35,8 +35,8 @@ import {
   createTraceScore,
   createScoresCh,
   getEnvironmentsForProject,
-} from "@langfuse/shared/src/server";
-import { env } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
 import { randomUUID } from "crypto";
 
 // Skip on environments without the events dev tables (azure / redis-cluster

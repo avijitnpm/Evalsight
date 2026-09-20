@@ -1,4 +1,4 @@
-import { type NormalizedMessage } from "@langfuse/shared/src/utils/normalized-io";
+import { type NormalizedMessage } from "@evalsight/shared/src/utils/normalized-io";
 
 import { getConversationEntries } from "@/src/features/sessions/SessionConversationTimeline/fns/getConversationEntries";
 import { getHistoricalInputIndices } from "@/src/features/sessions/SessionConversationTimeline/fns/getHistoricalInputIndices";

@@ -1,4 +1,4 @@
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import {
   isEnterpriseSupportPlan,
   isPlanWithoutCaseSeverity,

@@ -1,5 +1,5 @@
-import { removeEmptyEnvVariables } from "@langfuse/shared";
-import { langfuseS3EventKeyMaxSegmentBytesSchema } from "@langfuse/shared/src/env";
+import { removeEmptyEnvVariables } from "@evalsight/shared";
+import { langfuseS3EventKeyMaxSegmentBytesSchema } from "@evalsight/shared/src/env";
 import { z } from "zod";
 
 const EnvSchema = z.object({
@@ -33,7 +33,7 @@ const EnvSchema = z.object({
   STRIPE_SECRET_KEY: z.string().optional(),
 
   // ClickHouse Billing cutoff, shared with web via the provider resolver in
-  // @langfuse/shared (getBillingProvider). The worker only consults it in the
+  // @evalsight/shared (getBillingProvider). The worker only consults it in the
   // defensive usage-metering guard; unset = CHB routing off. Date-only
   // (YYYY-MM-DD) so the cutline is a single unambiguous instant of UTC
   // midnight, which is what new Date() yields for a date-only string. Parsed
@@ -73,7 +73,7 @@ const EnvSchema = z.object({
     .default("false"),
   LANGFUSE_S3_EVENT_UPLOAD_SSE: z.enum(["AES256", "aws:kms"]).optional(),
   LANGFUSE_S3_EVENT_UPLOAD_SSE_KMS_KEY_ID: z.string().optional(),
-  // Validation rules live in `@langfuse/shared/src/env` so producer and
+  // Validation rules live in `@evalsight/shared/src/env` so producer and
   // consumer agree on what values are accepted. Must match the web container's
   // resolved value at deploy time; otherwise web and worker can write/read
   // different S3 keys for the same id.

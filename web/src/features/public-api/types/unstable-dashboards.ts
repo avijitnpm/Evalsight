@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { singleFilterList } from "@langfuse/shared";
+import { singleFilterList } from "@evalsight/shared";
 
 const pagination = z.object({
   page: z.coerce.number().int().positive().default(1),

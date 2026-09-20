@@ -3,7 +3,7 @@ const mocks = vi.hoisted(() => ({
   getEventsStreamForEval: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServerModule>();
 
   return {
@@ -14,9 +14,9 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
 });
 
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { EvalTargetObject } from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
-import type * as SharedServerModule from "@langfuse/shared/src/server";
+import { EvalTargetObject } from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
+import type * as SharedServerModule from "@evalsight/shared/src/server";
 import { runCodeEvalTestForJobConfig } from "@/src/features/evals/server/codeEvalTestRun";
 
 const commentFilter = {

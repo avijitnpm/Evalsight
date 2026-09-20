@@ -4,8 +4,8 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { Prisma, type Dataset } from "@langfuse/shared/src/db";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { Prisma, type Dataset } from "@evalsight/shared/src/db";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import { throwIfNoProjectAccess } from "@/src/features/rbac";
 import { auditLog } from "@/src/features/audit-logs/server";
 import { createMediaUploadUrl } from "@/src/features/media/server/mediaService";
@@ -35,7 +35,7 @@ import {
   BatchActionType,
   BatchExportTableName,
   type BulkDatasetItemValidationError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 import { TRPCError } from "@trpc/server";
 import {
@@ -92,7 +92,7 @@ import {
   WEBHOOK_URL_VALIDATION_LOG_CONTEXT,
   deleteDatasetsByIds,
   findDatasetsForDeletion,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { aggregateScores } from "@/src/features/scores/lib/aggregateScores";
 import {
   updateDataset,

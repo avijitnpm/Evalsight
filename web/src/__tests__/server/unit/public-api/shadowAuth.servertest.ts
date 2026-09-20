@@ -8,7 +8,7 @@ import {
   ForbiddenError,
   InternalServerError,
   InvalidRequestError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const {
   env,

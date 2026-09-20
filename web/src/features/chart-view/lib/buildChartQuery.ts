@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { type FilterState, type QueryType } from "@langfuse/shared";
+import { type FilterState, type QueryType } from "@evalsight/shared";
 import {
   type DataPoint,
   getWidgetMissingBucketValue,

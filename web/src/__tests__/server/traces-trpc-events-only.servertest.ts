@@ -31,7 +31,7 @@ const eventsTableAvailable = vi.hoisted(() => {
 });
 
 import type { Session } from "next-auth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import {
@@ -39,8 +39,8 @@ import {
   createEventsCh,
   getTraceByIdFromEventsTable,
   getTraceByIdFromTracesTable,
-} from "@langfuse/shared/src/server";
-import { env } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
 import waitForExpect from "wait-for-expect";
 import { randomUUID } from "crypto";
 

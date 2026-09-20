@@ -7,7 +7,7 @@ import {
   type Dispatch,
   type SetStateAction,
 } from "react";
-import type { FilterState, OrderByState } from "@langfuse/shared";
+import type { FilterState, OrderByState } from "@evalsight/shared";
 
 export interface PeekTableState {
   filters: FilterState;

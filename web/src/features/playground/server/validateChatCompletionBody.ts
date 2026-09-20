@@ -5,7 +5,7 @@ import {
   LLMToolDefinitionSchema,
   ChatMessageSchema,
   JSONObjectSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const ModelParamsSchema = z.object({
   provider: z.string(),

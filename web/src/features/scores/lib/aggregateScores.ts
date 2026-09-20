@@ -7,7 +7,7 @@ import {
   type ScoreDataTypeType,
   type ListableScore,
   type ListableScoreDataType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Normalizes score names for comparison by converting - and . to _

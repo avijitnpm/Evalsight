@@ -1,6 +1,6 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
-import { prisma } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 import { cors, runMiddleware } from "@/src/features/public-api/server/cors";
 import { RateLimitService } from "@/src/features/public-api/server/RateLimitService";
 import {

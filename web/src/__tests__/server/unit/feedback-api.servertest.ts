@@ -2,7 +2,7 @@ import {
   LangfuseConflictError,
   LangfuseNotFoundError,
   ServiceUnavailableError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { createMocks } from "node-mocks-http";
 import { beforeEach, describe, expect, it, vi } from "vitest";

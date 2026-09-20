@@ -1,4 +1,4 @@
-import { stringify } from "@langfuse/shared";
+import { stringify } from "@evalsight/shared";
 
 export interface ServerTraceDownloadParams {
   traceId: string;

@@ -1,6 +1,6 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
-import { prisma } from "@langfuse/shared/src/db";
-import { Role } from "@langfuse/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { Role } from "@evalsight/shared";
 import { z } from "zod";
 import { getSfdcService } from "@/src/ee/features/sfdc-sync/server";
 

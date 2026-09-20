@@ -3,7 +3,7 @@ import {
   recordGauge,
   redis,
   V4_LEGACY_API_USAGE_HEARTBEAT_KEY,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * Freshness metric for the v4 legacy API usage pipeline.

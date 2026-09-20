@@ -30,7 +30,7 @@ import { api } from "@/src/utils/api";
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { CodeMirrorEditor } from "@/src/components/editor/CodeMirrorEditor";
 import { CodeView } from "@/src/components/ui/CodeJsonViewer";
-import { type Prisma, WebhookProtectedHeaders } from "@langfuse/shared";
+import { type Prisma, WebhookProtectedHeaders } from "@evalsight/shared";
 import { Skeleton } from "@/src/components/ui/skeleton";
 import { getFormattedPayload } from "@/src/features/experiments/utils/format";
 import { Spinner } from "@/src/components/design-system/Spinner/Spinner";

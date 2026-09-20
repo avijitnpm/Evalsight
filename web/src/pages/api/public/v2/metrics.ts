@@ -1,14 +1,14 @@
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
 import { env } from "@/src/env.mjs";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import {
   GetMetricsV2Query,
   GetMetricsV2Response,
 } from "@/src/features/public-api/types/metrics";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
-import { executeQuery } from "@langfuse/shared/query/server";
-import { validateQuery } from "@langfuse/shared/query";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
+import { executeQuery } from "@evalsight/shared/query/server";
+import { validateQuery } from "@evalsight/shared/query";
 import { clampToDataAccessDays } from "@/src/features/entitlements/server/hasEntitlementLimit";
 const DEFAULT_ROW_LIMIT = 100;
 

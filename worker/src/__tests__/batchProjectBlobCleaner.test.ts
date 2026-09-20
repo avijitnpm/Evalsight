@@ -5,8 +5,8 @@ import {
   createOrgProjectAndApiKey,
   getDeletedProjects,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { BatchProjectBlobCleaner } from "../features/batch-project-blob-cleaner";
 
 // vi.hoisted ensures this is declared before vi.mock's hoisted factory runs.
@@ -15,8 +15,8 @@ const { mockRemoveIngestionEvents } = vi.hoisted(() => ({
   mockRemoveIngestionEvents: vi.fn().mockResolvedValue(undefined),
 }));
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     getDeletedProjects: vi.fn(),

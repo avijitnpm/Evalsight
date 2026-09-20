@@ -7,7 +7,7 @@ import {
 } from "@/src/features/sessions/TraceEventsRow";
 import { useSessionDetailStore } from "@/src/features/sessions/SessionDetailStoreProvider";
 import { type RouterOutputs } from "@/src/utils/api";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { type IOPreviewContentMode } from "@/src/features/traces/components/IOPreview/IOPreview";
 
 type LazySessionTraceEventsRowProps = {

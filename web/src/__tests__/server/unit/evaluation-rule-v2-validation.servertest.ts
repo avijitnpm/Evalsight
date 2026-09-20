@@ -1,4 +1,4 @@
-import { EvalTargetObject } from "@langfuse/shared";
+import { EvalTargetObject } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 import {
   CreateRuleSchema,

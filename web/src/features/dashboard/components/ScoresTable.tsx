@@ -5,8 +5,8 @@ import {
   type ScoreDataTypeType,
   type ScoreSourceType,
   type FilterState,
-} from "@langfuse/shared";
-import { type ViewVersion } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { api } from "@/src/utils/api";
 import { compactNumberFormatter } from "@/src/utils/numbers";
 import { RightAlignedCell } from "./RightAlignedCell";

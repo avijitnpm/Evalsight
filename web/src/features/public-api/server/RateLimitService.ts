@@ -7,15 +7,15 @@ import {
   type RateLimitResource,
   type RateLimitConfig,
   type Plan,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   recordIncrement,
   type ApiAccessScopeWithOptionalApiKeyId,
   logger,
   createNewRedisInstance,
   redisQueueRetryOptions,
-} from "@langfuse/shared/src/server";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import { type NextApiResponse } from "next";
 import {
   createStructuredPublicApiRateLimitError,

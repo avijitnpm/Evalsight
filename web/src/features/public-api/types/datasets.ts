@@ -13,8 +13,8 @@ import {
   type DatasetItemDomain,
   datasetItemMediaFields,
   stringDateTime,
-} from "@langfuse/shared";
-import { DatasetJSONSchema } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { DatasetJSONSchema } from "@evalsight/shared/src/server";
 import { z } from "zod";
 
 /**

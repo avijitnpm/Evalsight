@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { useRouter } from "next/router";
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 
 import { Skeleton } from "@/src/components/ui/skeleton";
 import { useEvalTemplate } from "@/src/features/evals/v2/hooks/useEvalTemplate";

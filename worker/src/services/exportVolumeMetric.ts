@@ -1,4 +1,4 @@
-import { recordIncrement } from "@langfuse/shared/src/server";
+import { recordIncrement } from "@evalsight/shared/src/server";
 
 export const EXPORT_VOLUME_METRIC = "langfuse.export.serialized_bytes";
 

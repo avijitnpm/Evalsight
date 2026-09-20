@@ -16,26 +16,26 @@ import { setupServer } from "msw/node";
 import { http, HttpResponse } from "msw";
 import { Prisma, PrismaClient } from "@prisma/client";
 
-import { JobConfigState } from "@langfuse/shared";
+import { JobConfigState } from "@evalsight/shared";
 import {
   createOrgProjectAndApiKey,
   redis,
   type WebhookInput,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   MonitorProcessor,
   type MonitorQueueEvent,
   MonitorQueueEventSchema,
   MonitorScheduler,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 import {
   MonitorNoDataModeSchema,
   MonitorSeveritySchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
-import { prisma } from "@langfuse/shared/src/db";
-import { encrypt, generateWebhookSecret } from "@langfuse/shared/encryption";
+} from "@evalsight/shared/monitors";
+import { prisma } from "@evalsight/shared/src/db";
+import { encrypt, generateWebhookSecret } from "@evalsight/shared/encryption";
 
 import { executeWebhook } from "../queues/webhooks";
 

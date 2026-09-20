@@ -40,14 +40,14 @@ vi.mock("@/src/utils/exceptions", () => ({
   isPrismaException: () => false,
 }));
 
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   CloudConfigSchema: {
     parse: vi.fn((value) => value),
   },
   isPlan: vi.fn((plan) => typeof plan === "string"),
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   API_KEY_NON_EXISTENT: "api-key-non-existent",
   CachedApiKey: {
     safeParse: vi.fn((value) => ({ data: value, success: true })),

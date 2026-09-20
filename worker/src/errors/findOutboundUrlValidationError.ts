@@ -7,10 +7,10 @@
  *
  * Matched by error NAME rather than `instanceof`: importing the shared error
  * classes as values breaks in tests that replace the
- * `@langfuse/shared/src/server` barrel without `importOriginal`, and a
+ * `@evalsight/shared/src/server` barrel without `importOriginal`, and a
  * classifier that throws would destroy the very error it is meant to describe.
  */
-import { DNS_LOOKUP_FAILED_MESSAGE_PREFIX } from "@langfuse/shared/src/server";
+import { DNS_LOOKUP_FAILED_MESSAGE_PREFIX } from "@evalsight/shared/src/server";
 
 // Host/IP policy blocks — the SSRF signal proper. RedirectValidationError
 // belongs here: it means a redirect TARGET failed host validation.

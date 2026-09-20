@@ -17,7 +17,7 @@ import {
   type SafeWebhookActionConfig,
   WebhookDefaultHeaders,
   WebhookProtectedHeaders,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { api, reportNonTrpcError } from "@/src/utils/api";
 import { useState } from "react";
 import {

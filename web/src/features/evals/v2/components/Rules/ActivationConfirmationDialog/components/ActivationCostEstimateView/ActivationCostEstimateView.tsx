@@ -1,4 +1,4 @@
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 
 import { InfoTooltip } from "@/src/components/ui/InfoTooltip/InfoTooltip";
 import { RuleEvaluatorCostEstimate } from "@/src/features/evals/v2/components/Rules/RuleSetup/components/RuleEvaluatorCostEstimate";

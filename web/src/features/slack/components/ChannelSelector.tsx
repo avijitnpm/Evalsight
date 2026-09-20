@@ -18,7 +18,7 @@ import {
 import { useVirtualizer } from "@tanstack/react-virtual";
 import { api, reportNonTrpcError } from "@/src/utils/api";
 import { env } from "@/src/env.mjs";
-import { type SlackChannel } from "@langfuse/shared/src/server";
+import { type SlackChannel } from "@evalsight/shared/src/server";
 
 export type { SlackChannel };
 

@@ -9,7 +9,7 @@ import {
 } from "../components/PresetDashboardWidget";
 import { DashboardWidget } from "@/src/features/widgets";
 import type { ResolvedReadPath } from "@/src/features/events";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { useState, useEffect, useRef } from "react";
 
 export type DashboardPlacement = WidgetPlacement | PresetPlacement;

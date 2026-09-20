@@ -1,9 +1,9 @@
 import type { Session } from "next-auth";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
-import { decrypt } from "@langfuse/shared/encryption";
+import { prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
+import { decrypt } from "@evalsight/shared/encryption";
 import { randomUUID } from "crypto";
 
 const orgIds: string[] = [];

@@ -1,7 +1,7 @@
-import { MonitorService } from "@langfuse/shared/monitors/server";
+import { MonitorService } from "@evalsight/shared/monitors/server";
 import { z } from "zod";
 
-import { buildMonitorUrl } from "@langfuse/shared/src/server";
+import { buildMonitorUrl } from "@evalsight/shared/src/server";
 
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";

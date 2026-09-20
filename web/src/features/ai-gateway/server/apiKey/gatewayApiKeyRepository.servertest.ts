@@ -1,4 +1,4 @@
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import { describe, expect, it, vi } from "vitest";
 
 import { GatewayApiKeyRepository } from "./gatewayApiKeyRepository";

@@ -10,7 +10,7 @@ import {
   ScoreConfigNameSchema,
   validateCategories,
   validateNumericRangeFields,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 /**

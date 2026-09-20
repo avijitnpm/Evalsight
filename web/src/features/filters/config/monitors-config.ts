@@ -1,4 +1,4 @@
-import { monitorsTableCols } from "@langfuse/shared";
+import { monitorsTableCols } from "@evalsight/shared";
 import type { FilterConfig } from "@/src/features/filters/lib/filter-config";
 
 const baseFacets: FilterConfig["facets"] = [

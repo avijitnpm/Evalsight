@@ -1,10 +1,10 @@
-import { type Plan, Role } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { type Plan, Role } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createApiKeyCacheKey,
   createAuthzContextCacheKey,
   createShaHash,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import { v4 as uuidv4 } from "uuid";
 import {

@@ -1,11 +1,11 @@
 import { makeZodVerifiedAPICall } from "@/src/__tests__/test-utils";
 import { v4 } from "uuid";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createTracesCh,
   createOrgProjectAndApiKey,
   createTrace,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   GetSessionsV1Response,
   GetSessionV1Response,

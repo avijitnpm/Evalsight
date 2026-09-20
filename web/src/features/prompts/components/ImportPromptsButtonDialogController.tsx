@@ -14,7 +14,7 @@ import {
 } from "@/src/components/ui/dialog";
 import { api } from "@/src/utils/api";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
-import { CreatePromptSchema } from "@langfuse/shared";
+import { CreatePromptSchema } from "@evalsight/shared";
 import { z } from "zod";
 
 type ImportItem = z.infer<typeof CreatePromptSchema>;

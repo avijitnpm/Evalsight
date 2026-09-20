@@ -5,7 +5,7 @@ import { Readable } from "stream";
 // was threaded through. Hoisted so the module mock can close over it.
 const uploadCalls = vi.hoisted(() => [] as any[]);
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     blobStorageIntegration: {
       findUnique: vi.fn(),
@@ -18,9 +18,9 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const mod =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   async function* empty(): AsyncGenerator<Record<string, unknown>> {
     // no rows
   }
@@ -71,7 +71,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
   };
 });
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { handleBlobStorageIntegrationProjectJob } from "../features/blobstorage/handleBlobStorageIntegrationProjectJob";
 import type { Job } from "bullmq";
 

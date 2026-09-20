@@ -1,11 +1,11 @@
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import {
   ChatMessageRole,
   ChatMessageType,
   generateLangfuseAIText,
   getClientInitiatedNonStreamingLlmTimeoutMs,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { resolveLangfuseAiFeatureAvailability } from "@/src/features/ai-features/server";
 

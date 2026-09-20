@@ -4,7 +4,7 @@ import { useHasProjectAccess } from "@/src/features/rbac";
 import {
   type CreateQueueWithAssignments,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ReactNode, useRef, useState } from "react";
 
 import { Dialog, DialogContent } from "@/src/components/ui/dialog";

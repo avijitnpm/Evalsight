@@ -20,11 +20,11 @@ import {
   StorageService,
   StorageServiceFactory,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import { processClickhouseTraceDelete } from "../features/traces/processClickhouseTraceDelete";
 import { env } from "../env";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { skipUnlessClickhouseTablesExist } from "./helpers/clickhouseTables";
 
 describe("trace deletion", () => {

@@ -131,9 +131,9 @@ import {
   type SfdcLeadSource,
 } from "@/src/ee/features/sfdc-sync/server";
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server";
-import { parseDbOrg } from "@langfuse/shared";
-import { prisma, Role } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { parseDbOrg } from "@evalsight/shared";
+import { prisma, Role } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 
 type Cli = {
   execute: boolean;

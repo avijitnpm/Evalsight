@@ -1,4 +1,4 @@
-import { ZodModelConfig } from "@langfuse/shared";
+import { ZodModelConfig } from "@evalsight/shared";
 import z from "zod";
 
 export const CreateExperimentData = z.object({

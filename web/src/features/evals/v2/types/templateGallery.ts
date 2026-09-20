@@ -4,7 +4,7 @@ import type {
   EvalTemplateType,
   EvaluatorPromptMessage,
   PersistedEvalOutputDefinition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import type { NormalizedEvaluatorDefinition } from "@/src/features/evals/v2/server/evaluators/evaluatorTypes";
 

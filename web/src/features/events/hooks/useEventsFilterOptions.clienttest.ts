@@ -1,7 +1,7 @@
 import { act, renderHook } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { FilterState, TimeFilter } from "@langfuse/shared";
+import type { FilterState, TimeFilter } from "@evalsight/shared";
 
 const mocks = vi.hoisted(() => ({
   bulkInputs: [] as any[],

@@ -1,5 +1,5 @@
 import { Job } from "bullmq";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   QueueName,
   TQueueJobTypes,
@@ -10,8 +10,8 @@ import {
   getEventsForAnalyticsIntegrations,
   getCurrentSpan,
   recordIncrement,
-} from "@langfuse/shared/src/server";
-import { decrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared/src/server";
+import { decrypt } from "@evalsight/shared/encryption";
 import { MixpanelClient } from "./mixpanelClient";
 import { recordExportVolume } from "../../services/exportVolumeMetric";
 import { recordExportFreshnessLag } from "../../services/exportFreshnessLagMetric";

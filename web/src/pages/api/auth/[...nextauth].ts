@@ -3,7 +3,7 @@ import { getAdClickIdsFromRequest } from "@/src/features/auth/lib/signupAttribut
 import { getCookieName } from "@/src/server/utils/cookies";
 import { isValidCallbackUrl } from "@/src/server/utils/nextAuthCallbackUrl";
 import { env } from "@/src/env.mjs";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import type { NextApiRequest, NextApiResponse } from "next";
 import NextAuth from "next-auth";
 

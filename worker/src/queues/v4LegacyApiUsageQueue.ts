@@ -1,5 +1,5 @@
 import { Processor } from "bullmq";
-import { logger, QueueJobs } from "@langfuse/shared/src/server";
+import { logger, QueueJobs } from "@evalsight/shared/src/server";
 import { handleV4LegacyApiUsageJob } from "../features/v4/handleV4LegacyApiUsageJob";
 
 export const v4LegacyApiUsageProcessor: Processor = async (job) => {

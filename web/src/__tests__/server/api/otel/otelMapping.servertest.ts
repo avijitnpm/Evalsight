@@ -4,7 +4,7 @@ import {
   type IngestionEventType,
   type OtelIngestionProcessorConfig,
   type ResourceSpan,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * Widened event shape for assertions in this file.

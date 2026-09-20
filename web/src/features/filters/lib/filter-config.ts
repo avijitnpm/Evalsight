@@ -1,5 +1,5 @@
 import type React from "react";
-import type { ColumnDefinition, FilterState } from "@langfuse/shared";
+import type { ColumnDefinition, FilterState } from "@evalsight/shared";
 
 interface BaseFacet {
   column: string;

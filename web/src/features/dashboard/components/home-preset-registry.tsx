@@ -3,8 +3,8 @@ import {
   HOME_DASHBOARD_PRESET_IDS,
   type FilterState,
   type HomeDashboardPresetId,
-} from "@langfuse/shared";
-import { type ViewVersion } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { type DashboardDateRangeAggregationOption } from "@/src/utils/date-range-utils";
 import { TracesBarListChart } from "@/src/features/dashboard/components/TracesBarListChart";
 import { ModelCostTable } from "@/src/features/dashboard/components/ModelCostTable";

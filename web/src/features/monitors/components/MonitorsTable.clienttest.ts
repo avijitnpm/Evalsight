@@ -1,13 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import {
   type Monitor,
   MonitorNoDataModeSchema,
   MonitorSeveritySchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 import { getMonitorFilterConfig } from "@/src/features/filters";
 import { __test } from "./MonitorsTable";

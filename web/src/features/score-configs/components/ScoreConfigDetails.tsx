@@ -1,5 +1,5 @@
 import { isNumericDataType } from "@/src/features/scores/lib/helpers";
-import { isPresent, type ScoreConfigDomain } from "@langfuse/shared";
+import { isPresent, type ScoreConfigDomain } from "@evalsight/shared";
 
 export function ScoreConfigDetails({ config }: { config: ScoreConfigDomain }) {
   const { name, description, minValue, maxValue, dataType } = config;

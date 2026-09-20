@@ -5,8 +5,8 @@ import {
   QueueName,
   shouldSkipDeletionFor,
   TQueueJobTypes,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 
 import { processClickhouseTraceDelete } from "../features/traces/processClickhouseTraceDelete";
 import { processPostgresTraceDelete } from "../features/traces/processPostgresTraceDelete";

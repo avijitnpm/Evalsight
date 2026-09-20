@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { AnalyticsIntegrationExportSource } from "@langfuse/shared";
+import { AnalyticsIntegrationExportSource } from "@evalsight/shared";
 import { type RouterOutputs } from "@/src/utils/api";
 import { PostHogStatusSection } from "./PostHogStatusSection";
 

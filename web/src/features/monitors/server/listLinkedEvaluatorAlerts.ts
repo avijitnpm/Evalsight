@@ -1,6 +1,6 @@
-import { metric as MetricSchema } from "@langfuse/shared";
-import { findMonitorIdsLinkedToEvaluators } from "@langfuse/shared/monitors/server";
-import type { Prisma, PrismaClient } from "@langfuse/shared/src/db";
+import { metric as MetricSchema } from "@evalsight/shared";
+import { findMonitorIdsLinkedToEvaluators } from "@evalsight/shared/monitors/server";
+import type { Prisma, PrismaClient } from "@evalsight/shared/src/db";
 
 const LINKED_ALERTS_PAGE_SIZE = 20;
 

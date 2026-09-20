@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { expect, fn, userEvent, within } from "storybook/test";
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 import preview from "../../../../../../../../.storybook/preview";
 import { EvaluatorGallerySection } from "./EvaluatorGallerySection";
 import { EVALUATOR_GALLERY_SAFETY_CALLOUT } from "../../../../constants/evaluatorGallery";

@@ -1,15 +1,15 @@
 /** @jest-environment node */
 import { v4 } from "uuid";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   validateAndInflateScore,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   InvalidRequestError,
   LangfuseNotFoundError,
   ScoreSourceEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("validateAndInflateScore", () => {
   describe("configId scoping", () => {

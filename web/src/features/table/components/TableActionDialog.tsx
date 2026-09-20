@@ -27,7 +27,7 @@ import { TableActionTargetOptions } from "@/src/features/table/components/TableA
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { ActionButton } from "@/src/components/ActionButton";
 import { useOptionalEntitlement } from "@/src/features/entitlements";
-import { type BatchExportTableName } from "@langfuse/shared";
+import { type BatchExportTableName } from "@evalsight/shared";
 import { api } from "@/src/utils/api";
 import { targetOptionsQueryMap } from "@/src/features/table/components/targetOptionsQueryMap";
 import { Spinner } from "@/src/components/design-system/Spinner/Spinner";

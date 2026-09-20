@@ -16,7 +16,7 @@ import { ConfirmationDialogController } from "@/src/components/design-system/Con
 import { copyTextToClipboard } from "@/src/utils/clipboard";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import { useRouter } from "next/router";
-import { type metricAggregations } from "@langfuse/shared/query";
+import { type metricAggregations } from "@evalsight/shared/query";
 import { type z } from "zod";
 import { PaginationBar } from "@/src/components/design-system/PaginationBar/PaginationBar";
 import { type AsyncTableData } from "@/src/components/design-system/table/Table";

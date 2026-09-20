@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import { deepParseJson } from "@langfuse/shared";
+import { deepParseJson } from "@evalsight/shared";
 
 import { adaptEventsToTraceFormat } from "./eventsToTraceAdapter";
 

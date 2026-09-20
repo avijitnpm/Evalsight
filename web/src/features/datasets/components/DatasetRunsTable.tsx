@@ -19,7 +19,7 @@ import {
   type Prisma,
   datasetRunsTableColsWithOptions,
   type ScoreAggregate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useQueryFilterState } from "@/src/features/filters";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";

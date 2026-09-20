@@ -6,7 +6,7 @@ import {
   viewDeclarations,
   views,
   type ViewVersion,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import {
   getWidgetImportFilterConfig,
   normalizeStoredWidgetFiltersForEditor,
@@ -19,7 +19,7 @@ import {
   MetricSchema,
   singleFilterList,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { dashboardWidgetChartTypeSchema } from "@/src/features/widgets/lib/dashboardWidgetChartTypes";
 import {
   MAX_PIVOT_TABLE_DIMENSIONS,

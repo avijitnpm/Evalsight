@@ -7,7 +7,7 @@ import {
 } from "@/src/components/ui/drawer";
 import { CommentList } from "@/src/features/comments/CommentList";
 import { useHasProjectAccess } from "@/src/features/rbac";
-import { type CommentObjectType } from "@langfuse/shared";
+import { type CommentObjectType } from "@evalsight/shared";
 import { useRouter } from "next/router";
 import { type ReactNode, useRef, useState } from "react";
 import { type SelectionData } from "./contexts/InlineCommentSelectionContext";

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { OutboundUrlValidationError } from "@langfuse/shared/src/server";
+import { OutboundUrlValidationError } from "@evalsight/shared/src/server";
 import {
   classifyCustomerFault,
   isCustomerFaultError,

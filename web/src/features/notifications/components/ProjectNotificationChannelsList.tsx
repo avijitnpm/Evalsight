@@ -3,7 +3,7 @@ import { SiSlack } from "react-icons/si";
 import { Webhook, Plus, Pencil, Trash2 } from "lucide-react";
 
 import { Button } from "@/src/components/ui/button";
-import { type AutomationDomain } from "@langfuse/shared";
+import { type AutomationDomain } from "@evalsight/shared";
 
 const destinationLabel = (automation: AutomationDomain): string => {
   if (automation.action.type === "SLACK") {

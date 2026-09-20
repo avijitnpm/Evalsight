@@ -5,9 +5,9 @@ import {
   QueueJobs,
   QueueName,
   WebhookQueue,
-} from "@langfuse/shared/src/server";
-import { MonitorProcessor } from "@langfuse/shared/monitors/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { MonitorProcessor } from "@evalsight/shared/monitors/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { SpanKind } from "@opentelemetry/api";
 
 export const monitorQueueProcessor: Processor = async (job) => {

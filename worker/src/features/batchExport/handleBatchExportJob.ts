@@ -7,8 +7,8 @@ import {
   BatchExportTableName,
   exportOptions,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   StorageServiceFactory,
   sendBatchExportSuccessEmail,
@@ -19,7 +19,7 @@ import {
   applyCommentFilters,
   type CommentObjectType,
   type PreferredClickhouseService,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { getDatabaseReadStreamPaginated } from "../database-read-stream/getDatabaseReadStream";
 import { getObservationStream } from "../database-read-stream/observation-stream";

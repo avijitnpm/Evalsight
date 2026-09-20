@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   logger: { debug: vi.fn(), warn: vi.fn() },
   redis: null,
   ClickHouseClientManager: {

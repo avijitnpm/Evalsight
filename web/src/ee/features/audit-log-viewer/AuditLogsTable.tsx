@@ -11,7 +11,7 @@ import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-
 import { DataTableToolbar } from "@/src/components/table/data-table-toolbar";
 import { SettingsTableCard } from "@/src/components/layouts/settings-table-card";
 import { BatchExportTableButton } from "@/src/components/BatchExportTableButton";
-import { BatchExportTableName } from "@langfuse/shared";
+import { BatchExportTableName } from "@evalsight/shared";
 import { createTextTableColumn } from "@/src/components/design-system/table/columns/createTextTableColumn";
 import { useHasProjectAccess } from "@/src/features/rbac";
 

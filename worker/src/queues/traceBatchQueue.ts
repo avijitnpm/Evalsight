@@ -11,7 +11,7 @@ import {
   TraceBatchEventSchema,
   type QueueName,
   type TQueueJobTypes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../env";
 
 const JOB_MAX_AGE_MS = 2 * 60 * 60_000;

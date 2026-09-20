@@ -6,15 +6,15 @@ import {
   LangfuseNotFoundError,
   validateDbScoreConfig,
   validateDbScoreConfigSafe,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { auditLog } from "@/src/features/audit-logs/server";
 import {
   type PostScoreConfigBody,
   type PutScoreConfigBody,
 } from "@/src/features/public-api/types/score-configs";
 
-export { listScoreConfigs, getScoreConfig } from "@langfuse/shared/src/server";
+export { listScoreConfigs, getScoreConfig } from "@evalsight/shared/src/server";
 
 type ApiKeyProjectContext = {
   projectId: string;

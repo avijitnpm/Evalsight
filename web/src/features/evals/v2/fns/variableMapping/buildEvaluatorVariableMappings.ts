@@ -1,7 +1,7 @@
 import {
   extractVariables,
   type EvaluatorPromptMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { inferDefaultMapping } from "@/src/features/evals/utils/evaluator-form-utils";
 import type { VariableFieldState } from "@/src/features/evals/v2/types/variableMapping";

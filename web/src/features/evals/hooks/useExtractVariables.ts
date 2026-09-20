@@ -5,7 +5,7 @@ import { showErrorToast } from "@/src/features/notifications";
 import {
   EvalTargetObject,
   extractValueFromObjectAsString,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useEffect, useState, useRef } from "react";
 
 /**

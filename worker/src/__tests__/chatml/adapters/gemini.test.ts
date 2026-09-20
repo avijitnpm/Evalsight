@@ -7,7 +7,7 @@ import {
   normalizeOutput as chatmlNormalizeOutput,
   combineInputOutputMessages,
   type NormalizerContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Test helper
 function normalizeInput(input: unknown, ctx: NormalizerContext = {}) {

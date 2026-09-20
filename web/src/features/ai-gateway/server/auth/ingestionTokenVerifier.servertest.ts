@@ -4,8 +4,8 @@ import { describe, expect, it, vi } from "vitest";
 
 import { signHmacSha256 } from "@/src/server/utils/hmac";
 import { createEs256JwtSigner } from "@/src/server/utils/jwt";
-import { UnauthorizedError } from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import { UnauthorizedError } from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 
 import { verifyGatewayIngestionAuthorization } from "./ingestionTokenVerifier";
 

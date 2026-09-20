@@ -5,7 +5,7 @@ import {
   type langfuseObjects,
   TimeScopeSchema,
   wipVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { OUTPUT_MAPPING } from "@/src/features/evals/utils/evaluator-constants";
 import { getJsonPathCompatibilityWarning } from "@/src/features/evals/utils/json-path-compatibility";
 

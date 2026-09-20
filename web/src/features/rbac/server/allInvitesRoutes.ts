@@ -12,7 +12,7 @@ import {
   type Prisma,
   type PrismaClient,
   Role,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 

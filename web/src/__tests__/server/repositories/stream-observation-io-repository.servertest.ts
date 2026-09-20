@@ -5,7 +5,7 @@ import {
   createEventsCh,
   getObservationIOFieldByteLengthFromEventsTable,
   streamObservationIOFieldFromEventsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 
 // Reads the v4 events table (events_full), so gate on the same preview opt-in as

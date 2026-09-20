@@ -4,7 +4,7 @@ import { api } from "@/src/utils/api";
 import {
   datasetRunItemsTableColsWithOptions,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { scoreFilters } from "@/src/features/scores";
 
 export function useDatasetRunAggregateColumns({

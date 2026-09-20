@@ -1,9 +1,9 @@
 import { afterEach, beforeEach, describe, it, expect, vi } from "vitest";
 import dns from "node:dns/promises";
-import { validateWebhookURL } from "@langfuse/shared/src/server";
+import { validateWebhookURL } from "@evalsight/shared/src/server";
 
 // Stub the dns module object, not vi.mock("node:dns/promises"): this file loads
-// the validator from @langfuse/shared's compiled output, whose require() vitest
+// the validator from @evalsight/shared's compiled output, whose require() vitest
 // does not intercept.
 const dnsError = (code: string, hostname: string) =>
   Object.assign(new Error(`queryA ${code} ${hostname}`), { code });

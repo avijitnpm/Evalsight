@@ -1,4 +1,4 @@
-import { ObservationType } from "@langfuse/shared";
+import { ObservationType } from "@evalsight/shared";
 import {
   type AgentGraphDataResponse,
   LANGFUSE_START_NODE_NAME,

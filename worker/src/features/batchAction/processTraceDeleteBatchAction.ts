@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   ActionId,
   BatchActionQuerySchema,
@@ -8,13 +8,13 @@ import {
   type FilterState,
   type TraceDeleteBatchActionConfig,
   type TraceDeleteBatchActionCursor,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getTraceDeleteCursorPageFromEvents,
   getTraceDeleteCursorPageFromTraces,
   logger,
   shouldSkipDeletionFor,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { processClickhouseTraceDelete } from "../traces/processClickhouseTraceDelete";
 import { processPostgresTraceDelete } from "../traces/processPostgresTraceDelete";

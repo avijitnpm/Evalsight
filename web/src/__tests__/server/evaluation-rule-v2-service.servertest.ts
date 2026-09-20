@@ -1,8 +1,8 @@
 import { randomUUID } from "node:crypto";
-import { EvalTargetObject } from "@langfuse/shared";
-import type * as SharedServer from "@langfuse/shared/src/server";
-import { prisma, type Prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { EvalTargetObject } from "@evalsight/shared";
+import type * as SharedServer from "@evalsight/shared/src/server";
+import { prisma, type Prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   afterAll,
   afterEach,
@@ -21,7 +21,7 @@ const telemetryMocks = vi.hoisted(() => ({
   getTotalCostByRule: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<typeof SharedServer>()),
   getRecentRuleExecutionTraces: telemetryMocks.getRecentRuleExecutionTraces,
   getTotalCostByRule: telemetryMocks.getTotalCostByRule,

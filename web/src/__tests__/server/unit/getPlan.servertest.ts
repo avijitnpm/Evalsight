@@ -1,7 +1,7 @@
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server/getPlan";
-import { CloudConfigSchema } from "@langfuse/shared";
+import { CloudConfigSchema } from "@evalsight/shared";
 
 const CHB_ORG_ID = "0d5e6f7a-1b2c-4d3e-8f9a-0b1c2d3e4f5a";
 const STRIPE_TEAM_PRODUCT_ID = "prod_QhK9qKGH25BTcS";

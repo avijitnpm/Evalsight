@@ -4,7 +4,7 @@ import {
   convertEventRecordToObservationForEval,
   DatasetItemDomain,
   Prisma,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   ChatMessage,
   compileLangfuseMediaMessages,
@@ -27,7 +27,7 @@ import {
   QueueJobs,
   redis,
   TraceSinkParams,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 import z from "zod";
 import {
@@ -39,7 +39,7 @@ import {
 import {
   validateDatasetItem,
   normalizeDatasetItemInput,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { randomUUID } from "crypto";
 import { createW3CTraceId } from "../utils";
 import { scheduleExperimentObservationEvals } from "./scheduleExperimentEvals";

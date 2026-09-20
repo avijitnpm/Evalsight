@@ -1,4 +1,4 @@
-import { EvalTargetObject } from "@langfuse/shared";
+import { EvalTargetObject } from "@evalsight/shared";
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import {

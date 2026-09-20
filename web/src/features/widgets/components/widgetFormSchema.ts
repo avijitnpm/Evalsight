@@ -2,7 +2,7 @@
 import { z } from "zod";
 import startCase from "lodash/startCase";
 
-import { singleFilterList, type FilterState } from "@langfuse/shared";
+import { singleFilterList, type FilterState } from "@evalsight/shared";
 import {
   getValidAggregationsForMeasureType,
   getWidgetRequiredVersion,
@@ -11,7 +11,7 @@ import {
   viewDeclarations,
   views,
   type ViewVersion,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 
 import {
   mapWidgetUiTableFilterToView,

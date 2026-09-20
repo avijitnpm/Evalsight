@@ -13,7 +13,7 @@ import {
   INTERNAL_INGESTION_SDK_NAMES,
   queryClickhouse,
   type IngestionSdkAttributionStatus,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { getSdkVersionCapabilityStatus } from "@/src/features/sdk-version/lib/sdkVersionCapabilities";
 import { getExperimentPostUsageByProject } from "@/src/features/v4/server/v4TransitionQueryLogUsage";
 import {

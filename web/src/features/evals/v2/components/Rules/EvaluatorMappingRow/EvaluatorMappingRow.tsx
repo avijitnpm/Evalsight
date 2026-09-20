@@ -3,7 +3,7 @@ import { Check, ChevronDown, TriangleAlert, Unlink } from "lucide-react";
 import type {
   EvalTemplateType,
   ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { memo, type ReactNode, useState } from "react";
 import { useStore } from "zustand";
 

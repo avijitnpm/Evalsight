@@ -1,9 +1,9 @@
 /* eslint-disable no-nested-ternary */
-import { InternalServerError } from "@langfuse/shared";
+import { InternalServerError } from "@evalsight/shared";
 import {
   type ApiAccessLevel,
   type ApiAccessScope,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { type Principal } from "@/src/features/auth/policy/types";
 

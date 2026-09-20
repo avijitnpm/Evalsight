@@ -1,6 +1,6 @@
 import type { z } from "zod";
-import { singleFilterList } from "@langfuse/shared";
-import { type views } from "@langfuse/shared/query";
+import { singleFilterList } from "@evalsight/shared";
+import { type views } from "@evalsight/shared/query";
 
 export const FilterArray = singleFilterList;
 

@@ -17,7 +17,7 @@ import {
   queryClickhouse,
   redis,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { handleEventPropagationJob } from "../features/eventPropagation/handleEventPropagationJob";
 import { TableName } from "../services/ClickhouseWriter";
 import { skipUnlessClickhouseTablesExist } from "./helpers/clickhouseTables";

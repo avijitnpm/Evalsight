@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { toast } from "sonner";
-import { isPresent, type ScoreConfigDomain } from "@langfuse/shared";
+import { isPresent, type ScoreConfigDomain } from "@evalsight/shared";
 import { Button } from "@/src/components/ui/button";
 import {
   Dialog,

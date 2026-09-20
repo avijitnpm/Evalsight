@@ -2,7 +2,7 @@ import { type JobConfiguration, type JobExecution } from "@prisma/client";
 import {
   type EvalExecutionContext,
   type EvalTemplateCodeBased,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   CodeEvalExecutionError,
   instrumentAsync,
@@ -11,7 +11,7 @@ import {
   runCodeBasedEvaluationDispatch,
   writeInternalTraceViaOtelIngestion,
   type ExtractedVariable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { UnrecoverableError } from "../../../errors/UnrecoverableError";
 import { createW3CTraceId } from "../../utils";
 import { type EvalExecutionResult } from "../evalCompletion";

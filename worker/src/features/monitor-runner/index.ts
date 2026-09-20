@@ -3,9 +3,9 @@ import {
   logger,
   MonitorQueue,
   QueueJobs,
-} from "@langfuse/shared/src/server";
-import { MonitorScheduler } from "@langfuse/shared/monitors/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { MonitorScheduler } from "@evalsight/shared/monitors/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { v4 } from "uuid";
 
 import { PeriodicExclusiveRunner } from "../../utils/PeriodicExclusiveRunner";

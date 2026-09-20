@@ -8,8 +8,8 @@ type SessionFeatureFlags = SessionUser["featureFlags"];
 import * as z from "zod";
 import { env } from "@/src/env.mjs";
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const originalModule = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const originalModule = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...originalModule,
     getTraceById: vi.fn(),
@@ -29,7 +29,7 @@ import { resetAdminAccessWebhookCacheForTests } from "@/src/server/adminAccessWe
 import {
   getTraceById,
   getTraceByIdFromEventsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const middlewareTestRouter = createTRPCRouter({
   project: protectedProjectProcedureWithoutTracing

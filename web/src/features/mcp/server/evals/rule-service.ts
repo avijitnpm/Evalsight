@@ -6,7 +6,7 @@ import {
   toStoredMappingList,
 } from "@/src/features/public-api/server/evaluation/evaluationAdapters";
 import { RuleService } from "@/src/features/evals/v2/server/rules/ruleService";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import type { z } from "zod";
 import type { ServerContext } from "../../types";
 import {

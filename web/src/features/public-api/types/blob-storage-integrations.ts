@@ -4,7 +4,7 @@ import {
   OBSERVATION_FIELD_GROUPS_FULL,
   BLOB_STORAGE_REGION_INVALID_MESSAGE,
   BLOB_STORAGE_REGION_REGEX,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   validateAzureContainerName,
   validateExportFieldGroups,

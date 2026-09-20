@@ -1,4 +1,4 @@
-import { ScoreDataTypeEnum } from "@langfuse/shared";
+import { ScoreDataTypeEnum } from "@evalsight/shared";
 import { type ReactNode } from "react";
 
 import { DialogController } from "@/src/components/design-system/DialogController/DialogController";

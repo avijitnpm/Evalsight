@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { prisma, PrismaClient } from "@langfuse/shared/src/db";
+import { prisma, PrismaClient } from "@evalsight/shared/src/db";
 import defaultModelPrices from "../constants/default-model-prices.json";
-import { clearFullModelCache, logger } from "@langfuse/shared/src/server";
+import { clearFullModelCache, logger } from "@evalsight/shared/src/server";
 import {
   PricingTierConditionSchema,
   validatePricingTiers,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const PricingTierSchema = z.object({
   id: z.string(),

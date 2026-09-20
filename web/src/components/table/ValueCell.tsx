@@ -2,7 +2,7 @@
 import { memo, type JSX, useState } from "react";
 import { useRouter } from "next/router";
 import { type Row } from "@tanstack/react-table";
-import { urlRegex } from "@langfuse/shared";
+import { urlRegex } from "@evalsight/shared";
 import {
   SMALL_ARRAY_THRESHOLD,
   SMALL_OBJECT_THRESHOLD,

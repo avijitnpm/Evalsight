@@ -3,7 +3,7 @@ import {
   type FilterConfig,
   type FilterStateMigration,
 } from "@/src/features/filters/lib/filter-config";
-import type { ColumnDefinition } from "@langfuse/shared";
+import type { ColumnDefinition } from "@evalsight/shared";
 
 // Temporary column definitions for experiments
 // TODO: Move to shared package once backend is implemented

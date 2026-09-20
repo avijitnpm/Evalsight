@@ -1,12 +1,12 @@
 import crypto from "node:crypto";
 import { type NextApiRequest } from "next";
 import { ApiAuthService } from "@/src/features/public-api/server/apiAuth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   redis,
   type AuthHeaderValidVerificationResult,
   type ApiAccessLevel,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 
 /** Access levels that can be accepted by project-scoped API routes. */

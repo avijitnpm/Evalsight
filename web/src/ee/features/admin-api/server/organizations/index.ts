@@ -1,5 +1,5 @@
-import { prisma } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 import { organizationNameSchema } from "@/src/features/organizations/utils/organizationNameSchema";
 import { auditLog } from "@/src/features/audit-logs/server";
 import { type NextApiRequest, type NextApiResponse } from "next";

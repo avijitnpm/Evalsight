@@ -4,9 +4,9 @@ import {
   createDatasetRunItemsCh,
   createOrgProjectAndApiKey,
   getDatasetRunItemsByDatasetIdCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { processClickhouseDatasetDelete } from "../features/datasets/processClickhouseDatasetDelete";
 
 const getRunItems = (projectId: string, datasetId: string) =>

@@ -2,13 +2,13 @@ import {
   CommentObjectType,
   type CreateCommentData,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type z } from "zod";
 import {
   getObservationById,
   getTraceById,
   getTracesIdentifierForSession,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const validateCommentReferenceObject = async ({
   ctx,

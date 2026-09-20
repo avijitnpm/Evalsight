@@ -4,7 +4,7 @@ import {
   filterOperators,
   FTS_MATCH_OPERATOR,
   OBSERVATION_MCP_ALLOWED_EVENTS_TABLE_FILTER_COLUMNS,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { defineTool } from "../../../core/define-tool";
 import { observationEventsFilterConfig } from "@/src/features/events/config/filter-config";
 

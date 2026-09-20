@@ -9,7 +9,7 @@ import {
   traceDetailTitle,
 } from "@/src/features/traces";
 import { resolvePeekTraceParams } from "@/src/components/table/peek/resolvePeekTraceParams";
-import { buildTracePath } from "@langfuse/shared";
+import { buildTracePath } from "@evalsight/shared";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 

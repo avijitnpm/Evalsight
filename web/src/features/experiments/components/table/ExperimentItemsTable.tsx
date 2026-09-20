@@ -29,7 +29,7 @@ import {
   ActionId,
   BatchActionType,
   EXPERIMENT_IO_TRUNCATE_LENGTH,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ExperimentFilterPills } from "./ExperimentFilterPills";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import {

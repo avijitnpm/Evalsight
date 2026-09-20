@@ -3,7 +3,7 @@ import {
   EvalTemplateType,
   observationVariableMappingList,
   singleFilterList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useState } from "react";
 import { DialogBody } from "@/src/components/ui/dialog";
 import { RuleDialogFooter } from "@/src/features/evals/v2/components/Rules/RuleDialogFooter/RuleDialogFooter";

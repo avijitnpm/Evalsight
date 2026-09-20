@@ -8,7 +8,7 @@ import {
   getScoreById,
   getTraceById,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 let projectId: string;

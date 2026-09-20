@@ -31,7 +31,7 @@ import {
   ActionId,
   BatchActionType,
   buildExperimentPath,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { numberFormatter } from "@/src/utils/numbers";
 import { useOrderByState } from "@/src/features/orderBy/hooks/useOrderByState";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";

@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 
 import { getDefaultCodeEvalSource } from "@/src/features/evals/utils/code-eval-template-starter-examples";

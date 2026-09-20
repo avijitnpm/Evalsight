@@ -43,7 +43,7 @@ import {
   TriggerEventSource,
   TriggerEventSourceSchema,
   webhookActionFilterOptions,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { InlineFilterBuilder, MultiSelect } from "@/src/features/filters";
 import { DeleteAutomationDialogController } from "./DeleteAutomationDialogController";
 import { useLangfuseCloudRegion } from "@/src/features/organizations/hooks";

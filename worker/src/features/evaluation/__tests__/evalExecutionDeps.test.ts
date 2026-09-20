@@ -15,9 +15,9 @@ const {
   mockRecordIncrement: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const original =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...original,
     compileLangfuseMediaMessages: mockCompileLangfuseMediaMessages,

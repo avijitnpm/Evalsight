@@ -1,7 +1,7 @@
 import { createMocks } from "node-mocks-http";
 import handler from "@/src/pages/api/public/ingestion";
 import { type NextApiResponse, type NextApiRequest } from "next";
-import { Prisma } from "@langfuse/shared/src/db";
+import { Prisma } from "@evalsight/shared/src/db";
 
 /*
 
@@ -41,8 +41,8 @@ Timed out fetching a new connection from the connection pool. More info:  (Curre
   meta: { modelName: 'ApiKey', connection_limit: 1, timeout: 10 }
 */
 
-vi.mock("@langfuse/shared/src/db", async () => {
-  const originalModule = await vi.importActual("@langfuse/shared/src/db");
+vi.mock("@evalsight/shared/src/db", async () => {
+  const originalModule = await vi.importActual("@evalsight/shared/src/db");
 
   // Create a mock for PrismaClient
   const mockPrismaClient = {

@@ -25,21 +25,21 @@ import {
   createScoresCh,
   createTraceScore,
   type EventFilterOptionColumn,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   getEventListCursor,
   getEventFilterNumericRange,
   getEventFilterOptions,
   getEventFilterValuePage,
 } from "@/src/features/events/server/eventsService";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { randomUUID } from "crypto";
 import { env } from "@/src/env.mjs";
 import {
   type EventsTableFilterState,
   type FilterCondition,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import waitForExpect from "wait-for-expect";
 
 const projectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";

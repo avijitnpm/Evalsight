@@ -1,4 +1,4 @@
-import { EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateType } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 import { z } from "zod";
 import {

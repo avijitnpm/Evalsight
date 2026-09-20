@@ -1,19 +1,19 @@
 import { expect, test, describe, beforeEach, vi, afterEach } from "vitest";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { randomUUID } from "crypto";
-import { LLMAdapter } from "@langfuse/shared";
-import { encrypt } from "@langfuse/shared/encryption";
+import { LLMAdapter } from "@evalsight/shared";
+import { encrypt } from "@evalsight/shared/encryption";
 import { createExperimentJobClickhouse } from "../features/experiments/experimentServiceClickhouse";
 import {
   createDatasetItem,
   createOrgProjectAndApiKey,
   generateLLMText,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 // Mock the logger to capture log calls
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     generateLLMText: vi.fn().mockResolvedValue({ text: "test output" }),

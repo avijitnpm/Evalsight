@@ -3,7 +3,7 @@ import {
   EvalOutputDefinitionSchema,
   ScoreDataTypeEnum,
   type EvalOutputDefinition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { ScoreOutputFormState } from "@/src/features/evals/v2/scoreOutputTypes";
 import {
   DEFAULT_REASONING_DESCRIPTION,

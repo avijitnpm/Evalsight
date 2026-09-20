@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
 import waitForExpect from "wait-for-expect";
 import { describe, expect, it } from "vitest";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   ActionId,
   BatchActionStatus,
@@ -9,7 +9,7 @@ import {
   createTraceDeleteBatchActionConfig,
   TraceDeleteBatchActionConfigSchema,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   createEvent,
   createEventsCh,
@@ -23,7 +23,7 @@ import {
   deleteObservationsByTraceIds,
   deleteScoresByTraceIds,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { processTraceDeleteBatchAction } from "../features/batchAction/processTraceDeleteBatchAction";
 import { TraceDeleteBatchActionRunner } from "../features/trace-delete-batch-action-runner";
 import { skipUnlessClickhouseTablesExist } from "./helpers/clickhouseTables";

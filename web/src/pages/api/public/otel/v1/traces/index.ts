@@ -5,9 +5,9 @@ import {
   markProjectAsOtelUser,
   createIngestionAttribution,
   getLangfuseHeaderValue,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { z } from "zod";
-import { ForbiddenError } from "@langfuse/shared";
+import { ForbiddenError } from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 import {
   gunzipOtelRequestBody,

@@ -108,7 +108,7 @@ async function syncParseTraceData(
   output: unknown,
   metadata: unknown,
 ): Promise<ParsedData> {
-  const { deepParseJsonIterative } = await import("@langfuse/shared");
+  const { deepParseJsonIterative } = await import("@evalsight/shared");
   const startTime = performance.now();
 
   return {

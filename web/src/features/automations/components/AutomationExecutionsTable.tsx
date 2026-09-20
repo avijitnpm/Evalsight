@@ -9,7 +9,7 @@ import { useQueryParams, withDefault, NumberParam } from "use-query-params";
 import { formatDistanceToNow } from "date-fns";
 import { formatIntervalSeconds } from "@/src/utils/dates";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";
-import { ActionExecutionStatus } from "@langfuse/shared";
+import { ActionExecutionStatus } from "@evalsight/shared";
 import { type Status } from "@/src/components/ui/StatusBadge/StatusBadge";
 
 const actionExecutionStatusToStatus = {

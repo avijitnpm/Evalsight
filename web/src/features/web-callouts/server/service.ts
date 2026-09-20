@@ -21,12 +21,12 @@ import {
   withWebCalloutInFlightLimit,
   type WebCalloutLimitContext,
 } from "@/src/features/web-callouts/server/rateLimit";
-import { LangfuseUserAgent } from "@langfuse/shared";
-import { fetchWithSecureRedirects, logger } from "@langfuse/shared/src/server";
+import { LangfuseUserAgent } from "@evalsight/shared";
+import { fetchWithSecureRedirects, logger } from "@evalsight/shared/src/server";
 import {
   type PrismaClient,
   type WebCalloutEndpoint,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 
 const WEB_CALLOUT_TIMEOUT_MS = 5_000;
 const WEB_CALLOUT_MAX_REDIRECTS = 10;

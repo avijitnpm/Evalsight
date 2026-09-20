@@ -3,9 +3,9 @@ import {
   logger,
   recordDistribution,
   RetryBaggage,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "../../env";
 
 const LLM_QUEUE_RETRY_FIRST_DELAY_SECONDS = 5 * 60;

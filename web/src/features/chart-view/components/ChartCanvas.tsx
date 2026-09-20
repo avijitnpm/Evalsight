@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { BarChart3 } from "lucide-react";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import {
   Chart,
   type DataPoint,

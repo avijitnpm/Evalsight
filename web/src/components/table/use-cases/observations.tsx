@@ -44,7 +44,7 @@ import {
   type TracingSearchType,
   type ScoreAggregate,
   buildTracePath,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { transformFiltersForBackend } from "@/src/features/filters/lib/filter-transform";
 import { sortOptionValues } from "@/src/features/filters/lib/option-sort";
 import { formatIntervalSeconds } from "@/src/utils/dates";

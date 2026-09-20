@@ -6,9 +6,9 @@ import {
   logger,
   StorageServiceFactory,
   type StorageService,
-} from "@langfuse/shared/src/server";
-import { metricAggregations, viewDeclarations } from "@langfuse/shared/query";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { metricAggregations, viewDeclarations } from "@evalsight/shared/query";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "../env";
 
 const CORE_DATA_EXPORT_PAGE_SIZE = 1_000;

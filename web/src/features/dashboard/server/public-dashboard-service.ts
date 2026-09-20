@@ -2,12 +2,12 @@ import {
   DashboardService,
   type ApiAccessScope,
   type DashboardDomain,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   HOME_DASHBOARD_PRESET_IDS,
   LangfuseConflictError,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { auditLog } from "@/src/features/audit-logs/server";
 import {
   DashboardSchema,

@@ -3,7 +3,7 @@ import { fn } from "storybook/test";
 import {
   EvalTemplateSourceCodeLanguageEnum,
   EvalTemplateTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import preview from "../../../../../../../.storybook/preview";
 import { EvaluatorCodeLanguageSelector } from "@/src/features/evals/v2/components/Evaluators/Code/EvaluatorCodeLanguageSelector/EvaluatorCodeLanguageSelector";

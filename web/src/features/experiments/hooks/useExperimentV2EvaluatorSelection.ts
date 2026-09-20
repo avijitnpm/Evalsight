@@ -14,7 +14,7 @@ import {
   isExperimentEvaluationRule,
   observationVariableMappingList,
   stripExperimentRootFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 type EvaluationRule =
   RouterOutputs["evalsV2"]["rules"]["list"]["rules"][number];

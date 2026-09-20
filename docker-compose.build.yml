@@ -1,11 +1,11 @@
 services:
-  langfuse-web:
+  evalsight-web:
     build:
       dockerfile: ./web/Dockerfile
       context: .
       args:
         - NEXT_PUBLIC_LANGFUSE_CLOUD_REGION=${NEXT_PUBLIC_LANGFUSE_CLOUD_REGION}
-    depends_on: &langfuse-depends-on
+    depends_on: &evalsight-depends-on
       postgres:
         condition: service_healthy
       minio:
@@ -16,7 +16,7 @@ services:
         condition: service_healthy
     ports:
       - "3000:3000"
-    environment: &langfuse-web-env
+    environment: &evalsight-web-env
       # Docker injects HOSTNAME=<container-id>; override it so app servers bind on all interfaces.
       HOSTNAME: 0.0.0.0
       DATABASE_URL: ${DATABASE_URL:-postgresql://postgres:postgres@postgres:5432/postgres}
@@ -88,17 +88,17 @@ services:
       start_period: 60s
       start_interval: 2s
 
-  langfuse-worker:
+  evalsight-worker:
     build:
       dockerfile: ./worker/Dockerfile
       context: .
       args:
         - NEXT_PUBLIC_LANGFUSE_CLOUD_REGION=${NEXT_PUBLIC_LANGFUSE_CLOUD_REGION}
-    depends_on: *langfuse-depends-on
+    depends_on: *evalsight-depends-on
     ports:
       - "3030:3030"
     environment:
-      <<: *langfuse-web-env
+      <<: *evalsight-web-env
       # In-app agent worker settings (ignored by the web service).
       LANGFUSE_IN_APP_AGENT_RUN_QUEUE_PROCESSING_CONCURRENCY: ${LANGFUSE_IN_APP_AGENT_RUN_QUEUE_PROCESSING_CONCURRENCY:-}
       LANGFUSE_IN_APP_AGENT_AWS_PROFILE: ${LANGFUSE_IN_APP_AGENT_AWS_PROFILE:-}
@@ -113,7 +113,7 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-      # See langfuse-web healthcheck: probe quickly during startup.
+      # See evalsight-web healthcheck: probe quickly during startup.
       start_period: 60s
       start_interval: 2s
 
@@ -125,8 +125,8 @@ services:
       CLICKHOUSE_USER: ${CLICKHOUSE_USER:-clickhouse}
       CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:-clickhouse}
     volumes:
-      - langfuse_clickhouse_data:/var/lib/clickhouse
-      - langfuse_clickhouse_logs:/var/log/clickhouse-server
+      - evalsight_clickhouse_data:/var/lib/clickhouse
+      - evalsight_clickhouse_logs:/var/log/clickhouse-server
     ports:
       - "8123:8123"
       - "9000:9000"
@@ -193,9 +193,9 @@ services:
 volumes:
   langfuse_postgres_data:
     driver: local
-  langfuse_clickhouse_data:
+  evalsight_clickhouse_data:
     driver: local
-  langfuse_clickhouse_logs:
+  evalsight_clickhouse_logs:
     driver: local
   langfuse_minio_data:
     driver: local

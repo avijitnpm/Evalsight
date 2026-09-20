@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import type { EvalTemplateType } from "@langfuse/shared";
+import type { EvalTemplateType } from "@evalsight/shared";
 
 import {
   Dialog,

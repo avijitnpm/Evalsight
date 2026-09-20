@@ -5,7 +5,7 @@ import {
   QueueJobs,
   QueueName,
   TraceUpsertQueue,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { WorkerManager } from "../queues/workerManager";
 
 describe.sequential("handle redis events", () => {

@@ -5,13 +5,13 @@ import {
   createScoresCh,
   createOrgProjectAndApiKey,
   transformBooleanValueForFilter,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,
 } from "@/src/__tests__/test-utils";
-import { GetScoresResponseV3 } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { GetScoresResponseV3 } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { v4 } from "uuid";
 
 describe("/api/public/v3/scores API Endpoint", () => {

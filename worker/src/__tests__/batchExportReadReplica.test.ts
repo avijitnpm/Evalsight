@@ -39,8 +39,8 @@ const {
   createTraceScore,
   createTracesCh,
   queryClickhouse,
-} = await import("@langfuse/shared/src/server");
-const { BatchExportTableName } = await import("@langfuse/shared");
+} = await import("@evalsight/shared/src/server");
+const { BatchExportTableName } = await import("@evalsight/shared");
 const { getDatabaseReadStreamPaginated } =
   await import("../features/database-read-stream/getDatabaseReadStream");
 const { getObservationStream } =

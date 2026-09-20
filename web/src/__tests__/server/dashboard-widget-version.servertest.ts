@@ -2,17 +2,17 @@ import { v4 as uuidv4 } from "uuid";
 import {
   createOrgProjectAndApiKey,
   DashboardService,
-} from "@langfuse/shared/src/server";
-import { DashboardWidgetViews, prisma } from "@langfuse/shared/src/db";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { DashboardWidgetViews, prisma } from "@evalsight/shared/src/db";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import {
   LANGFUSE_HOME_DASHBOARD_DEFINITION,
   LANGFUSE_HOME_DASHBOARD_ID,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import type { Session } from "next-auth";
-import { requiresV2 } from "@langfuse/shared/query";
+import { requiresV2 } from "@evalsight/shared/query";
 import {
   mapLegacyUiTableFilterToView,
   mapWidgetUiTableFilterToView,

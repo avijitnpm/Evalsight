@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 
 import { GatewayModelCatalogService } from "../models/gatewayModelCatalogService";
 import { GatewayProviderRepository } from "./gatewayProviderRepository";

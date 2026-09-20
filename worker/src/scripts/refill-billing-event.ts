@@ -3,9 +3,9 @@
 import {
   QueueJobs,
   CloudUsageMeteringQueue,
-} from "@langfuse/shared/src/server";
-import { logger } from "@langfuse/shared/src/server";
-import { redis } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
+import { redis } from "@evalsight/shared/src/server";
 
 const main = async () => {
   // Create queue connection

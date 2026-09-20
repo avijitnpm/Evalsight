@@ -1,5 +1,5 @@
-import type { FilterState } from "@langfuse/shared";
-import { stringFilterToPrisma } from "@langfuse/shared/src/server";
+import type { FilterState } from "@evalsight/shared";
+import { stringFilterToPrisma } from "@evalsight/shared/src/server";
 
 type StringFilter = Extract<FilterState[number], { type: "string" }>;
 type StringOptionsFilter = Extract<

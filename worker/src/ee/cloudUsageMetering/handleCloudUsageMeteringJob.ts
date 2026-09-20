@@ -1,5 +1,5 @@
-import { getBillingProvider, parseDbOrg, Prisma } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { getBillingProvider, parseDbOrg, Prisma } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import Stripe from "stripe";
 import { env } from "../../env";
 import {
@@ -9,7 +9,7 @@ import {
   getScoreCountsByProjectInCreationInterval,
   getTraceCountsByProjectInCreationInterval,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   cloudUsageMeteringDbCronJobName,
   CloudUsageMeteringDbCronJobStates,
@@ -18,7 +18,7 @@ import {
   QueueJobs,
   recordIncrement,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { Job } from "bullmq";
 import { backOff } from "exponential-backoff";
 

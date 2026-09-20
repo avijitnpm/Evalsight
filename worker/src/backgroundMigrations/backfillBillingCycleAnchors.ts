@@ -1,8 +1,8 @@
 import { IBackgroundMigration } from "./IBackgroundMigration";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { parseArgs } from "node:util";
-import { prisma } from "@langfuse/shared/src/db";
-import { parseDbOrg } from "@langfuse/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { parseDbOrg } from "@evalsight/shared";
 import Stripe from "stripe";
 import { env } from "../env";
 

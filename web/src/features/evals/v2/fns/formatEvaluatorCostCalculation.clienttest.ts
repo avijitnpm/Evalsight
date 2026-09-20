@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 
 import { formatEvaluatorCostCalculation } from "./formatEvaluatorCostCalculation";
 

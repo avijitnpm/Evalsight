@@ -8,7 +8,7 @@ import {
   type CustomDialogTableAction,
 } from "@/src/features/table/types";
 import { TableActionDialog } from "@/src/features/table/components/TableActionDialog";
-import { type BatchExportTableName } from "@langfuse/shared";
+import { type BatchExportTableName } from "@evalsight/shared";
 import { numberFormatter } from "@/src/utils/numbers";
 import {
   Tooltip,

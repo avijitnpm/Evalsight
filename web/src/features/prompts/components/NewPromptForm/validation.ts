@@ -7,7 +7,7 @@ import {
   TextPromptContentSchema,
   COMMIT_MESSAGE_MAX_LENGTH,
   PromptType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const NewPromptBaseSchema = z.object({
   name: PromptNameSchema,

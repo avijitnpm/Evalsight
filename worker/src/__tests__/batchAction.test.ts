@@ -5,7 +5,7 @@ import {
   BatchActionStatus,
   EvalTargetObject,
   EvalTemplateType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { expect, describe, it } from "vitest";
 import { v4 as uuidv4 } from "uuid";
 import { handleBatchActionJob } from "../features/batchAction/handleBatchActionJob";
@@ -31,8 +31,8 @@ import {
   getQueuePrefix,
   redisQueueRetryOptions,
   TQueueJobTypes,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { Decimal } from "decimal.js";
 import waitForExpect from "wait-for-expect";
 import { Queue } from "bullmq";

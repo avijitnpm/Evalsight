@@ -20,7 +20,7 @@ import {
   TriggerEventSource,
   type ActionTypes,
   type ProjectNotificationEventType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /** Project notifications route to webhooks or Slack; GitHub dispatch is not wired for this event source. */
 const PROJECT_NOTIFICATION_ACTION_TYPES: ActionTypes[] = ["WEBHOOK", "SLACK"];

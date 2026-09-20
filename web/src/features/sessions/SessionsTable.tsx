@@ -35,7 +35,7 @@ import {
   ActionId,
   type TimeFilter,
   type ScoreAggregate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { transformFiltersForBackend } from "@/src/features/filters/lib/filter-transform";
 import { sortOptionValues } from "@/src/features/filters/lib/option-sort";
 import { useDetailPageLists } from "@/src/features/navigate-detail-pages/context";

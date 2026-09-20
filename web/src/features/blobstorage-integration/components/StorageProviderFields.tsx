@@ -12,7 +12,7 @@ import { Input } from "@/src/components/ui/input";
 import { PasswordInput } from "@/src/components/design-system/PasswordInput/PasswordInput";
 import { SelectInput } from "@/src/components/design-system/SelectInput/SelectInput";
 import { Switch } from "@/src/components/design-system/Switch/Switch";
-import { BlobStorageIntegrationType } from "@langfuse/shared";
+import { BlobStorageIntegrationType } from "@evalsight/shared";
 import { useLangfuseCloudRegion } from "@/src/features/organizations/hooks";
 import { type BlobStorageFormControl } from "@/src/features/blobstorage-integration/components/formValues";
 

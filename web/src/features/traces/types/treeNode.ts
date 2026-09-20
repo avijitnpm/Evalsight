@@ -8,7 +8,7 @@
 import {
   type ObservationLevelType,
   type ObservationType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type Decimal from "decimal.js";
 
 /**

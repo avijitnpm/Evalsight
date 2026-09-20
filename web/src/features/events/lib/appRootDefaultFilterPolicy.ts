@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 const URL_STATE_PARAMS = ["filter", "search", "searchType", "orderBy"];
 
 export const APP_ROOT_OBSERVATION_FILTER = {

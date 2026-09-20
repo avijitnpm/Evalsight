@@ -3,10 +3,10 @@ import {
   EvalTargetObject,
   EvalTemplateType,
   JobConfigState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ObservationEvalRule } from "../evaluation/observationEval";
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     batchAction: {
       update: vi.fn().mockResolvedValue(undefined),
@@ -19,7 +19,7 @@ vi.mock("../evaluation/observationEval", () => ({
   scheduleObservationEvals: vi.fn().mockResolvedValue(undefined),
 }));
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { scheduleObservationEvals } from "../evaluation/observationEval";
 import { processBatchedObservationEval } from "./processBatchedObservationEval";
 

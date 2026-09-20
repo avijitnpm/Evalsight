@@ -32,7 +32,7 @@ vi.mock("rate-limiter-flexible", () => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   ClickHouseClientManager: {
     getInstance: () => ({ closeAllConnections: vi.fn() }),
   },

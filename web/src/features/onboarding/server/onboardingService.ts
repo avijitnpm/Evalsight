@@ -3,18 +3,18 @@ import {
   type PrismaClient,
   Role,
   SurveyName,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import {
   resolveProjectRole,
   invalidateCachedOrgApiKeys,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import { auditLog } from "@/src/features/audit-logs/server";
 import {
   organizationRoleAccessRights,
   type OrganizationScope,
 } from "@/src/features/rbac";
-import { projectRoleAccessRights } from "@langfuse/shared";
+import { projectRoleAccessRights } from "@evalsight/shared";
 import { createProjectRoute } from "@/src/features/setup/setupRoutes";
 
 const DEFAULT_STARTER_PROJECT_NAME = "My Project";

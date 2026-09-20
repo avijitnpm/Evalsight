@@ -10,7 +10,7 @@ import {
   type V4ExperimentPostUsageBlob,
   type V4LegacyApiUsageBlob,
   type V4LegacyApiUsageRow,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * Redis caching for the v4 transition usage checks.

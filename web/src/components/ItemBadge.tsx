@@ -23,7 +23,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { cva } from "class-variance-authority";
-import { type ObservationType } from "@langfuse/shared";
+import { type ObservationType } from "@evalsight/shared";
 import { cn } from "@/src/utils/tailwind";
 
 export type LangfuseItemType =

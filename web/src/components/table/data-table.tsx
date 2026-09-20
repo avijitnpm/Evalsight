@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable @repo/no-style-props */
 "use client";
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 import React, {
   useState,
   useMemo,

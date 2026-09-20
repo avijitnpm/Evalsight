@@ -34,7 +34,7 @@ vi.mock("@/src/components/ui/LangfuseMediaView", () => ({
   ),
 }));
 
-import { ChatMlArraySchema } from "@langfuse/shared";
+import { ChatMlArraySchema } from "@evalsight/shared";
 
 import { ChatMessage } from "./ChatMessage";
 import { type ChatMlMessage } from "../../../fns/chatMessageUtils";

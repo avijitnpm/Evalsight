@@ -13,7 +13,7 @@ import {
   OtelIngestionQueue,
   QueueName,
   TraceUpsertQueue,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { type z } from "zod";
 
 const getQueues = () => {

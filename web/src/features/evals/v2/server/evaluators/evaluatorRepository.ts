@@ -4,7 +4,7 @@ import {
   Prisma,
   type PrismaClient,
   type EvaluatorBlockReason,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import type {
   CreateEvaluatorInput,
   EvaluatorDefinitionForPersistence,
@@ -17,13 +17,13 @@ import {
   eventsEvalFilterColumns,
   validateEvaluatorFiltersForTarget,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   compilePrismaFilters,
   stringFilterToPrisma,
   stringOptionsFilterToPrisma,
   type PrismaFilterColumnHandlers,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { creatorOptionsWhere, creatorWhere } from "../creatorFilterPrisma";
 
 type PrismaTransaction = Prisma.TransactionClient;

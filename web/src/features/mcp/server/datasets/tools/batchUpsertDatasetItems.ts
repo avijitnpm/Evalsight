@@ -1,6 +1,6 @@
 import { createDatasetItemForApi } from "@/src/features/datasets/server";
 import { PostDatasetItemsV1Response } from "@/src/features/public-api/server";
-import { buildDatasetItemUrl } from "@langfuse/shared/src/server";
+import { buildDatasetItemUrl } from "@evalsight/shared/src/server";
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { BatchUpsertDatasetItemsMcpInput } from "../schema";

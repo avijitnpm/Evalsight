@@ -1,5 +1,5 @@
 import startCase from "lodash/startCase";
-import { viewDeclarations } from "@langfuse/shared";
+import { viewDeclarations } from "@evalsight/shared";
 import { VIEW_BY_DATASET } from "@/src/features/scores-chart-view/constants/viewByDataset";
 import {
   type ScoreChartDataset,

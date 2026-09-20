@@ -2,7 +2,7 @@ import {
   type ModelConfig,
   type ModelParams,
   type UIModelParams,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export function getFinalModelParams(modelParams: UIModelParams): ModelParams {
   return Object.entries(modelParams)

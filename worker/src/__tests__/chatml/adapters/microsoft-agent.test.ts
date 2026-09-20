@@ -5,7 +5,7 @@ import {
   mapToChatMl,
   mapOutputToChatMl,
   type NormalizerContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Test helpers
 function normalizeInput(input: unknown, ctx: NormalizerContext = {}) {

@@ -52,7 +52,7 @@ vi.mock("@/src/features/public-api/server/apiAuth", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/db", async () => {
+vi.mock("@evalsight/shared/src/db", async () => {
   const { GatewayConnectionStatus, GatewayIngestionMode, GatewayProvider } =
     await vi.importActual<typeof PrismaClientModule>("@prisma/client");
   return {
@@ -67,7 +67,7 @@ vi.mock("@langfuse/shared/src/db", async () => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   redis: null,
   logger: {
     debug: mockLoggerDebug,

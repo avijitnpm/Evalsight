@@ -1,4 +1,4 @@
-import { deepParseJson } from "@langfuse/shared";
+import { deepParseJson } from "@evalsight/shared";
 
 const MAX_PAYLOAD_DEPTH = 6;
 

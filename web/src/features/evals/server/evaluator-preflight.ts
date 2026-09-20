@@ -2,13 +2,13 @@ import {
   compilePersistedEvalOutputDefinition,
   EvalTemplateType,
   PersistedEvalOutputDefinitionSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   DefaultEvalModelService,
   getClientInitiatedNonStreamingLlmTimeoutMs,
   getLLMErrorInfo,
   testModelCall,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export type EvaluatorPreflightDefinition = {
   name: string;

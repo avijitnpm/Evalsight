@@ -8,7 +8,7 @@ import {
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
   parseInAppAgentInterruptEvent,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import { createInAppAgentMessageId } from "../ids";
 import { BackgroundExecutionConnectionError } from "./backgroundExecutionErrors";
 import {

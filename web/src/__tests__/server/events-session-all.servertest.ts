@@ -18,7 +18,7 @@ vi.mock(
 
 import { randomUUID } from "crypto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import type { Session } from "next-auth";
 
 import { eventsRouter } from "@/src/features/events/server/eventsRouter";

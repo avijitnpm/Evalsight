@@ -6,7 +6,7 @@ import {
   HoverCardTrigger,
 } from "@/src/components/ui/hover-card";
 import { cn } from "@/src/utils/tailwind";
-import { type LastUserScore, type ScoreDomain } from "@langfuse/shared";
+import { type LastUserScore, type ScoreDomain } from "@evalsight/shared";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 import { scoreLevelFromScore } from "@/src/components/score-tag";
 import { ScoreBadge } from "@/src/components/ScoreBadge/ScoreBadge";

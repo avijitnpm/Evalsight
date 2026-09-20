@@ -11,7 +11,7 @@ import { Button, type ButtonProps } from "@/src/components/ui/button";
 import { LockIcon, TrashIcon } from "lucide-react";
 import { IconOnlyButton } from "@/src/components/IconOnlyButton";
 import { useHasProjectAccess } from "@/src/features/rbac/utils/checkProjectAccess";
-import { type ProjectScope } from "@langfuse/shared";
+import { type ProjectScope } from "@evalsight/shared";
 import { api } from "@/src/utils/api";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics/usePostHogClientCapture";
 import { showSuccessToast } from "@/src/features/notifications/showSuccessToast";

@@ -6,18 +6,18 @@ import {
   ScoreDataTypeEnum,
   ScoreSourceEnum,
   TEXT_SCORE_MAX_LENGTH,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   convertDateToClickhouseDateTime,
   upsertScore,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import {
   AgUiContextSchema,
   getInAppAgentInstrumentationObservationId,
   getInAppAgentInstrumentationTraceId,
   IN_APP_AGENT_PRODUCT_ENVIRONMENT,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import { InAppAgentMessageFeedbackValueSchema } from "../schema";
 import {
   assertInAppAgentAvailable,
@@ -32,7 +32,7 @@ import {
   getConversationMessages,
   getOwnedConversationOrThrow,
   serializeConversation,
-} from "@langfuse/shared/in-app-agent/server/persistence";
+} from "@evalsight/shared/in-app-agent/server/persistence";
 import {
   assertInAppAgentRateLimit,
   getInAppAgentApiAccessScope,

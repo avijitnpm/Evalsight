@@ -9,8 +9,8 @@ vi.hoisted(() => {
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { entitlementAccess } from "@/src/features/entitlements/constants/entitlements";
-import { prisma, type Role } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { prisma, type Role } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import { v4 } from "uuid";
 import {
@@ -18,7 +18,7 @@ import {
   MonitorSeveritySchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 type RoleName = keyof typeof Role;
 

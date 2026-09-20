@@ -4,7 +4,7 @@ import type {
   ScoreMetricSpec,
 } from "@/src/features/experiments/types/charts";
 import type { WidgetDimensionConfig } from "@/src/features/widgets";
-import type { FilterCondition } from "@langfuse/shared";
+import type { FilterCondition } from "@evalsight/shared";
 
 // Base chart IDs
 export const BASE_CHART_IDS = {

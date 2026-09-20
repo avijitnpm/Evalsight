@@ -8,7 +8,7 @@ const mocks = vi.hoisted(() => ({
   emitV4LegacyApiUsageFreshnessMetrics: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   QueueName: {
     TraceDelete: "trace-delete",
   },

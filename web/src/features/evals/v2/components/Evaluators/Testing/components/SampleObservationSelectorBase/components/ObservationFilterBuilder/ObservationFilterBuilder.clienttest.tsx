@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import type { ColumnDefinition, FilterState } from "@langfuse/shared";
+import type { ColumnDefinition, FilterState } from "@evalsight/shared";
 
 import { ObservationFilterBuilder } from "./ObservationFilterBuilder";
 

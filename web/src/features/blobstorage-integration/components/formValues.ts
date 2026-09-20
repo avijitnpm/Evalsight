@@ -8,7 +8,7 @@ import {
   type BlobStorageIntegration,
   type ObservationFieldGroupFull,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type {
   blobStorageIntegrationFormSchema,
   BlobStorageIntegrationFormSchema,

@@ -1,7 +1,7 @@
 import Header from "@/src/components/layouts/header";
 import { Alert } from "@/src/components/design-system/Alert/Alert";
 import { Card } from "@/src/components/ui/card";
-import { BlobStorageExportMode } from "@langfuse/shared";
+import { BlobStorageExportMode } from "@evalsight/shared";
 import { type RouterOutputs } from "@/src/utils/api";
 
 type BlobStorageIntegrationConfig = NonNullable<

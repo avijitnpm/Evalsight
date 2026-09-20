@@ -9,9 +9,9 @@ import {
   ForbiddenError,
   JobConfigState,
   LangfuseConflictError,
-} from "@langfuse/shared";
-import { prisma, Prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { LegacyEvalCompatibilityService } from "@/src/features/evals/server/legacyCompatibilityService";
 
 const organizationIds: string[] = [];

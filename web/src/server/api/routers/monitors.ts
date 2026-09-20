@@ -20,7 +20,7 @@ import {
   MonitorService,
   type SessionContext,
   UpdateMonitorSchema,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 
 /** monitorsProcedure protects monitor routes behind a v4Writes check. */
 const monitorsProcedure = protectedProjectProcedure.use(requireV4Writes);

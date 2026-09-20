@@ -1,4 +1,4 @@
-import type { ObservationVariableMapping } from "@langfuse/shared";
+import type { ObservationVariableMapping } from "@evalsight/shared";
 import {
   type ObservationForEval,
   type ObservationEvalAssignment,
@@ -13,7 +13,7 @@ import {
   InMemoryFilterService,
   LangfuseInternalTraceEnvironment,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   JobExecutionStatus,
   type FilterState,
@@ -22,7 +22,7 @@ import {
   coerceLegacyEmptyMetadataFilters,
   mapEventEvalFilterColumnIdToField,
   observationVariableMappingList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createW3CTraceId } from "../../utils";
 import { isInternalEvalEnvironment } from "../isEvalTargetEnvironmentAllowed";
 

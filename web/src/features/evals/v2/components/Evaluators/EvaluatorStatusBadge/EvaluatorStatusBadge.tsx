@@ -4,7 +4,7 @@ import { Circle } from "lucide-react";
 import {
   getEvaluatorBlockMetadata,
   type EvaluatorBlockReason,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { Badge } from "@/src/components/ui/badge";
 import {

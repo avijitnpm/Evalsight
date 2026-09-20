@@ -1,5 +1,5 @@
 // No test dependencies from shared
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   ObservationType: {
     SPAN: "SPAN",
     EVENT: "EVENT",

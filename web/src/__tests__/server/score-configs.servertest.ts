@@ -8,9 +8,9 @@ import {
   PostScoreConfigResponse,
   PutScoreConfigResponse,
 } from "@/src/features/public-api/types/score-configs";
-import { ScoreConfigDataType } from "@langfuse/shared";
-import { type ScoreConfig, prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { ScoreConfigDataType } from "@evalsight/shared";
+import { type ScoreConfig, prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 const configOne = [

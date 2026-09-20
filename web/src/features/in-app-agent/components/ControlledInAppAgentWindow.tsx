@@ -23,7 +23,7 @@ import {
 import {
   InAppAgentRunStatus,
   isUnsettledInAppAgentRunStatus,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 
 type ControlledInAppAgentWindowBaseProps = {
   isHeaderDragHandleEnabled?: boolean;

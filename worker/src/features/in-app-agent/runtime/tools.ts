@@ -4,8 +4,8 @@ import {
 } from "@mastra/core/schema";
 import { createTool, Tool } from "@mastra/core/tools";
 import type { InAppAgentSandbox } from "./sandbox";
-import { assertUnreachable } from "@langfuse/shared";
-import { getToolFailureMessage } from "@langfuse/shared/in-app-agent/server/toolErrors";
+import { assertUnreachable } from "@evalsight/shared";
+import { getToolFailureMessage } from "@evalsight/shared/in-app-agent/server/toolErrors";
 import {
   buildDashboardsPath,
   buildDashboardWidgetPath,
@@ -23,13 +23,13 @@ import {
   buildSessionsPath,
   buildTracePath,
   buildTracesPath,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import z from "zod";
 import {
   ObservationLevelDomain,
   TABLE_AGGREGATION_OPTIONS,
   TracingSearchType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   InAppAgentSandboxBashArgsSchema,
   InAppAgentSandboxEditArgsSchema,
@@ -37,13 +37,13 @@ import {
   InAppAgentSandboxWriteArgsSchema,
   IN_APP_AGENT_REDIRECT_TOOL_NAME,
   IN_APP_AGENT_SILENT_MCP_OUTPUT_TYPE,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   isSilentInAppAgentMcpToolOutput,
   toAiSdkToolModelOutput,
   type CompletedInAppAgentMcpToolCall,
   type SilentInAppAgentMcpToolOutput,
-} from "@langfuse/shared/in-app-agent/server/toolResults";
+} from "@evalsight/shared/in-app-agent/server/toolResults";
 export function createSandboxTools(sandbox: InAppAgentSandbox) {
   return {
     read: createTool({

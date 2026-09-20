@@ -6,9 +6,9 @@
  */
 
 import { randomUUID } from "crypto";
-import { prisma, type Role } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
-import { createAndAddApiKeysToDb } from "@langfuse/shared/src/server/auth/apiKeys";
+import { prisma, type Role } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
+import { createAndAddApiKeysToDb } from "@evalsight/shared/src/server/auth/apiKeys";
 import type { ServerContext } from "@/src/features/mcp/types";
 
 /**

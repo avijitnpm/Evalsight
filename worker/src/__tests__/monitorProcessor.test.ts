@@ -5,8 +5,8 @@ import {
   ClickHouseResourceError,
   createOrgProjectAndApiKey,
   logger,
-} from "@langfuse/shared/src/server";
-import { InvalidRequestError } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { InvalidRequestError } from "@evalsight/shared";
 import {
   MonitorProcessor,
   type MonitorPublisher,
@@ -14,14 +14,14 @@ import {
   type MonitorQueueEvent,
   type MonitorQueueEventInput,
   type GetTriggerConfigurations,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 import {
   MonitorNoDataModeSchema,
   MonitorSeveritySchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/monitors";
+import { prisma } from "@evalsight/shared/src/db";
 import type { Prisma, PrismaClient } from "@prisma/client";
 
 type MonitorStatus = "ACTIVE" | "PAUSED" | "ERROR_BAD_QUERY";

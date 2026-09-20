@@ -1,7 +1,7 @@
 // @vitest-environment node
 
 import { describe, expect, it } from "vitest";
-import { HOME_DASHBOARD_PRESET_IDS } from "@langfuse/shared";
+import { HOME_DASHBOARD_PRESET_IDS } from "@evalsight/shared";
 import { getSuggestedHomePresetIds } from "@/src/features/dashboard/components/home-preset-registry";
 
 describe("Add Widget home-card suggestions", () => {

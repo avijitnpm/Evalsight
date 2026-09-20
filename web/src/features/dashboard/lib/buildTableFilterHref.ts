@@ -2,8 +2,8 @@ import {
   type FilterState,
   encodeFiltersGeneric,
   MAX_URL_FILTER_QUERY_LENGTH,
-} from "@langfuse/shared";
-import { type views } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { type views } from "@evalsight/shared/query";
 import { type z } from "zod";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import {

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { LLMJSONSchema } from "@langfuse/shared";
+import { LLMJSONSchema } from "@evalsight/shared";
 
 export const LLMSchemaNameSchema = z
   .string()

@@ -5,13 +5,13 @@ import {
   EvalTemplateType,
   PersistedEvalOutputDefinitionSchema,
   ZodModelConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   CODE_EVAL_SOURCE_MAX_BYTES,
   DefaultEvalModelService,
   getClientInitiatedNonStreamingLlmTimeoutMs,
   testModelCall,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { assertUnreachable } from "@/src/utils/types";
 import {

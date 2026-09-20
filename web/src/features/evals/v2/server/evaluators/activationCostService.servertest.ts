@@ -1,6 +1,6 @@
-import { EvalTemplateType } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import { EvalTemplateType } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
@@ -15,7 +15,7 @@ vi.mock("./evaluatorRepository", () => ({
   findEvaluatorsByIds: mocks.findEvaluatorsByIds,
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<typeof SharedServer>()),
   getObservationsCountFromEventsTable:
     mocks.getObservationsCountFromEventsTable,

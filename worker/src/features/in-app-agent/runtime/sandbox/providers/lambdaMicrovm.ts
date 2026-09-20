@@ -11,7 +11,7 @@ import {
   TerminateMicrovmCommand,
   type RunMicrovmCommandInput,
 } from "@aws-sdk/client-lambda-microvms";
-import { logger, recordIncrement } from "@langfuse/shared/src/server";
+import { logger, recordIncrement } from "@evalsight/shared/src/server";
 import { z } from "zod";
 
 import type {

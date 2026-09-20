@@ -6,7 +6,7 @@ import { type RouterOutputs, api } from "@/src/utils/api";
 import Link from "next/link";
 import React from "react";
 import { ItemBadge } from "@/src/components/ItemBadge";
-import { deepParseJson, type FilterState } from "@langfuse/shared";
+import { deepParseJson, type FilterState } from "@evalsight/shared";
 import { SessionObservationIO } from "@/src/features/sessions/SessionObservationIO";
 import { FilterX } from "lucide-react";
 import { SESSION_DETAIL_VIEW_TRIGGER_ID } from "@/src/features/sessions/session-detail-presets";

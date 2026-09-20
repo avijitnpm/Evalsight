@@ -4,13 +4,13 @@ import {
   createOrgProjectAndApiKey,
   getDeletedProjectWithMedia,
   getS3MediaStorageClient,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { BatchProjectMediaCleaner } from "../features/batch-project-media-cleaner";
 
 // Mock S3 storage client and project selection query
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     getS3MediaStorageClient: vi.fn(),

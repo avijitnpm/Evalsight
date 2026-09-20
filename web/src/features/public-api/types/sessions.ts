@@ -3,8 +3,8 @@ import {
   deprecationResponseZod,
   paginationMetaResponseZod,
   publicApiPaginationZod,
-} from "@langfuse/shared";
-import { stringDateTime } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { stringDateTime } from "@evalsight/shared/src/server";
 
 import { z } from "zod";
 

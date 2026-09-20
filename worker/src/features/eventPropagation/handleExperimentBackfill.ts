@@ -8,7 +8,7 @@ import {
   recordGauge,
   UNKNOWN_INGESTION_SDK_VALUE,
   type EventRecordInsertType,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { ClickhouseWriter, TableName } from "../../services/ClickhouseWriter";
 import { chunk } from "lodash";

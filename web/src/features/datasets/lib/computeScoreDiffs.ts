@@ -1,4 +1,4 @@
-import { type ScoreAggregate } from "@langfuse/shared";
+import { type ScoreAggregate } from "@evalsight/shared";
 import { type BaselineDiff, calculateScoreDiff } from "./calculateBaselineDiff";
 
 /**

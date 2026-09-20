@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 import type { FieldRegistry } from "@/src/features/search-bar";
 import type { AbsoluteTimeRange } from "@/src/utils/date-range-utils";

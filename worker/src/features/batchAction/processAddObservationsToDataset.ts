@@ -1,13 +1,13 @@
 /* eslint-disable no-nested-ternary */
-import { logger, traceException } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
-import { createManyDatasetItems } from "@langfuse/shared/src/server";
+import { logger, traceException } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { createManyDatasetItems } from "@evalsight/shared/src/server";
 import {
   applyFullMapping,
   BatchActionStatus,
   type ObservationAddToDatasetConfig,
   type MappingError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Chunk size for batch processing. Smaller than the default 1000 because:
 // 1. Each observation requires JSON path evaluation and mapping transformation

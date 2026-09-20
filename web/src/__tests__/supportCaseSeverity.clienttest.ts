@@ -2,7 +2,7 @@
 
 // pylonClient imports the shared server logger at module load; stub it so this
 // stays a lightweight client-side unit test of the pure mapping functions.
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   logger: { error: vi.fn(), warn: vi.fn(), info: vi.fn() },
 }));
 

@@ -1,5 +1,5 @@
 import { generateJson, type JsonSchema } from "json-schema-faker";
-import type { Prisma } from "@langfuse/shared";
+import type { Prisma } from "@evalsight/shared";
 
 /**
  * Generate an example object from a JSON Schema using json-schema-faker

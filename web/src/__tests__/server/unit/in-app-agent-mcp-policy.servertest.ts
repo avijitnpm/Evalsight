@@ -3,7 +3,7 @@ import { describe, expect, expectTypeOf, it } from "vitest";
 import {
   IN_APP_AGENT_LANGFUSE_MCP_TOOL_POLICIES,
   type InAppAgentLangfuseMcpToolName,
-} from "@langfuse/shared/in-app-agent/server/mcpPolicy";
+} from "@evalsight/shared/in-app-agent/server/mcpPolicy";
 import {
   bootstrapMcpFeatures,
   type McpToolName,

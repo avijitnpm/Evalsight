@@ -1,4 +1,4 @@
-import { prisma, Role } from "@langfuse/shared/src/db";
+import { prisma, Role } from "@evalsight/shared/src/db";
 import {
   type CreatePromptSchema,
   type GetPromptByNameSchema,
@@ -9,7 +9,7 @@ import {
   LangfuseConflictError,
   LangfuseNotFoundError,
   hasProjectAccessByRole,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { z } from "zod";
 
 import { auditLog } from "@/src/features/audit-logs/server";

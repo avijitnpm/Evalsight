@@ -2,7 +2,7 @@ import {
   generateDailyMetrics as _generateDailyMetrics,
   getDailyMetricsCount as _getDailyMetricsCount,
   convertApiProvidedFilterToClickhouseFilter,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 type DailyMetricsQueryProps = {
   page: number;

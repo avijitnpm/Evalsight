@@ -1,7 +1,7 @@
-import { logger, PromptService, redis } from "@langfuse/shared/src/server";
+import { logger, PromptService, redis } from "@evalsight/shared/src/server";
 import { removeLabelsFromPreviousPromptVersions } from "@/src/features/prompts/server/utils/updatePromptLabels";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
-import { prisma, Prisma } from "@langfuse/shared/src/db";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
 import { promptChangeEventSourcing } from "@/src/features/prompts/server/promptChangeEventSourcing";
 
 export type UpdatePromptParams = {

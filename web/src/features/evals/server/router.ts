@@ -28,7 +28,7 @@ import {
   EvalTemplateType,
   type EvaluatorExecutionStatusCount,
   type EvalTemplateSourceCodeLanguage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getQueue,
   getAvgCostByEvaluatorIds,
@@ -42,7 +42,7 @@ import {
   QueueJobs,
   tableColumnsToSqlFilterAndPrefix,
   invalidateProjectEvalConfigCaches,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { EvaluatorStatus } from "../types";
 import { assertUnreachable, isNotNullOrUndefined } from "@/src/utils/types";

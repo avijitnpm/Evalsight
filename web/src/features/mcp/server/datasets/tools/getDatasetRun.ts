@@ -1,7 +1,7 @@
 import { GetDatasetRunV1Response } from "@/src/features/public-api/server";
 import { getDatasetRunByIdForApi } from "@/src/features/datasets/server";
 import { defineTool } from "../../../core/define-tool";
-import { buildDatasetRunUrl } from "@langfuse/shared/src/server";
+import { buildDatasetRunUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { rejectDatasetRunToolsInEventsOnlyMode } from "../events-only-guard";
 import { GetDatasetRunMcpInput } from "../schema";

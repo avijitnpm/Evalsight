@@ -1,5 +1,5 @@
 import { v4 } from "uuid";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createObservation,
   createObservationsCh,
@@ -18,8 +18,8 @@ import {
   type ObservationRecordInsertType,
   type EventRecordInsertType,
   createTrace,
-} from "@langfuse/shared/src/server";
-import { type FilterState } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { type FilterState } from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 
 const isEventsPath = env.LANGFUSE_MIGRATION_V4_ALLOW_PREVIEW_OPT_IN === "true";

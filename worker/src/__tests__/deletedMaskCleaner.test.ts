@@ -13,7 +13,7 @@ import {
   createEventsCh,
   queryClickhouse,
   redis,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../env";
 import {
   DELETED_MASK_CLEANER_LOCK_KEY,

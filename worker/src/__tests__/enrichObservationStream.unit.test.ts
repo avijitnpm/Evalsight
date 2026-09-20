@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from "vitest";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const mod =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...mod,
     createModelCache: vi.fn().mockReturnValue({
@@ -18,7 +18,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
 });
 
 import { enrichObservationStream } from "../features/blobstorage/handleBlobStorageIntegrationProjectJob";
-import type { ObservationFieldGroupFull } from "@langfuse/shared";
+import type { ObservationFieldGroupFull } from "@evalsight/shared";
 
 async function* rowStream(
   rows: Record<string, unknown>[],

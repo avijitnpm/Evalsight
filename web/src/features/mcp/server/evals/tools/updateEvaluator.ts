@@ -1,6 +1,6 @@
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
-import { buildEvaluatorUrl } from "@langfuse/shared/src/server";
+import { buildEvaluatorUrl } from "@evalsight/shared/src/server";
 import { createMcpEvaluatorService } from "../evaluator-service";
 import {
   McpUpdateEvaluatorInput,

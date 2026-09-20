@@ -59,7 +59,7 @@ import { useEvaluatorSetupSample } from "@/src/features/evals/v2/hooks/useEvalua
 import { useCopyToClipboard } from "@/src/hooks/useCopyToClipboard";
 import type { EvaluatorSetupStore } from "@/src/features/evals/v2/store/evaluatorSetupStore/evaluatorSetupStore";
 import { cn } from "@/src/utils/tailwind";
-import type { EvaluatorPromptMessage } from "@langfuse/shared";
+import type { EvaluatorPromptMessage } from "@evalsight/shared";
 
 const ROLES: Array<{ value: EvaluatorPromptMessage["role"]; label: string }> = [
   { value: "system", label: "System" },

@@ -5,7 +5,7 @@ import {
   TriggerEventSource,
   type AutomationDomain,
   type ProjectNotificationEventType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /** ProjectNotificationChannelsMode is the section's view: the channel list or the create/edit form. */
 export type ProjectNotificationChannelsMode = "list" | "create" | "edit";

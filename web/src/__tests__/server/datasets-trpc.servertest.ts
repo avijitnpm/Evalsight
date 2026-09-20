@@ -1,7 +1,7 @@
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma, type Role } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { prisma, type Role } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import { v4 } from "uuid";
 import { afterAll, afterEach, describe, expect, it, vi } from "vitest";

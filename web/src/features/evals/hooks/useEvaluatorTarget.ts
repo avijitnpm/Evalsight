@@ -6,7 +6,7 @@ import {
   availableDatasetEvalVariables,
   eventTargetEvalVariableColumns,
   experimentTargetEvalVariableColumns,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   isTraceTarget,
   isEventTarget,

@@ -15,7 +15,7 @@ const { mockFindUnique, mockQueryRaw, mockInstrumentAsync } = vi.hoisted(
   }),
 );
 
-vi.mock("@langfuse/shared/src/db", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/db", async (importOriginal) => ({
   ...(await importOriginal<Record<string, unknown>>()),
   prisma: {
     user: {
@@ -25,7 +25,7 @@ vi.mock("@langfuse/shared/src/db", async (importOriginal) => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<Record<string, unknown>>()),
   instrumentAsync: mockInstrumentAsync,
 }));

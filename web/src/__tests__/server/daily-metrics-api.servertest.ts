@@ -3,7 +3,7 @@ import {
   createTrace,
   createObservationsCh,
   createTracesCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { makeZodVerifiedAPICall } from "@/src/__tests__/test-utils";
 import { randomUUID } from "crypto";
 import { GetMetricsDailyV1Response } from "@/src/features/public-api/types/metrics";

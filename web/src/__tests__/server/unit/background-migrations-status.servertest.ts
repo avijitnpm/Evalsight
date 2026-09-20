@@ -4,7 +4,7 @@ import type { Session } from "next-auth";
 import { env } from "@/src/env.mjs";
 import { backgroundMigrationsRouter } from "@/src/features/background-migrations/server/background-migrations-router";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { type BackgroundMigration } from "@langfuse/shared";
+import { type BackgroundMigration } from "@evalsight/shared";
 
 // Real gate declared in the worker env (worker/src/env.ts); the status endpoint
 // mirrors the worker's gate discovery, which only considers env vars with the

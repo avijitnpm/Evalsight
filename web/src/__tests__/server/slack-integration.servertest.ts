@@ -1,15 +1,15 @@
 import type { Mock } from "vitest";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import type { Session } from "next-auth";
-import { encrypt } from "@langfuse/shared/encryption";
+import { encrypt } from "@evalsight/shared/encryption";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { appRouter } from "@/src/server/api/root";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 
 // Mock SlackService
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     SlackService: {
@@ -81,7 +81,7 @@ const prepare = async () => {
 describe("Slack Integration", () => {
   beforeAll(async () => {
     // Import mocked SlackService
-    const { SlackService } = await import("@langfuse/shared/src/server");
+    const { SlackService } = await import("@evalsight/shared/src/server");
 
     // Create mock service instance
     mockSlackService = {
@@ -573,7 +573,7 @@ describe("Slack Integration", () => {
       expect(rawIntegration?.botToken).not.toContain("xoxb-secret-bot-token");
 
       // Verify the encrypted token can be decrypted back to original
-      const { decrypt } = await import("@langfuse/shared/encryption");
+      const { decrypt } = await import("@evalsight/shared/encryption");
       const decryptedToken = decrypt(rawIntegration!.botToken);
       expect(decryptedToken).toBe(originalToken);
     });

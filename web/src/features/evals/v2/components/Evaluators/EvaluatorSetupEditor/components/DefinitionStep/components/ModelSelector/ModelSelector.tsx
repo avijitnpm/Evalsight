@@ -1,4 +1,4 @@
-import type { LLMAdapter } from "@langfuse/shared";
+import type { LLMAdapter } from "@evalsight/shared";
 import { useState } from "react";
 import { useStore } from "zustand";
 import { useShallow } from "zustand/react/shallow";

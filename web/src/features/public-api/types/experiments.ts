@@ -7,7 +7,7 @@ import {
   optionalCommaSeparatedStringArray,
   publicApiPaginationLimitZod,
   type EventsTableFilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 const EXPERIMENT_FIELD_GROUPS = ["core", "metadata", "scores"] as const;

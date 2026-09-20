@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { useEffect } from "react";
-import { type ScoreDomain, type Prisma } from "@langfuse/shared";
+import { type ScoreDomain, type Prisma } from "@evalsight/shared";
 import useIsFeatureEnabled from "@/src/features/feature-flags/hooks/useIsFeatureEnabled";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import useLocalStorage from "@/src/components/useLocalStorage";

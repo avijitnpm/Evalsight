@@ -66,8 +66,8 @@ import {
   MonitorWindowSchema,
   UpdateMonitorSchema,
   type UpdateMonitor,
-} from "@langfuse/shared/monitors";
-import { viewDeclarations, type FilterState } from "@langfuse/shared";
+} from "@evalsight/shared/monitors";
+import { viewDeclarations, type FilterState } from "@evalsight/shared";
 
 import TagManager from "@/src/features/tag/components/TagManager";
 

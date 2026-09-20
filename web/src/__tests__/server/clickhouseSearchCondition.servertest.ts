@@ -1,5 +1,5 @@
 import { env } from "@/src/env.mjs";
-import { InvalidRequestError, type TracingSearchType } from "@langfuse/shared";
+import { InvalidRequestError, type TracingSearchType } from "@evalsight/shared";
 import {
   clickhouseSearchCondition,
   createEvent,
@@ -7,7 +7,7 @@ import {
   eventSearchCondition,
   getObservationsWithModelDataFromEventsTable,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 
 const maybeEventsTable =

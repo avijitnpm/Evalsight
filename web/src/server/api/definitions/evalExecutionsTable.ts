@@ -1,7 +1,7 @@
 import {
   type ColumnDefinition,
   type JobExecutionStatus,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Client-safe mirror of the Prisma enum — see evalConfigsTable.ts.
 const JOB_EXECUTION_STATUSES = [

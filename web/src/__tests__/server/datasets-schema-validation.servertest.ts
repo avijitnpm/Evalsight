@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,
@@ -14,8 +14,8 @@ import {
   DatasetItemValidator,
   getDatasetItems,
   createDatasetItemFilterState,
-} from "@langfuse/shared/src/server";
-import { validateFieldAgainstSchema } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { validateFieldAgainstSchema } from "@evalsight/shared";
 
 process.env.LANGFUSE_DATASET_SERVICE_READ_FROM_VERSIONED_IMPLEMENTATION =
   "true";

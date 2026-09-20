@@ -30,7 +30,7 @@ vi.mock("@/src/ee/features/billing/utils/isCloudBilling", () => ({
 }));
 
 import { cloudBillingRouter } from "@/src/ee/features/billing/server/cloudBillingRouter";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 /** Metadata payloads passed to `logger.error`, where the labels land. */
 const loggedErrors = () =>

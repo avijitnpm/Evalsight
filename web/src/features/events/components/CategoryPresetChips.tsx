@@ -13,7 +13,7 @@ import {
   SystemTableViewPresetCategory,
   TableViewPresetTableName,
   type TableViewPresetState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Button } from "@/src/components/ui/button";
 import {
   Popover,

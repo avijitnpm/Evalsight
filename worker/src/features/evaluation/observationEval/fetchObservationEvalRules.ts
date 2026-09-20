@@ -4,13 +4,13 @@ import {
   coerceLegacyEmptyMetadataFilters,
   normalizeEvaluationRuleTarget,
   type FilterState,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   logger,
   hasNoEvalConfigsCache,
   setNoEvalConfigsCache,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { type ObservationEvalRule } from "./types";
 
 /**

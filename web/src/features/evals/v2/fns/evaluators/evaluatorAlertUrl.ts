@@ -1,4 +1,4 @@
-import { encodeFiltersGeneric } from "@langfuse/shared";
+import { encodeFiltersGeneric } from "@evalsight/shared";
 
 /** Builds an alerts-list URL, optionally filtered to one evaluator. */
 export function evaluatorAlertsListUrl(

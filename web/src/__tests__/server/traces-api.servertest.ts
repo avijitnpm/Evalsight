@@ -10,7 +10,7 @@ import {
   createObservationsCh,
   createTracesCh,
   createEventsCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,

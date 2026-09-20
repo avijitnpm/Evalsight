@@ -10,7 +10,7 @@ import {
   Prisma,
   CreateCommentData,
   DeleteCommentData,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
 import { TRPCError } from "@trpc/server";
 import { validateCommentReferenceObject } from "@/src/features/comments/validateCommentReferenceObject";
@@ -21,7 +21,7 @@ import {
   NotificationQueue,
   QueueJobs,
   getUserProjectRoles,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   extractUniqueMentionedUserIds,
   sanitizeMentions,

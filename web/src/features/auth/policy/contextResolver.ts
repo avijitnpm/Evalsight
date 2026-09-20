@@ -1,5 +1,5 @@
-import { type ApiKey } from "@langfuse/shared/src/db";
-import { CloudConfigSchema, type InternalServerError } from "@langfuse/shared";
+import { type ApiKey } from "@evalsight/shared/src/db";
+import { CloudConfigSchema, type InternalServerError } from "@evalsight/shared";
 
 import { apiKeyAccessRights } from "@/src/features/rbac/constants/apiKeyAccessRights";
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server";

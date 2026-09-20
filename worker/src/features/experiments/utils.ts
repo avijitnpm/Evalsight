@@ -13,7 +13,7 @@ import {
   PromptContent,
   PromptType,
   stringifyValue,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   logger,
   parsePromptToolConfig,
@@ -24,8 +24,8 @@ import {
   ExperimentMetadataSchema,
   LLMApiKeySchema,
   PromptContentSchema,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import z from "zod";
 import { UnrecoverableError } from "../../errors/UnrecoverableError";
 

@@ -3,7 +3,7 @@ import {
   Prisma,
   type PrismaClient,
   Role,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import {
   filterFeaturePreviewFlags,

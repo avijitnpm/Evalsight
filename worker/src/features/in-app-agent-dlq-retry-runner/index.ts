@@ -1,6 +1,6 @@
 import type { Job } from "bullmq";
-import { IN_APP_AGENT_HEARTBEAT_STALE_MS } from "@langfuse/shared/in-app-agent/server/tunables";
-import { getQueue, logger, QueueName } from "@langfuse/shared/src/server";
+import { IN_APP_AGENT_HEARTBEAT_STALE_MS } from "@evalsight/shared/in-app-agent/server/tunables";
+import { getQueue, logger, QueueName } from "@evalsight/shared/src/server";
 
 import { env } from "../../env";
 import { PeriodicExclusiveRunner } from "../../utils/PeriodicExclusiveRunner";

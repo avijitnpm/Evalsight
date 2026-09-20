@@ -1,5 +1,5 @@
-import { EvalTemplateSourceCodeLanguage } from "@langfuse/shared";
-import { env } from "@langfuse/shared/src/env";
+import { EvalTemplateSourceCodeLanguage } from "@evalsight/shared";
+import { env } from "@evalsight/shared/src/env";
 
 export type CodeEvalCapabilities = {
   enabled: boolean;

@@ -15,8 +15,8 @@ import {
   ScoreConfigNameSchema,
   validateDbScoreConfig,
   validateDbScoreConfigSafe,
-} from "@langfuse/shared";
-import { traceException } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { traceException } from "@evalsight/shared/src/server";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
 import { appendCategoryToExisting } from "@/src/features/scores/lib/annotationFormHelpers";
 

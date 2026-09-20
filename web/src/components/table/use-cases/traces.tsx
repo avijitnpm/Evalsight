@@ -52,7 +52,7 @@ import {
   type ScoreAggregate,
   type TracingSearchType,
   DEFAULT_SIDEBAR_IMPLICIT_ENVIRONMENT_CONFIG,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";
 import { EmptyValue } from "@/src/components/design-system/table/components/EmptyValue/EmptyValue";
 import { ConnectedIOTableCell } from "@/src/components/table/ConnectedIOTableCell";

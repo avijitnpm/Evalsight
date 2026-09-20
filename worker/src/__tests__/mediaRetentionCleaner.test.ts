@@ -6,14 +6,14 @@ import {
   findNextMediaRetentionProject,
   getS3MediaStorageClient,
   removeIngestionEventsFromS3AndDeleteClickhouseRefsForProject,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { MediaRetentionCleaner } from "../features/media-retention-cleaner";
 import { env } from "../env";
 
 // Mock S3 and blob storage functions
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     getS3MediaStorageClient: vi.fn(),

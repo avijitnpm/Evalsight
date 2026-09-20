@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { EvalTargetObject, EvalTemplateType } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { EvalTargetObject, EvalTemplateType } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,

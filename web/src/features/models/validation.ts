@@ -7,7 +7,7 @@ import {
   PricingTierInputSchema,
   tiersMissingConditions,
   validatePricingTiers,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const USAGE_TYPE_PATTERN = /^[a-zA-Z0-9_-]+$/;
 const UsageTypeSchema = z.string().regex(USAGE_TYPE_PATTERN);

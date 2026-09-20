@@ -3,7 +3,7 @@ import { createSocket } from "node:dgram";
 import { once } from "node:events";
 import { createRequire } from "node:module";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import { hello, initTelemetry } from "@langfuse/native";
+import { hello, initTelemetry } from "@evalsight/native";
 
 // The addon sends DogStatsD datagrams itself, so capture them on a throwaway
 // UDP socket instead of mocking anything on the Node side.
@@ -49,7 +49,7 @@ const waitUntil = async (condition: () => boolean, timeoutMs = 5_000) => {
   }
 };
 
-describe("@langfuse/native telemetry", () => {
+describe("@evalsight/native telemetry", () => {
   beforeAll(async () => {
     socket.bind(0, "127.0.0.1");
     await once(socket, "listening");
@@ -94,7 +94,7 @@ describe("@langfuse/native telemetry", () => {
     // A child process, because the log subscriber is installed once per
     // process and this one already has it configured for text output.
     const addonPath = createRequire(import.meta.url).resolve(
-      "@langfuse/native",
+      "@evalsight/native",
     );
     const script = [
       `const { initTelemetry, hello } = require(${JSON.stringify(addonPath)});`,

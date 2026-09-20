@@ -27,7 +27,7 @@ import {
   extractVariables,
   PRODUCTION_LABEL,
   PromptType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getPromptTabs,
   PROMPT_TABS,

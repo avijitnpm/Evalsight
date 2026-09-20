@@ -1,8 +1,8 @@
 import {
   createOrgProjectAndApiKey,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import waitForExpect from "wait-for-expect";
 import { randomBytes } from "crypto";
 import { afterAll } from "vitest";

@@ -4,7 +4,7 @@
 // part with real branching logic — is unit-testable without a live model. This
 // mirrors the search-bar feature's own lib/ (pure) vs I/O split.
 
-import { type FilterState, singleFilter } from "@langfuse/shared";
+import { type FilterState, singleFilter } from "@evalsight/shared";
 
 import {
   EVENTS_FIELD_REGISTRY,

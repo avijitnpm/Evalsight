@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { DashboardWidgetChartType } from "@langfuse/shared";
-import { metricAggregations } from "@langfuse/shared/query";
+import { DashboardWidgetChartType } from "@evalsight/shared";
+import { metricAggregations } from "@evalsight/shared/query";
 import { defineTool } from "@/src/features/mcp/core/define-tool";
 import { runMcpTool } from "@/src/features/mcp/core/run-mcp-tool";
 import {
@@ -10,7 +10,7 @@ import {
 import {
   buildDashboardUrl,
   buildDashboardWidgetUrl,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   GetUnstableDashboardWidgetsQuery,
   DashboardWidgetIdQuery,

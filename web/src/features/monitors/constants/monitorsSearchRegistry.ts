@@ -1,4 +1,4 @@
-import { ListMonitorFilterSchema } from "@langfuse/shared/monitors";
+import { ListMonitorFilterSchema } from "@evalsight/shared/monitors";
 import type { FilterConfig } from "@/src/features/filters";
 import { fieldRegistryFromColumns } from "@/src/features/search-bar/lib/fields";
 

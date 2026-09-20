@@ -7,7 +7,7 @@ import {
   classifyEvaluatorLlmError,
   logger,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { retryLLMRateLimitError } from "../features/utils";
 import { createExperimentJobClickhouse } from "../features/experiments/experimentServiceClickhouse";
 import { isUnrecoverableError } from "../errors/UnrecoverableError";

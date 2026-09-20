@@ -1,11 +1,11 @@
-import type { FilterCondition } from "@langfuse/shared";
+import type { FilterCondition } from "@evalsight/shared";
 import {
   createEvent,
   createEventsCh,
   createScoresCh,
   createTraceScore,
   getEventsStreamForEval,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import type { Readable } from "stream";
 import { describe, expect, it } from "vitest";

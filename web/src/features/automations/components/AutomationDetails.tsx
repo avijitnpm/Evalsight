@@ -10,7 +10,7 @@ import {
   JobConfigState,
   TriggerEventSource,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   TabsBar,
   TabsBarContent,

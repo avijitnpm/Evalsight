@@ -11,7 +11,7 @@ import {
   type CloudConfigRateLimit,
   type Plan,
   type ProjectScope,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   organizationScopes,
   type OrganizationScope,

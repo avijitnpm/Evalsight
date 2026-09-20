@@ -3,7 +3,7 @@ import { useEffect, useMemo } from "react";
 import {
   normalizeOrderByForTable,
   TableViewPresetTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { DataTable } from "@/src/components/table/data-table";
 import {
   DataTableControlsProvider,

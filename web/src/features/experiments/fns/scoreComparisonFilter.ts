@@ -1,4 +1,4 @@
-import { type AggregatedScoreData } from "@langfuse/shared";
+import { type AggregatedScoreData } from "@evalsight/shared";
 import {
   readOrderedScoreValue,
   type ScoreColumnDataType,

@@ -3,7 +3,7 @@ import {
   type ColumnDefinition,
   type JobConfigState,
   JobTimeScopeZod,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const evalConfigTargetOptions = Object.values(EvalTargetObject).map(
   (value) => ({

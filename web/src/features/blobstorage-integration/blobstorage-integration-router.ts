@@ -25,15 +25,15 @@ import {
   StorageServiceFactory,
   blobStorageEndpointConnectionValidationOptions,
   validateBlobStorageEndpoint,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
-import { decrypt } from "@langfuse/shared/encryption";
+import { decrypt } from "@evalsight/shared/encryption";
 import {
   AnalyticsIntegrationExportSource,
   BlobStorageIntegrationType,
   BlobStorageIntegrationFileType,
   InvalidRequestError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const getAuditLogErrorType = (error: unknown) =>
   error instanceof TRPCError

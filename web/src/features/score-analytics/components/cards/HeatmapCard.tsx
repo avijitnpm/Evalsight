@@ -14,7 +14,7 @@ import { getHeatmapCellColor } from "@/src/features/score-analytics/lib/color-sc
 import { type HeatmapCell } from "@/src/features/score-analytics/lib/heatmap-utils";
 import { useCallback } from "react";
 import { SamplingDetailsHoverCard } from "../SamplingDetailsHoverCard";
-import { type ScoreDataTypeType } from "@langfuse/shared";
+import { type ScoreDataTypeType } from "@evalsight/shared";
 import { Spinner } from "@/src/components/design-system/Spinner/Spinner";
 
 interface HeatmapTooltipContentProps {

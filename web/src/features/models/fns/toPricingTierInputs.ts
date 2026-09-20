@@ -1,4 +1,4 @@
-import { type PricingTierInput } from "@langfuse/shared";
+import { type PricingTierInput } from "@evalsight/shared";
 
 import { derivePriorities } from "@/src/features/models/fns/derivePriorities";
 import { parsePriceInput } from "@/src/features/models/fns/parsePriceInput";

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { BatchEvalSourceTable, EvalTemplateType } from "@langfuse/shared";
+import { BatchEvalSourceTable, EvalTemplateType } from "@evalsight/shared";
 import {
   getBatchEvalCostObservationCount,
   getCreateEvaluatorHref,

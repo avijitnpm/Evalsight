@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { z } from "zod";
 
 import { getProjectV4MigrationData } from "@/src/features/v4/server/v4TransitionService";

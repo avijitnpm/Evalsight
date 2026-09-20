@@ -1,7 +1,7 @@
 import crypto from "crypto";
 
 import { NextRequest } from "next/server";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
@@ -27,14 +27,14 @@ const mocks = vi.hoisted(() => ({
 
 vi.mock("@/src/env.mjs", () => ({ env: mocks.env }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     organization: { findFirst: mocks.findOrg, update: mocks.updateOrg },
     project: { findMany: mocks.findProjects },
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
 
   return {
@@ -64,7 +64,7 @@ import {
   chbWebhookHandler,
   verifyChbSignature,
 } from "@/src/ee/features/billing/server/chb/chbWebhookHandler";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 vi.spyOn(logger, "error").mockImplementation((() => {}) as never);
 vi.spyOn(logger, "warn").mockImplementation((() => {}) as never);

@@ -1,4 +1,4 @@
-import { singleFilterList } from "@langfuse/shared";
+import { singleFilterList } from "@evalsight/shared";
 import { z } from "zod";
 
 export type DatabaseRow = {

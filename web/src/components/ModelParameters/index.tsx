@@ -22,7 +22,7 @@ import {
   LLMAdapter,
   type supportedModels,
   type UIModelParams,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { InfoIcon, PlusIcon, Settings2 } from "lucide-react";
 import {
   Popover,

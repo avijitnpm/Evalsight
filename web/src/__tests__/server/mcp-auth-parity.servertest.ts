@@ -2,12 +2,12 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { createMocks } from "node-mocks-http";
 
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createAndAddApiKeysToDb,
   createBasicAuthHeader,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import mcpHandler from "@/src/pages/api/public/mcp";
 

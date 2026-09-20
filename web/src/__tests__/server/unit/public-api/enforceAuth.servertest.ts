@@ -1,7 +1,7 @@
 import { type NextApiRequest } from "next";
 import { describe, expect, it } from "vitest";
 
-import { ForbiddenError } from "@langfuse/shared";
+import { ForbiddenError } from "@evalsight/shared";
 
 import { __test } from "@/src/features/public-api/server/enforceAuth";
 import {

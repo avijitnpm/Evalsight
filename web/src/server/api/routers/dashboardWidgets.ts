@@ -8,9 +8,9 @@ import {
   singleFilterList,
   optionalPaginationZod,
   LangfuseConflictError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { throwIfNoProjectAccess } from "@/src/features/rbac/utils/checkProjectAccess";
-import { DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import {
   DashboardService,
   DimensionSchema,
@@ -18,8 +18,8 @@ import {
   ChartConfigSchema,
   dashboardWidgetViewToQueryView,
   queryViewToDashboardWidgetView,
-} from "@langfuse/shared/src/server";
-import { views } from "@langfuse/shared/query";
+} from "@evalsight/shared/src/server";
+import { views } from "@evalsight/shared/query";
 import { TRPCError } from "@trpc/server";
 
 const CreateDashboardWidgetInput = z.object({

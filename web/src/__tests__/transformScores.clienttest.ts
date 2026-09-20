@@ -5,7 +5,7 @@ import {
   type ScoreDomain,
   type ScoreAggregate,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 
 const mockConfigs: ScoreConfigDomain[] = [

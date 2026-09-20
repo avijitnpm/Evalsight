@@ -1,5 +1,5 @@
-import { InvalidRequestError, UnauthorizedError } from "@langfuse/shared";
-import { stringify } from "@langfuse/shared/src/server";
+import { InvalidRequestError, UnauthorizedError } from "@evalsight/shared";
+import { stringify } from "@evalsight/shared/src/server";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import {
   buildTraceExport,

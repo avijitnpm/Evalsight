@@ -10,7 +10,7 @@ import { useDatasetItemValidation } from "../hooks/useDatasetItemValidation";
 import type { DatasetSchema } from "../utils/datasetItemUtils";
 import { type Control, type FieldPath, useWatch } from "react-hook-form";
 import { FormField } from "@/src/components/ui/form";
-import { type DatasetItemMediaField } from "@langfuse/shared";
+import { type DatasetItemMediaField } from "@evalsight/shared";
 
 export type DatasetItemFormValues = {
   input: string;

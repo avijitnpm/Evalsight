@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 
 // Client-safe mirror of the Prisma enum. Vite/Storybook resolve shared from
 // source and cannot turn `export * from "@prisma/client"` into named ESM

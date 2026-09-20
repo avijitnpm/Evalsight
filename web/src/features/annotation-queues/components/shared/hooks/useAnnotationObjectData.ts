@@ -2,7 +2,7 @@ import { api } from "@/src/utils/api";
 import {
   type AnnotationQueueItem,
   AnnotationQueueObjectType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useEventsTraceData, useReadPath } from "@/src/features/events";
 
 export interface ObjectDataHook<TData> {

@@ -7,7 +7,7 @@ import {
   type SlackActionConfig,
   type ActionCreate,
   type ActionDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 // Define the form schema for Slack actions

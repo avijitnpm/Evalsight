@@ -2,8 +2,8 @@ import {
   getValidAggregationsForMeasureType,
   viewsV2,
   viewDeclarations,
-} from "@langfuse/shared/query";
-import { filterOperators } from "@langfuse/shared";
+} from "@evalsight/shared/query";
+import { filterOperators } from "@evalsight/shared";
 import { publicGranularities } from "@/src/features/public-api/server";
 import { z } from "zod";
 import { defineTool } from "../../../core/define-tool";

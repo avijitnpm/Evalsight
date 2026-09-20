@@ -1,5 +1,5 @@
 import type { Span } from "@opentelemetry/api";
-import { InvalidRequestError } from "@langfuse/shared";
+import { InvalidRequestError } from "@evalsight/shared";
 import { z } from "zod";
 import type { ServerContext } from "@/src/features/mcp/types";
 
@@ -18,7 +18,7 @@ const { addUserToSpanMock, fakeSpan, instrumentAsyncMock } = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal()),
   addUserToSpan: addUserToSpanMock,
   instrumentAsync: instrumentAsyncMock,

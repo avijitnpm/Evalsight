@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 import {
   SessionConversationTimeline,

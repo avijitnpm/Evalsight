@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,

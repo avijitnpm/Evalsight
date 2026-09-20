@@ -22,7 +22,7 @@ const restrictedImportPatterns = [
       "Only react-icons/si and react-icons/tb are allowed. Please use lucide-react for other icons.",
   },
   {
-    // Relative paths escaping web/ bypass @langfuse/shared's exports
+    // Relative paths escaping web/ bypass @evalsight/shared's exports
     // map (which points at dist/) and pull shared *source* into the
     // Next.js typecheck program, where web's next-auth augmentation
     // breaks it — this failed production deploys (PR #15031).
@@ -34,7 +34,7 @@ const restrictedImportPatterns = [
     // see blob-storage-integration-trpc.servertest.ts).
     regex: "^(\\.\\./)+(packages|ee|worker)/",
     message:
-      "Do not import other workspace packages via relative paths. Use the package entrypoints instead (e.g. @langfuse/shared/src/db, @langfuse/shared/src/server).",
+      "Do not import other workspace packages via relative paths. Use the package entrypoints instead (e.g. @evalsight/shared/src/db, @evalsight/shared/src/server).",
   },
 ];
 

@@ -20,7 +20,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/src/components/ui/popover";
-import { ScoreDataTypeEnum } from "@langfuse/shared";
+import { ScoreDataTypeEnum } from "@evalsight/shared";
 import { CategoryEditorPopover } from "./components/CategoryEditorPopover/CategoryEditorPopover";
 import {
   Tooltip,

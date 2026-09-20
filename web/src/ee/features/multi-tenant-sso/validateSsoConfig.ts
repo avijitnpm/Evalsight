@@ -4,8 +4,8 @@ import { z } from "zod";
 import {
   fetchWithSecureRedirects,
   validateWebhookURL,
-} from "@langfuse/shared/src/server";
-import { env } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
 import { type SsoProviderSchema } from "@/src/ee/features/multi-tenant-sso/types";
 
 const discoveryTimeoutMs = 5000;

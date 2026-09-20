@@ -1,8 +1,8 @@
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { type NextApiRequest, type NextApiResponse } from "next";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
 import type { BlobStorageIntegrationStatusResponseType } from "@/src/features/public-api/types/blob-storage-integrations";
 import { deriveSyncStatus } from "@/src/features/blobstorage-integration/deriveSyncStatus";
 import { authorizeBlobStorageRequest } from "@/src/features/blobstorage-integration/authorizeBlobStorageRequest";

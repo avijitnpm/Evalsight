@@ -1,4 +1,4 @@
-import { encodeFiltersGeneric } from "@langfuse/shared";
+import { encodeFiltersGeneric } from "@evalsight/shared";
 
 export function buildGatewayModelsUrl(
   organizationId: string,

@@ -2,7 +2,7 @@ import type {
   EvaluatorPromptMessage,
   EvalTemplateSourceCodeLanguage,
   EvalTemplateType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { ScoreOutputDataType } from "@/src/features/evals/v2/scoreOutputTypes";
 
 export type EvaluatorCreationSource =

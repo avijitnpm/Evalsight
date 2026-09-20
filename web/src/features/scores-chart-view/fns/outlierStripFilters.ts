@@ -1,4 +1,4 @@
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { partitionStoredUiTableFiltersToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 
 /**

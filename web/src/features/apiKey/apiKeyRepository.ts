@@ -2,9 +2,9 @@ import {
   type ApiKey,
   type PrismaClient,
   prisma as defaultPrisma,
-} from "@langfuse/shared/src/db";
-import { type InternalServerError } from "@langfuse/shared";
-import { logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/db";
+import { type InternalServerError } from "@evalsight/shared";
+import { logger } from "@evalsight/shared/src/server";
 
 import {
   internalServerError,

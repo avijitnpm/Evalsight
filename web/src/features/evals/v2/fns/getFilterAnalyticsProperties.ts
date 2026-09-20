@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 const EXPERIMENT_FILTER_COLUMNS = new Set([
   "experimentId",

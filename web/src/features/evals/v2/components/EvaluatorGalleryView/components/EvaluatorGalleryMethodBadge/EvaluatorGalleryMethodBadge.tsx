@@ -1,5 +1,5 @@
 import { Code2, Sparkles } from "lucide-react";
-import { EvalTemplateTypeEnum, type EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateTypeEnum, type EvalTemplateType } from "@evalsight/shared";
 
 export function EvaluatorGalleryMethodBadge({
   type,

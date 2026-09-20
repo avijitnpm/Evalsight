@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import isEqual from "lodash/isEqual";
 
 function sameField(left: FilterState[number], right: FilterState[number]) {

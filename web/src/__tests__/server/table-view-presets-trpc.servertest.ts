@@ -2,9 +2,9 @@
 
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { TableViewPresetTableName } from "@langfuse/shared";
-import { prisma, type Prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { TableViewPresetTableName } from "@evalsight/shared";
+import { prisma, type Prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import { randomUUID } from "node:crypto";
 

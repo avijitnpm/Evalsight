@@ -2,7 +2,7 @@ import {
   ChatMessageType,
   compileChatMessages,
   extractPlaceholderNames,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("compileChatMessages", () => {
   it("should compile message placeholders with provided values", () => {

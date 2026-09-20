@@ -3,7 +3,7 @@ import {
   type EvalTemplateType,
   EvalTemplateTypeEnum,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 import {
   evaluatorExecutionsUrl,

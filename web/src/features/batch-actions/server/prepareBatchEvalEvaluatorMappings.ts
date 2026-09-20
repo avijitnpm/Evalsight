@@ -2,8 +2,8 @@ import {
   EvalTemplateType,
   InvalidRequestError,
   type BatchEvalEvaluatorMapping,
-} from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import { findEvaluatorsByIds } from "@/src/features/evals/v2/server/evaluators/evaluatorRepository";
 import { reconcileEvaluatorPromptMessages } from "@/src/features/evals/v2/server/evaluators/evaluatorService";
 import {

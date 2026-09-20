@@ -3,7 +3,7 @@ import {
   SCORE_FIELD_GROUPS_V3,
   ScoreDataTypeDomain,
   ScoreSourceDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
@@ -12,7 +12,7 @@ import {
   listScoresV3ForPublicApi,
   EncodedScoresCursorV3,
 } from "@/src/features/public-api/server";
-import { buildScoreSubjectUrl } from "@langfuse/shared/src/server";
+import { buildScoreSubjectUrl } from "@evalsight/shared/src/server";
 
 const ListScoresBaseSchema = z
   .object({

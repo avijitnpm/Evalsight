@@ -1,4 +1,4 @@
-import type { TracingSearchType } from "@langfuse/shared";
+import type { TracingSearchType } from "@evalsight/shared";
 
 // Helper function to get the current search mode value for the radio group
 export function getSearchMode(

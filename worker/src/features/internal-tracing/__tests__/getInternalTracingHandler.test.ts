@@ -35,7 +35,7 @@ vi.mock(
 );
 
 import { getInternalTracingHandler } from "../../../../../packages/shared/src/server/llm/getInternalTracingHandler";
-import { LangfuseInternalTraceEnvironment } from "@langfuse/shared";
+import { LangfuseInternalTraceEnvironment } from "@evalsight/shared";
 import { env } from "../../../../../packages/shared/src/env";
 
 const traceId = "trace-123";

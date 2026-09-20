@@ -4,7 +4,7 @@ import {
   createBooleanEvalOutputDefinition,
   createCategoricalEvalOutputDefinition,
   createNumericEvalOutputDefinition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { getTemplateResultType } from "./template-output";
 
 describe("getTemplateResultType", () => {

@@ -1,4 +1,4 @@
-import { type FilterState, getGenerationLikeTypes } from "@langfuse/shared";
+import { type FilterState, getGenerationLikeTypes } from "@evalsight/shared";
 import type { MissingBucketValue } from "@/src/features/widgets";
 
 export type TimeSeriesChartDataPoint = {
@@ -6,7 +6,7 @@ export type TimeSeriesChartDataPoint = {
   values: { label: string; value?: number }[];
 };
 import { type DatabaseRow } from "@/src/server/api/services/sqlInterface";
-import { type ViewVersion } from "@langfuse/shared/query";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import { useScheduledDashboardExecuteQuery } from "@/src/features/dashboard/hooks/useDashboardQueryScheduler";
 

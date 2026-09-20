@@ -1,7 +1,7 @@
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
-import { type Plan, Role } from "@langfuse/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { type Plan, Role } from "@evalsight/shared";
 import type { Session } from "next-auth";
 import { v4 as uuidv4 } from "uuid";
 

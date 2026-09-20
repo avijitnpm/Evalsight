@@ -21,7 +21,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/src/components/ui/dialog";
-import { type AutomationDomain } from "@langfuse/shared";
+import { type AutomationDomain } from "@evalsight/shared";
 import { ErrorPage } from "@/src/components/error-page";
 
 export default function AutomationsPage() {

@@ -1,22 +1,22 @@
-import { prisma, type Prisma } from "@langfuse/shared/src/db";
-import { logger, recordGauge, redis } from "@langfuse/shared/src/server";
-import { deleteInAppAgentMcpApiKeyFromDb } from "@langfuse/shared/src/server/auth/apiKeys";
+import { prisma, type Prisma } from "@evalsight/shared/src/db";
+import { logger, recordGauge, redis } from "@evalsight/shared/src/server";
+import { deleteInAppAgentMcpApiKeyFromDb } from "@evalsight/shared/src/server/auth/apiKeys";
 import {
   IN_APP_AGENT_UNSETTLED_RUN_STATUSES,
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   classifyStaleRun,
   cleanupTerminalRunMcpApiKeys,
   reconcileConversationRuns,
-} from "@langfuse/shared/in-app-agent/server/runLifecycle";
+} from "@evalsight/shared/in-app-agent/server/runLifecycle";
 import {
   IN_APP_AGENT_APPROVAL_TTL_MS,
   IN_APP_AGENT_HEARTBEAT_STALE_MS,
   IN_APP_AGENT_QUEUE_TIMEOUT_MS,
   IN_APP_AGENT_RUN_MAX_DURATION_MS,
-} from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent/server/tunables";
 
 import { env } from "../../env";
 import { PeriodicExclusiveRunner } from "../../utils/PeriodicExclusiveRunner";

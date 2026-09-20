@@ -1,5 +1,5 @@
-import { InAppAgentRunStatus } from "@langfuse/shared";
-import { isUnsettledInAppAgentRunStatus } from "@langfuse/shared/in-app-agent";
+import { InAppAgentRunStatus } from "@evalsight/shared";
+import { isUnsettledInAppAgentRunStatus } from "@evalsight/shared/in-app-agent";
 
 export type InAppAgentActivityState =
   | "running"

@@ -1,4 +1,4 @@
-import type { ScoreAggregate } from "@langfuse/shared";
+import type { ScoreAggregate } from "@evalsight/shared";
 
 export type DatasetRunItemByItemRowData = {
   id: string;

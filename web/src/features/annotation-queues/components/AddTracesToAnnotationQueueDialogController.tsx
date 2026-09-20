@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { type ReactNode, useState } from "react";
-import { ActionId, BatchExportTableName } from "@langfuse/shared";
+import { ActionId, BatchExportTableName } from "@evalsight/shared";
 import { api } from "@/src/utils/api";
 import { Dialog, DialogContent } from "@/src/components/ui/dialog";
 import { useHasProjectAccess } from "@/src/features/rbac";

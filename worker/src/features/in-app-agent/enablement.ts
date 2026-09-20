@@ -1,4 +1,4 @@
-import { isInAppAgentInstanceEnabled } from "@langfuse/shared/in-app-agent/server/modelProvider";
+import { isInAppAgentInstanceEnabled } from "@evalsight/shared/in-app-agent/server/modelProvider";
 
 /**
  * Instance switch is the default. Explicit `"false"` opts a split-role

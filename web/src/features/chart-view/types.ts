@@ -1,4 +1,4 @@
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 
 /**
  * The "chart view" feature — render the v4 events/observations data as a

@@ -1,5 +1,5 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
-import { TriggerEventSource } from "@langfuse/shared";
+import { TriggerEventSource } from "@evalsight/shared";
 
 const createAutomationMutateAsync = vi.fn().mockResolvedValue({
   automation: { id: "auto-1" },

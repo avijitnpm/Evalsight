@@ -8,7 +8,7 @@
 
 import { useState, useCallback } from "react";
 import { toast } from "sonner";
-import { stringify } from "@langfuse/shared";
+import { stringify } from "@evalsight/shared";
 import { copyTextToClipboard } from "@/src/utils/clipboard";
 import { type ObservationIOData } from "./useLogViewAllObservationsIO";
 

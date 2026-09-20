@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
@@ -16,13 +16,13 @@ const mocks = vi.hoisted(() => ({
 
 vi.mock("@/src/env.mjs", () => ({ env: mocks.env }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: { project: { findUnique: mocks.findProject } },
 }));
 
 // Partial mock: the shared teardown hook imports redis/logger/ClickHouse from
 // this module, so the real exports have to stay reachable.
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
 
   return {
@@ -35,7 +35,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
 });
 
 import { chbMetricsApiHandler } from "@/src/ee/features/billing/server/chb/chbMetricsApiHandler";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 const loggerError = vi
   .spyOn(logger, "error")

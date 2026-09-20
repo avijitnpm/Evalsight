@@ -11,8 +11,8 @@ import {
   InternalServerError,
   LangfuseNotFoundError,
   MediaAssociationOrigin,
-} from "@langfuse/shared";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
 import {
   declarePendingDatasetItemMedia,
   getMediaBucketPath,
@@ -23,7 +23,7 @@ import {
   recordHistogram,
   recordIncrement,
   upsertMediaRecord,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export async function createMediaUploadUrl(params: {
   projectId: string;

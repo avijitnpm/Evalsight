@@ -4,7 +4,7 @@ import {
 } from "@/src/features/public-api/server";
 import { getAnnotationQueueItemForApi } from "@/src/features/annotation-queues/server/publicAnnotationQueueService";
 import { defineTool } from "../../../core/define-tool";
-import { buildAnnotationQueueItemUrl } from "@langfuse/shared/src/server";
+import { buildAnnotationQueueItemUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 
 export const [getAnnotationQueueItemTool, handleGetAnnotationQueueItem] =

@@ -19,7 +19,7 @@ import {
   EvalTargetObject,
   type EvalTemplate,
   getCodeEvalVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ExternalLink, ListTree, Play, RotateCcw } from "lucide-react";
 import Link from "next/link";
 import { useMemo } from "react";

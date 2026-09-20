@@ -1,18 +1,18 @@
 import { z } from "zod";
 import { TRPCError } from "@trpc/server";
-import { RequestHeaderSchema, WebhookProtectedHeaders } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { RequestHeaderSchema, WebhookProtectedHeaders } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   decrypt,
   encrypt,
   generateWebhookSecret,
-} from "@langfuse/shared/encryption";
+} from "@evalsight/shared/encryption";
 import {
   buildWebhookRequestHeaders,
   createDisplayHeaders,
   decryptSecretHeaders,
   encryptSecretHeaders,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const RemoteExperimentHeadersSchema = z.record(
   z.string(),

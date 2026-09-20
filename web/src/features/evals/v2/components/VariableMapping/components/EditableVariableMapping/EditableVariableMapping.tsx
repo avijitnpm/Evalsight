@@ -27,7 +27,7 @@ import {
 import {
   deepParseJsonIterative,
   experimentTargetEvalVariableColumns,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 
 const TOOL_CALLS_COLUMN_ID = "toolCalls";

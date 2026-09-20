@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
 import { IBackgroundMigration } from "./IBackgroundMigration";
-import { prisma, Prisma } from "@langfuse/shared/src/db";
-import { instrumentAsync, logger } from "@langfuse/shared/src/server";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
+import { instrumentAsync, logger } from "@evalsight/shared/src/server";
 import { env } from "../env";
 
 const ENV_GATE_PREFIX = "LANGFUSE_BACKGROUND_MIGRATION_";

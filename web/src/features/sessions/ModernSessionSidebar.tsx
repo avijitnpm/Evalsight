@@ -10,7 +10,7 @@ import {
   Search,
   X,
 } from "lucide-react";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 import { renderFilterIcon } from "@/src/components/ItemBadge";
 import { SessionVirtualizedRow } from "@/src/features/sessions/SessionVirtualizedRow";

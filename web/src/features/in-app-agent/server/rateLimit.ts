@@ -5,8 +5,8 @@ import {
   CloudConfigSchema,
   ForbiddenError,
   type RateLimitResult,
-} from "@langfuse/shared";
-import type { ApiAccessScope } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import type { ApiAccessScope } from "@evalsight/shared/src/server";
 
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server";
 import { RateLimitService } from "@/src/features/public-api/server";

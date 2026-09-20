@@ -1,5 +1,5 @@
 import { IBackgroundMigration } from "./IBackgroundMigration";
-import { commandClickhouse, logger } from "@langfuse/shared/src/server";
+import { commandClickhouse, logger } from "@evalsight/shared/src/server";
 import { parseArgs } from "node:util";
 import { checkPredecessorMigrationFinalized } from "./utils/backfillBase";
 import {

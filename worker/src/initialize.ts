@@ -1,11 +1,11 @@
 import { upsertDefaultModelPrices } from "./scripts/upsertDefaultModelPrices";
 import { upsertLangfuseDashboards } from "./scripts/upsertLangfuseDashboards";
-import { hello, initTelemetry } from "@langfuse/native";
+import { hello, initTelemetry } from "@evalsight/native";
 import {
   initializeClickhouseCompatibility,
   logger,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const initializeWorker = async (): Promise<void> => {
   initializeNativeAddon();

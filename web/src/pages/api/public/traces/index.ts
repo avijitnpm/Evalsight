@@ -8,7 +8,7 @@ import {
   TRACE_FIELD_GROUPS,
   type TraceFieldGroup,
 } from "@/src/features/public-api/types/traces";
-import { InvalidRequestError } from "@langfuse/shared";
+import { InvalidRequestError } from "@evalsight/shared";
 import {
   LEGACY_PUBLIC_API_OBSERVATIONS_CLICKHOUSE_RESOURCE_ERROR_MESSAGE,
   withMiddlewares,
@@ -22,7 +22,7 @@ import {
   traceDeletionProcessor,
   getTracesFromEventsTableForPublicApi,
   getTracesCountFromEventsTableForPublicApi,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 import { telemetry } from "@/src/features/telemetry";
 import { auditLog } from "@/src/features/audit-logs/auditLog";

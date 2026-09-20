@@ -4,7 +4,7 @@ import {
   normalizeInput,
   normalizeOutput,
   extractAdditionalInput,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("OpenAI Adapter", () => {
   describe("detection", () => {

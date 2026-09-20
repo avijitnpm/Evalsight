@@ -17,7 +17,7 @@ import {
   type TraceDomain,
   type ScoreDomain,
   ObservationLevel,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ObservationReturnTypeWithMetadata } from "@/src/server/api/routers/traces";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 import { type TreeNode } from "../types/treeNode";

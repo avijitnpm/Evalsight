@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { Alert } from "@/src/components/design-system/Alert/Alert";
 import { Button } from "@/src/components/ui/button";
-import { type BulkDatasetItemValidationError } from "@langfuse/shared";
+import { type BulkDatasetItemValidationError } from "@evalsight/shared";
 
 type CsvImportValidationErrorProps = {
   errors: BulkDatasetItemValidationError[];

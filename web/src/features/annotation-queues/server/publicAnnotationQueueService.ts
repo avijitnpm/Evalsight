@@ -20,9 +20,9 @@ import {
   LangfuseNotFoundError,
   MethodNotAllowedError,
   Prisma,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { getUserProjectRoles } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { getUserProjectRoles } from "@evalsight/shared/src/server";
 import type { z } from "zod";
 
 type GetAnnotationQueuesInput = z.infer<typeof GetAnnotationQueuesQuery>;

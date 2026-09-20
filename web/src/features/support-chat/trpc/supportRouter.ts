@@ -8,7 +8,7 @@ import { z } from "zod";
 import { env } from "@/src/env.mjs";
 import { VERSION } from "@/src/constants";
 import { nanoid } from "nanoid";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 import {
   MessageTypeSchema,

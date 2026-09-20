@@ -5,12 +5,12 @@ import {
   PostScoresBodyV1,
   PostScoresResponseV1,
   UnauthorizedError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ScoresApiService } from "@/src/features/public-api/server";
 import {
   createUnknownSdkIngestionAttribution,
   buildScoreTargetUrl,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { defineTool } from "../../../core/define-tool";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 import { ApiServerError } from "../../../core/errors";

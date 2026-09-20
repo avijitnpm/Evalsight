@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
-vi.mock("@langfuse/shared/src/server/llm/llmText", async () => {
+vi.mock("@evalsight/shared/src/server/llm/llmText", async () => {
   const actual = await vi.importActual(
-    "@langfuse/shared/src/server/llm/llmText",
+    "@evalsight/shared/src/server/llm/llmText",
   );
   return {
     ...actual,
@@ -16,13 +16,13 @@ import { randomUUID } from "crypto";
 import { vi } from "vitest";
 import waitForExpect from "wait-for-expect";
 
-import { type Plan } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { type Plan } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   getScoreById,
-} from "@langfuse/shared/src/server";
-import { generateLLMText } from "@langfuse/shared/src/server/llm/llmText";
+} from "@evalsight/shared/src/server";
+import { generateLLMText } from "@evalsight/shared/src/server/llm/llmText";
 import { env } from "@/src/env.mjs";
 import {
   InAppAgentRunErrorCode,
@@ -34,7 +34,7 @@ import {
   type AgUiEvent,
   type InAppAgentRunRequest,
   IN_APP_AGENT_REDIRECT_TOOL_NAME,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   createInAppAgentConversationId,
   createInAppAgentRunId,
@@ -54,8 +54,8 @@ import {
   flushPendingRunEvents,
   shouldFlushPersistedEvent,
   toPersistableAgentEvent,
-} from "@langfuse/shared/in-app-agent/server/persistence";
-import { finishClaimedRun } from "@langfuse/shared/in-app-agent/server/runLifecycle";
+} from "@evalsight/shared/in-app-agent/server/persistence";
+import { finishClaimedRun } from "@evalsight/shared/in-app-agent/server/runLifecycle";
 import { watchConversationFrames } from "@/src/features/in-app-agent/server/watch";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 

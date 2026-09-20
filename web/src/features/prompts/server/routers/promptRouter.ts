@@ -9,7 +9,7 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { type Prompt, Prisma } from "@langfuse/shared/src/db";
+import { type Prompt, Prisma } from "@evalsight/shared/src/db";
 import {
   createPrompt,
   duplicatePrompt,
@@ -32,7 +32,7 @@ import {
   orderBy,
   singleFilterList,
   normalizeOrderByForTable,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   orderByToPrismaSql,
   PromptService,
@@ -47,7 +47,7 @@ import {
   getAggregatedScoresForPrompts,
   getAggregatedScoresForPromptsFromEvents,
   postgresSearchCondition,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { aggregateScores } from "@/src/features/scores/lib/aggregateScores";
 import { TRPCError } from "@trpc/server";
 import { promptChangeEventSourcing } from "@/src/features/prompts/server/promptChangeEventSourcing";

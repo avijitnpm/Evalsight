@@ -1,5 +1,5 @@
 import { Job } from "bullmq";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   QueueName,
   TQueueJobTypes,
@@ -13,7 +13,7 @@ import {
   recordIncrement,
   dispatchProjectNotification,
   fetchWithSecureRedirects,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   buildAnalyticsRedirectOptions,
   hostnameForLog,
@@ -25,7 +25,7 @@ import {
   transformEventForPostHog,
   transformScoreForPostHog,
 } from "./transformers";
-import { decrypt } from "@langfuse/shared/encryption";
+import { decrypt } from "@evalsight/shared/encryption";
 import { PostHog } from "posthog-node";
 import { recordExportVolume } from "../../services/exportVolumeMetric";
 import { recordExportFreshnessLag } from "../../services/exportFreshnessLagMetric";

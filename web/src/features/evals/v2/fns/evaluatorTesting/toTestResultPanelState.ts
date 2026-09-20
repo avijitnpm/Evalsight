@@ -1,4 +1,4 @@
-import type { EvalTemplateType } from "@langfuse/shared";
+import type { EvalTemplateType } from "@evalsight/shared";
 import type { TestResultPanelState } from "@/src/features/evals/v2/components/Evaluators/Testing/components/TestResultPanelView/TestResultPanelView";
 
 export function toTestResultPanelState(params: {

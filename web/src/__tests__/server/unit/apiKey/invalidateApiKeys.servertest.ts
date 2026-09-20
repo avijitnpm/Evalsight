@@ -1,13 +1,13 @@
 import { type Redis } from "ioredis";
 import { describe, expect, it, vi } from "vitest";
 
-import { type ApiKey } from "@langfuse/shared/src/db";
+import { type ApiKey } from "@evalsight/shared/src/db";
 import {
   API_KEY_CACHE_KEY_PREFIX,
   AUTHZ_CONTEXT_CACHE_KEY_PREFIX,
   createShaHash,
   invalidateCachedApiKeys,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 

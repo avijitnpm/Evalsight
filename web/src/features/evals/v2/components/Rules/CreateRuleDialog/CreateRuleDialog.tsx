@@ -1,4 +1,4 @@
-import { type EvalTargetObject, type FilterState } from "@langfuse/shared";
+import { type EvalTargetObject, type FilterState } from "@evalsight/shared";
 import { useState } from "react";
 import { useDebounce } from "@/src/hooks/useDebounce";
 import { CreateRuleDialogContent } from "@/src/features/evals/v2/components/Rules/CreateRuleDialog/components/CreateRuleDialogContent/CreateRuleDialogContent";

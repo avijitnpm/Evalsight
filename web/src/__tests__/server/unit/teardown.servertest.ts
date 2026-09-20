@@ -1,8 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import teardown from "../../teardown";
 
-vi.mock("@langfuse/shared/src/server", () => {
+vi.mock("@evalsight/shared/src/server", () => {
   throw new Error("Test cleanup must not load the shared server barrel");
 });
 
@@ -37,7 +37,7 @@ describe("server test resource cleanup", () => {
 
   it("waits for existing ClickHouse clients to close", async () => {
     const { clickhouseClient } =
-      await import("@langfuse/shared/src/server/clickhouse");
+      await import("@evalsight/shared/src/server/clickhouse");
     const client = clickhouseClient();
     let finishClose!: () => void;
     const closed = new Promise<void>((resolve) => {
@@ -60,7 +60,7 @@ describe("server test resource cleanup", () => {
 
   it("closes clients created through the built shared server export", async () => {
     const actual = await vi.importActual<typeof SharedServer>(
-      "@langfuse/shared/src/server",
+      "@evalsight/shared/src/server",
     );
     try {
       const client = actual.clickhouseClient();
@@ -76,7 +76,7 @@ describe("server test resource cleanup", () => {
 
   it("leaves shared-context resources open for later test files", async () => {
     const { clickhouseClient } =
-      await import("@langfuse/shared/src/server/clickhouse");
+      await import("@evalsight/shared/src/server/clickhouse");
     const disconnect = vi.fn();
     const close = vi.spyOn(clickhouseClient(), "close");
     vi.stubGlobal("redis", { status: "ready", disconnect });

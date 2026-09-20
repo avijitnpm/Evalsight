@@ -3,13 +3,13 @@ import { createAnthropic } from "ai-sdk-anthropic-v4";
 import { createOpenAICompatible } from "ai-sdk-openai-compatible-v4";
 import { createOpenAI } from "ai-sdk-openai-v4";
 
-import type { InAppAgentModelConfig } from "@langfuse/shared/in-app-agent/server/modelProvider";
+import type { InAppAgentModelConfig } from "@evalsight/shared/in-app-agent/server/modelProvider";
 import {
   isOpenAICompatibleEndpoint,
   resolveLangfuseAIOpenAICall,
-} from "@langfuse/shared/in-app-agent/server/openaiCompatibility";
-import { env } from "@langfuse/shared/src/env";
-import { createDefaultBedrockProviderAuth } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/in-app-agent/server/openaiCompatibility";
+import { env } from "@evalsight/shared/src/env";
+import { createDefaultBedrockProviderAuth } from "@evalsight/shared/src/server";
 
 const BEDROCK_CLAUDE_MODEL_ID_PART = "anthropic.claude";
 const ANTHROPIC_CLAUDE_MODEL_ID_PART = "claude";

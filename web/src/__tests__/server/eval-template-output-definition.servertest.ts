@@ -4,7 +4,7 @@ import {
   createCategoricalEvalOutputDefinition,
   createNumericEvalOutputDefinition,
   ScoreDataTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("CreateEvalTemplateInputSchema", () => {
   const baseInput = {

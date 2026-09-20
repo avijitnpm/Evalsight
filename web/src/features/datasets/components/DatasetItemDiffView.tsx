@@ -1,4 +1,4 @@
-import type { DatasetItemDomain } from "@langfuse/shared";
+import type { DatasetItemDomain } from "@evalsight/shared";
 import DiffViewer from "@/src/components/DiffViewer";
 import { Accordion } from "@/src/components/design-system/Accordion/Accordion";
 import { stringifyDatasetItemData } from "../utils/datasetItemUtils";

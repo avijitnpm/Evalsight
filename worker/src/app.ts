@@ -16,7 +16,7 @@ import {
 import { codeEvalExecutionQueueProcessorBuilder } from "./queues/codeEvalQueue";
 import { batchExportQueueProcessor } from "./queues/batchExportQueue";
 import { drainAndClose, onShutdown } from "./utils/shutdown";
-import { installProcessErrorHandlers } from "@langfuse/shared/src/server";
+import { installProcessErrorHandlers } from "@evalsight/shared/src/server";
 import helmet from "helmet";
 import { cloudUsageMeteringQueueProcessor } from "./queues/cloudUsageMeteringQueue";
 import { cloudSpendAlertQueueProcessor } from "./queues/cloudSpendAlertQueue";
@@ -47,14 +47,14 @@ import {
   SecondaryEvalExecutionQueue,
   LLMAsJudgeExecutionQueue,
   CodeEvalExecutionQueue,
-} from "@langfuse/shared/src/server";
-import { monitorProcessorTtl } from "@langfuse/shared/monitors/server";
-import { IN_APP_AGENT_RUN_MAX_DURATION_MS } from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/src/server";
+import { monitorProcessorTtl } from "@evalsight/shared/monitors/server";
+import { IN_APP_AGENT_RUN_MAX_DURATION_MS } from "@evalsight/shared/in-app-agent/server/tunables";
 import { env, v4WritesToEventsTable } from "./env";
 import { isInAppAgentWorkerSurfaceEnabled } from "./features/in-app-agent/enablement";
 import { ingestionQueueProcessorBuilder } from "./queues/ingestionQueue";
 import { BackgroundMigrationManager } from "./backgroundMigrations/backgroundMigrationManager";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { ClickhouseReadSkipCache } from "./utils/clickhouseReadSkipCache";
 import { experimentCreateQueueProcessor } from "./queues/experimentQueue";
 import { traceDeleteProcessor } from "./queues/traceDelete";

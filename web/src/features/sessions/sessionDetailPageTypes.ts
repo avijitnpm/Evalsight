@@ -1,6 +1,6 @@
 import { type ListEntry } from "@/src/features/navigate-detail-pages/context";
 import { type RouterOutputs } from "@/src/utils/api";
-import { type SingleValueOption } from "@langfuse/shared";
+import { type SingleValueOption } from "@evalsight/shared";
 
 export type LegacySessionTrace =
   RouterOutputs["sessions"]["byIdWithScores"]["traces"][number];

@@ -31,8 +31,8 @@ import {
   LangfuseNotFoundError,
   Prisma,
   UnauthorizedError,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "@/src/env.mjs";
 import {
   datasetItemMediaReferenceKey,
@@ -53,7 +53,7 @@ import {
   processEventBatch,
   type AuthHeaderValidVerificationResultIngestion,
   upsertDatasetItem,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { z } from "zod";
 
 type DatasetAuditScope = {

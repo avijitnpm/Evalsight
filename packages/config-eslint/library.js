@@ -56,7 +56,7 @@ export default tseslint.config(
         "error",
         {
           name: "redis",
-          message: "Import redis explicitly from '@langfuse/shared/src/server'",
+          message: "Import redis explicitly from '@evalsight/shared/src/server'",
         },
       ],
       "@typescript-eslint/no-deprecated": "warn",

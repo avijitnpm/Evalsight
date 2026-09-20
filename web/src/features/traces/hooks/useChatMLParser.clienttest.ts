@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react";
-import { normalizeSpanIO } from "@langfuse/shared/src/utils/normalized-io";
+import { normalizeSpanIO } from "@evalsight/shared/src/utils/normalized-io";
 import { toIOPreview } from "../parsers/toIOPreview";
 import {
   parseChatML,

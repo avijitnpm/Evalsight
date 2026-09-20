@@ -27,9 +27,9 @@ import {
   VERTEXAI_USE_DEFAULT_CREDENTIALS,
   EvaluatorBlockReason,
   type LLMConnectionConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
-import { encrypt, decrypt } from "@langfuse/shared/encryption";
+import { encrypt, decrypt } from "@evalsight/shared/encryption";
 import {
   ChatMessageType,
   generateLLMText,
@@ -44,7 +44,7 @@ import {
   EvaluatorBlockSource,
   finalizeEvaluatorBlocks,
   validateLlmConnectionBaseURL,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import { TRPCError } from "@trpc/server";
 

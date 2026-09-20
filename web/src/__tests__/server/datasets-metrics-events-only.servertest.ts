@@ -10,9 +10,9 @@ const eventsTableAvailable = vi.hoisted(() => {
 
 import type { Session } from "next-auth";
 import { randomUUID } from "crypto";
-import { prisma } from "@langfuse/shared/src/db";
-import { createEvent, createEventsCh } from "@langfuse/shared/src/server";
-import { env } from "@langfuse/shared/src/env";
+import { prisma } from "@evalsight/shared/src/db";
+import { createEvent, createEventsCh } from "@evalsight/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 

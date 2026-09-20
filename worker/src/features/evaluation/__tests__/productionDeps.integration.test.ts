@@ -5,9 +5,9 @@ import {
   createOrgProjectAndApiKey,
   StorageService,
   StorageServiceFactory,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
-import { EvalTargetObject } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { EvalTargetObject } from "@evalsight/shared";
 import { env } from "../../../env";
 import { createObservationEvalSchedulerDeps } from "../observationEval/createSchedulerDeps";
 import { createProductionEvalExecutionDeps } from "../evalExecutionDeps";

@@ -1,5 +1,5 @@
 import { expect, fn, userEvent } from "storybook/test";
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 
 import preview from "../../../../../../../../.storybook/preview";
 import { EVALUATOR_EMPTY_STATE_DOCS_HREF } from "@/src/features/evals/v2/constants/evaluatorEmptyState";

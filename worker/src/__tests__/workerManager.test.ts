@@ -8,7 +8,7 @@ import {
   getQueuePrefix,
   QueueName,
   redisQueueRetryOptions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { WorkerManager } from "../queues/workerManager";
 
 const extractProjectId = (data: unknown): string | undefined =>

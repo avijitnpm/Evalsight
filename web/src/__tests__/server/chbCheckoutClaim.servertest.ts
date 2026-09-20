@@ -15,8 +15,8 @@
 
 import { randomUUID } from "crypto";
 
-import { parseDbOrg } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { parseDbOrg } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import {

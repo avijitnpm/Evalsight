@@ -19,8 +19,8 @@ import {
   useDatasetCompareFields,
 } from "@/src/features/datasets/contexts/DatasetCompareFieldsContext";
 import { useColumnFilterState } from "@/src/features/filters";
-import { type Prisma } from "@langfuse/shared";
-import { type EnrichedDatasetRunItem } from "@langfuse/shared/src/server";
+import { type Prisma } from "@evalsight/shared";
+import { type EnrichedDatasetRunItem } from "@evalsight/shared/src/server";
 import { usePeekNavigation } from "@/src/components/table/peek/hooks/usePeekNavigation";
 import { TablePeekViewTraceDetail } from "@/src/components/table/peek/peek-trace-detail";
 

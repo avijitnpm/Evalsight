@@ -1,5 +1,5 @@
 import { type EvalFormType } from "@/src/features/evals/utils/evaluator-form-utils";
-import { EvalTargetObject, type ObservationType } from "@langfuse/shared";
+import { EvalTargetObject, type ObservationType } from "@evalsight/shared";
 import { type UseFormReturn, useWatch } from "react-hook-form";
 import { useRouter } from "next/router";
 import {

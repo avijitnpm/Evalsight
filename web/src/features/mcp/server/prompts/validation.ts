@@ -14,7 +14,7 @@ import {
   LATEST_PROMPT_LABEL,
   PRODUCTION_LABEL,
   PromptLabelSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Prompt name parameter

@@ -156,7 +156,7 @@ const h = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     posthogIntegration: {
       findFirst: vi.fn(async () => h.db.integration),
@@ -172,7 +172,7 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   QueueName: { PostHogIntegrationProcessingQueue: "posthog" },
   logger: { info: vi.fn(), warn: vi.fn(), error: vi.fn(), debug: vi.fn() },
   recordIncrement: h.recordIncrement,
@@ -194,7 +194,7 @@ vi.mock("../features/posthog/transformers", () => ({
   transformEventForPostHog: vi.fn((e) => e),
 }));
 
-vi.mock("@langfuse/shared/encryption", () => ({
+vi.mock("@evalsight/shared/encryption", () => ({
   decrypt: vi.fn(() => "phc_decrypted"),
 }));
 

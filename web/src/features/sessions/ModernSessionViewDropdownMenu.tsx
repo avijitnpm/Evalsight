@@ -1,4 +1,4 @@
-import { type TableViewPresetState } from "@langfuse/shared";
+import { type TableViewPresetState } from "@evalsight/shared";
 import { Check, Filter, Settings2 } from "lucide-react";
 
 import { SESSION_DETAIL_SYSTEM_PRESETS } from "@/src/features/sessions/session-detail-presets";

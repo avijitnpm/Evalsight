@@ -2,7 +2,7 @@ import {
   type TriggerEventAction,
   jsonSchemaNullable,
   InternalServerError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getTriggerConfigurations,
   getActionById,
@@ -14,10 +14,10 @@ import {
   type PromptResult,
   getAutomations,
   EntityChangeEventType,
-} from "@langfuse/shared/src/server";
-import { TriggerEventSource } from "@langfuse/shared";
-import { ActionExecutionStatus, JobConfigState } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { TriggerEventSource } from "@evalsight/shared";
+import { ActionExecutionStatus, JobConfigState } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { v4 } from "uuid";
 
 /**

@@ -5,7 +5,7 @@ import {
   OpenAIConfigSchema,
   VertexAIConfigSchema,
   LLMApiKeySchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const LlmApiKeySchema = z.object({
   projectId: z.string(),

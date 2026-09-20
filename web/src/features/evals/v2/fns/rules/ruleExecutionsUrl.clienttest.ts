@@ -1,7 +1,7 @@
 import {
   decodeFiltersGeneric,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 import { ruleExecutionsUrl } from "./ruleExecutionsUrl";
 

@@ -1,7 +1,7 @@
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import type { ComponentProps, ReactNode } from "react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { ModernSessionFilterControls } from "./ModernSessionFilterControls";
 
 const { updateConfig, savedViews } = vi.hoisted(() => ({

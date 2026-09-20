@@ -1,11 +1,11 @@
-import { prisma } from "@langfuse/shared/src/db";
-import { encrypt } from "@langfuse/shared/encryption";
+import { prisma } from "@evalsight/shared/src/db";
+import { encrypt } from "@evalsight/shared/encryption";
 import { SsoProviderSchema } from "./types";
 import { validateSsoConfig } from "@/src/ee/features/multi-tenant-sso/validateSsoConfig";
 import { TRPCError } from "@trpc/server";
 import { type NextApiRequest, type NextApiResponse } from "next";
 import { env } from "@/src/env.mjs";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { multiTenantSsoAvailable } from "@/src/ee/features/multi-tenant-sso/multiTenantSsoAvailable";
 import { AdminApiAuthService } from "@/src/ee/features/admin-api/server/adminApiAuth";
 

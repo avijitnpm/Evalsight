@@ -2,15 +2,15 @@ import {
   type FilterState,
   LangfuseNotFoundError,
   TableViewPresetTableName,
-} from "@langfuse/shared";
-import type { AgUiContext } from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared";
+import type { AgUiContext } from "@evalsight/shared/in-app-agent";
 
 type InAppAgentContext = AgUiContext;
 import {
   logger,
   parseSavedViewFromURL,
   TableViewService,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { sanitizeInAppAgentContext } from "@/src/features/in-app-agent/context";
 

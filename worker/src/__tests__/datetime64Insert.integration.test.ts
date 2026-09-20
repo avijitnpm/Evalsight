@@ -2,7 +2,7 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import {
   clickhouseClient,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const TABLE_MS = "datetime64_insert_probe_ms";
 const TICKS_MS = Date.UTC(2024, 10, 6, 20, 37, 0, 123);

@@ -2,7 +2,7 @@ import { createNextApiHandler } from "@trpc/server/adapters/next";
 import { createTRPCContext } from "@/src/server/api/trpc";
 import { appRouter } from "@/src/server/api/root";
 import { env } from "@/src/env.mjs";
-import { logger, traceException } from "@langfuse/shared/src/server";
+import { logger, traceException } from "@evalsight/shared/src/server";
 import { getTRPCErrorReporting } from "@/src/server/utils/trpc-utils";
 
 export const config = {

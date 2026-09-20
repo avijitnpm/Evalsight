@@ -2,7 +2,7 @@
 
 import { describe, expect, it } from "vitest";
 
-import { InAppAgentRunStatus } from "@langfuse/shared";
+import { InAppAgentRunStatus } from "@evalsight/shared";
 
 import {
   getInAppAgentActivityKey,

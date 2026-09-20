@@ -7,8 +7,8 @@ import {
   mapLegacyLLMCompletionParams,
   streamLLMText,
   type LLMModelMessage,
-} from "@langfuse/shared/src/server";
-import { encrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared/src/server";
+import { encrypt } from "@evalsight/shared/encryption";
 import {
   buildEvalOutputResultSchema,
   ChatMessageType,
@@ -18,7 +18,7 @@ import {
   type PersistedEvalOutputDefinition,
   LLMAdapter,
   type ModelParams,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 /**

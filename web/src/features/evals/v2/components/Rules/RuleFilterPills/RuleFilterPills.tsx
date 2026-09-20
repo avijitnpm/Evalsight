@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import type { ReactNode } from "react";
 
 import { SingleLineOverflowList } from "@/src/components/SingleLineOverflowList";

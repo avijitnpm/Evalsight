@@ -1,8 +1,8 @@
 import { randomUUID } from "node:crypto";
 import type { Session } from "next-auth";
-import { EvalTargetObject } from "@langfuse/shared";
-import { JobConfigState, prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { EvalTargetObject } from "@evalsight/shared";
+import { JobConfigState, prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { afterAll, afterEach, beforeAll, describe, expect, it } from "vitest";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";

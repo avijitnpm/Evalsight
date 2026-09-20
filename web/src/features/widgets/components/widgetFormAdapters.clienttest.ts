@@ -4,7 +4,7 @@
 import startCase from "lodash/startCase";
 import { type z } from "zod";
 
-import { type metricAggregations } from "@langfuse/shared/query";
+import { type metricAggregations } from "@evalsight/shared/query";
 import {
   mapWidgetUiTableFilterToView,
   normalizeStoredWidgetFiltersForEditor,

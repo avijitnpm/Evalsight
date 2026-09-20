@@ -6,7 +6,7 @@ import {
   type ColumnDefinition,
   type FilterState,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { useEventsFilterOptions } from "@/src/features/events";
 import {

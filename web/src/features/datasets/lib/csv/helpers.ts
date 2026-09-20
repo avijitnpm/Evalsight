@@ -3,7 +3,7 @@ import {
   isJsonNumberLiteral,
   parseJsonPrioritised,
   type Prisma,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type {
   ParseOptions,
   CsvPreviewResult,

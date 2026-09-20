@@ -56,7 +56,7 @@ import {
   NonEmptyString,
   formatSessionPositionInTraceFilterValue,
   getSessionPositionInTraceFilterMode,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { cn } from "@/src/utils/tailwind";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import {

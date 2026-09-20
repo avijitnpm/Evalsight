@@ -2,7 +2,7 @@ import {
   encodeFiltersGeneric,
   type FilterState,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export function ruleExecutionsUrl(projectId: string, ruleId: string) {
   const filter: FilterState = [

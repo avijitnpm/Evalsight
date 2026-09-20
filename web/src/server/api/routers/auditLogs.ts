@@ -7,8 +7,8 @@ import {
 import { throwIfNoProjectAccess } from "@/src/features/rbac/utils/checkProjectAccess";
 import { throwIfNoOrganizationAccess } from "@/src/features/rbac/utils/checkOrganizationAccess";
 import { throwIfNoEntitlement } from "@/src/features/entitlements/server/hasEntitlement";
-import { paginationZod } from "@langfuse/shared";
-import { AuditLogRecordType, type AuditLog } from "@langfuse/shared/src/db";
+import { paginationZod } from "@evalsight/shared";
+import { AuditLogRecordType, type AuditLog } from "@evalsight/shared/src/db";
 
 type AuditLogActor =
   | {

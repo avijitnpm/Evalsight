@@ -4,11 +4,11 @@ import {
   InAppAgentRunStatus,
   InAppAgentRunStatusSchema,
   type AgUiEvent,
-} from "@langfuse/shared/in-app-agent";
-import { type PrismaClient } from "@langfuse/shared/src/db";
-import { reconcileConversationRuns } from "@langfuse/shared/in-app-agent/server/runLifecycle";
-import { toPublicInAppAgentEvent } from "@langfuse/shared/in-app-agent/server/toolResults";
-import { IN_APP_AGENT_HEARTBEAT_STALE_MS } from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent";
+import { type PrismaClient } from "@evalsight/shared/src/db";
+import { reconcileConversationRuns } from "@evalsight/shared/in-app-agent/server/runLifecycle";
+import { toPublicInAppAgentEvent } from "@evalsight/shared/in-app-agent/server/toolResults";
+import { IN_APP_AGENT_HEARTBEAT_STALE_MS } from "@evalsight/shared/in-app-agent/server/tunables";
 import {
   isActiveInAppAgentRunStatus,
   type InAppAgentWatchFrame,

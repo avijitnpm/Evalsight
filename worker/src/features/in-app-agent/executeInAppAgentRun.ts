@@ -1,17 +1,17 @@
 /* eslint-disable @repo/no-exotic-operators */
-import { Role } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { Role } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   getLangfuseAITraceSinkParams,
   logger,
   recordIncrement,
   redis,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   createAndAddApiKeysToDb,
   deleteInAppAgentMcpApiKeyFromDb,
-} from "@langfuse/shared/src/server/auth/apiKeys";
+} from "@evalsight/shared/src/server/auth/apiKeys";
 import {
   InAppAgentRunErrorCode,
   InAppAgentRunRequestSchema,
@@ -21,7 +21,7 @@ import {
   type AgUiEvent,
   type InAppAgentRunRequest,
   type InAppAgentToolApprovalRequest,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   createSandboxToolCallFileAccumulator,
   flushPendingRunEvents,
@@ -30,12 +30,12 @@ import {
   shouldFlushPersistedEvent,
   toPersistableAgentEvent,
   type PersistedConversationEvent,
-} from "@langfuse/shared/in-app-agent/server/persistence";
+} from "@evalsight/shared/in-app-agent/server/persistence";
 import {
   getInAppAgentModelConfig,
   isInAppAgentInstanceEnabled,
   LANGFUSE_AI_MODEL_UNCONFIGURED_MESSAGE,
-} from "@langfuse/shared/in-app-agent/server/modelProvider";
+} from "@evalsight/shared/in-app-agent/server/modelProvider";
 import {
   claimQueuedRun,
   cleanupTerminalRunMcpApiKeys,
@@ -44,7 +44,7 @@ import {
   heartbeatClaimedRun,
   isMissingInAppAgentMcpApiKeyError,
   reconcileConversationRuns,
-} from "@langfuse/shared/in-app-agent/server/runLifecycle";
+} from "@evalsight/shared/in-app-agent/server/runLifecycle";
 import {
   buildInAppAgentToolApprovalSidecar,
   createInAppAgentMcpRunOverride,
@@ -52,8 +52,8 @@ import {
   getInAppAgentMcpAllowedToolNames,
   getInAppAgentRegistryToolName,
   type InAppAgentUserAccess,
-} from "@langfuse/shared/in-app-agent/server/mcpPolicy";
-import { IN_APP_AGENT_HEARTBEAT_INTERVAL_MS } from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent/server/mcpPolicy";
+import { IN_APP_AGENT_HEARTBEAT_INTERVAL_MS } from "@evalsight/shared/in-app-agent/server/tunables";
 import {
   createInAppAgentSandboxProvider,
   getDefaultInAppAgentSandboxProviderType,

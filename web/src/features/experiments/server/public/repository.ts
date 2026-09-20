@@ -16,8 +16,8 @@ import {
   queryScoreRecordsForExperimentItems,
   queryScoreRecordsForExperiments,
   type ScoreRecordReadType,
-} from "@langfuse/shared/src/server";
-import { type EventsTableFilterState } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { type EventsTableFilterState } from "@evalsight/shared";
 
 type ExperimentSummaryRow = {
   experiment_id: string;

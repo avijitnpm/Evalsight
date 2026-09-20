@@ -1,12 +1,12 @@
 import { type UseFormReturn } from "react-hook-form";
 import { type CreateExperiment } from "@/src/features/experiments/types";
-import { type UIModelParams } from "@langfuse/shared/src/server";
+import { type UIModelParams } from "@evalsight/shared/src/server";
 import { type ModelParamsContext } from "@/src/components/ModelParameters";
 import {
   type EvalTemplate,
   type PromptToolConfig,
   type PromptType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type PartialConfig } from "@/src/features/evals/types";
 import type {
   RuleDraft,

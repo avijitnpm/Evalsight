@@ -1,4 +1,4 @@
-import { LLMAdapter } from "@langfuse/shared";
+import { LLMAdapter } from "@evalsight/shared";
 
 import { getJudgeModelProviderAdapters } from "./judgeModel";
 

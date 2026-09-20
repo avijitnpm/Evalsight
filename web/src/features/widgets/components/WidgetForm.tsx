@@ -22,7 +22,7 @@ import {
   type QueryType,
   type ViewVersion,
   type metricAggregations,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import {
   mapWidgetUiTableFilterToView,
   partitionWidgetUiTableFiltersToView,
@@ -64,9 +64,9 @@ import {
 import { Chart } from "@/src/features/widgets/chart-library/Chart";
 import { type DataPoint } from "@/src/features/widgets/chart-library/chart-props";
 import { Button } from "@/src/components/ui/button";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import { showErrorToast } from "@/src/features/notifications";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { isTimeSeriesChart } from "@/src/features/widgets/chart-library/utils";
 import { Plus, X, AlertCircle, Sparkles } from "lucide-react";
 import { dashboardWidgetChartTypeIcons } from "@/src/features/widgets/chart-library/chartTypeIcons";

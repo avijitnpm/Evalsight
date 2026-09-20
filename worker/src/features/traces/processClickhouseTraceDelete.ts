@@ -7,9 +7,9 @@ import {
   logger,
   removeIngestionEventsFromS3AndDeleteClickhouseRefsForTraces,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env, v4WritesToEventsTable } from "../../env";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
 import { chunk } from "lodash";
 
 const deleteMediaItemsForTraces = async (

@@ -1,8 +1,8 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { InternalServerError } from "@langfuse/shared";
-import { type ApiKey } from "@langfuse/shared/src/db";
-import { hashSecretKey } from "@langfuse/shared/src/server";
+import { InternalServerError } from "@evalsight/shared";
+import { type ApiKey } from "@evalsight/shared/src/db";
+import { hashSecretKey } from "@evalsight/shared/src/server";
 
 import { Verifier } from "@/src/features/apiKey/verifier";
 import {

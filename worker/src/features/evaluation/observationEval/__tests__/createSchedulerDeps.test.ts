@@ -1,13 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { EvalTemplateType } from "@langfuse/shared/src/db";
+import { EvalTemplateType } from "@evalsight/shared/src/db";
 
 const addToLLMQueue = vi.fn();
 const addToCodeQueue = vi.fn();
 const getLLMQueueInstance = vi.fn(() => ({ add: addToLLMQueue }));
 const getCodeQueueInstance = vi.fn(() => ({ add: addToCodeQueue }));
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
 
   return {
     ...actual,

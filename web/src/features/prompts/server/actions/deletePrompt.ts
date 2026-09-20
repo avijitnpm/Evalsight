@@ -1,6 +1,6 @@
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
-import { prisma, type Prompt } from "@langfuse/shared/src/db";
-import { PromptService, redis } from "@langfuse/shared/src/server";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
+import { prisma, type Prompt } from "@evalsight/shared/src/db";
+import { PromptService, redis } from "@evalsight/shared/src/server";
 
 export type DeletePromptParams = {
   promptName: string;

@@ -25,7 +25,7 @@ import {
   type UpdateAnnotationScoreData,
   type CreateAnnotationScoreData,
   TEXT_SCORE_MAX_LENGTH,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Input } from "@/src/components/ui/input";
 import {
   Popover,

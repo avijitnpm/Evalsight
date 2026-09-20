@@ -13,7 +13,7 @@ import {
   singleFilterList,
   type ObservationVariableMapping,
   type PersistedEvaluatorPromptMessages,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import { endOfDay, startOfDay, subMonths } from "date-fns";
 

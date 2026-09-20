@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MediaTag } from "../../MediaTag/MediaTag";
 import { useResolvedMedia } from "./useResolvedMedia";
 import { type MediaDescriptor } from "./mediaUtils";
-import { OBSERVATION_FIELD_SIZE_LIMIT_MEDIA_SOURCE } from "@langfuse/shared";
+import { OBSERVATION_FIELD_SIZE_LIMIT_MEDIA_SOURCE } from "@evalsight/shared";
 
 type LangfuseRefDescriptor = Extract<MediaDescriptor, { kind: "langfuseRef" }>;
 

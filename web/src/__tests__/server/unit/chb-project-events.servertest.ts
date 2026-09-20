@@ -1,4 +1,4 @@
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const EVENT_BUS_ARN =
@@ -37,14 +37,14 @@ vi.mock("@aws-sdk/client-eventbridge", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     organization: { findUnique: mocks.findOrg },
     project: { findMany: mocks.findProjects },
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
 
   return {
@@ -58,7 +58,7 @@ import {
   emitChbProjectEvent,
   sendChbProjectEvent,
 } from "@/src/ee/features/billing/server/chb/chbProjectEvents";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 const loggerError = vi
   .spyOn(logger, "error")

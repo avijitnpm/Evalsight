@@ -1,4 +1,4 @@
-import { logger, getCurrentSpan } from "@langfuse/shared/src/server";
+import { logger, getCurrentSpan } from "@evalsight/shared/src/server";
 import { PeriodicRunner } from "./PeriodicRunner";
 import { OnUnavailableBehavior, RedisLock } from "./RedisLock";
 

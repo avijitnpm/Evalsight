@@ -2,7 +2,7 @@ import {
   type FilterState,
   type ColumnDefinition,
   type SingleValueOption,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Maps frontend column IDs to backend-expected column IDs

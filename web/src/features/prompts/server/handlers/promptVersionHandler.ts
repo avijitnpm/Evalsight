@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { LATEST_PROMPT_LABEL } from "@langfuse/shared";
+import { LATEST_PROMPT_LABEL } from "@evalsight/shared";
 
 import {
   withMiddlewares,

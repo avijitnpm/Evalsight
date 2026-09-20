@@ -1,8 +1,8 @@
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma, type Role } from "@langfuse/shared/src/db";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { prisma, type Role } from "@evalsight/shared/src/db";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import type { Session } from "next-auth";
 
@@ -11,12 +11,12 @@ const llmMocks = vi.hoisted(() => ({
 }));
 
 // Stub the published LLM helper rather than the shared server barrel: the
-// barrel is also imported by `@langfuse/shared/src/db`, and mocking it breaks
+// barrel is also imported by `@evalsight/shared/src/db`, and mocking it breaks
 // Prisma setup. `langfuseAiCompletion` is not a package export, so tsc cannot
 // resolve a mock of that path.
-vi.mock("@langfuse/shared/src/server/llm/llmText", async () => {
+vi.mock("@evalsight/shared/src/server/llm/llmText", async () => {
   const actual = await vi.importActual(
-    "@langfuse/shared/src/server/llm/llmText",
+    "@evalsight/shared/src/server/llm/llmText",
   );
   return {
     ...actual,

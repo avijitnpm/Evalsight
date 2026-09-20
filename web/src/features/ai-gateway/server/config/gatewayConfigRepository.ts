@@ -1,4 +1,4 @@
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 
 export class GatewayConfigRepository {
   constructor(private readonly prisma: PrismaClient) {}

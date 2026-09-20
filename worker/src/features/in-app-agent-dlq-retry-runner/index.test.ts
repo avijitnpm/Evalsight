@@ -4,8 +4,8 @@ const mocks = vi.hoisted(() => ({
   getQueue: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@langfuse/shared/src/server")>()),
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@evalsight/shared/src/server")>()),
   getQueue: mocks.getQueue,
   logger: { debug: vi.fn(), error: vi.fn(), info: vi.fn(), warn: vi.fn() },
 }));

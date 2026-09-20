@@ -17,12 +17,12 @@ import {
   DefaultViewAssignmentsSchema,
   TableViewPresetsNamesCreatorListSchema,
   isSystemTableViewPresetId,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   LangfuseConflictError,
   Prisma,
   TableViewPresetTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const TableViewPresetsRouter = createTRPCRouter({
   create: protectedProjectProcedure

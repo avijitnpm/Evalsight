@@ -10,16 +10,16 @@ import {
   isGitHubDispatchAction,
   type AutomationDomain,
   type ActionDomainWithSecrets,
-} from "@langfuse/shared";
-import { decrypt, createSignatureHeader } from "@langfuse/shared/encryption";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { decrypt, createSignatureHeader } from "@evalsight/shared/encryption";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
 import {
   validateWebhookURL,
   whitelistFromEnv,
   fetchWithSecureRedirects,
   WEBHOOK_URL_VALIDATION_LOG_CONTEXT,
   buildWebhookRequestHeaders,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   TQueueJobTypes,
   QueueName,
@@ -33,11 +33,11 @@ import {
   redis,
   ProjectNotificationWebhookQueueEventSchema,
   buildProjectNotificationSlackMessage,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   MonitorWebhookQueueEventSchema,
   buildMonitorAlertSlackMessage,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 import { Processor, Job } from "bullmq";
 import { backOff } from "exponential-backoff";
 import { env } from "../env";

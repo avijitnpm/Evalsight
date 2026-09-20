@@ -12,7 +12,7 @@ import {
   type ChatMessageWithId,
   PromptChatMessageListSchema,
   ChatMessageType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { type NewPromptFormSchemaType } from "./validation";
 import { PromptSelectionDialog } from "../PromptSelectionDialog";

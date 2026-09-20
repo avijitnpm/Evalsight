@@ -1,4 +1,4 @@
-import { ObservationType } from "@langfuse/shared";
+import { ObservationType } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 
 import {

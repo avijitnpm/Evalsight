@@ -1,5 +1,5 @@
-import { prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { createDefaultSpendAlerts } from "@/src/ee/features/billing/server/stripe/stripeWebhookHandler";
 import { stripeProducts } from "@/src/ee/features/billing/utils/stripeCatalogue";
 

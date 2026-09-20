@@ -10,32 +10,32 @@ import { EventType } from "@ag-ui/core";
 import { randomUUID } from "crypto";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { type Plan } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
-import { LANGFUSE_AI_MODEL_UNCONFIGURED_MESSAGE } from "@langfuse/shared/in-app-agent/server/modelProvider";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { type Plan } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
+import { LANGFUSE_AI_MODEL_UNCONFIGURED_MESSAGE } from "@evalsight/shared/in-app-agent/server/modelProvider";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   IN_APP_AGENT_APPROVAL_DECISION_EVENT_NAME,
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   createInAppAgentConversationId,
   createInAppAgentRunId,
 } from "@/src/features/in-app-agent/ids";
-import { ensureOwnedConversation } from "@langfuse/shared/in-app-agent/server/persistence";
+import { ensureOwnedConversation } from "@evalsight/shared/in-app-agent/server/persistence";
 import {
   IN_APP_AGENT_HEARTBEAT_STALE_MS,
   IN_APP_AGENT_QUEUE_TIMEOUT_MS,
   IN_APP_AGENT_RUN_MAX_DURATION_MS,
-} from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent/server/tunables";
 import { env } from "@/src/env.mjs";
 import { inAppAgentRouter } from "@/src/features/in-app-agent/server/router";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 
-import type * as SharedServerModule from "@langfuse/shared/src/server";
-import type * as PersistenceModule from "@langfuse/shared/in-app-agent/server/persistence";
+import type * as SharedServerModule from "@evalsight/shared/src/server";
+import type * as PersistenceModule from "@evalsight/shared/in-app-agent/server/persistence";
 
 const enqueuedJobs: Array<{ name: string; payload: unknown; jobId?: string }> =
   [];
@@ -49,9 +49,9 @@ const persistenceMocks = vi.hoisted(() => ({
   maybeInferAndPersistConversationTitle: vi.fn().mockResolvedValue(undefined),
 }));
 
-vi.mock("@langfuse/shared/in-app-agent/server/persistence", async () => {
+vi.mock("@evalsight/shared/in-app-agent/server/persistence", async () => {
   const actual = await vi.importActual<typeof PersistenceModule>(
-    "@langfuse/shared/in-app-agent/server/persistence",
+    "@evalsight/shared/in-app-agent/server/persistence",
   );
 
   return {
@@ -61,9 +61,9 @@ vi.mock("@langfuse/shared/in-app-agent/server/persistence", async () => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", async () => {
+vi.mock("@evalsight/shared/src/server", async () => {
   const actual = await vi.importActual<typeof SharedServerModule>(
-    "@langfuse/shared/src/server",
+    "@evalsight/shared/src/server",
   );
 
   return {

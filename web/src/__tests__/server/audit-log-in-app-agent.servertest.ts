@@ -1,9 +1,9 @@
 import { randomUUID } from "crypto";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
-import { prisma, AuditLogRecordType } from "@langfuse/shared/src/db";
-import { createAndAddApiKeysToDb } from "@langfuse/shared/src/server/auth/apiKeys";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { prisma, AuditLogRecordType } from "@evalsight/shared/src/db";
+import { createAndAddApiKeysToDb } from "@evalsight/shared/src/server/auth/apiKeys";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 
 describe("in-app agent audit logging", () => {
   afterEach(() => {

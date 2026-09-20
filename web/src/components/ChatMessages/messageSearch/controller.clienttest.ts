@@ -1,4 +1,4 @@
-import { ChatMessageRole, ChatMessageType } from "@langfuse/shared";
+import { ChatMessageRole, ChatMessageType } from "@evalsight/shared";
 import {
   applyCodeMirrorSearchQuery,
   setActiveSearchMarkCodeMirrorRange,

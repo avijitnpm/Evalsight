@@ -1,5 +1,5 @@
-import { type MetadataDomain, type TraceDomain } from "@langfuse/shared";
-import { type FullEventsObservations } from "@langfuse/shared/src/server";
+import { type MetadataDomain, type TraceDomain } from "@evalsight/shared";
+import { type FullEventsObservations } from "@evalsight/shared/src/server";
 import { type ObservationReturnTypeWithMetadata } from "@/src/server/api/routers/traces";
 import {
   stringifyMetadata,

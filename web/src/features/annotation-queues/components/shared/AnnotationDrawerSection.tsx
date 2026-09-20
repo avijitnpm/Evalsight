@@ -5,7 +5,7 @@ import {
   type ScoreDomain,
   isPresent,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { TriangleAlertIcon } from "lucide-react";
 import { useSession } from "next-auth/react";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";

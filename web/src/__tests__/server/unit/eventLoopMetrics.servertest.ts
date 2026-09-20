@@ -13,7 +13,7 @@ vi.mock("node:perf_hooks", () => ({
 }));
 // Use the real metric cache and publisher without loading unrelated server clients.
 vi.mock(
-  "@langfuse/shared/src/server",
+  "@evalsight/shared/src/server",
   () => import("../../../../../packages/shared/src/server/instrumentation"),
 );
 
@@ -38,7 +38,7 @@ it("delivers a stalled window even when another metric just flushed, then delive
   const send = vi
     .spyOn(CloudWatchClient.prototype, "send")
     .mockResolvedValue({});
-  const { recordGauge } = await import("@langfuse/shared/src/server");
+  const { recordGauge } = await import("@evalsight/shared/src/server");
   const { startEventLoopMetrics, stopEventLoopMetrics } =
     await import("@/src/utils/eventLoopMetrics");
   stop = stopEventLoopMetrics;

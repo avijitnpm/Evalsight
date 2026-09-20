@@ -1,4 +1,4 @@
-import { EvalTemplateTypeEnum, type EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateTypeEnum, type EvalTemplateType } from "@evalsight/shared";
 
 import { Badge } from "@/src/components/ui/badge";
 

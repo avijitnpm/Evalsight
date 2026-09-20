@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { type EvalTemplate, EvalTemplateType } from "@langfuse/shared";
+import { type EvalTemplate, EvalTemplateType } from "@evalsight/shared";
 import { type RouterOutputs } from "@/src/utils/api";
 import { type PartialConfig } from "@/src/features/evals/types";
 

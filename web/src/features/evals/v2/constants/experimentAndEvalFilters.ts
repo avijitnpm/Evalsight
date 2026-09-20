@@ -1,7 +1,7 @@
 import {
   LangfuseInternalTraceEnvironment,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const INTERNAL_EVALUATION_ENVIRONMENTS = [
   ...Object.values(LangfuseInternalTraceEnvironment),

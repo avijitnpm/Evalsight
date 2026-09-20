@@ -22,7 +22,7 @@ import {
   EvalTemplateSourceCodeLanguage,
   EvalTemplateType,
   type EvalTemplate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { getDefaultCodeEvalSource } from "@/src/features/evals/utils/code-eval-template-starter-examples";
 import { useIsCodeEvalEnabled } from "@/src/features/evals/hooks/useIsCodeEvalEnabled";
 import { CODE_EVAL_ESCAPE_CONFIRM_MESSAGE } from "@/src/features/evals/utils/code-eval-template-utils";

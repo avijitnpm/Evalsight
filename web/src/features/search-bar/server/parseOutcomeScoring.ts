@@ -11,7 +11,7 @@
 // model OR a live Langfuse client.
 
 import { Langfuse } from "langfuse";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { getProductBaseUrl } from "@/src/utils/base-url";
 import type { GeneratedFilters } from "./parseFilterCompletion";
 

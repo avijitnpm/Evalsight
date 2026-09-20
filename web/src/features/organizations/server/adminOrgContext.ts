@@ -1,5 +1,5 @@
-import { CloudConfigSchema } from "@langfuse/shared";
-import { Role, type PrismaClient } from "@langfuse/shared/src/db";
+import { CloudConfigSchema } from "@evalsight/shared";
+import { Role, type PrismaClient } from "@evalsight/shared/src/db";
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server";
 import { type Session } from "next-auth";
 import { TRPCError } from "@trpc/server";

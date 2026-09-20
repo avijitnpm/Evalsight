@@ -2,8 +2,8 @@ import {
   type Organization,
   type PrismaClient,
   prisma as defaultPrisma,
-} from "@langfuse/shared/src/db";
-import { type InternalServerError } from "@langfuse/shared";
+} from "@evalsight/shared/src/db";
+import { type InternalServerError } from "@evalsight/shared";
 
 import { internalServerError, type ErrorResult, type Success } from "./types";
 

@@ -4,7 +4,7 @@ import {
   BooleanConfigFields,
   TextConfigFields,
   validateNumericRangeFields,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import { type CreateConfig, type UpdateConfig } from "./upsertFormTypes";
 

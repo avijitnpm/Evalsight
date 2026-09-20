@@ -9,7 +9,7 @@ import { api } from "@/src/utils/api";
 import { CopyIcon, ListTree, MoreVertical, Pencil, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { DatasetStatus } from "@langfuse/shared";
+import { DatasetStatus } from "@evalsight/shared";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import {
   DropdownMenu,

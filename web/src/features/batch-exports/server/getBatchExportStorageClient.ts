@@ -2,7 +2,7 @@ import { env } from "@/src/env.mjs";
 import {
   type StorageService,
   StorageServiceFactory,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 let batchExportStorageServiceClient: StorageService;
 

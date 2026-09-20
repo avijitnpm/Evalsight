@@ -11,8 +11,8 @@ import {
   createObservation,
   createTracesCh,
   createObservationsCh,
-} from "@langfuse/shared/src/server";
-import { type QueryType } from "@langfuse/shared/query";
+} from "@evalsight/shared/src/server";
+import { type QueryType } from "@evalsight/shared/query";
 
 describe("/api/public/metrics API Endpoint", () => {
   // Test setup variables

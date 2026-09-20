@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import type { AgUiMessage } from "@langfuse/shared/in-app-agent";
+import type { AgUiMessage } from "@evalsight/shared/in-app-agent";
 
 export const InAppAgentMessageFeedbackValueSchema = z.enum([
   "thumbs_up",

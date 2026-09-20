@@ -3,7 +3,7 @@ import { createProjectMembershipsOnSignup } from "@/src/features/auth/lib/create
 import { advanceSessionsExpiredAtForEmail } from "@/src/features/auth/lib/sessionExpiration";
 import type { AdClickIds } from "@/src/features/auth";
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { TRPCError } from "@trpc/server";
 import { compare, hash } from "bcryptjs";
 

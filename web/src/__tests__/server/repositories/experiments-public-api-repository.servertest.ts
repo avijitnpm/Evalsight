@@ -8,7 +8,7 @@ import {
   createScoresCh,
   createTraceScore,
   parseClickhouseUTCDateTimeFormat,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import {

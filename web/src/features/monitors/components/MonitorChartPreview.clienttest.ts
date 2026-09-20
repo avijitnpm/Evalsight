@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   monitorEvaluationOffsetMs,
   windowToMs,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 import { __test } from "./MonitorChartPreview";
 

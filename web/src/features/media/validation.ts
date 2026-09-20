@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { datasetItemMediaFields, MediaContentType } from "@langfuse/shared";
+import { datasetItemMediaFields, MediaContentType } from "@evalsight/shared";
 
 export { MediaContentType };
 

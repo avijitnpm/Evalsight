@@ -1,1 +1,1 @@
-export { truncate } from "@langfuse/shared";
+export { truncate } from "@evalsight/shared";

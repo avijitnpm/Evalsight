@@ -4,7 +4,7 @@ import {
   type AnalyticsData,
   type ScoreTarget,
 } from "@/src/features/scores/types";
-import { type ScoreDomain } from "@langfuse/shared";
+import { type ScoreDomain } from "@evalsight/shared";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 
 type AnnotateDrawerContentProps<Target extends ScoreTarget> = {

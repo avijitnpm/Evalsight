@@ -1,4 +1,4 @@
-import { type MonitorWindow, windowToMs } from "@langfuse/shared/monitors";
+import { type MonitorWindow, windowToMs } from "@evalsight/shared/monitors";
 
 /** monitorPreviewBucketCount is the number of complete window buckets the preview renders. */
 export const monitorPreviewBucketCount = 20;

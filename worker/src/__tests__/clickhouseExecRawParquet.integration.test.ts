@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   queryClickhouseExecRaw,
   BLOB_EXPORT_PARQUET_CLICKHOUSE_SETTINGS,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 // Integration tests for the FORMAT Parquet exec path against a live ClickHouse.
 // Lives in worker (not shared) because the shared test job runs without a

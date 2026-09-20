@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useCallback, useMemo, useState } from "react";
 import { SlidersHorizontal } from "lucide-react";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import { Button } from "@/src/components/ui/button";
 import { Separator } from "@/src/components/ui/separator";
 // Shared, production chart-view components — the harness renders the exact same

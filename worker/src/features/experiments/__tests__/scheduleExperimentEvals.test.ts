@@ -2,13 +2,13 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import {
   convertEventRecordToObservationForEval,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   buildInternalTraceEventInputs,
   materializeInternalTrace,
   prepareInternalTraceEvents,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import type { ObservationForEval } from "../../evaluation/observationEval";
 import { IngestionService } from "../../../services/IngestionService";
 import * as clickhouseWriterExports from "../../../services/ClickhouseWriter";

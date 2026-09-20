@@ -1,9 +1,9 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   invalidateCachedOrgApiKeys,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { organizationNameSchema } from "@/src/features/organizations/utils/organizationNameSchema";
 import { auditLog } from "@/src/features/audit-logs/server";
 import { z } from "zod";

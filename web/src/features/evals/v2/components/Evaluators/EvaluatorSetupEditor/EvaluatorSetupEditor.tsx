@@ -74,4 +74,4 @@ export function EvaluatorSetupEditor({
     </div>
   );
 }
-import type { LLMAdapter } from "@langfuse/shared";
+import type { LLMAdapter } from "@evalsight/shared";

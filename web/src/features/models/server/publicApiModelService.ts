@@ -7,9 +7,9 @@ import {
   type PostModelsV1Body,
   prismaToApiModelDefinition,
 } from "@/src/features/public-api/server";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
-import { clearModelCacheForProject } from "@langfuse/shared/src/server";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
+import { clearModelCacheForProject } from "@evalsight/shared/src/server";
 import type { z } from "zod";
 
 const modelPricingInclude = {

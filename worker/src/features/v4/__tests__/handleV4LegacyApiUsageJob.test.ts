@@ -9,7 +9,7 @@ import {
   V4_LEGACY_API_USAGE_DEEP_RESCAN_AT_KEY,
   V4_LEGACY_API_USAGE_HEARTBEAT_KEY,
   V4_LEGACY_API_USAGE_LOCK_KEY,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /**
  * In-memory Redis fake covering the commands used by the handler and
@@ -70,9 +70,9 @@ const mocks = vi.hoisted(() => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const original =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...original,
     redis: redisMock,
@@ -85,7 +85,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
   };
 });
 
-vi.mock("@langfuse/shared/src/env", () => ({
+vi.mock("@evalsight/shared/src/env", () => ({
   env: {
     CLICKHOUSE_URL: "https://clickhouse-main.example.com",
     CLICKHOUSE_READ_ONLY_URL: "https://clickhouse-read.example.com",

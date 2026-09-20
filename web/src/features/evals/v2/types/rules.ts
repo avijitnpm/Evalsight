@@ -2,7 +2,7 @@ import type {
   EvalTemplateType,
   FilterState,
   ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { StoreApi } from "zustand/vanilla";
 import type { TableSelectionStore } from "@/src/components/table/table-selection-store";
 import type { RouterOutputs } from "@/src/utils/api";

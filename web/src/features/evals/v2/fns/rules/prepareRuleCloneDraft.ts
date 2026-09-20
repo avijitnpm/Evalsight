@@ -1,7 +1,7 @@
 import {
   EvalTemplateType,
   observationVariableMappingList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { prepareModernRuleVariableMapping } from "@/src/features/evals/v2/fns/variableMapping/prepareModernRuleVariableMapping";
 import type {
   RuleDraft,

@@ -10,14 +10,14 @@ import {
   getS3EventStorageClient,
   getTraceById,
   getTraceByIdFromEventsTable,
-} from "@langfuse/shared/src/server";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import { randomBytes } from "crypto";
 import { env } from "@/src/env.mjs";
 import { $root } from "@/src/pages/api/public/otel/otlp-proto/generated/root";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 
 const projectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";
 const eventsTableAvailable =

@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { evaluateJsonPath } from "@langfuse/shared";
+import { evaluateJsonPath } from "@evalsight/shared";
 import { z } from "zod";
 
 const JSON_PATH_MAX_LENGTH = 1_000;

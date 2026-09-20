@@ -5,7 +5,7 @@ import { WidgetForm } from "@/src/features/widgets";
 import { type WidgetSavePayload } from "@/src/features/widgets/components/widgetFormSchema";
 import { showSuccessToast } from "@/src/features/notifications/showSuccessToast";
 import { showErrorToast } from "@/src/features/notifications/showErrorToast";
-import { type metricAggregations, type views } from "@langfuse/shared/query";
+import { type metricAggregations, type views } from "@evalsight/shared/query";
 import { type z } from "zod";
 import { SelectDashboardDialog } from "@/src/features/dashboard/components/SelectDashboardDialog";
 import { useState } from "react";

@@ -2,7 +2,7 @@ import {
   type ScoreDomain,
   type ScoreConfigDomain,
   type ScoreAggregate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   ANNOTATION_SCORE_DATA_TYPES_ARRAY,
   type AnnotationScoreDataType,

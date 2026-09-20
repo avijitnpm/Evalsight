@@ -3,7 +3,7 @@ import type { Span } from "@opentelemetry/api";
 import {
   addUserToSpan,
   contextWithLangfuseProps,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 describe("Langfuse context propagation", () => {
   it("adds api key metadata to span attributes and baggage", () => {

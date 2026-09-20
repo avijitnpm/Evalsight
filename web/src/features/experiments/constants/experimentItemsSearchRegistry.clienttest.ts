@@ -3,7 +3,7 @@ import { EXPERIMENT_ITEMS_FIELD_REGISTRY } from "./experimentItemsSearchRegistry
 import { planCommit } from "@/src/features/search-bar/lib/commit";
 import { filterStateToQueryText } from "@/src/features/search-bar/lib/filter-state-to-query";
 import { hasAmbiguousTargetChange } from "@/src/features/experiments/lib/reconcileFilterTargets";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 describe("experiment item search contract", () => {
   it("lowers root/trace score conditions to the same canonical columns as the sidebar", () => {

@@ -3,7 +3,7 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { paginationZod } from "@langfuse/shared";
+import { paginationZod } from "@evalsight/shared";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { GetBatchActionByIdSchema } from "../validation";

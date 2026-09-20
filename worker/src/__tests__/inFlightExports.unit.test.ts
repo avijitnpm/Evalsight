@@ -3,7 +3,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const mockRecordIncrement = vi.hoisted(() => vi.fn());
 
 // The tracker only needs a logger + metric sink; stub the heavy shared barrel.
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   logger: { info: vi.fn(), warn: vi.fn(), error: vi.fn() },
   recordIncrement: mockRecordIncrement,
 }));

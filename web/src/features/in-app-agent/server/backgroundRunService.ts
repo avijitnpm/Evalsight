@@ -1,15 +1,15 @@
 import { EventType } from "@ag-ui/core";
 import { randomUUID } from "crypto";
 
-import { BaseError, LangfuseNotFoundError, type Plan } from "@langfuse/shared";
-import { Prisma, type PrismaClient } from "@langfuse/shared/src/db";
+import { BaseError, LangfuseNotFoundError, type Plan } from "@evalsight/shared";
+import { Prisma, type PrismaClient } from "@evalsight/shared/src/db";
 import {
   InAppAgentRunQueue,
   logger,
   QueueJobs,
   redis,
-} from "@langfuse/shared/src/server";
-import { deleteInAppAgentMcpApiKeyFromDb } from "@langfuse/shared/src/server/auth/apiKeys";
+} from "@evalsight/shared/src/server";
+import { deleteInAppAgentMcpApiKeyFromDb } from "@evalsight/shared/src/server/auth/apiKeys";
 import {
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
@@ -17,8 +17,8 @@ import {
   parseInAppAgentApprovalDecisionEvent,
   parseInAppAgentInterruptEvent,
   type AgUiContext,
-} from "@langfuse/shared/in-app-agent";
-import { getInAppAgentPrefixedToolName } from "@langfuse/shared/in-app-agent/server/mcpPolicy";
+} from "@evalsight/shared/in-app-agent";
+import { getInAppAgentPrefixedToolName } from "@evalsight/shared/in-app-agent/server/mcpPolicy";
 import { createInAppAgentMessageId, createInAppAgentRunId } from "../ids";
 import {
   ensureOwnedConversation,
@@ -27,7 +27,7 @@ import {
   maybeInferAndPersistConversationTitle,
   serializeConversation,
   type PersistedConversationEvent,
-} from "@langfuse/shared/in-app-agent/server/persistence";
+} from "@evalsight/shared/in-app-agent/server/persistence";
 import {
   cancelConversationRunsInTransaction,
   cleanupTerminalRunMcpApiKeys,
@@ -37,7 +37,7 @@ import {
   reconcileConversationRuns,
   recordImmediateCancelOutcomes,
   requestRunCancellation,
-} from "@langfuse/shared/in-app-agent/server/runLifecycle";
+} from "@evalsight/shared/in-app-agent/server/runLifecycle";
 
 import { serializeInAppAgentDisplayState } from "@/src/features/in-app-agent/lib/display";
 import { assertInAppAgentRunCapacity } from "@/src/features/in-app-agent/server/runCapacity";

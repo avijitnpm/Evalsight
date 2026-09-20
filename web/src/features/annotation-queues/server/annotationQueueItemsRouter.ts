@@ -17,14 +17,14 @@ import {
   LangfuseNotFoundError,
   paginationZod,
   Prisma,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getObservationById,
   getObservationByIdFromEventsTable,
   getObservationsTraceIdsFromEventsTable,
   getTraceIdsForObservations,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { env } from "@/src/env.mjs";

@@ -1,4 +1,4 @@
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { chartFilterExclusionReason } from "@/src/features/chart-view/lib/chartFilterCompatibility";
 
 export const canApplyOutlierStripFilters = (

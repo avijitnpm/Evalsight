@@ -1,4 +1,4 @@
-import type { ColumnDefinition } from "@langfuse/shared";
+import type { ColumnDefinition } from "@evalsight/shared";
 
 import type { ObservedOptions } from "@/src/features/search-bar";
 

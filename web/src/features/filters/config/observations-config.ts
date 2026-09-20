@@ -1,4 +1,4 @@
-import { observationsTableCols } from "@langfuse/shared";
+import { observationsTableCols } from "@evalsight/shared";
 import {
   omitFilterFacets,
   type FilterConfig,

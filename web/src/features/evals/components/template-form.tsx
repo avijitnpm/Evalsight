@@ -33,7 +33,7 @@ import {
   type EvalTemplate,
   type ModelParams,
   ZodModelConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import router from "next/router";
 import { ModelParameters } from "@/src/components/ModelParameters";
 import { PromptVariableListPreview } from "@/src/features/prompts/components/PromptVariableListPreview";

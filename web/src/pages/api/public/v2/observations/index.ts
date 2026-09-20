@@ -1,5 +1,5 @@
-import { getObservationsV2FromEventsTableForPublicApi } from "@langfuse/shared/src/server";
-import { LangfuseNotFoundError } from "@langfuse/shared";
+import { getObservationsV2FromEventsTableForPublicApi } from "@evalsight/shared/src/server";
+import { LangfuseNotFoundError } from "@evalsight/shared";
 
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";

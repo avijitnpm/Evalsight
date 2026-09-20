@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Bot, ChevronDown, UserRound, Wrench } from "lucide-react";
-import { type ReasoningPart } from "@langfuse/shared/src/utils/normalized-io";
+import { type ReasoningPart } from "@evalsight/shared/src/utils/normalized-io";
 
 import { type SessionTimelineConversationMessage } from "@/src/features/sessions/SessionConversationTimeline/fns/processTimelineMessages";
 import { SessionTimelinePart } from "@/src/features/sessions/SessionConversationTimeline/components/SessionTimelinePart/SessionTimelinePart";

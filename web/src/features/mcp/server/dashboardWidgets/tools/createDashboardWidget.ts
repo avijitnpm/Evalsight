@@ -3,8 +3,8 @@ import { z } from "zod";
 import {
   DashboardWidgetChartType,
   InvalidRequestError,
-} from "@langfuse/shared";
-import { metricAggregations } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { metricAggregations } from "@evalsight/shared/query";
 import { defineTool } from "@/src/features/mcp/core/define-tool";
 import { runMcpTool } from "@/src/features/mcp/core/run-mcp-tool";
 import { createPublicDashboardWidget } from "@/src/features/widgets/server";
@@ -14,7 +14,7 @@ import {
   PostUnstableDashboardWidgetBody,
   PostUnstableDashboardWidgetView,
 } from "@/src/features/public-api/server";
-import { buildDashboardWidgetUrl } from "@langfuse/shared/src/server";
+import { buildDashboardWidgetUrl } from "@evalsight/shared/src/server";
 
 export const DashboardWidgetFilterBaseSchema = z
   .object({

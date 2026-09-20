@@ -38,7 +38,7 @@ import {
   executeLlmEvaluator,
   type CodeEvalScoreWithName,
   type EvaluatorLlmErrorClassification,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   inMemoryFilterRequiresMetadata,
   mapTraceFilterColumn,
@@ -67,9 +67,9 @@ import {
   extractValueFromObject,
   validateEvaluatorFiltersForTarget,
   type EvalExecutionContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { env } from "../../env";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { createW3CTraceId } from "../utils";
 import { UnrecoverableError } from "../../errors/UnrecoverableError";
 import { ObservationNotFoundError } from "../../errors/ObservationNotFoundError";
@@ -85,7 +85,7 @@ import {
   type EvalExecutionDeps,
   createProductionEvalExecutionDeps,
 } from "./evalExecutionDeps";
-import { type ExtractedVariable } from "@langfuse/shared/src/server";
+import { type ExtractedVariable } from "@evalsight/shared/src/server";
 import {
   buildEvalExecutionSpanAttributes,
   buildEvaluatorLlmErrorSpanAttributes,

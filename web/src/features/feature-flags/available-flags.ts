@@ -1,4 +1,4 @@
-import { assertUnreachable } from "@langfuse/shared";
+import { assertUnreachable } from "@evalsight/shared";
 
 export const featurePreviewFlags = [
   "modernSession",

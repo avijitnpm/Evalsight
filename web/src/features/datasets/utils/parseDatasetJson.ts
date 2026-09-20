@@ -1,4 +1,4 @@
-import { isJsonNumberLiteral, parseJsonPrioritised } from "@langfuse/shared";
+import { isJsonNumberLiteral, parseJsonPrioritised } from "@evalsight/shared";
 
 export function parseDatasetJson(value: string): unknown {
   return parseJsonPrioritised(value);

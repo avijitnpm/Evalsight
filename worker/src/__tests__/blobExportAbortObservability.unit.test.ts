@@ -7,7 +7,7 @@ const incrementCalls = vi.hoisted(
 );
 const errorLogs = vi.hoisted(() => [] as { msg: string; meta: unknown }[]);
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     blobStorageIntegration: {
       findUnique: vi.fn(),
@@ -20,9 +20,9 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const mod =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
 
   // Mirrors enrichWithQueryId: a real CH exception with a query_id appended.
   async function* throwsChException(): AsyncGenerator<Record<string, unknown>> {
@@ -69,7 +69,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
   };
 });
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { handleBlobStorageIntegrationProjectJob } from "../features/blobstorage/handleBlobStorageIntegrationProjectJob";
 import type { Job } from "bullmq";
 

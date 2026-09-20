@@ -22,9 +22,9 @@ import {
   createTracesCh,
   createObservation,
   createObservationsCh,
-} from "@langfuse/shared/src/server";
-import { QueryBuilder, executeQuery } from "@langfuse/shared/query/server";
-import { type QueryType } from "@langfuse/shared/query";
+} from "@evalsight/shared/src/server";
+import { QueryBuilder, executeQuery } from "@evalsight/shared/query/server";
+import { type QueryType } from "@evalsight/shared/query";
 import {
   transformToPivotTable,
   type DatabaseRow,

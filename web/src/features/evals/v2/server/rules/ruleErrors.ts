@@ -2,12 +2,12 @@ import {
   InvalidRequestError,
   LangfuseConflictError,
   EvalTargetObject,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   type PrismaClient,
   type Prisma,
   JobConfigState,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 
 /**
  * Enforced for every surface (tRPC, MCP, public API) through this shared guard,

@@ -2,7 +2,7 @@
 
 import { describe, expect, it } from "vitest";
 
-import { TriggerEventSource } from "@langfuse/shared";
+import { TriggerEventSource } from "@evalsight/shared";
 import { WebhookActionHandler } from "./WebhookActionHandler";
 
 const handler = new WebhookActionHandler();

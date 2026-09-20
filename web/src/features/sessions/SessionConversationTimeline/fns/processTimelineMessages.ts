@@ -2,7 +2,7 @@ import {
   type NormalizedMessage,
   type NormalizedMessagePart,
   type ToolCallPart,
-} from "@langfuse/shared/src/utils/normalized-io";
+} from "@evalsight/shared/src/utils/normalized-io";
 
 import {
   getConversationEntries,

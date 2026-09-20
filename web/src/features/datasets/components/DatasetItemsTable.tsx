@@ -16,7 +16,7 @@ import {
   DatasetStatus,
   type Prisma,
   BatchExportTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type LangfuseColumnDef } from "@/src/components/table/types";
 import { useDetailPageLists } from "@/src/features/navigate-detail-pages/context";
 import { useEffect, useState } from "react";

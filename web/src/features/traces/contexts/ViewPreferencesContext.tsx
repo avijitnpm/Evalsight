@@ -12,7 +12,7 @@
  */
 
 import { createContext, useContext, useMemo, type ReactNode } from "react";
-import { type ObservationLevelType, ObservationLevel } from "@langfuse/shared";
+import { type ObservationLevelType, ObservationLevel } from "@evalsight/shared";
 import useLocalStorage from "@/src/components/useLocalStorage";
 import { useCollapseSystemPromptPreference } from "@/src/hooks/useCollapsibleSystemPrompt";
 import {

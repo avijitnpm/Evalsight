@@ -24,8 +24,8 @@ import {
   deleteObservationsOlderThanDays,
   deleteScoresOlderThanDays,
   deleteEventsOlderThanDays,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { Job } from "bullmq";
 import { projectDeleteProcessor } from "../queues/projectDelete";
 

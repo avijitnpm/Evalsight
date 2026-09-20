@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { api, sendAsPostOption } from "@/src/utils/api";
 import {
   type ExperimentItemsTableRow,

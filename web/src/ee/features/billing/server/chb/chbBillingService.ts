@@ -3,12 +3,12 @@ import { TRPCError } from "@trpc/server";
 import { env } from "@/src/env.mjs";
 import { type OrgAuthedContext } from "@/src/server/api/trpc";
 import { auditLog } from "@/src/features/audit-logs/server";
-import { CloudConfigSchema, parseDbOrg } from "@langfuse/shared";
+import { CloudConfigSchema, parseDbOrg } from "@evalsight/shared";
 import {
   getBillingCycleEnd,
   getBillingCycleStart,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { type BillingSubscriptionInfo } from "../stripe/stripeBillingService";
 import {

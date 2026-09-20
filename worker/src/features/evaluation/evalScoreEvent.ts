@@ -1,11 +1,11 @@
 import { randomUUID } from "crypto";
-import { ScoreSourceEnum, type EvalExecutionContext } from "@langfuse/shared";
+import { ScoreSourceEnum, type EvalExecutionContext } from "@evalsight/shared";
 import {
   buildDeterministicEvalScoreIds,
   eventTypes,
   ScoreEventType,
   type CodeEvalScoreWithName,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export type EvalScoreWritePayload = {
   eventId: string;

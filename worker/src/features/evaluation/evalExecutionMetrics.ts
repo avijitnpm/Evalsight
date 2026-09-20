@@ -1,11 +1,11 @@
-import { EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateType } from "@evalsight/shared";
 import {
   CodeEvalDispatcherErrorCodes,
   CodeEvalExecutionError,
   recordDistribution,
   recordIncrement,
   type EvaluatorLlmErrorClassification,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export type ObservationEvalExecutionType =
   | typeof EvalTemplateType.LLM_AS_JUDGE

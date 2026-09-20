@@ -9,8 +9,8 @@ import { describe, it, expect, beforeEach, vi } from "vitest";
 import {
   metadataArraysToRecord,
   OtelIngestionProcessor,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { IngestionService } from "../../services/IngestionService";
 import * as clickhouseWriterExports from "../../services/ClickhouseWriter";
 

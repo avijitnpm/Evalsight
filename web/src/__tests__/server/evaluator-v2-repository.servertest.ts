@@ -1,8 +1,8 @@
 import { randomUUID } from "crypto";
-import { getCodeEvalVariableMapping, LLMAdapter } from "@langfuse/shared";
-import { encrypt } from "@langfuse/shared/encryption";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { getCodeEvalVariableMapping, LLMAdapter } from "@evalsight/shared";
+import { encrypt } from "@evalsight/shared/encryption";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { afterAll, afterEach, beforeAll, describe, expect, it } from "vitest";
 import * as evaluatorRepository from "@/src/features/evals/v2/server/evaluators/evaluatorRepository";
 import { EvaluatorVersionConflictError } from "@/src/features/evals/v2/server/evaluators/evaluatorErrors";

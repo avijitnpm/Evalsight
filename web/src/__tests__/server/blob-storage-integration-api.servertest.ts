@@ -2,19 +2,19 @@ import {
   makeZodVerifiedAPICall,
   makeAPICall,
 } from "@/src/__tests__/test-utils";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { z } from "zod";
 import { randomUUID } from "crypto";
 import {
   createAndAddApiKeysToDb,
   createBasicAuthHeader,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   OBSERVATION_FIELD_GROUPS_FULL,
   LEGACY_EXPORT_PROJECT_CUTOFF,
   LEGACY_BLOB_EXPORTER_CUTOFF,
-} from "@langfuse/shared";
-import { decrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared";
+import { decrypt } from "@evalsight/shared/encryption";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const PRE_CUTOFF = new Date(

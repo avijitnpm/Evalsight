@@ -11,7 +11,7 @@ import {
   Prompt,
   safeJsonParse,
   type JsonNested,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   ClickhouseClientType,
   convertDateToClickhouseDateTime,
@@ -60,7 +60,7 @@ import {
   sanitizeSdkMetricTagValue,
   type IngestionAttribution,
   type PricingTierMatchAttributes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { tokenCountAsync } from "../../features/tokenisation/async-usage";
 import { ClickhouseWriter, TableName } from "../ClickhouseWriter";

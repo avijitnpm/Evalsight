@@ -1,4 +1,4 @@
-import { type PrismaClient } from "@langfuse/shared";
+import { type PrismaClient } from "@evalsight/shared";
 
 type CheckHasProtectedLabelsParams = {
   labelsToCheck: string[];

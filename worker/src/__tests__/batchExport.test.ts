@@ -15,13 +15,13 @@ import {
   createEventsCh,
   getEventsForBlobStorageExport,
   streamTransformations,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   BatchExportFileFormat,
   BatchExportTableName,
   DatasetStatus,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { getDatabaseReadStreamPaginated } from "../features/database-read-stream/getDatabaseReadStream";
 import { getObservationStream } from "../features/database-read-stream/observation-stream";
 import { getTraceStream } from "../features/database-read-stream/trace-stream";

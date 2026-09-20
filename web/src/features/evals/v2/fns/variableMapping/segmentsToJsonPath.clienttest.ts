@@ -6,7 +6,7 @@ import {
   jsonPathToSegments,
   segmentsToJsonPath,
 } from "@/src/features/evals/v2/fns/variableMapping/segmentsToJsonPath";
-import { extractValueFromObject } from "@langfuse/shared";
+import { extractValueFromObject } from "@evalsight/shared";
 
 describe("JSONPath segments", () => {
   it("stores and restores a dynamic last-entry JSONPath", () => {

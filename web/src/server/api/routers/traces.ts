@@ -29,7 +29,7 @@ import {
   getTracesGroupedBySessionId,
   updateEvents,
   getScoresAndCorrectionsForTraces,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   createTRPCRouter,
   protectedGetTraceProcedure,
@@ -55,7 +55,7 @@ import {
   ScoreDataTypeArray,
   ScoreDataTypeEnum,
   LISTABLE_SCORE_TYPES,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { TRPCError } from "@trpc/server";
 import { createBatchActionJob } from "@/src/features/table/server/createBatchActionJob";
 import { throwIfNoEntitlement } from "@/src/features/entitlements/server/hasEntitlement";

@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 
-import { type Monitor } from "@langfuse/shared/monitors";
+import { type Monitor } from "@evalsight/shared/monitors";
 
 vi.mock("@/src/components/deleteButton", () => ({
   DeleteMonitorButton: (props: { itemId: string }) => (

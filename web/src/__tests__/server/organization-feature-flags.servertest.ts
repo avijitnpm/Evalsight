@@ -1,8 +1,8 @@
 import type { Session } from "next-auth";
 import { randomUUID } from "node:crypto";
 
-import { Role, type Plan } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { Role, type Plan } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "@/src/env.mjs";
 import { getFeaturePreviewOptOutFlag } from "@/src/features/feature-flags/utils";
 import { appRouter } from "@/src/server/api/root";

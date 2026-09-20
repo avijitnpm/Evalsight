@@ -8,9 +8,9 @@
  *   (events tables not written) rejects v2 — not covered here because the
  *   test env boots in dual mode.
  */
-import { type QueryType } from "@langfuse/shared/query";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+import { type QueryType } from "@evalsight/shared/query";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import type { Session } from "next-auth";

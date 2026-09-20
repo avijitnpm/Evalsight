@@ -1,4 +1,4 @@
-import { MediaReferenceStringSchema } from "@langfuse/shared";
+import { MediaReferenceStringSchema } from "@evalsight/shared";
 
 const LANGFUSE_MEDIA_PREFIX = "@@@langfuseMedia:";
 const LANGFUSE_MEDIA_REFERENCE_PATTERN = /@@@langfuseMedia:[^@]*@@@/g;

@@ -1,18 +1,18 @@
-// Mock env before any @langfuse/shared module is loaded to prevent parse failures
+// Mock env before any @evalsight/shared module is loaded to prevent parse failures
 // in environments without a .env file.
-vi.mock("@langfuse/shared/src/env", () => ({
+vi.mock("@evalsight/shared/src/env", () => ({
   env: new Proxy({} as Record<string, unknown>, { get: () => undefined }),
   removeEmptyEnvVariables: (e: Record<string, string | undefined>) => e,
 }));
 
 // Prisma client creation is a module-level side effect; stub it out.
-vi.mock("@langfuse/shared/src/db", () => ({ prisma: {} }));
+vi.mock("@evalsight/shared/src/db", () => ({ prisma: {} }));
 
 import {
   type EventsObservationRecordReadType,
   convertEventsObservation,
   DEFAULT_RENDERING_PROPS,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const TRACE_CONTEXT_FIELDS = [
   "userId",

@@ -12,7 +12,7 @@ import {
   applyCommentFilters,
   getObservationsCountFromEventsTable,
   getObservationsTableCount,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import {
   BatchTableNames,
@@ -20,7 +20,7 @@ import {
   BatchActionStatus,
   ActionId,
   InvalidRequestError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 import { CreateObservationAddToDatasetActionSchema } from "../validation";
 import { assertLegacyTracingIoSearchCanCreateBatchJob } from "@/src/features/traces/server/legacyIoSearch";

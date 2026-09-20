@@ -100,7 +100,7 @@ import {
 } from "@/src/components/ui/popover";
 import { DataTableAIFilters } from "@/src/components/table/data-table-ai-filters";
 import { useLangfuseCloudRegion } from "@/src/features/organizations/hooks";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 interface ControlsContextType {
   open: boolean;

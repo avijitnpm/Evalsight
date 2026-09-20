@@ -1,4 +1,4 @@
-import { ScoreDataTypeEnum } from "@langfuse/shared";
+import { ScoreDataTypeEnum } from "@evalsight/shared";
 
 const numericOutputDefinitionDefaults = {
   scoreDataType: ScoreDataTypeEnum.NUMERIC,

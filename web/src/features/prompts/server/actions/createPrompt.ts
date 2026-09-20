@@ -10,8 +10,8 @@ import {
   LATEST_PROMPT_LABEL,
   PromptType,
   extractVariables,
-} from "@langfuse/shared";
-import { type PrismaClient, Prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { type PrismaClient, Prisma } from "@evalsight/shared/src/db";
 import { removeLabelsFromPreviousPromptVersions } from "@/src/features/prompts/server/utils/updatePromptLabels";
 import { updatePromptTagsOnAllVersions } from "@/src/features/prompts/server/utils/updatePromptTags";
 import {
@@ -22,7 +22,7 @@ import {
   logger,
   extractPlaceholderNames,
   type PromptResult,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { promptChangeEventSourcing } from "@/src/features/prompts/server/promptChangeEventSourcing";
 
 export type CreatePromptParams = CreatePromptTRPCType & {

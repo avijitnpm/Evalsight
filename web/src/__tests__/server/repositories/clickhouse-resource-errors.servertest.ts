@@ -5,7 +5,7 @@ import {
   queryClickhouseExecRaw,
   queryClickhouseWithProgress,
   ClickHouseResourceError,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { fail } from "assert";
 import { randomUUID } from "node:crypto";
 

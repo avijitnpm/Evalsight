@@ -1,5 +1,5 @@
-import { ClickHouseClientManager, logger } from "@langfuse/shared/src/server";
-import { disconnectAllRedisInstances } from "@langfuse/shared/src/server";
+import { ClickHouseClientManager, logger } from "@evalsight/shared/src/server";
+import { disconnectAllRedisInstances } from "@evalsight/shared/src/server";
 
 import { ClickhouseWriter } from "../services/ClickhouseWriter";
 import { setSigtermReceived } from "../features/health";
@@ -9,7 +9,7 @@ import { getTokenCountWorkerManager } from "../features/tokenisation/async-usage
 import { WorkerManager } from "../queues/workerManager";
 import { logInFlightBlobExportsOnShutdown } from "../features/blobstorage/inFlightExports";
 import { abortActiveInAppAgentRuns } from "../features/in-app-agent/executeInAppAgentRun";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { BackgroundMigrationManager } from "../backgroundMigrations/backgroundMigrationManager";
 import {
   batchProjectCleaners,

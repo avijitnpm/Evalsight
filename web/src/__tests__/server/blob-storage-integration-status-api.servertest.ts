@@ -2,13 +2,13 @@ import {
   makeZodVerifiedAPICall,
   makeAPICall,
 } from "@/src/__tests__/test-utils";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { z } from "zod";
 import { randomUUID } from "crypto";
 import {
   createAndAddApiKeysToDb,
   createBasicAuthHeader,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const BlobStorageIntegrationStatusResponseSchema = z
   .object({

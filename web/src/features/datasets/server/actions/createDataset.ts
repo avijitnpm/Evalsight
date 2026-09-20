@@ -4,9 +4,9 @@ import {
   InvalidRequestError,
   LangfuseConflictError,
   Prisma,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { validateAllDatasetItems } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { validateAllDatasetItems } from "@evalsight/shared/src/server";
 
 type DatasetJson =
   | Prisma.InputJsonObject

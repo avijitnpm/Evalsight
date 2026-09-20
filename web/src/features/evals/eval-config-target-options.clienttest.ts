@@ -3,7 +3,7 @@
 import {
   EvalTargetObject,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { resolveCheckboxOperator } from "@/src/features/filters";
 import { evalConfigFilterColumns } from "@/src/server/api/definitions/evalConfigsTable";
 import {

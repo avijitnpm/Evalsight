@@ -6,13 +6,13 @@ import {
   type EvaluationRuleWithAssignments,
   type ObservationEvalSchedulerDeps,
 } from "../types";
-import { type Prisma } from "@langfuse/shared/src/db";
+import { type Prisma } from "@evalsight/shared/src/db";
 import {
   EvalTargetObject,
   EvalTemplateType,
   JobConfigState,
   JobExecutionStatus,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createW3CTraceId } from "../../../utils";
 
 describe("scheduleObservationEvals", () => {

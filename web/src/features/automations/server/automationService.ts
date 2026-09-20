@@ -1,6 +1,6 @@
-import { TriggerEventSource, type TriggerDomain } from "@langfuse/shared";
-import { type PrismaClient, type Trigger } from "@langfuse/shared/src/db";
-import { getAutomationById } from "@langfuse/shared/src/server";
+import { TriggerEventSource, type TriggerDomain } from "@evalsight/shared";
+import { type PrismaClient, type Trigger } from "@evalsight/shared/src/db";
+import { getAutomationById } from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 
 /** assertProjectNotificationAutomation loads an automation and guards it to the project-notification source. */

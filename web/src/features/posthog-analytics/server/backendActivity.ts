@@ -1,5 +1,5 @@
 /* eslint-disable @repo/no-exotic-operators */
-import { logger, redis } from "@langfuse/shared/src/server";
+import { logger, redis } from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import { ServerPosthog } from "@/src/features/posthog-analytics/ServerPosthog";

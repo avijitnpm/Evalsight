@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   OutboundUrlValidationError,
   RedirectValidationError,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   classifyCustomerFault,
   isCustomerFaultError,

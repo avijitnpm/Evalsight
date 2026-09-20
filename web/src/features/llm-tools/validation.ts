@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { LLMJSONSchema, LLMToolNameSchema } from "@langfuse/shared";
+import { LLMJSONSchema, LLMToolNameSchema } from "@evalsight/shared";
 
-export { LLMToolNameSchema } from "@langfuse/shared";
+export { LLMToolNameSchema } from "@evalsight/shared";
 
 const LLMToolInput = z.object({
   name: LLMToolNameSchema,

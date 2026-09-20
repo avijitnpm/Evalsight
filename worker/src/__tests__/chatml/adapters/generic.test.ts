@@ -5,7 +5,7 @@ import {
   normalizeOutput,
   combineInputOutputMessages,
   cleanLegacyOutput,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("Generic Adapter", () => {
   it("should always detect (fallback)", () => {

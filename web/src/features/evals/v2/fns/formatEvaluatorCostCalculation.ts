@@ -1,4 +1,4 @@
-import { type EvalTemplateType, EvalTemplateTypeEnum } from "@langfuse/shared";
+import { type EvalTemplateType, EvalTemplateTypeEnum } from "@evalsight/shared";
 import { numberFormatter, usdFormatter } from "@/src/utils/numbers";
 
 export function formatEvaluatorCostCalculation({

@@ -59,7 +59,7 @@ import {
   hasPromptToolStructuredOutputConflict,
   PROMPT_TOOL_STRUCTURED_OUTPUT_CONFLICT_MESSAGE,
   PromptType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const LegacyExperimentNameValidation = ({
   projectId,

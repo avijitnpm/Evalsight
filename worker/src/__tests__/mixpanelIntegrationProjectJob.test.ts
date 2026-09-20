@@ -97,7 +97,7 @@ vi.mock("../features/mixpanel/transformers", () => ({
   transformEventForMixpanel: vi.fn((e) => e),
 }));
 
-vi.mock("@langfuse/shared/encryption", () => ({
+vi.mock("@evalsight/shared/encryption", () => ({
   decrypt: vi.fn(() => "decrypted-token"),
 }));
 
@@ -115,7 +115,7 @@ vi.mock("../env", () => ({
     e.LANGFUSE_MIGRATION_V4_WRITE_MODE !== "legacy",
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     mixpanelIntegration: {
       findFirst: vi.fn(async () => h.db.integration),
@@ -124,7 +124,7 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   QueueName: { MixpanelIntegrationProcessingQueue: "mixpanel" },
   logger: { info: vi.fn(), warn: vi.fn(), error: vi.fn(), debug: vi.fn() },
   recordIncrement: vi.fn(),
@@ -147,8 +147,8 @@ import {
   getScoresForAnalyticsIntegrations,
   recordIncrement,
   recordDistribution,
-} from "@langfuse/shared/src/server";
-import { decrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared/src/server";
+import { decrypt } from "@evalsight/shared/encryption";
 import { EXPORT_FRESHNESS_LAG_METRIC } from "../services/exportFreshnessLagMetric";
 import { env } from "../env";
 

@@ -4,7 +4,7 @@ import {
   protectedOrganizationProcedure,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { isForceV3ExperienceProject } from "@langfuse/shared/src/server";
+import { isForceV3ExperienceProject } from "@evalsight/shared/src/server";
 import {
   getAccessibleOrganizationProjects,
   getProjectV4MigrationData,

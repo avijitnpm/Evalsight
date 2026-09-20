@@ -2,7 +2,7 @@ import type { RefObject } from "react";
 import type { DatasetFormRef } from "@/src/features/datasets";
 
 // Re-export base types from shared
-export type { SourceField, MappingMode, MappingTarget } from "@langfuse/shared";
+export type { SourceField, MappingMode, MappingTarget } from "@evalsight/shared";
 
 import type {
   SourceField,
@@ -10,7 +10,7 @@ import type {
   RootMappingConfig,
   KeyValueMappingEntry as SharedKeyValueMappingEntry,
   MappingTarget,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Step definitions - dialog-specific
 export type DialogStep =

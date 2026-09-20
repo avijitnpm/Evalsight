@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { metadataArraysToRecord } from "@langfuse/shared/src/server";
+import { metadataArraysToRecord } from "@evalsight/shared/src/server";
 
 describe("metadataArraysToRecord", () => {
   it("should return undefined for empty arrays", () => {

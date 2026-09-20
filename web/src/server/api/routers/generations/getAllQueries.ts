@@ -4,13 +4,13 @@ import {
   BatchTableNames,
   normalizeOrderByForTable,
   paginationZod,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { GenerationTableOptions } from "./utils/GenerationTableOptions";
 import { getAllGenerations } from "@/src/server/api/routers/generations/db/getAllGenerationsSqlQuery";
 import {
   getObservationsTableCount,
   applyCommentFilters,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { sanitizeLegacyTracingSearch } from "@/src/features/traces/server/legacyIoSearch";
 
 const GetAllGenerationsInput = GenerationTableOptions.safeExtend({

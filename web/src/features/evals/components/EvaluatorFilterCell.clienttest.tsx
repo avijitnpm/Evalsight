@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { EvaluatorFilterCell } from "@/src/features/evals/components/EvaluatorFilterCell";
 
 const ENVIRONMENT_FILTER = [

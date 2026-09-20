@@ -1,5 +1,5 @@
-import { prisma } from "@langfuse/shared/src/db";
-import { logger, redis } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger, redis } from "@evalsight/shared/src/server";
 import { Response } from "express";
 
 import { env, v4WritesToEventsTable } from "../../env";

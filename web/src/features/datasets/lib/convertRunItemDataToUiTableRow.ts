@@ -2,8 +2,8 @@ import {
   type DatasetRunItemByRunRowData,
   type DatasetRunItemByItemRowData,
 } from "./types";
-import { type EnrichedDatasetRunItem } from "@langfuse/shared/src/server";
-import { isPresent } from "@langfuse/shared";
+import { type EnrichedDatasetRunItem } from "@evalsight/shared/src/server";
+import { isPresent } from "@evalsight/shared";
 
 const getRunItemTotalCost = (
   item: EnrichedDatasetRunItem,

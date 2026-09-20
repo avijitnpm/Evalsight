@@ -1,7 +1,7 @@
 import { type NextApiRequest } from "next";
 
-import { ForbiddenError, UnauthorizedError } from "@langfuse/shared";
-import { type ApiAccessScope } from "@langfuse/shared/src/server";
+import { ForbiddenError, UnauthorizedError } from "@evalsight/shared";
+import { type ApiAccessScope } from "@evalsight/shared/src/server";
 
 import { hasEntitlementBasedOnPlan } from "@/src/features/entitlements/server/hasEntitlement";
 import { shadowAuth } from "@/src/features/public-api/server/shadowAuth";

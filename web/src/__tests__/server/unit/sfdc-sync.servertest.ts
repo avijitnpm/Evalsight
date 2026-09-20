@@ -95,13 +95,13 @@ vi.mock("@/src/env.mjs", async (importOriginal) => {
 });
 // Partial mock — keep Role/Prisma/type exports for the router graph; only
 // the prisma client is replaced.
-vi.mock("@langfuse/shared/src/db", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/db", async (importOriginal) => {
   const actual = (await importOriginal()) as Record<string, unknown>;
   return { ...actual, prisma: prismaMock };
 });
 // Partial mock — keep real exports for teardown.ts which imports `redis` and
 // `ClickHouseClientManager` from this module.
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = (await importOriginal()) as Record<string, unknown>;
   return {
     ...actual,
@@ -125,8 +125,8 @@ import { createProjectMembershipsOnSignup } from "@/src/features/auth/lib/create
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { handleUpdateMembership } from "@/src/ee/features/admin-api/server/memberships";
-import { CloudConfigSchema, Role } from "@langfuse/shared";
-import { type PrismaClient } from "@langfuse/shared/src/db";
+import { CloudConfigSchema, Role } from "@evalsight/shared";
+import { type PrismaClient } from "@evalsight/shared/src/db";
 import type { Session } from "next-auth";
 import { type NextApiRequest, type NextApiResponse } from "next";
 

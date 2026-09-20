@@ -5,7 +5,7 @@ import {
   type OrderByState,
   type TableViewPresetState,
   type ColumnDefinition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type NextRouter, useRouter } from "next/router";
 import { useEffect, useCallback, useState, useRef } from "react";
 import { type VisibilityState } from "@tanstack/react-table";

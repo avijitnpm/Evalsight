@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const mocks = vi.hoisted(() => ({
@@ -20,7 +20,7 @@ vi.mock("@/src/features/playground/server/authorizeRequest", () => ({
   authorizeRequestOrThrow: mocks.authorize,
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: { llmApiKeys: { findFirst: mocks.findConnection } },
 }));
 
@@ -30,7 +30,7 @@ vi.mock("@opentelemetry/api", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
 
   return {
@@ -48,7 +48,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
 });
 
 import chatCompletionHandler from "@/src/features/playground/server/chatCompletionHandler";
-import { LLMValidationError } from "@langfuse/shared/src/server";
+import { LLMValidationError } from "@evalsight/shared/src/server";
 
 const AISDK_ERROR_MARKER = Symbol.for("vercel.ai.error");
 const API_CALL_ERROR_MARKER = Symbol.for("vercel.ai.error.AI_APICallError");

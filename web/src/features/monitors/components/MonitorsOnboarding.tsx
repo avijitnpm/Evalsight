@@ -5,7 +5,7 @@ import { ActionButton } from "@/src/components/ActionButton";
 import { Button } from "@/src/components/ui/button";
 import { SplashScreen } from "@/src/components/ui/splash-screen";
 import { automationCreateHref } from "@/src/features/automations/components/automationForm";
-import { type ActionTypes } from "@langfuse/shared";
+import { type ActionTypes } from "@evalsight/shared";
 
 /** OnboardingChannel describes one notification-channel CTA shown in step 1 of the splash. */
 type OnboardingChannel = {

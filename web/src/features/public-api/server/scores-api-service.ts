@@ -14,7 +14,7 @@ import {
   type PostScoresBodyV1,
   scoresTableCols,
   type ScoreDataTypeType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   _handleGetScoreById,
   eventTypes,
@@ -29,7 +29,7 @@ import {
   deriveFilters,
   convertApiProvidedFilterToClickhouseFilter,
   scoresTableUiColumnDefinitions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { z } from "zod";
 
 const secureScoreFilterOptions = [

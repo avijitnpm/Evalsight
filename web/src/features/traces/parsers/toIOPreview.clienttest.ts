@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { NormalizedIO } from "@langfuse/shared/src/utils/normalized-io";
+import type { NormalizedIO } from "@evalsight/shared/src/utils/normalized-io";
 import { toIOPreview } from "./toIOPreview";
 
 const emptySpan = { input: undefined, output: undefined, metadata: undefined };

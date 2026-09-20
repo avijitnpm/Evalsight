@@ -8,7 +8,7 @@ import {
   GetCommentV1Response,
   PostCommentsV1Response,
 } from "@/src/features/public-api/types/comments";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { z } from "zod";
 import {
   createObservationsCh,
@@ -17,7 +17,7 @@ import {
   createTrace,
   createEvent,
   createEventsCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const seedProjectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";
 

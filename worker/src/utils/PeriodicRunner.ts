@@ -5,7 +5,7 @@ import {
   recordGauge,
   recordIncrement,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { SpanKind } from "@opentelemetry/api";
 
 const METRIC_PREFIX = "langfuse.periodic_runner";

@@ -32,7 +32,7 @@ import {
   validateExportSource,
   type V4WriteMode,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Alert } from "@/src/components/design-system/Alert/Alert";
 // Shared export-source UI adapters; policy in export-source-policy.ts.
 import {

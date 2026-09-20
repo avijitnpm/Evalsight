@@ -1,4 +1,4 @@
-import { eventsTableCols, type FilterState } from "@langfuse/shared";
+import { eventsTableCols, type FilterState } from "@evalsight/shared";
 import {
   omitFilterFacets,
   type FilterConfig,

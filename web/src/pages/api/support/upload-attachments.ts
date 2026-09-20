@@ -1,7 +1,7 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
 import { getServerAuthSession } from "@/src/server/auth";
 import { env } from "@/src/env.mjs";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { uploadPylonAttachment } from "@/src/features/support-chat/pylon/pylonClient";
 import { PYLON_MAX_FILE_SIZE_BYTES } from "@/src/features/support-chat/pylon/pylonConstants";
 

@@ -1,4 +1,4 @@
-import { EvalTemplateSourceCodeLanguage } from "@langfuse/shared";
+import { EvalTemplateSourceCodeLanguage } from "@evalsight/shared";
 
 import { EvaluatorsOnboardingView } from "@/src/components/onboarding/components/EvaluatorsOnboardingView/EvaluatorsOnboardingView";
 import type { ActionConfig } from "@/src/components/ui/splash-screen";

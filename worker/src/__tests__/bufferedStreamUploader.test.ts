@@ -6,12 +6,12 @@ import {
   isTransientError,
   type ChunkedUploadStrategy,
   type CompletedPart,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   S3ChunkedUploadStrategy,
   S3_MAX_MULTIPART_PARTS,
-} from "@langfuse/shared/src/server";
-import { logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { isMultipartPartLimitError } from "../features/blobstorage/partLimitError";
 
 /**

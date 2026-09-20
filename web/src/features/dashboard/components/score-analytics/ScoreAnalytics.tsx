@@ -2,7 +2,7 @@
 /* eslint-disable @repo/no-style-props */
 import { api } from "@/src/utils/api";
 import { DashboardCard } from "@/src/features/dashboard/components/cards/DashboardCard";
-import { type FilterState, type ScoreDataTypeType } from "@langfuse/shared";
+import { type FilterState, type ScoreDataTypeType } from "@evalsight/shared";
 import { type DashboardDateRangeAggregationOption } from "@/src/utils/date-range-utils";
 import {
   convertScoreColumnsToAnalyticsData,
@@ -19,7 +19,7 @@ import { NumericScoreHistogram } from "@/src/features/dashboard/components/score
 import DocPopup from "@/src/components/layouts/doc-popup";
 import { NoDataOrLoading } from "@/src/components/NoDataOrLoading";
 import useLocalStorage from "@/src/components/useLocalStorage";
-import { type ViewVersion } from "@langfuse/shared/query";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { MultiSelectTagInput } from "@/src/components/design-system/MultiSelectTagInput/MultiSelectTagInput";
 
 export function ScoreAnalytics(props: {

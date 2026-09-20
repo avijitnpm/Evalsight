@@ -1,12 +1,12 @@
 import type { GetServerSidePropsContext } from "next";
-import type * as SharedServer from "@langfuse/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const { isForceV3ExperienceProjectMock } = vi.hoisted(() => ({
   isForceV3ExperienceProjectMock: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<typeof SharedServer>()),
   isForceV3ExperienceProject: isForceV3ExperienceProjectMock,
 }));

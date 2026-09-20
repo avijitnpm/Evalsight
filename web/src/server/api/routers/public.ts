@@ -5,7 +5,7 @@ import {
   protectedProjectProcedure,
   publicProcedure,
 } from "@/src/server/api/trpc";
-import { logger, compareVersions } from "@langfuse/shared/src/server";
+import { logger, compareVersions } from "@evalsight/shared/src/server";
 import { z } from "zod";
 
 const ReleaseApiRes = z.array(

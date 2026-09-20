@@ -3,7 +3,7 @@ import {
   type AnnotationQueueItem,
   AnnotationQueueObjectType,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useEffect } from "react";
 import { StringParam, useQueryParam } from "use-query-params";
 import { AnnotationDrawerSection } from "../shared/AnnotationDrawerSection";

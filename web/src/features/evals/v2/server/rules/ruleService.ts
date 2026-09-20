@@ -9,12 +9,12 @@ import {
   validateEvaluatorFiltersForTarget,
   type FilterState,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   JobConfigState,
   type Prisma,
   type PrismaClient,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import {
   ChatMessageRole,
   ChatMessageType,
@@ -24,7 +24,7 @@ import {
   logger,
   getRecentRuleExecutionTraces,
   getTotalCostByRule,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { resolveLangfuseAiFeatureAvailability } from "@/src/features/ai-features/server/availability";
 import type {
   CreateOrAttachFromEvaluatorFiltersInput,

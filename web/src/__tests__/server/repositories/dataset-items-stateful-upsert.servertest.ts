@@ -5,9 +5,9 @@ vi.hoisted(() => {
     "false";
 });
 
-import { LangfuseConflictError } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { upsertDatasetItem } from "@langfuse/shared/src/server";
+import { LangfuseConflictError } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { upsertDatasetItem } from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 const projectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";

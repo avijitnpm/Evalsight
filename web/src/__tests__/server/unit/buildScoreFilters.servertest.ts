@@ -16,8 +16,8 @@ vi.mock("@/src/features/audit-logs/auditLog", () => ({
 }));
 
 import { ScoresApiService } from "@/src/features/public-api/server/scores-api-service";
-import { LISTABLE_SCORE_TYPES } from "@langfuse/shared";
-import type { ScoreQueryType } from "@langfuse/shared/src/server";
+import { LISTABLE_SCORE_TYPES } from "@evalsight/shared";
+import type { ScoreQueryType } from "@evalsight/shared/src/server";
 
 const BASE: ScoreQueryType = {
   projectId: "project-1",

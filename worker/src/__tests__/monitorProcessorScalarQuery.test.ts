@@ -1,14 +1,14 @@
 import { v4 } from "uuid";
 import { beforeAll, describe, expect, it } from "vitest";
 
-import { executeQuery } from "@langfuse/shared/query/server";
+import { executeQuery } from "@evalsight/shared/query/server";
 import {
   getViewDeclaration,
   viewsV2,
   type QueryType,
-} from "@langfuse/shared/query";
-import { getValidMonitorAggregationsForMeasure } from "@langfuse/shared/monitors";
-import { queryClickhouse } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/query";
+import { getValidMonitorAggregationsForMeasure } from "@evalsight/shared/monitors";
+import { queryClickhouse } from "@evalsight/shared/src/server";
 
 /** eventsCoreAvailable reports whether the dev-only `events_core` table exists. */
 async function eventsCoreAvailable(): Promise<boolean> {

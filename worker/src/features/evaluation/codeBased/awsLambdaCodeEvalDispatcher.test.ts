@@ -3,7 +3,7 @@ import {
   AwsLambdaCodeEvalDispatcher,
   CodeEvalDispatcherError,
   type DispatchInput,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const baseInput: DispatchInput = {
   scope: {

@@ -5,7 +5,7 @@ import {
   JobConfigState,
   TriggerEventSource,
   type AutomationDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { cn } from "@/src/utils/tailwind";
 import { StatusBadge } from "@/src/components/ui/StatusBadge/StatusBadge";
 

@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { useMemo } from "react";
-import { type Prisma, deepParseJson } from "@langfuse/shared";
-import { normalizeSpanIO } from "@langfuse/shared/src/utils/normalized-io";
+import { type Prisma, deepParseJson } from "@evalsight/shared";
+import { normalizeSpanIO } from "@evalsight/shared/src/utils/normalized-io";
 import { toIOPreview } from "../parsers/toIOPreview";
 import { parseChatML, type ChatMLParserResult } from "./useChatMLParser";
 import { isOnlyJsonMessage } from "../fns/chatMessageUtils";

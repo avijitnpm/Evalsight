@@ -16,7 +16,7 @@ import {
   type AnalyticsIntegrationExportSource,
   BlobStorageIntegrationFileType,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   blobStorageIntegrationFormSchema,
   type BlobStorageIntegrationFormSchema,

@@ -22,7 +22,7 @@ export async function register() {
   // dependencies load only when a fatal actually fires.
   if (isNodeRuntime) {
     const { installProcessErrorHandlers } =
-      await import("@langfuse/shared/src/server");
+      await import("@evalsight/shared/src/server");
     installProcessErrorHandlers({
       onFatal: async () => {
         const { drainAndClose } = await import("./utils/shutdown");
@@ -45,7 +45,7 @@ export async function register() {
       try {
         await preloadOtelIngestionWorkerShadow();
       } catch (error) {
-        const { logger } = await import("@langfuse/shared/src/server");
+        const { logger } = await import("@evalsight/shared/src/server");
         logger.error(
           "Failed to preload OTel ingestion worker shadow; shadow disabled",
           error,

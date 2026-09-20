@@ -23,9 +23,9 @@ const mocks = vi.hoisted(() => ({
     | undefined,
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...actual,
     recordIncrement: mocks.recordIncrement,
@@ -39,8 +39,8 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
 });
 
 import { IngestionService } from "../../IngestionService";
-import { logger, type ScoreEventType } from "@langfuse/shared/src/server";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
+import { logger, type ScoreEventType } from "@evalsight/shared/src/server";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
 import { TableName } from "../../ClickhouseWriter";
 
 const METRIC = "langfuse.ingestion.metadata_dropped";

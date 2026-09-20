@@ -14,8 +14,8 @@ import {
   ForbiddenError,
   LangfuseNotFoundError,
   InvalidRequestError,
-} from "@langfuse/shared";
-import { ClickHouseResourceError, logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { ClickHouseResourceError, logger } from "@evalsight/shared/src/server";
 
 /**
  * Format an error for MCP response.

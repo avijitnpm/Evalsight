@@ -7,8 +7,8 @@ import {
   protectedOrganizationProcedure,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { paginationZod, type PrismaClient, Role } from "@langfuse/shared";
-import { formatAuthProviderName } from "@langfuse/shared/src/server";
+import { paginationZod, type PrismaClient, Role } from "@evalsight/shared";
+import { formatAuthProviderName } from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { env } from "@/src/env.mjs";

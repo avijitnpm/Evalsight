@@ -5,9 +5,9 @@ import {
   type InternalServerError,
   type LangfuseNotFoundError,
   type UnauthorizedError,
-} from "@langfuse/shared";
-import { type ApiAccessScope } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { type ApiAccessScope } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 
 import { authorize } from "@/src/features/auth/policy/authorize";
 import { authenticator } from "@/src/features/apiKey/authenticator";

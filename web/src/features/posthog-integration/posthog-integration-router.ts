@@ -11,17 +11,17 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { decrypt, encrypt } from "@langfuse/shared/encryption";
+import { decrypt, encrypt } from "@evalsight/shared/encryption";
 import { posthogIntegrationFormSchema } from "@/src/features/posthog-integration/types";
 import { TRPCError } from "@trpc/server";
 import { env } from "@/src/env.mjs";
-import { validateWebhookURL } from "@langfuse/shared/src/server";
+import { validateWebhookURL } from "@evalsight/shared/src/server";
 import { getDisplayCredential } from "@/src/features/analytics-integrations/server/displayCredential";
 import {
   AnalyticsIntegrationExportSource,
   LangfuseNotFoundError,
   LEGACY_ANALYTICS_EXPORTER_CUTOFF,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const posthogIntegrationRouter = createTRPCRouter({
   get: protectedProjectProcedure

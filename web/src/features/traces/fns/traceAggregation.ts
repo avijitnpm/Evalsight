@@ -6,7 +6,7 @@
  */
 
 import { type ObservationReturnTypeWithMetadata } from "@/src/server/api/routers/traces";
-import { type ObservationType, isGenerationLike } from "@langfuse/shared";
+import { type ObservationType, isGenerationLike } from "@evalsight/shared";
 import { type TreeNode } from "../types/treeNode";
 
 export interface AggregatedTraceMetrics {

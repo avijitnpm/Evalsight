@@ -14,14 +14,14 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { ModelUsageUnit, paginationZod, Prisma } from "@langfuse/shared";
+import { ModelUsageUnit, paginationZod, Prisma } from "@evalsight/shared";
 import {
   clearModelCacheForProject,
   queryClickhouse,
   findModel,
   hasPricingTierUsageDetails,
   matchPricingTier,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 
 const ModelAllOptions = z.object({

@@ -5,7 +5,7 @@ import {
   observationEvalFilterColumns,
   observationEvalVariableColumns,
   eventsEvalFilterColumns,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("observationForEvalSchema", () => {
   describe("schema field validation", () => {

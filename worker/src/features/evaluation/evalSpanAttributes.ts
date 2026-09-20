@@ -4,11 +4,11 @@ import {
   observationVariableMappingList,
   singleFilterList,
   variableMappingList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   EvaluatorBlockSource,
   type EvaluatorLlmErrorClassification,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const dedupeStrings = (values: string[]): string[] => [
   ...new Set(values.filter(Boolean)),

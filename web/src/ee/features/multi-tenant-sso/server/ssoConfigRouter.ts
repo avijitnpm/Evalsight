@@ -7,7 +7,7 @@ import {
 } from "@/src/server/api/trpc";
 import { SsoProviderSchema } from "@/src/ee/features/multi-tenant-sso/types";
 import { validateSsoConfig } from "@/src/ee/features/multi-tenant-sso/validateSsoConfig";
-import { encrypt } from "@langfuse/shared/encryption";
+import { encrypt } from "@evalsight/shared/encryption";
 import { TRPCError } from "@trpc/server";
 import * as z from "zod";
 

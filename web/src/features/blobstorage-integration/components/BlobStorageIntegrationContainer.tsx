@@ -8,7 +8,7 @@ import {
   type V4WriteMode,
   type BlobStorageIntegration,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { buildExportSourceContext } from "@/src/features/analytics-integrations/exportSource";
 import { type BlobStorageIntegrationFormSchema } from "@/src/features/blobstorage-integration/types";
 import { useLangfuseCloudRegion } from "@/src/features/organizations/hooks";

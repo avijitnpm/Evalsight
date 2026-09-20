@@ -1,18 +1,18 @@
-import { encrypt, generateWebhookSecret } from "@langfuse/shared/encryption";
+import { encrypt, generateWebhookSecret } from "@evalsight/shared/encryption";
 import {
   type ActionCreate,
   type ActionConfig,
   type WebhookActionConfigWithSecrets,
   type WebhookActionCreate,
   isWebhookActionConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getActionByIdWithSecrets,
   mergeHeaders,
   createDisplayHeaders,
   encryptSecretHeaders,
   validateWebhookURL,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 
 interface WebhookConfigOptions {

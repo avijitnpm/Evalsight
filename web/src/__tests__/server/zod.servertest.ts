@@ -7,7 +7,7 @@ import {
   publicApiPaginationLimitZod,
   sanitizeEmailSubject,
   StringNoHTML,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ZodError } from "zod";
 
 // Create test cases

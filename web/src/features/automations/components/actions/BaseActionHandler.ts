@@ -5,7 +5,7 @@ import {
   type ActionType,
   type AutomationDomain,
   type TriggerEventSource,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export interface BaseActionHandler<
   TFormData extends FieldValues = FieldValues,

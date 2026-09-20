@@ -9,13 +9,13 @@ import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/cr
 import {
   createInAppAgentToolPolicy,
   filterInAppAgentAvailableLangfuseMcpTools,
-} from "@langfuse/shared/in-app-agent/server/mcpPolicy";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/in-app-agent/server/mcpPolicy";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createAndAddApiKeysToDb,
   createBasicAuthHeader,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const authMocks = vi.hoisted(() => ({
   getServerAuthSessionForRequest: vi.fn(),

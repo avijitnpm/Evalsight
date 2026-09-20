@@ -1,4 +1,4 @@
-import { tracesTableCols } from "@langfuse/shared";
+import { tracesTableCols } from "@evalsight/shared";
 import {
   omitFilterFacets,
   type FilterConfig,

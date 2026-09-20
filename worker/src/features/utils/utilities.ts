@@ -1,4 +1,4 @@
-import { createW3CTraceId } from "@langfuse/shared/src/server";
+import { createW3CTraceId } from "@evalsight/shared/src/server";
 
 export { createW3CTraceId };
 

@@ -7,7 +7,7 @@ import { MonitorPagePermissions } from "@/src/features/monitors/components/Monit
 import { getInitialMonitorTriggerIds } from "@/src/features/monitors/fns/getInitialMonitorTriggerIds";
 import { getMonitorPrefill } from "@/src/features/monitors/fns/getMonitorPrefill";
 import { api } from "@/src/utils/api";
-import { TriggerEventSource } from "@langfuse/shared";
+import { TriggerEventSource } from "@evalsight/shared";
 
 const alertAnalyticsSource = (alert: string | string[] | undefined) => {
   switch (alert) {

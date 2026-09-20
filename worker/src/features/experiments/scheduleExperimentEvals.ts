@@ -4,7 +4,7 @@ import {
   createObservationEvalSchedulerDeps,
   type ObservationForEval,
 } from "../evaluation/observationEval";
-import { logger, traceException } from "@langfuse/shared/src/server";
+import { logger, traceException } from "@evalsight/shared/src/server";
 
 interface ScheduleExperimentEvalsParams {
   observation: ObservationForEval;

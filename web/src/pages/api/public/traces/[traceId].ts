@@ -17,15 +17,15 @@ import { env } from "@/src/env.mjs";
 import {
   filterAndValidateDbLegacyTraceScoreList,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   getObservationsForTrace,
   getScoresForTraces,
   getTraceById,
   traceException,
   traceDeletionProcessor,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import Decimal from "decimal.js";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
 import { legacyPublicApiRateLimitUpgradePaths } from "@/src/features/public-api/server/rateLimitUpgradePaths";

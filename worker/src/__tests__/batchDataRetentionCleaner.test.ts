@@ -19,8 +19,8 @@ import {
   queryClickhouse,
   toClickhouseDateTime,
   traceException,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "../env";
 
 const integrationHooks = vi.hoisted(() => ({
@@ -39,9 +39,9 @@ const integrationHooks = vi.hoisted(() => ({
   incrementCalls: [] as Array<[stat: string, value: number | undefined]>,
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
 
   return {
     ...actual,

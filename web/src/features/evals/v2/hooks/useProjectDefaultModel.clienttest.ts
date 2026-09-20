@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import { LLMAdapter } from "@langfuse/shared";
+import { LLMAdapter } from "@evalsight/shared";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { useProjectDefaultModel } from "./useProjectDefaultModel";

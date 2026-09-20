@@ -1,5 +1,5 @@
-import { InvalidRequestError } from "@langfuse/shared";
-import { orderByToPrismaSql } from "@langfuse/shared/src/server";
+import { InvalidRequestError } from "@evalsight/shared";
+import { orderByToPrismaSql } from "@evalsight/shared/src/server";
 import { evalConfigsTableCols } from "@/src/server/api/definitions/evalConfigsTable";
 
 describe("eval config orderBy columns", () => {

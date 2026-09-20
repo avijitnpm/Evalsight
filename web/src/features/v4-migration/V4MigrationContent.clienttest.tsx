@@ -23,7 +23,7 @@ import {
   type V4MigrationSdkState,
   type V4MigrationSdkUsageSeries,
 } from "./sdkVersionStatus";
-import { TABLE_AGGREGATION_OPTIONS } from "@langfuse/shared";
+import { TABLE_AGGREGATION_OPTIONS } from "@evalsight/shared";
 import { rangeFromString } from "@/src/utils/date-range-utils";
 
 const makeSdkUsageSeries = (

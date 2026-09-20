@@ -20,8 +20,8 @@ import {
   PostUnstableDashboardResponse,
 } from "@/src/features/public-api/types/unstable-dashboards";
 import { StructuredPublicApiErrorResponse } from "@/src/features/public-api/types/structuredPublicApiErrorSchema";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { nanoid } from "nanoid";
 
 const widget = {

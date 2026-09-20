@@ -2,8 +2,8 @@ import { v4 as uuidv4 } from "uuid";
 import {
   createOrgProjectAndApiKey,
   DashboardService,
-} from "@langfuse/shared/src/server";
-import { LangfuseNotFoundError } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { LangfuseNotFoundError } from "@evalsight/shared";
 
 describe("DashboardService.deleteDashboard", () => {
   it("deletes an existing dashboard and throws LangfuseNotFoundError on repeat delete", async () => {

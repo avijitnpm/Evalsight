@@ -1,5 +1,5 @@
 import { cors, runMiddleware } from "@/src/features/public-api/server/cors";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { RateLimitService } from "@/src/features/public-api/server/RateLimitService";
 import { handleGetProjects } from "@/src/ee/features/admin-api/server/projects";
 import { shadowAuth } from "@/src/features/public-api/server/shadowAuth";

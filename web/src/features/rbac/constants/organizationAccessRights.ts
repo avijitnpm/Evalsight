@@ -1,4 +1,4 @@
-import { type Role } from "@langfuse/shared/src/db";
+import { type Role } from "@evalsight/shared/src/db";
 
 export const organizationScopes = [
   "projects:read",

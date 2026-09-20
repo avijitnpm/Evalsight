@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/src/components/ui/card";
 import { Badge } from "@/src/components/ui/badge";
 import { Separator } from "@/src/components/ui/separator";
 import { EstimatedCostRow } from "./EstimatedCostRow";
-import type { BatchEvalSourceTable } from "@langfuse/shared";
+import type { BatchEvalSourceTable } from "@evalsight/shared";
 import { getBatchEvalCostObservationCount } from "./utils";
 
 type ConfirmationStepProps = {

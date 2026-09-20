@@ -5,7 +5,7 @@ import {
 } from "@/src/server/api/trpc";
 import { TRPCError } from "@trpc/server";
 import { SurveyName } from "@prisma/client";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 const surveyResponseSchema = z.object({
   surveyName: z.enum(SurveyName),

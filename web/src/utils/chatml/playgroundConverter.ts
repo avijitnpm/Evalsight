@@ -7,7 +7,7 @@ import {
   isOpenAIImageContentPart,
   type ChatMessage,
   type PlaceholderMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 type ChatMlMessage = z.infer<typeof ChatMlMessageSchema>;
 

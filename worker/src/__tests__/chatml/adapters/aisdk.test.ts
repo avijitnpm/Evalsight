@@ -4,7 +4,7 @@ import {
   normalizeInput,
   normalizeOutput,
   type NormalizerContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("AI SDK Adapter", () => {
   describe("detection", () => {

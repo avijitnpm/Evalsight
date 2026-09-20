@@ -29,7 +29,7 @@ import {
   getEventsGroupedByTraceTags,
   hasAnySessionFromEventsTable,
   parseClickhouseUTCDateTimeFormat,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   createTRPCRouter,
   protectedGetSessionProcedure,
@@ -48,7 +48,7 @@ import {
   type SessionOptions,
   type ScoreDomain,
   LISTABLE_SCORE_TYPES,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { TRPCError } from "@trpc/server";
 import Decimal from "decimal.js";
 import chunk from "lodash/chunk";

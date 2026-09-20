@@ -1,6 +1,6 @@
 import { act, renderHook } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
-import type { TracingSearchType } from "@langfuse/shared";
+import type { TracingSearchType } from "@evalsight/shared";
 import { eventsSearchRegistry } from "../config/eventsSearchRegistry";
 import { useEventsSearchBar } from "@/src/features/search-bar/hooks/useEventsSearchBar";
 

@@ -1,7 +1,7 @@
 import {
   type AnnotationQueueItem,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { AnnotationDrawerSection } from "../shared/AnnotationDrawerSection";
 import { AnnotationProcessingLayout } from "../shared/AnnotationProcessingLayout";
 import {

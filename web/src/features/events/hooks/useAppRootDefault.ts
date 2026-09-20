@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { TableViewPresetTableName, type FilterState } from "@langfuse/shared";
+import { TableViewPresetTableName, type FilterState } from "@evalsight/shared";
 
 import { api } from "@/src/utils/api";
 import {

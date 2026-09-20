@@ -3,7 +3,7 @@ import {
   variableMapping,
   observationVariableMapping,
   type EvalTargetObject,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   isEventTarget,
   isExperimentTarget,

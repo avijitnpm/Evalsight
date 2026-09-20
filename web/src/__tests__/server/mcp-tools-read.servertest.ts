@@ -3,8 +3,8 @@ vi.hoisted(() => {
 });
 
 // Mock queue operations to avoid Redis dependency in tests
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     // Mock queue getInstance to return a no-op queue
@@ -38,7 +38,7 @@ import { nanoid } from "nanoid";
 import { createHash, randomUUID } from "crypto";
 import { ErrorCode } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createDatasetRunScore,
   createEvent,
@@ -55,10 +55,10 @@ import {
   buildPromptUrl,
   buildSessionUrl,
   buildTraceUrl,
-} from "@langfuse/shared/src/server";
-import { ScoreConfigDataType } from "@langfuse/shared";
-import { viewDeclarations } from "@langfuse/shared/query";
-import { MonitorService } from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/src/server";
+import { ScoreConfigDataType } from "@evalsight/shared";
+import { viewDeclarations } from "@evalsight/shared/query";
+import { MonitorService } from "@evalsight/shared/monitors/server";
 import {
   createMcpTestSetup,
   createPromptInDb,

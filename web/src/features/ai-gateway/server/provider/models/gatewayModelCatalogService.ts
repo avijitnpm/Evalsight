@@ -1,10 +1,10 @@
 import type {
   GatewayConnectionStatus,
   PrismaClient,
-} from "@langfuse/shared/src/db";
-import { LangfuseNotFoundError } from "@langfuse/shared";
-import { decrypt } from "@langfuse/shared/encryption";
-import { redis as defaultRedis } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/db";
+import { LangfuseNotFoundError } from "@evalsight/shared";
+import { decrypt } from "@evalsight/shared/encryption";
+import { redis as defaultRedis } from "@evalsight/shared/src/server";
 import type { Cluster, Redis } from "ioredis";
 
 import { auditLog } from "@/src/features/audit-logs/server";

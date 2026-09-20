@@ -16,7 +16,7 @@ import {
   type ChatMessageWithId,
   type LLMToolCall,
   type PlaceholderMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Button } from "@/src/components/ui/button";
 import { Card, CardContent } from "@/src/components/ui/card";
 import { CodeMirrorEditor } from "@/src/components/editor";

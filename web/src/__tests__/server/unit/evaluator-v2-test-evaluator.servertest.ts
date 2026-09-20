@@ -1,7 +1,7 @@
 import {
   createNumericEvalOutputDefinition,
   LLMAdapter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   compileLangfuseMediaMessages,
   DefaultEvalModelService,
@@ -9,7 +9,7 @@ import {
   generateLLMText,
   resolveConfiguredCodeEvalDispatcher,
   runCodeBasedEvaluationDispatch,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { getObservationForEvalById } from "@/src/features/evals/server/getObservationForEvalById";
 import { testEvaluator } from "@/src/features/evals/v2/server/evaluators/testEvaluator";
 import { beforeEach, describe, expect, it, vi } from "vitest";
@@ -18,8 +18,8 @@ vi.mock("@/src/features/evals/server/getObservationForEvalById", () => ({
   getObservationForEvalById: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async () => ({
-  ...(await vi.importActual("@langfuse/shared/src/server")),
+vi.mock("@evalsight/shared/src/server", async () => ({
+  ...(await vi.importActual("@evalsight/shared/src/server")),
   DefaultEvalModelService: {
     fetchValidModelConfig: vi.fn(),
   },

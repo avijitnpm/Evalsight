@@ -5,7 +5,7 @@ import { createIOTableColumn } from "@/src/components/design-system/table/column
 import useColumnVisibility from "@/src/features/column-visibility/hooks/useColumnVisibility";
 import { api } from "@/src/utils/api";
 import { safeExtract } from "@/src/utils/map-utils";
-import { type Prisma } from "@langfuse/shared/src/db";
+import { type Prisma } from "@evalsight/shared/src/db";
 import { useQueryParams, withDefault, StringParam } from "use-query-params";
 import { usePaginationState } from "@/src/hooks/usePaginationState";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";

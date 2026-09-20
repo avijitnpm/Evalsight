@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { InternalServerError } from "@langfuse/shared";
+import { InternalServerError } from "@evalsight/shared";
 
 import { toApiAccessScope } from "@/src/features/public-api/server/toApiAccessScope";
 import { type Principal } from "@/src/features/auth/policy/types";

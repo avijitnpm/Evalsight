@@ -16,7 +16,7 @@ const mocks = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   getClickhouseEntityType: (eventType: string) =>
     eventType === "trace-create" ? "trace" : "observation",
   instrumentAsync: mocks.instrumentAsync,
@@ -26,8 +26,8 @@ vi.mock("@langfuse/shared/src/server", () => ({
   uploadMediaForTrace: mocks.uploadMediaForTrace,
 }));
 
-import { MediaAssociationOrigin } from "@langfuse/shared";
-import type { IngestionEventType } from "@langfuse/shared/src/server";
+import { MediaAssociationOrigin } from "@evalsight/shared";
+import type { IngestionEventType } from "@evalsight/shared/src/server";
 import {
   createDirectOtelMediaTargets,
   createLegacyOtelMediaTargets,

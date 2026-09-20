@@ -5,7 +5,7 @@ import {
   type EvalTemplateType,
   type ObservationVariableMapping,
   type EvaluatorPromptMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { Codeblock as CodeBlock } from "@/src/components/design-system/Codeblock/Codeblock";
 import { Badge } from "@/src/components/ui/badge";

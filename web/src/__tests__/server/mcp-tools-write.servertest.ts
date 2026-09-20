@@ -1,6 +1,6 @@
 // Mock queue operations to avoid Redis dependency in tests
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     // Mock queue getInstance to return a no-op queue
@@ -41,7 +41,7 @@ vi.mock(
   }),
 );
 
-import { prisma, Role } from "@langfuse/shared/src/db";
+import { prisma, Role } from "@evalsight/shared/src/db";
 import { nanoid } from "nanoid";
 import { z } from "zod";
 import {

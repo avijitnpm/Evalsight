@@ -5,7 +5,7 @@ const mocks = vi.hoisted(() => ({
   queueAdd: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServerModule>();
 
   return {
@@ -26,13 +26,13 @@ vi.mock("@/src/features/audit-logs/auditLog", () => ({
 
 import type { Session } from "next-auth";
 import { afterAll, beforeEach, describe, expect, it, vi } from "vitest";
-import type { PrismaClient } from "@langfuse/shared/src/db";
-import type * as SharedServerModule from "@langfuse/shared/src/server";
+import type { PrismaClient } from "@evalsight/shared/src/db";
+import type * as SharedServerModule from "@evalsight/shared/src/server";
 import {
   BatchEvalSourceTable,
   InvalidRequestError,
   type BatchActionQuery,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { addToDatasetRouter } from "@/src/features/batch-actions/server/addToDatasetRouter";
 import { runEvaluationRouter } from "@/src/features/batch-actions/server/runEvaluationRouter";

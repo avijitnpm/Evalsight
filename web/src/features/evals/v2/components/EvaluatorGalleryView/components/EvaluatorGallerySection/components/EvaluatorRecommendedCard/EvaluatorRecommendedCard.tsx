@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { EvalTemplateType } from "@langfuse/shared";
+import type { EvalTemplateType } from "@evalsight/shared";
 
 import { EvaluatorGalleryMethodBadge } from "@/src/features/evals/v2/components/EvaluatorGalleryView/components/EvaluatorGalleryMethodBadge/EvaluatorGalleryMethodBadge";
 import { EVALUATOR_GALLERY_RECOMMENDED_SECTION_KEY } from "@/src/features/evals/v2/constants/evaluatorGallery";

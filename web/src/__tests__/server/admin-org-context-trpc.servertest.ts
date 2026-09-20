@@ -5,7 +5,7 @@ import type { Session } from "next-auth";
 type SessionUser = NonNullable<Session["user"]>;
 type SessionOrgs = SessionUser["organizations"];
 type SessionFeatureFlags = SessionUser["featureFlags"];
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { randomUUID } from "crypto";
@@ -13,7 +13,7 @@ import {
   createTrace,
   createTracesCh,
   deleteTraces,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const orgId = `org-${randomUUID()}`;
 const projectId = `project-${randomUUID()}`;

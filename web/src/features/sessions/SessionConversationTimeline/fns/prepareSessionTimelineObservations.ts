@@ -2,7 +2,7 @@ import {
   normalizeSpanIO,
   type NormalizedMessage,
   type ToolCallPart,
-} from "@langfuse/shared/src/utils/normalized-io";
+} from "@evalsight/shared/src/utils/normalized-io";
 
 import { deduplicateTimelineInput } from "@/src/features/sessions/SessionConversationTimeline/fns/deduplicateTimelineInput";
 import { getToolObservationCallId } from "@/src/features/sessions/SessionConversationTimeline/fns/getToolObservationCallId";

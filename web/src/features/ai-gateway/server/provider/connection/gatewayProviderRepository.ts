@@ -3,7 +3,7 @@ import type {
   GatewayProvider,
   Prisma,
   PrismaClient,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 
 type DatabaseClient = PrismaClient | Prisma.TransactionClient;
 

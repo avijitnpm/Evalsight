@@ -16,8 +16,8 @@
  *   pnpm --filter=worker retry-monitor-bad-query-errors --apply --jitter-minutes=30
  */
 
-import { prisma } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 
 /** defaultJitterMinutes spreads the reactivated monitors' first run over this window, kept short so the UNKNOWN "pending" state clears within ~15 minutes. */
 const defaultJitterMinutes = 15;

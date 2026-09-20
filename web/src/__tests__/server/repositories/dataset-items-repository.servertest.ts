@@ -5,8 +5,8 @@ process.env.LANGFUSE_DATASET_SERVICE_WRITE_TO_VERSIONED_IMPLEMENTATION = "true";
 
 import crypto from "crypto";
 
-import { LangfuseConflictError } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { LangfuseConflictError } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createDatasetItem,
   upsertDatasetItem,
@@ -18,7 +18,7 @@ import {
   getDatasetItemVersionHistory,
   getDatasetItemChangesSinceVersion,
   getDatasetItems,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 const projectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";

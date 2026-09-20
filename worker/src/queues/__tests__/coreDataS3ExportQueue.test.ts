@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 import { Readable } from "node:stream";
-import { type StorageService } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+import { type StorageService } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   coreDataTableExports,
   mapDashboardToCoreDataRow,

@@ -8,7 +8,7 @@ import {
 } from "@/src/features/auth-credentials/lib/credentialsServerUtils";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 
 const OLD_PASSWORD = "Oldpass1!";
 const NEW_PASSWORD = "Newpass1!";

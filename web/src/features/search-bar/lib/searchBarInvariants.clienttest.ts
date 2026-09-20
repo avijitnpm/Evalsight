@@ -29,7 +29,7 @@ import {
   getScoreFilterConfig,
   type ScoresTableHiddenColumn,
 } from "@/src/features/filters/config/scores-config";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { validateQuery } from "./validate";
 import { DEFAULT_SEARCH_TYPE, planCommit } from "./commit";
 import { filterStateToQueryText } from "./filter-state-to-query";

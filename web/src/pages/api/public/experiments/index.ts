@@ -1,4 +1,4 @@
-import { LangfuseNotFoundError } from "@langfuse/shared";
+import { LangfuseNotFoundError } from "@evalsight/shared";
 
 import { env } from "@/src/env.mjs";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";

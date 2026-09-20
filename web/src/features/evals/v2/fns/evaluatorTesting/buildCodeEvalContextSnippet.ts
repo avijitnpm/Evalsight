@@ -3,7 +3,7 @@ import {
   EvalTemplateSourceCodeLanguageEnum,
   type EvalTemplateSourceCodeLanguage,
   deepParseJsonIterative,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // The preview teaches shape, not full content: long strings and arrays are
 // clipped so a huge sample cannot bury the structure.

@@ -1,7 +1,7 @@
 import { showSuccessToast } from "@/src/features/notifications";
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { useState } from "react";
-import { supportedModels } from "@langfuse/shared";
+import { supportedModels } from "@evalsight/shared";
 
 import { env } from "@/src/env.mjs";
 import { getJudgeModelProviderAdapters } from "@/src/features/evals/v2/judgeModel";

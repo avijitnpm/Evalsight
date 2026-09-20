@@ -12,8 +12,8 @@ const {
   realFns: { deriveFilters: null as unknown },
 }));
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   realFns.deriveFilters = (actual as Record<string, unknown>).deriveFilters;
   return {
     ...(actual as object),
@@ -27,7 +27,7 @@ import {
   generateObservationsForPublicApi,
   getObservationsCountForPublicApi,
 } from "@/src/features/public-api/server/observations";
-import { FilterList, StringFilter } from "@langfuse/shared/src/server";
+import { FilterList, StringFilter } from "@evalsight/shared/src/server";
 
 const BASE = {
   projectId: "project-1",

@@ -1,6 +1,6 @@
 import { type ReactNode } from "react";
 
-import { parseJsonPrioritised, type Prisma } from "@langfuse/shared";
+import { parseJsonPrioritised, type Prisma } from "@evalsight/shared";
 
 import {
   DialogController,

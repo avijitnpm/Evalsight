@@ -32,7 +32,7 @@ import {
   CreateQueueWithAssignmentsData,
   type CreateQueueWithAssignments,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMemo, useState } from "react";
 import { useForm } from "react-hook-form";

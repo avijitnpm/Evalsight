@@ -14,7 +14,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import isEqual from "lodash/isEqual";
 
-import type { FilterState, TracingSearchType } from "@langfuse/shared";
+import type { FilterState, TracingSearchType } from "@evalsight/shared";
 
 import {
   classifySearchError,

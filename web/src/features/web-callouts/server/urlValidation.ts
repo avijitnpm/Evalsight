@@ -6,7 +6,7 @@ import {
   type WebhookValidationWhitelist,
   validateWebhookURL,
   whitelistFromEnv,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const LOCAL_DEVELOPMENT_CALLOUT_WHITELIST: WebhookValidationWhitelist = {
   hosts: ["localhost", "127.0.0.1", "[::1]"],

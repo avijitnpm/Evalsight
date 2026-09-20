@@ -1,13 +1,13 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable @repo/no-style-props */
 import { useMemo, useState, useCallback, type ReactNode } from "react";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
-import { type OrderByState } from "@langfuse/shared";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
+import { type OrderByState } from "@evalsight/shared";
 import {
   type QueryType,
   type ViewVersion,
   getResultUnit,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import { useScheduledDashboardExecuteQuery } from "@/src/features/dashboard/hooks/useDashboardQueryScheduler";
 import { Chart } from "@/src/features/widgets/chart-library/Chart";
 import { ChartLoadingState } from "@/src/features/widgets/chart-library/ChartLoadingState";

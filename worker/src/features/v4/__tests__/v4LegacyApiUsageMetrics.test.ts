@@ -8,9 +8,9 @@ const mocks = vi.hoisted(() => ({
   recordGauge: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const original =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...original,
     redis: {
@@ -21,7 +21,7 @@ vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
   };
 });
 
-import { V4_LEGACY_API_USAGE_HEARTBEAT_KEY } from "@langfuse/shared/src/server";
+import { V4_LEGACY_API_USAGE_HEARTBEAT_KEY } from "@evalsight/shared/src/server";
 import {
   emitV4LegacyApiUsageFreshnessMetrics,
   V4_LEGACY_API_USAGE_HEARTBEAT_AGE_METRIC,

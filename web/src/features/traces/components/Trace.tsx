@@ -1,4 +1,4 @@
-import { type TraceDomain, type ScoreDomain } from "@langfuse/shared";
+import { type TraceDomain, type ScoreDomain } from "@evalsight/shared";
 import { type ObservationReturnTypeWithMetadata } from "@/src/server/api/routers/traces";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 import { TraceDataProvider } from "@/src/features/traces/contexts/TraceDataContext";

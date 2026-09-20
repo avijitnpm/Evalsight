@@ -14,7 +14,7 @@ import { showErrorToast } from "@/src/features/notifications/showErrorToast";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics/usePostHogClientCapture";
 import { compactNumberFormatter } from "@/src/utils/numbers";
 import { decodeUnicodeEscapesOnly } from "@/src/utils/unicode";
-import { parseJsonIfString } from "@langfuse/shared";
+import { parseJsonIfString } from "@evalsight/shared";
 
 export type SessionTraceObservation =
   RouterOutputs["sessions"]["observationsForTraceFromEvents"][number];

@@ -16,18 +16,18 @@ import {
   invalidateCachedProjectApiKeys as invalidateCachedProjectApiKeysShared,
   createApiKeyCacheKey,
   API_KEY_NON_EXISTENT,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   type PrismaClient,
   type ApiKey,
   type Prisma,
   type ApiKeyScope,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import { isPrismaException } from "@/src/utils/exceptions";
 import { type Redis, type Cluster } from "ioredis";
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server";
 import { type z } from "zod";
-import { CloudConfigSchema, isPlan } from "@langfuse/shared";
+import { CloudConfigSchema, isPlan } from "@evalsight/shared";
 
 type VerifyAuthHeaderOptions = {
   allowInAppAgentKey?: boolean;

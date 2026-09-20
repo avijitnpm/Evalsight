@@ -2,7 +2,7 @@
 import { pipeline, Transform, type Readable } from "stream";
 import { monitorEventLoopDelay } from "perf_hooks";
 import { Job, UnrecoverableError } from "bullmq";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   QueueName,
   TQueueJobTypes,
@@ -33,7 +33,7 @@ import {
   blobStorageEndpointConnectionValidationOptions,
   validateBlobStorageEndpoint,
   dispatchProjectNotification,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   registerInFlightBlobExport,
   unregisterInFlightBlobExport,
@@ -68,10 +68,10 @@ import {
   isLegacyExporter,
   resolveBlobExportTuning,
   DEFAULT_BLOB_EXPORT_PART_SIZE_BYTES,
-} from "@langfuse/shared";
-import { decrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared";
+import { decrypt } from "@evalsight/shared/encryption";
 // Shared env for the buffered-upload flag (gates part-level upload stats).
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import { randomUUID } from "crypto";
 import { SpanKind } from "@opentelemetry/api";
 import { env } from "../../env";

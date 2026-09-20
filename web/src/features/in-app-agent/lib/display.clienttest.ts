@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import type { AgUiMessage } from "@langfuse/shared/in-app-agent";
+import type { AgUiMessage } from "@evalsight/shared/in-app-agent";
 import type { InAppAgentUiMessage } from "../schema";
 import {
   createInAppAgentDisplayState,

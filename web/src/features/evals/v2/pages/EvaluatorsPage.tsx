@@ -5,7 +5,7 @@ import {
   type OrderByState,
   TableViewPresetTableName,
   ZodModelConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Plus, Trash2 } from "lucide-react";
 import { useRouter } from "next/router";
 import { type ComponentProps, useMemo, useRef, useState } from "react";

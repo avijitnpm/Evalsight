@@ -1,4 +1,4 @@
-import type { TracingSearchType } from "@langfuse/shared";
+import type { TracingSearchType } from "@evalsight/shared";
 import {
   useQueryParam,
   withDefault,

@@ -6,8 +6,8 @@ import {
   getGatewayProviderDefinition,
   providerSupportsApiFormat,
 } from ".";
-import type { PrismaClient } from "@langfuse/shared/src/db";
-import { encrypt } from "@langfuse/shared/encryption";
+import type { PrismaClient } from "@evalsight/shared/src/db";
+import { encrypt } from "@evalsight/shared/encryption";
 import type { Redis } from "ioredis";
 import type { OrgAuthedContext } from "@/src/server/api/trpc";
 

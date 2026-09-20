@@ -1,4 +1,4 @@
-import { isGenerationLike, type ObservationType } from "@langfuse/shared";
+import { isGenerationLike, type ObservationType } from "@evalsight/shared";
 
 import { usdFormatter } from "@/src/utils/numbers";
 

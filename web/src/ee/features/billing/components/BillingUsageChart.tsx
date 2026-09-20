@@ -2,7 +2,7 @@
 
 import { Card } from "@/src/components/ui/card";
 import { numberFormatter, compactNumberFormatter } from "@/src/utils/numbers";
-import { type Plan } from "@langfuse/shared";
+import { type Plan } from "@evalsight/shared";
 import type { RouterOutput } from "@/src/utils/types";
 
 export const BillingUsageChart = ({

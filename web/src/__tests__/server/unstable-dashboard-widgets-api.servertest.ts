@@ -9,11 +9,11 @@ import {
   PostUnstableDashboardWidgetResponse,
 } from "@/src/features/public-api/types/unstable-dashboard-widgets";
 import { StructuredPublicApiErrorResponse } from "@/src/features/public-api/types/structuredPublicApiErrorSchema";
-import { DashboardWidgetViews, prisma } from "@langfuse/shared/src/db";
+import { DashboardWidgetViews, prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   DashboardService,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { z } from "zod";
 
 const baseWidgetBody = {

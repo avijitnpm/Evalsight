@@ -1,7 +1,7 @@
 import { Langfuse } from "langfuse";
 
-import { env } from "@langfuse/shared/src/env";
-import { getProductBaseUrl } from "@langfuse/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
+import { getProductBaseUrl } from "@evalsight/shared/src/server";
 
 let client: Langfuse | null = null;
 

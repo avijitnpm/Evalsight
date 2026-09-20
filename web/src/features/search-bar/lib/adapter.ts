@@ -21,7 +21,7 @@
 // - NOT lowers at this boundary (none-of / does-not-contain / inverted
 //   comparisons / inverted booleans); gaps error via fields.negationIssue.
 
-import { type FilterState, type TracingSearchType } from "@langfuse/shared";
+import { type FilterState, type TracingSearchType } from "@evalsight/shared";
 
 import type { ASTNode, FilterNode } from "./ast";
 import {

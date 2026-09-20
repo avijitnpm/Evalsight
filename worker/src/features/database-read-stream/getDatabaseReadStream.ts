@@ -7,8 +7,8 @@ import {
   TracingSearchType,
   isPresent,
   type ScoreDataTypeType,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   FullObservationsWithScores,
   DatabaseReadStream,
@@ -29,7 +29,7 @@ import {
   getScoresForTraces,
   getDatasetItems,
   type PreferredClickhouseService,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import Decimal from "decimal.js";
 import { env } from "../../env";
 import {

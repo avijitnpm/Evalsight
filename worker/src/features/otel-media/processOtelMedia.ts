@@ -9,8 +9,8 @@ import {
   type OtelMediaTarget,
   type OtelMediaWritePath,
   uploadMediaForTrace,
-} from "@langfuse/shared/src/server";
-import { MediaAssociationOrigin } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { MediaAssociationOrigin } from "@evalsight/shared";
 
 const MEDIA_FIELDS = ["input", "output", "metadata"] as const;
 

@@ -13,7 +13,7 @@ import {
   eventTargetEvalVariableColumns,
   experimentTargetEvalVariableColumns,
   EvalTargetObject,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Card } from "@/src/components/ui/card";
 import { JSONView } from "@/src/components/ui/CodeJsonViewer";
 import DocPopup from "@/src/components/layouts/doc-popup";

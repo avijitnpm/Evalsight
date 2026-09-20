@@ -21,7 +21,7 @@ import {
   createEventsCh,
   getEventsExactFilterOptionsForColumns,
   type EventFilterOptionRow,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import waitForExpect from "wait-for-expect";
 

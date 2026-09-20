@@ -185,7 +185,7 @@ describe("BullMQ Redis version check options", () => {
       },
     }));
 
-    vi.doMock("@langfuse/shared/src/server", () => ({
+    vi.doMock("@evalsight/shared/src/server", () => ({
       QueueName: {
         IngestionQueue: "ingestion-queue",
       },

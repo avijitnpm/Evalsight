@@ -1,5 +1,5 @@
 import type { Session } from "next-auth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import {
@@ -14,12 +14,12 @@ import {
   getTraceByIdFromEventsTable,
   createObservation,
   createObservationsCh,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import waitForExpect from "wait-for-expect";
 import { randomUUID } from "crypto";
 import { env } from "@/src/env.mjs";
 import { composeAggregateScoreKey } from "@/src/features/scores/lib/aggregateScores";
-import { BatchExportFileFormat, BatchTableNames } from "@langfuse/shared";
+import { BatchExportFileFormat, BatchTableNames } from "@evalsight/shared";
 
 describe("traces trpc", () => {
   const projectId = "7a88fb47-b4e2-43b8-a06c-a5ce950dc53a";

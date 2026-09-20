@@ -2,7 +2,7 @@ import {
   eventsTableCols,
   type FilterState,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Pure query planning for the events filter options (LFE-14489): which facet
 // columns share one bulk query, which need a self-excluded per-column query,

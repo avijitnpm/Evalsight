@@ -12,14 +12,14 @@ import {
   normalizeEventsTraceName,
   type ScoreDataTypeType,
   TracingSearchType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   buildEventsBlobExportStreamQuery,
   buildEventsStreamQuery,
   getDistinctScoreNames,
   queryClickhouseStream,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { Readable } from "stream";
 import { env } from "../../env";
 import {

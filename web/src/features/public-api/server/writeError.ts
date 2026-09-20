@@ -1,6 +1,6 @@
 import { type NextApiResponse } from "next";
 
-import { type BaseError } from "@langfuse/shared";
+import { type BaseError } from "@evalsight/shared";
 
 /** ErrorOrgApiKeyRequired is the 403 message when a non-organization key hits an organization-scoped operation. */
 export const ErrorOrgApiKeyRequired =

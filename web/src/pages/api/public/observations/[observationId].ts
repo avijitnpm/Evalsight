@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   GetObservationV1Query,
   GetObservationV1Response,
@@ -9,12 +9,12 @@ import {
   withMiddlewares,
 } from "@/src/features/public-api/server/withMiddlewares";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
-import { LangfuseNotFoundError } from "@langfuse/shared";
+import { LangfuseNotFoundError } from "@evalsight/shared";
 import {
   enrichObservationWithModelData,
   getObservationById,
   getObservationByIdFromEventsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { legacyPublicApiRateLimitUpgradePaths } from "@/src/features/public-api/server/rateLimitUpgradePaths";
 import { OBSERVATIONS_V1_DEPRECATION } from "@/src/features/public-api/server/deprecations";
 

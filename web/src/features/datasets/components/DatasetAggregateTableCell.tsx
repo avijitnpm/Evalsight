@@ -9,7 +9,7 @@ import { formatIntervalSeconds } from "@/src/utils/dates";
 import { cn } from "@/src/utils/tailwind";
 import { ClockIcon, ListTree } from "lucide-react";
 import { usdFormatter } from "@/src/utils/numbers";
-import { type EnrichedDatasetRunItem } from "@langfuse/shared/src/server";
+import { type EnrichedDatasetRunItem } from "@evalsight/shared/src/server";
 import {
   type ScoreColumn,
   ScoreRow,
@@ -19,7 +19,7 @@ import {
 import { useRouter } from "next/router";
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { useTrpcError } from "@/src/hooks/useTrpcError";
-import { type ScoreAggregate } from "@langfuse/shared";
+import { type ScoreAggregate } from "@evalsight/shared";
 import { computeScoreDiffs } from "@/src/features/datasets/lib/computeScoreDiffs";
 import { useMemo } from "react";
 import { type BaselineDiff } from "@/src/features/datasets/lib/calculateBaselineDiff";

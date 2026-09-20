@@ -8,8 +8,8 @@ import {
   ObservationTypeDomain,
   type SingleValueOption,
   type TimeFilter,
-} from "@langfuse/shared";
-import { type views, type ViewVersion } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { type views, type ViewVersion } from "@evalsight/shared/query";
 import { type z } from "zod";
 
 import { Alert } from "@/src/components/design-system/Alert/Alert";

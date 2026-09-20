@@ -2,15 +2,15 @@ import {
   ObservationLevel,
   singleFilter,
   EvalTargetObject,
-} from "@langfuse/shared";
-import { JobConfiguration, Prisma, prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { JobConfiguration, Prisma, prisma } from "@evalsight/shared/src/db";
 import {
   convertDateToClickhouseDateTime,
   createOrgProjectAndApiKey,
   TraceRecordReadType,
   upsertObservation,
   upsertTrace,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import Decimal from "decimal.js";
 import { afterAll, test as baseTest, beforeAll, describe } from "vitest";

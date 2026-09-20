@@ -1,4 +1,4 @@
-import { type PrismaClient } from "@langfuse/shared/src/db";
+import { type PrismaClient } from "@evalsight/shared/src/db";
 import {
   BlobStorageExportMode,
   BlobStorageIntegrationType,
@@ -8,11 +8,11 @@ import {
   type ObservationFieldGroupFull,
   BLOB_STORAGE_REGION_INVALID_MESSAGE,
   normalizeBlobStorageRegion,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { assertPersistedExportSourceAllowed } from "@/src/features/analytics-integrations/server/exportSource";
-import { encrypt } from "@langfuse/shared/encryption";
+import { encrypt } from "@evalsight/shared/encryption";
 import { env } from "@/src/env.mjs";
-import { validateBlobStorageEndpoint } from "@langfuse/shared/src/server";
+import { validateBlobStorageEndpoint } from "@evalsight/shared/src/server";
 
 type UpsertBlobStorageIntegrationInput = {
   type: BlobStorageIntegrationType;

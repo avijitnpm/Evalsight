@@ -4,7 +4,7 @@ import {
   queryClickhouse,
   commandClickhouse,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const BATCH_DELETION_TABLES = [
   "traces",

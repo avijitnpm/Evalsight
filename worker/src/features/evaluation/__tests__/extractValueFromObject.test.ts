@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   extractValueFromObjectAsString,
   extractValueFromObject,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 describe("extractValueFromObject", () => {
   describe("JSONPath slice expressions returning multiple elements", () => {

@@ -9,9 +9,9 @@ import {
   logger,
   removeIngestionEventsFromS3AndDeleteClickhouseRefsForProject,
   getCurrentSpan,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { Job } from "bullmq";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { env, v4WritesToEventsTable } from "../../env";
 
 export const handleDataRetentionProcessingJob = async (job: Job) => {

@@ -1,4 +1,4 @@
-import { datasetItemFilterColumns } from "@langfuse/shared";
+import { datasetItemFilterColumns } from "@evalsight/shared";
 import { fieldRegistryFromColumns } from "@/src/features/search-bar/lib/fields";
 
 export const DATASET_ITEMS_FIELD_REGISTRY = fieldRegistryFromColumns(

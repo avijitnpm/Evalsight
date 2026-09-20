@@ -1,6 +1,6 @@
 import { Job, Processor } from "bullmq";
-import { EvalTemplateType, JobExecutionStatus } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { EvalTemplateType, JobExecutionStatus } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   QueueName,
   TQueueJobTypes,
@@ -12,7 +12,7 @@ import {
   QueueJobs,
   getCurrentSpan,
   classifyEvaluatorLlmError,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { createEvalJobs, evaluate } from "../features/evaluation/evalService";
 import { processObservationEval } from "../features/evaluation/observationEval";
 import { createW3CTraceId, retryLLMRateLimitError } from "../features/utils";

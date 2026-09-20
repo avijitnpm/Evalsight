@@ -2,7 +2,7 @@ import {
   CommentObjectType,
   paginationMetaResponseZod,
   publicApiPaginationZod,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 /**

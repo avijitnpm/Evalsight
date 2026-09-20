@@ -1,4 +1,4 @@
-import { type ModelParams } from "@langfuse/shared";
+import { type ModelParams } from "@evalsight/shared";
 
 export function useValidateCustomModel(
   availableProviders: string[],

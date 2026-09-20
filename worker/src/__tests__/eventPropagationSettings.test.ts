@@ -10,7 +10,7 @@ const mocks = vi.hoisted(() => ({
   minInsertBlockSizeBytes: undefined as number | undefined,
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   queryClickhouse: mocks.queryClickhouse,
   commandClickhouse: mocks.commandClickhouse,
   getCurrentSpan: vi.fn(() => undefined),

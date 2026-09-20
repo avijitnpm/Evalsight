@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { createMocks } from "node-mocks-http";
-import type { RateLimitResult } from "@langfuse/shared";
+import type { RateLimitResult } from "@evalsight/shared";
 
 const {
   mockCreateStructuredPublicApiRateLimitError,
@@ -49,13 +49,13 @@ vi.mock("@/src/env.mjs", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/env", () => ({
+vi.mock("@evalsight/shared/src/env", () => ({
   env: {
     REDIS_KEY_PREFIX: undefined,
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   redis: null,
   recordIncrement: vi.fn(),
   logger: {

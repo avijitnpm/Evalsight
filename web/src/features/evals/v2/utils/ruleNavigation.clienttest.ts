@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { EvalTargetObject } from "@langfuse/shared";
+import { EvalTargetObject } from "@evalsight/shared";
 import {
   getRuleNavigationAction,
   getRuleNavigationUrl,

@@ -4,7 +4,7 @@ import {
   getCachedInputMetric,
   observationsTableCols,
   tracesTableCols,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   normalizeFilterColumnNames,
   observationFilterConfig,

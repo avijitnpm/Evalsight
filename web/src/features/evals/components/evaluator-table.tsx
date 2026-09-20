@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { encodeFiltersGeneric } from "@langfuse/shared";
+import { encodeFiltersGeneric } from "@evalsight/shared";
 import { LevelCountsDisplay } from "@/src/components/level-counts-display";
 import { DataTable } from "@/src/components/table/data-table";
 import { DataTableToolbar } from "@/src/components/table/data-table-toolbar";

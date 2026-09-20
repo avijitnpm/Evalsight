@@ -59,7 +59,7 @@ import {
   getRuleNavigationUrl,
 } from "@/src/features/evals/v2/utils/ruleNavigation";
 import { ruleExecutionsUrl } from "@/src/features/evals/v2/fns/rules/ruleExecutionsUrl";
-import { TableViewPresetTableName, type OrderByState } from "@langfuse/shared";
+import { TableViewPresetTableName, type OrderByState } from "@evalsight/shared";
 import {
   omitFilterFacets,
   useSidebarFilterState,

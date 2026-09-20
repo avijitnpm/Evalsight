@@ -1,6 +1,6 @@
-import type { AgUiContext } from "@langfuse/shared/in-app-agent";
+import type { AgUiContext } from "@evalsight/shared/in-app-agent";
 import { getInAppAgentProjectRoute } from "@/src/features/in-app-agent/routeContext";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 type InAppAgentContext = AgUiContext;
 

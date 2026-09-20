@@ -1,15 +1,15 @@
-import { encrypt } from "@langfuse/shared/encryption";
+import { encrypt } from "@evalsight/shared/encryption";
 import {
   type ActionCreate,
   type ActionConfig,
   type GitHubDispatchActionConfigWithSecrets,
   type GitHubDispatchActionCreate,
   isGitHubDispatchActionConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getActionByIdWithSecrets,
   validateWebhookURL,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { areGitHubDispatchUrlsEquivalent } from "../githubDispatchUrl";
 

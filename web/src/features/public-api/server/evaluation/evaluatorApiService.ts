@@ -1,6 +1,6 @@
-import { EvalTemplateType, ZodModelConfig } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import type { ApiAccessScope } from "@langfuse/shared/src/server";
+import { EvalTemplateType, ZodModelConfig } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import type { ApiAccessScope } from "@evalsight/shared/src/server";
 import { auditLog } from "@/src/features/audit-logs/server";
 import {
   EVAL_TEMPLATE_AUDIT_LOG_RESOURCE_TYPE,

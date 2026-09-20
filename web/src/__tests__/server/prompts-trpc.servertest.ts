@@ -1,12 +1,12 @@
 import { disconnectQueues } from "@/src/__tests__/test-utils";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma, Prisma } from "@langfuse/shared/src/db";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   EntityChangeQueue,
-} from "@langfuse/shared/src/server";
-import { PromptType } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { PromptType } from "@evalsight/shared";
 import type { Session } from "next-auth";
 import { v4 } from "uuid";
 import waitForExpect from "wait-for-expect";

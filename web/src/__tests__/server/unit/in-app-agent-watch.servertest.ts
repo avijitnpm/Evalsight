@@ -1,11 +1,11 @@
 import { EventType } from "@ag-ui/core";
 import { describe, expect, it, vi } from "vitest";
 
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import {
   IN_APP_AGENT_SILENT_MCP_OUTPUT_MESSAGE,
   InAppAgentRunStatus,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import type { InAppAgentWatchFrame } from "@/src/features/in-app-agent/watchFrames";
 import { watchConversationFrames } from "@/src/features/in-app-agent/server/watch";
 

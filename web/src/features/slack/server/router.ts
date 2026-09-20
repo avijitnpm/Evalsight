@@ -7,7 +7,7 @@ import {
   SlackService,
   SlackApiError,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { throwIfNoProjectAccess } from "@/src/features/rbac";
 import { TRPCError } from "@trpc/server";
 import { auditLog } from "@/src/features/audit-logs/server";

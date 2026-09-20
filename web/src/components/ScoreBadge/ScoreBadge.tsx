@@ -1,4 +1,4 @@
-import { type LastUserScore, type ScoreDomain } from "@langfuse/shared";
+import { type LastUserScore, type ScoreDomain } from "@evalsight/shared";
 import {
   BracesIcon,
   ExternalLinkIcon,

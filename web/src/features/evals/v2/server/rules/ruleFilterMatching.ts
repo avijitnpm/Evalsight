@@ -1,4 +1,4 @@
-import { stableJsonStringify, type FilterState } from "@langfuse/shared";
+import { stableJsonStringify, type FilterState } from "@evalsight/shared";
 
 function conditionKey(condition: FilterState[number]) {
   const value = Array.isArray(condition.value)

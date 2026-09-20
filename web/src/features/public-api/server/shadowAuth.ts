@@ -1,13 +1,13 @@
 import { type NextApiRequest } from "next";
 
-import { ApiError, type BaseError } from "@langfuse/shared";
+import { ApiError, type BaseError } from "@evalsight/shared";
 import {
   type ApiAccessLevel,
   type ApiAccessScope,
   redis,
   traceException,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 
 import { env } from "@/src/env.mjs";
 import { ApiAuthService } from "@/src/features/public-api/server/apiAuth";

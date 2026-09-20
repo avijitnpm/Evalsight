@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
-import type { GatewayProvider, PrismaClient } from "@langfuse/shared/src/db";
-import { redis as defaultRedis } from "@langfuse/shared/src/server";
+import type { GatewayProvider, PrismaClient } from "@evalsight/shared/src/db";
+import { redis as defaultRedis } from "@evalsight/shared/src/server";
 import type { Cluster, Redis } from "ioredis";
 
 import type { GatewayApiKeyAuthContext } from "@/src/features/ai-gateway/server/auth/gatewayApiKeyAuthenticator";

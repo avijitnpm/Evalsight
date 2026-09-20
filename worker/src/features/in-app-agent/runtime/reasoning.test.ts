@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { env } from "@langfuse/shared/src/env";
+import { env } from "@evalsight/shared/src/env";
 import {
   createInAppAgentLanguageModel,
   getBedrockReasoningProviderOptions,

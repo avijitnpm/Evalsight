@@ -2,7 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Readable } from "stream";
 import { createMocks } from "node-mocks-http";
-import { LangfuseNotFoundError, UnauthorizedError } from "@langfuse/shared";
+import { LangfuseNotFoundError, UnauthorizedError } from "@evalsight/shared";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import handler from "../../pages/api/traces/[traceId]/observations/[observationId]/io/[field]";
 
@@ -31,8 +31,8 @@ vi.mock("../../features/traces/server/buildTraceExport", async () => ({
 
 // Override only the ClickHouse streaming read; keep logger, the field enum, and
 // everything withMiddlewares needs from the barrel intact.
-vi.mock("@langfuse/shared/src/server", async () => ({
-  ...(await vi.importActual("@langfuse/shared/src/server")),
+vi.mock("@evalsight/shared/src/server", async () => ({
+  ...(await vi.importActual("@evalsight/shared/src/server")),
   getObservationIOFieldByteLengthFromEventsTable: (...args: unknown[]) =>
     mockByteLength(...args),
   streamObservationIOFieldFromEventsTable: (...args: unknown[]) =>

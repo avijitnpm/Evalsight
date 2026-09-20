@@ -1,10 +1,10 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import Decimal from "decimal.js";
-import { matchPricingTier } from "@langfuse/shared/src/server";
+import { matchPricingTier } from "@evalsight/shared/src/server";
 
 const transaction = vi.hoisted(() => vi.fn());
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: { $transaction: transaction },
 }));
 

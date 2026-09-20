@@ -4,7 +4,7 @@ import {
   publicApiPaginationZod,
   AnnotationQueueObjectType,
   AnnotationQueueStatus,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Common Types

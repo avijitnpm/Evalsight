@@ -11,7 +11,7 @@ import { type NextApiRequest, type NextApiResponse } from "next";
 import { type Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import { formatErrorForUser } from "../core/error-formatting";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 /**
  * Handle MCP request using Streamable HTTP transport.

@@ -7,7 +7,7 @@ import {
   StringFilter,
   StringObjectFilter,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const maybeEventsTable =
   env.LANGFUSE_MIGRATION_V4_ALLOW_PREVIEW_OPT_IN === "true"

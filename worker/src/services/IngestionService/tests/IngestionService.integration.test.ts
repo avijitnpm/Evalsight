@@ -9,7 +9,7 @@ import {
   type TestContext,
 } from "vitest";
 import { uuid, z } from "zod";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   clickhouseClient,
   ObservationEvent,
@@ -27,11 +27,11 @@ import {
   getObservationsV2FromEventsTableForPublicApi,
   queryClickhouse,
   setNoEvalConfigsCache,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import waitForExpect from "wait-for-expect";
 import { ClickhouseWriter, TableName } from "../../ClickhouseWriter";
 import { IngestionService } from "../../IngestionService";
-import { ModelUsageUnit, ScoreSourceEnum } from "@langfuse/shared";
+import { ModelUsageUnit, ScoreSourceEnum } from "@evalsight/shared";
 import {
   clickhouseTableExists,
   skipUnlessClickhouseTablesExist,

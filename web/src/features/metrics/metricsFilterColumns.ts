@@ -1,8 +1,8 @@
 import {
   type ColumnDefinition,
   type SingleValueOption,
-} from "@langfuse/shared";
-import { type ViewVersion, type views } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { type ViewVersion, type views } from "@evalsight/shared/query";
 
 import { type z } from "zod";
 

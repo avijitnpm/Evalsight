@@ -1,4 +1,4 @@
-import type { GatewayProvider, PrismaClient } from "@langfuse/shared/src/db";
+import type { GatewayProvider, PrismaClient } from "@evalsight/shared/src/db";
 
 import { isGatewayEnabledForOrganization } from "@/src/features/ai-gateway/server/availability";
 import { GatewayControlPlaneError } from "@/src/features/ai-gateway/server/gatewayControlPlaneError";

@@ -1,5 +1,5 @@
 import type { TestContext } from "vitest";
-import { queryClickhouse } from "@langfuse/shared/src/server";
+import { queryClickhouse } from "@evalsight/shared/src/server";
 
 export async function clickhouseTableExists(table: string): Promise<boolean> {
   try {

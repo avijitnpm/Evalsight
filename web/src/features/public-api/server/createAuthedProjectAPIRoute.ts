@@ -6,13 +6,13 @@ import {
   traceException,
   logger,
   contextWithLangfuseProps,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   BaseError,
   PayloadTooLargeError,
   type RateLimitResource,
   type ApiDeprecationInfo,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { verifyGatewayIngestionAuthorization } from "@/src/features/ai-gateway/server";
 import { RateLimitService } from "@/src/features/public-api/server/RateLimitService";
 import { type RateLimitUpgradePath } from "@/src/features/public-api/server/rateLimitUpgradePaths";

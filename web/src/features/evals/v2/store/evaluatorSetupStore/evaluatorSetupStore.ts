@@ -6,7 +6,7 @@ import {
   type EvalTemplateSourceCodeLanguage,
   type EvalTemplateType,
   type EvaluatorPromptMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createStore, type StoreApi } from "zustand/vanilla";
 
 import { inferDefaultMapping } from "@/src/features/evals/utils/evaluator-form-utils";

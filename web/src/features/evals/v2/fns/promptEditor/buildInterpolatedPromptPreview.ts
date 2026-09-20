@@ -2,7 +2,7 @@ import {
   extractValueFromObjectAsString,
   isValidVariableName,
   MUSTACHE_REGEX,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import type { InterpolatedPromptPreviewState } from "@/src/features/evals/v2/components/Evaluators/Judges/PromptVariableEditor/PromptVariableEditor";
 import type { VariableFieldState } from "@/src/features/evals/v2/types/variableMapping";

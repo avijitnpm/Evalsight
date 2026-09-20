@@ -5,9 +5,9 @@ import {
   variableMappingList,
   EvalTargetObject,
   compileTemplateString,
-} from "@langfuse/shared";
-import { encrypt } from "@langfuse/shared/encryption";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { encrypt } from "@evalsight/shared/encryption";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
 import {
   convertDateToClickhouseDateTime,
   createObservation,
@@ -20,7 +20,7 @@ import {
   createDatasetRunItem,
   createOrgProjectAndApiKey,
   LangfuseInternalTraceEnvironment,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import Decimal from "decimal.js";
 import { afterEach } from "node:test";
@@ -34,8 +34,8 @@ import {
 import { requiresDatabaseLookup } from "../features/evaluation/traceFilterUtils";
 
 // Mock the shared LLM runtime with default passthrough behavior.
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     generateLLMText: vi.fn().mockImplementation(actual.generateLLMText as any),
@@ -46,7 +46,7 @@ vi.mock("@langfuse/shared/src/server", async () => {
 import {
   EvalExecutionQueue,
   generateLLMText,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { UnrecoverableError } from "../errors/UnrecoverableError";
 
 let OPENAI_API_KEY = process.env.OPENAI_API_KEY;

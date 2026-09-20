@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from "vitest";
-import { type Prisma } from "@langfuse/shared/src/db";
+import { type Prisma } from "@evalsight/shared/src/db";
 import { scheduleObservationEvals } from "../scheduleObservationEvals";
 import {
   createTestObservation,
@@ -12,11 +12,11 @@ import {
   EvalTargetObject,
   normalizeEvaluationRuleTarget,
   observationForEvalSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Mock logger to avoid noise in tests
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     logger: {

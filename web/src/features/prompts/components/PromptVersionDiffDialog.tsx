@@ -6,7 +6,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/src/components/ui/dialog";
-import { type Prompt } from "@langfuse/shared";
+import { type Prompt } from "@evalsight/shared";
 import DiffViewer from "@/src/components/DiffViewer";
 
 type PromptVersionDiffDialogProps = {

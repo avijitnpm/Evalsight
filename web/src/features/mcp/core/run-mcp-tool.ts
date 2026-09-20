@@ -1,5 +1,5 @@
-import { BaseError } from "@langfuse/shared";
-import { addUserToSpan, instrumentAsync } from "@langfuse/shared/src/server";
+import { BaseError } from "@evalsight/shared";
+import { addUserToSpan, instrumentAsync } from "@evalsight/shared/src/server";
 import { SpanKind, type Span } from "@opentelemetry/api";
 import { ZodError } from "zod";
 

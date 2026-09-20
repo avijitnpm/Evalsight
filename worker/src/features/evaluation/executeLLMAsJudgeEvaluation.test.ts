@@ -10,9 +10,9 @@ const observabilityMocks = vi.hoisted(() => ({
   blockEvaluator: vi.fn().mockResolvedValue({ blockedEvaluatorIds: [] }),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
 
   return {
     ...actual,
@@ -49,12 +49,12 @@ import { UnrecoverableError } from "../../errors/UnrecoverableError";
 import {
   LLMValidationError,
   type ExtractedVariable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   EvalTargetObject,
   type PersistedEvalOutputDefinition,
   ScoreDataTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Unit tests for executeLLMAsJudgeEvaluation with mocked dependencies.

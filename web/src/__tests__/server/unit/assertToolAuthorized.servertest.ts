@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ErrorCode } from "@modelcontextprotocol/sdk/types.js";
 
-import { ForbiddenError } from "@langfuse/shared";
+import { ForbiddenError } from "@evalsight/shared";
 
 const { env } = vi.hoisted(() => ({
   env: { API_AUTH_MIGRATION: "enforce" as string },

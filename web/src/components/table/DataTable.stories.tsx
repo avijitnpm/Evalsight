@@ -7,7 +7,7 @@ import {
   type PaginationState,
   type RowSelectionState,
 } from "@tanstack/react-table";
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 import Decimal from "decimal.js";
 
 import {

@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
-import { MediaAssociationOrigin } from "@langfuse/shared";
-import type { EventRecordInsertType } from "@langfuse/shared/src/server";
+import { MediaAssociationOrigin } from "@evalsight/shared";
+import type { EventRecordInsertType } from "@evalsight/shared/src/server";
 
 const mocks = vi.hoisted(() => {
   const span = { setAttributes: vi.fn() };
@@ -25,8 +25,8 @@ const mocks = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@langfuse/shared/src/server")>()),
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@evalsight/shared/src/server")>()),
   instrumentAsync: mocks.instrumentAsync,
   logger: mocks.logger,
   recordDistribution: mocks.recordDistribution,

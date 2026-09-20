@@ -9,7 +9,7 @@ import {
   useColumnOrder,
   useColumnVisibility,
 } from "@/src/features/column-visibility";
-import { type AnnotationQueueStatus } from "@langfuse/shared";
+import { type AnnotationQueueStatus } from "@evalsight/shared";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";
 import { ChevronDown, ListTree, Trash } from "lucide-react";
 import { type RouterOutput } from "@/src/utils/types";

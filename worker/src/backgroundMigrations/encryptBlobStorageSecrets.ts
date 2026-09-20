@@ -1,7 +1,7 @@
 import { IBackgroundMigration } from "./IBackgroundMigration";
-import { logger } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
-import { encrypt, decrypt } from "@langfuse/shared/encryption";
+import { logger } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { encrypt, decrypt } from "@evalsight/shared/encryption";
 
 /**
  * Background migration to encrypt previously stored unencrypted secretAccessKey values

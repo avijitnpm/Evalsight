@@ -3,7 +3,7 @@ import {
   createEventsCh,
   createOrgProjectAndApiKey,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   makeAPICall,
   makeZodVerifiedAPICall,

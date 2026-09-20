@@ -3,7 +3,7 @@ import {
   hasLegacyTracingIoSearch,
   LEGACY_IO_SEARCH_TYPES,
 } from "@/src/features/traces/server/legacyIoSearchTypes";
-import { BatchTableNames, type TracingSearchType } from "@langfuse/shared";
+import { BatchTableNames, type TracingSearchType } from "@evalsight/shared";
 import { TRPCError } from "@trpc/server";
 
 const LEGACY_TRACING_TABLE_NAMES = new Set<BatchTableNames>([

@@ -8,7 +8,7 @@ vi.mock("@/src/features/v4/server/v4TransitionService", () => ({
   getProjectV4MigrationData,
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {},
 }));
 

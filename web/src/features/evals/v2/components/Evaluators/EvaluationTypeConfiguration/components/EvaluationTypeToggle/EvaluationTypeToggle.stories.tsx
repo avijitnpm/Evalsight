@@ -3,7 +3,7 @@ import { useArgs } from "storybook/preview-api";
 import { fn } from "storybook/test";
 
 import preview from "../../../../../../../../../.storybook/preview";
-import { EvalTemplateTypeEnum, type EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateTypeEnum, type EvalTemplateType } from "@evalsight/shared";
 
 import { EvaluationTypeToggle } from "./EvaluationTypeToggle";
 import { PopoverTrigger } from "@/src/components/ui/popover";

@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { type Role } from "@langfuse/shared";
+import { type Role } from "@evalsight/shared";
 import { useId } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";

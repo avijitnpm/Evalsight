@@ -2,8 +2,8 @@ import type { Session } from "next-auth";
 import type { JWT } from "next-auth/jwt";
 import { randomUUID } from "crypto";
 
-import type { Plan } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import type { Plan } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { env } from "@/src/env.mjs";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";

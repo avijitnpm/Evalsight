@@ -2,11 +2,11 @@ import type {
   GatewayConnectionStatus,
   GatewayProvider,
   PrismaClient,
-} from "@langfuse/shared/src/db";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
-import { encrypt } from "@langfuse/shared/encryption";
-import { LLMAdapter, testModelCall } from "@langfuse/shared/src/server";
-import { getDisplaySecretKey } from "@langfuse/shared/src/server/auth/apiKeys";
+} from "@evalsight/shared/src/db";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
+import { encrypt } from "@evalsight/shared/encryption";
+import { LLMAdapter, testModelCall } from "@evalsight/shared/src/server";
+import { getDisplaySecretKey } from "@evalsight/shared/src/server/auth/apiKeys";
 
 import { auditLog } from "@/src/features/audit-logs/server";
 import type { OrgAuthedContext } from "@/src/server/api/trpc";

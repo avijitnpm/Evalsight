@@ -1,12 +1,12 @@
 import { VERSION } from "@/src/constants";
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   convertDateToClickhouseDateTime,
   logger,
   queryClickhouse,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 type HealthCheckInput = {
   failIfDatabaseUnavailable: boolean;

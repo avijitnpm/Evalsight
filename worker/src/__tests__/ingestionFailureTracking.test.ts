@@ -1,13 +1,13 @@
 import { randomUUID } from "node:crypto";
 import { setTimeout as sleep } from "node:timers/promises";
 
-import { env } from "@langfuse/shared/src/env";
+import { env } from "@evalsight/shared/src/env";
 import {
   INGESTION_FAILURE_ACTIVE_PROJECTS_KEY,
   markProjectIngestFailure,
   redis,
   updateActiveIngestFailureProjectsMetric,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 
 async function waitForActiveProjectCount(expected: number): Promise<void> {

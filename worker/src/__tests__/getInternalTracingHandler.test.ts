@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   LangfuseInternalTraceEnvironment,
   prepareInternalTraceEvents,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 describe("prepareInternalTraceEvents", () => {
   it("sets the configured environment on every forwarded event", () => {

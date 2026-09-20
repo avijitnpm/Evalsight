@@ -2,10 +2,10 @@ import { generateKeyPairSync, randomUUID } from "node:crypto";
 
 import type { Session } from "next-auth";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import * as SharedServer from "@langfuse/shared/src/server";
+import * as SharedServer from "@evalsight/shared/src/server";
 import { z } from "zod/v4";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedServer>();
   return {
     ...actual,
@@ -32,9 +32,9 @@ import {
   GatewayProviderService,
 } from "@/src/features/ai-gateway/server/provider";
 import { createEs256JwtVerifier } from "@/src/server/utils/jwt";
-import { prisma, Role } from "@langfuse/shared/src/db";
-import { decrypt } from "@langfuse/shared/encryption";
-import { createShaHash } from "@langfuse/shared/src/server/auth/apiKeys";
+import { prisma, Role } from "@evalsight/shared/src/db";
+import { decrypt } from "@evalsight/shared/encryption";
+import { createShaHash } from "@evalsight/shared/src/server/auth/apiKeys";
 
 const cleanupOrganizations: string[] = [];
 const cleanupUsers: string[] = [];

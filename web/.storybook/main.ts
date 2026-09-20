@@ -125,9 +125,9 @@ const config: StorybookConfig = {
   ],
   framework: getAbsolutePath("@storybook/nextjs-vite"),
   staticDirs: ["../public", "./public"],
-  // Resolve `@langfuse/shared` to its TypeScript source, mirroring the app's
+  // Resolve `@evalsight/shared` to its TypeScript source, mirroring the app's
   // own alias (next.config.mjs: webpack alias + turbopack.resolveAlias both map
-  // "@langfuse/shared" -> "./packages/shared/src"). The package's published
+  // "@evalsight/shared" -> "./packages/shared/src"). The package's published
   // entry is a CommonJS bundle whose deeply transitive `export *` re-export
   // chains (e.g. MediaReferenceStringSchema, re-exported through
   // utils/IORepresentation/chatML) are not statically resolvable by Rollup's /
@@ -153,12 +153,12 @@ const config: StorybookConfig = {
     viteConfig.resolve = viteConfig.resolve ?? {};
     // Use the array form with regex `find`s for *exact* matching. The object
     // form is treated by Vite/Rollup as a literal prefix replacement, so an
-    // import like `@langfuse/shared/src/db` would become `.../src/src/db`
+    // import like `@evalsight/shared/src/db` would become `.../src/src/db`
     // (double `src`) and fail to resolve. The bare specifier and the
-    // `@langfuse/shared/src/...` subpaths (which the package's `exports` map
+    // `@evalsight/shared/src/...` subpaths (which the package's `exports` map
     // under `src/`) are handled by two distinct, anchored rules — matching how
     // the app aliases the package (next.config.mjs: transpilePackages +
-    // turbopack.resolveAlias "@langfuse/shared" -> "./packages/shared/src").
+    // turbopack.resolveAlias "@evalsight/shared" -> "./packages/shared/src").
     const existingAlias = viteConfig.resolve.alias ?? {};
     const aliasArray = Array.isArray(existingAlias)
       ? existingAlias
@@ -168,7 +168,7 @@ const config: StorybookConfig = {
         }));
     viteConfig.resolve.alias = [
       // The package also exposes a few named subpath exports (e.g.
-      // `@langfuse/shared/query`, imported transitively via the chart-library's
+      // `@evalsight/shared/query`, imported transitively via the chart-library's
       // PivotTable → widgets/utils). Those aren't under `src/`, so the two rules
       // below miss them and they fall through to the CJS dist bundle, whose
       // re-exported names (e.g. `getViewDeclaration`) Vite's lexer can't resolve

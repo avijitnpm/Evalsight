@@ -2,7 +2,7 @@ import { z } from "zod";
 import {
   LegacySpanPatchSchema,
   LegacySpanPostSchema,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 // POST /spans
 export const PostSpansV1Body = LegacySpanPostSchema;

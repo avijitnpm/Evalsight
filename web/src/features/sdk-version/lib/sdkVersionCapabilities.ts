@@ -1,4 +1,4 @@
-import { normalizeIngestionSdkName } from "@langfuse/shared";
+import { normalizeIngestionSdkName } from "@evalsight/shared";
 
 type SdkMetadata = {
   isOtel: boolean;

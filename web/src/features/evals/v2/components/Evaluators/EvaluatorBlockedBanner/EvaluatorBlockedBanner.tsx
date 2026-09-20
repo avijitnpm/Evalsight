@@ -2,7 +2,7 @@ import { formatDistanceToNow } from "date-fns";
 import {
   getEvaluatorBlockMetadata,
   type EvaluatorBlockReason,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { AlertTriangle, ExternalLinkIcon, RefreshCcw } from "lucide-react";
 import Link from "next/link";
 import { Fragment } from "react";

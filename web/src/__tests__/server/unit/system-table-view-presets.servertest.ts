@@ -1,13 +1,13 @@
 /** @jest-environment node */
 
-import { getSystemTableViewPresets } from "@langfuse/shared/src/server";
+import { getSystemTableViewPresets } from "@evalsight/shared/src/server";
 import {
   eventsTableCols,
   eventsTableFilterState,
   orderBy as orderBySchema,
   SystemTableViewPresetCategory,
   TableViewPresetTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Column ids that are valid targets for a filter or an orderBy on the events
 // table. Presets that reference an unknown column, or use a filter type/operator

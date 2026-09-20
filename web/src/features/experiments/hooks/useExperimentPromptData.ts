@@ -9,7 +9,7 @@ import {
   type PromptMessage,
   type PromptToolConfig,
   ZodModelConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod/v4";
 
 type ExperimentPromptDataProps = {

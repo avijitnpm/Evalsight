@@ -3,7 +3,7 @@ import { z } from "zod";
 import {
   InAppAgentRunStatus,
   InAppAgentRunStatusSchema,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 
 export const InAppAgentWatchFrameSchema = z.discriminatedUnion("type", [
   z.object({

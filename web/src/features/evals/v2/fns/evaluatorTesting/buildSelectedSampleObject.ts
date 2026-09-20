@@ -1,4 +1,4 @@
-import { zipToolCallsFromRecord } from "@langfuse/shared";
+import { zipToolCallsFromRecord } from "@evalsight/shared";
 
 export function buildSelectedSampleObject<
   TObservation extends object,

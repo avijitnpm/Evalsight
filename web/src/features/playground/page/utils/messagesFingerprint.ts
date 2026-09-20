@@ -2,7 +2,7 @@ import {
   type ChatMessageWithId,
   type ChatMessage,
   type PlaceholderMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Stable string for a set of playground messages, used to tell whether a window

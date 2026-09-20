@@ -1,6 +1,6 @@
-import { type DatasetRunItemDomain } from "@langfuse/shared";
+import { type DatasetRunItemDomain } from "@evalsight/shared";
 import { calculateRecursiveCost } from "../lib/costCalculations";
-import { type ObservationTuple } from "@langfuse/shared/src/server";
+import { type ObservationTuple } from "@evalsight/shared/src/server";
 
 // Helpers to extract fields from ObservationTuple
 const getObservationId = (obs: ObservationTuple) => obs[0];

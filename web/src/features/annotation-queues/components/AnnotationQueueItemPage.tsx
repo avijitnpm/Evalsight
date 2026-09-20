@@ -6,7 +6,7 @@ import { type RouterOutput } from "@/src/utils/types";
 import {
   AnnotationQueueStatus,
   AnnotationQueueObjectType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ArrowLeft, ArrowRight, Keyboard, SearchXIcon } from "lucide-react";
 import { useRouter } from "next/router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";

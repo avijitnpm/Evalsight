@@ -3,7 +3,7 @@ import {
   type Facet,
   type FilterConfig,
 } from "@/src/features/filters/lib/filter-config";
-import { sessionsEventsViewCols, sessionsViewCols } from "@langfuse/shared";
+import { sessionsEventsViewCols, sessionsViewCols } from "@evalsight/shared";
 import type { ColumnToBackendKeyMap } from "@/src/features/filters/lib/filter-transform";
 
 export type SessionOmittableFilterColumn = "userIds";

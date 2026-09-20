@@ -1,7 +1,7 @@
 /* eslint-disable @repo/no-exotic-operators */
 import React from "react";
 import { act, fireEvent, render, screen } from "@testing-library/react";
-import { SLOW_QUERY_HINT_TEXT } from "@langfuse/shared";
+import { SLOW_QUERY_HINT_TEXT } from "@evalsight/shared";
 import { ChartLoadingState } from "@/src/features/widgets/chart-library/ChartLoadingState";
 
 describe("ChartLoadingState", () => {

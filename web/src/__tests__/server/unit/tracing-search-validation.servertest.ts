@@ -2,7 +2,7 @@ import {
   BatchActionQuerySchema,
   BatchExportQuerySchema,
   BatchTableNames,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { GenerationTableOptions } from "@/src/server/api/routers/generations/utils/GenerationTableOptions";
 import { EventsTableOptions } from "@/src/features/events/server/types";
 

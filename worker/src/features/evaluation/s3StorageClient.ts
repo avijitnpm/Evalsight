@@ -1,7 +1,7 @@
 import {
   StorageService,
   StorageServiceFactory,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 
 /**

@@ -14,7 +14,7 @@ import { describe, it, expect } from "vitest";
 import {
   OtelIngestionProcessor,
   type OtelIngestionProcessorConfig,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const FLUE_SCOPE = "@flue/opentelemetry";
 

@@ -1,11 +1,11 @@
 import { type NextApiRequest, type NextApiResponse } from "next";
 import { z } from "zod";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   invalidateAllCachedApiKeys,
   logger,
   redis,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { ApiAuthService } from "@/src/features/public-api/server/apiAuth";
 import { AdminApiAuthService } from "@/src/ee/features/admin-api/server/adminApiAuth";
 

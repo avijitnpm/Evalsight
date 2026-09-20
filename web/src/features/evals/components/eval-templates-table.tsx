@@ -48,7 +48,7 @@ import {
   EvalTemplateSourceCodeLanguage,
   EvalTemplateType,
   type EvalTemplate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useIsCodeEvalEnabled } from "@/src/features/evals/hooks/useIsCodeEvalEnabled";
 import {
   CODE_EVAL_ESCAPE_CONFIRM_MESSAGE,

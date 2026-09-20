@@ -1,4 +1,4 @@
-import { noUrlCheck, StringNoHTMLNonEmpty } from "@langfuse/shared";
+import { noUrlCheck, StringNoHTMLNonEmpty } from "@evalsight/shared";
 import * as z from "zod";
 
 export const passwordSchema = z

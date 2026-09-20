@@ -10,7 +10,7 @@ import {
   recordWebCalloutInvokeMetric,
   withWebCalloutInFlightLimit,
 } from "@/src/features/web-callouts/server/rateLimit";
-import { decrypt } from "@langfuse/shared/encryption";
+import { decrypt } from "@evalsight/shared/encryption";
 import {
   fetchWithSecureRedirects,
   getObservationById,
@@ -20,10 +20,10 @@ import {
   getTracesIdentifierForSession,
   getTracesIdentifierForSessionFromEvents,
   validateWebhookURL,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
-vi.mock("@langfuse/shared/encryption", async () => {
-  const actual = await vi.importActual("@langfuse/shared/encryption");
+vi.mock("@evalsight/shared/encryption", async () => {
+  const actual = await vi.importActual("@evalsight/shared/encryption");
   return {
     ...actual,
     encrypt: vi.fn((value: string) => `encrypted:${value}`),
@@ -41,8 +41,8 @@ vi.mock("@/src/features/web-callouts/server/rateLimit", () => ({
   ),
 }));
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     fetchWithSecureRedirects: vi.fn(),

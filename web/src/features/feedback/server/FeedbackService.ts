@@ -4,12 +4,12 @@ import {
   LangfuseConflictError,
   LangfuseNotFoundError,
   ServiceUnavailableError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   type ApiAccessScope,
   logger,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import {
   RateLimitService,

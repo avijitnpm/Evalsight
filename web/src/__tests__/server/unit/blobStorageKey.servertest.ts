@@ -6,7 +6,7 @@ import {
   parseEventKey,
   safeBlobFilenameStem,
   safeBlobKeySegment,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const HEX16 = /^[0-9a-f]{16}$/;
 

@@ -1,4 +1,4 @@
-import { JobConfigState, type JobConfiguration } from "@langfuse/shared";
+import { JobConfigState, type JobConfiguration } from "@evalsight/shared";
 
 export const EvaluatorStatus = JobConfigState;
 

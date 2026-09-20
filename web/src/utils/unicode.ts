@@ -1,1 +1,1 @@
-export { decodeUnicodeEscapesOnly } from "@langfuse/shared";
+export { decodeUnicodeEscapesOnly } from "@evalsight/shared";

@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 
 type PrismaQueryable = {
   $queryRaw: (typeof prisma)["$queryRaw"];

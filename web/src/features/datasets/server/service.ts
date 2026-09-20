@@ -8,7 +8,7 @@ import {
   singleFilterList,
   type DatasetRunItemDomain,
   AGGREGATABLE_SCORE_TYPES,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import {
   type EnrichedDatasetRunItem,
@@ -18,7 +18,7 @@ import {
   traceException,
   getDatasetItems,
   getDatasetItemsCount,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import Decimal from "decimal.js";
 import groupBy from "lodash/groupBy";
 import { aggregateScores } from "@/src/features/scores/lib/aggregateScores";

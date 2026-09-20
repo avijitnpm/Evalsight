@@ -22,7 +22,7 @@ import Link from "next/link";
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { DeleteAnnotationQueueButton } from "@/src/features/annotation-queues/components/DeleteAnnotationQueueButton";
 import { getScoreDataTypeIcon } from "@/src/features/scores";
-import { type ScoreConfigDataType } from "@langfuse/shared";
+import { type ScoreConfigDataType } from "@evalsight/shared";
 
 type RowData = {
   key: {

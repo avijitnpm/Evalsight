@@ -1,13 +1,13 @@
 import { EventType } from "@ag-ui/core";
 import { describe, expect, it, vi } from "vitest";
 
-import { Prisma, type PrismaClient } from "@langfuse/shared/src/db";
+import { Prisma, type PrismaClient } from "@evalsight/shared/src/db";
 import {
   IN_APP_AGENT_SILENT_MCP_OUTPUT_MESSAGE,
   InAppAgentRunStatus,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   ClickHouseClientManager: {
     getInstance: () => ({ closeAllConnections: vi.fn() }),
   },

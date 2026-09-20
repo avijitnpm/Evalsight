@@ -4,7 +4,7 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { paginationZod, singleFilterList } from "@langfuse/shared";
+import { paginationZod, singleFilterList } from "@evalsight/shared";
 import {
   getTotalUserCount,
   getTracesGroupedByUsers,
@@ -14,7 +14,7 @@ import {
   getUsersFromEventsTable,
   hasAnyUser,
   hasAnyUserFromEventsTable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const UserFilterOptions = z.object({
   projectId: z.string(), // Required for protectedProjectProcedure

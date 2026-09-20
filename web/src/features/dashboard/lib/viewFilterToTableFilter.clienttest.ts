@@ -5,8 +5,8 @@ import {
   eventsTableCols,
   observationsTableCols,
   tracesTableCols,
-} from "@langfuse/shared";
-import { getViewDeclaration, type views } from "@langfuse/shared/query";
+} from "@evalsight/shared";
+import { getViewDeclaration, type views } from "@evalsight/shared/query";
 import { type z } from "zod";
 import {
   classifyViewFiltersForTable,

@@ -1,5 +1,5 @@
-import type { PrismaClient } from "@langfuse/shared/src/db";
-import { getInAppAgentModelConfig } from "@langfuse/shared/in-app-agent/server/modelProvider";
+import type { PrismaClient } from "@evalsight/shared/src/db";
+import { getInAppAgentModelConfig } from "@evalsight/shared/in-app-agent/server/modelProvider";
 import { env } from "@/src/env.mjs";
 
 type LangfuseAiFeatureUnavailableReason =

@@ -1,4 +1,4 @@
-import { publicApiPaginationLimitZod } from "@langfuse/shared";
+import { publicApiPaginationLimitZod } from "@evalsight/shared";
 import { z } from "zod";
 import {
   PromptVariableMapping,

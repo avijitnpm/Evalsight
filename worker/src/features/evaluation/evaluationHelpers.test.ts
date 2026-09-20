@@ -9,11 +9,11 @@ import {
   PersistedEvalOutputDefinitionSchema,
   ScoreDataTypeEnum,
   validateEvalOutputResult,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   buildEvalExecutionData,
   type EvaluatorLlmErrorClassification,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { parseDispatchResult } from "../../../../packages/shared/src/server/evals/codeEvalDispatcherTypes";
 import { createDeterministicEvalScoreId } from "../../../../packages/shared/src/server/evals/evalScoreIds";
 import { buildEvalScoreWritePayloads } from "./evalScoreEvent";

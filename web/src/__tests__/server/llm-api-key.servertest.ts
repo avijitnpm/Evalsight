@@ -1,7 +1,7 @@
 const mockFinalizeEvaluatorBlocks = vi.hoisted(() => vi.fn());
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     finalizeEvaluatorBlocks: mockFinalizeEvaluatorBlocks,
@@ -10,23 +10,23 @@ vi.mock("@langfuse/shared/src/server", async () => {
 });
 
 import type { Session } from "next-auth";
-import { BEDROCK_USE_DEFAULT_CREDENTIALS, LLMAdapter } from "@langfuse/shared";
+import { BEDROCK_USE_DEFAULT_CREDENTIALS, LLMAdapter } from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 import { randomUUID } from "crypto";
 import {
   EvalTemplateType,
   EvaluatorBlockReason,
   prisma,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { decrypt, encrypt } from "@langfuse/shared/encryption";
+import { decrypt, encrypt } from "@evalsight/shared/encryption";
 import { AuthMethod } from "@/src/features/llm-api-key/types";
 import {
   createOrgProjectAndApiKey,
   EvaluatorBlockSource,
   generateLLMText,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const mockGenerateLLMText = vi.mocked(generateLLMText);
 

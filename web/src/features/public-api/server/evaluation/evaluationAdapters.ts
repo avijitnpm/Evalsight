@@ -9,8 +9,8 @@ import {
   variableMappingList,
   type FilterState,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
-import { logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { logger } from "@evalsight/shared/src/server";
 import {
   EvaluatorDefinitionInputSchema,
   isLegacyEvalTarget,

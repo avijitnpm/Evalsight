@@ -2,7 +2,7 @@ import {
   logger,
   recordIncrement,
   redis as defaultRedis,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import type { Cluster, Redis } from "ioredis";
 import { z } from "zod/v4";
 

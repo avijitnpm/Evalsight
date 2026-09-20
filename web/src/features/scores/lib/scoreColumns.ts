@@ -6,7 +6,7 @@ import {
   type FilterCondition,
   type ScoreDataTypeType,
   type ScoreSourceType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const traceLevelScoreFilter = (): FilterCondition[] => [
   {

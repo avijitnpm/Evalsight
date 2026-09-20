@@ -1,7 +1,7 @@
-import { BaseError, ForbiddenError, UnauthorizedError } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { addUserToSpan, logger } from "@langfuse/shared/src/server";
-import { assertOwnedConversation } from "@langfuse/shared/in-app-agent/server/persistence";
+import { BaseError, ForbiddenError, UnauthorizedError } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { addUserToSpan, logger } from "@evalsight/shared/src/server";
+import { assertOwnedConversation } from "@evalsight/shared/in-app-agent/server/persistence";
 import type { InAppAgentWatchFrame } from "../watchFrames";
 import { watchConversationFrames } from "./watch";
 import { z } from "zod";

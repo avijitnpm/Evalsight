@@ -3,7 +3,7 @@ import {
   eventsTableCols,
   validateEvaluatorFiltersForTarget,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const MEASURE_COLUMNS = new Set([
   "latency",

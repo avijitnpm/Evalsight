@@ -5,7 +5,7 @@ import {
   LEGACY_EXPORT_PROJECT_CUTOFF,
   type BlobStorageIntegration,
   type ExportSourceContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { TooltipProvider } from "@/src/components/ui/tooltip";
 import { BlobStorageIntegrationForm } from "./BlobStorageIntegrationForm";
 import {

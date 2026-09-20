@@ -3,7 +3,7 @@ import {
   CodeEvalDispatcherError,
   LocalCodeEvalDispatcher,
   type DispatchInput,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TEXT_SCORE_MAX_LENGTH } from "../../../../../packages/shared/src/domain/scores";
 
 const baseInput: Omit<DispatchInput, "runtime" | "code"> = {

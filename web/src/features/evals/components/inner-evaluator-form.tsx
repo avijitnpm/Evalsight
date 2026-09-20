@@ -33,7 +33,7 @@ import {
   EvalTargetObject,
   EvalTargetObjectSchema,
   getCodeEvalVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import { useEffect, useMemo, useState, memo, Suspense, lazy } from "react";
 import { api } from "@/src/utils/api";

@@ -1,6 +1,6 @@
 import { env } from "@/src/env.mjs";
 
-// Mirrors getBaseUrl/getProductBaseUrl in @langfuse/shared
+// Mirrors getBaseUrl/getProductBaseUrl in @evalsight/shared
 // (src/server/utils/baseUrl.ts), which the shared in-app-agent runtime uses.
 // Web keeps its own copy so callers read the validated web env (and tests can
 // mock @/src/env.mjs as the seam).

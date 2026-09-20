@@ -4,7 +4,7 @@ import {
   observationVariableMapping,
   type EvalTargetObject as EvalTargetObjectType,
   type FilterCondition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { PrismaClient } from "@prisma/client";
 import { env } from "@/src/env.mjs";
 import {

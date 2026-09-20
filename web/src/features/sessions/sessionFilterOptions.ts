@@ -1,4 +1,4 @@
-import { type FilterState, type TimeFilter } from "@langfuse/shared";
+import { type FilterState, type TimeFilter } from "@evalsight/shared";
 
 const isSessionStartTimeFilter = (
   filter: FilterState[number],

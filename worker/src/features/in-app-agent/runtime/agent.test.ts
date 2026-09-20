@@ -3,15 +3,15 @@ import { Agent } from "@mastra/core/agent";
 import { MCPClient } from "@mastra/mcp";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import type { AgUiEvent } from "@langfuse/shared/in-app-agent";
+import type { AgUiEvent } from "@evalsight/shared/in-app-agent";
 import {
   IN_APP_AGENT_MCP_TOOL_OVERRIDE_HEADER,
   IN_APP_AGENT_REDIRECT_TOOL_NAME,
   IN_APP_AGENT_TOOL_APPROVAL_EVENT_NAME,
   IN_APP_AGENT_TOOL_REJECTION_ERROR_CODE,
-} from "@langfuse/shared/in-app-agent";
-import { createInAppAgentToolPolicy } from "@langfuse/shared/in-app-agent/server/mcpPolicy";
-import { IN_APP_AGENT_MAX_STEPS } from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent";
+import { createInAppAgentToolPolicy } from "@evalsight/shared/in-app-agent/server/mcpPolicy";
+import { IN_APP_AGENT_MAX_STEPS } from "@evalsight/shared/in-app-agent/server/tunables";
 import { patchMastraApprovalChunks, type createAgUiStream } from "./agent";
 import {
   createInAppAgentSandbox,
@@ -21,7 +21,7 @@ import {
 import {
   DEFAULT_SIDEBAR_HIDDEN_ENVIRONMENTS,
   decodeFiltersGeneric,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { Langfuse } from "langfuse";
 import type { InAppAgentTracingConfig } from "./instrumentation";
 

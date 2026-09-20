@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { ScoreDataTypeEnum } from "@langfuse/shared";
+import { ScoreDataTypeEnum } from "@evalsight/shared";
 import { describe, expect, it, vi } from "vitest";
 
 import { TooltipProvider } from "@/src/components/ui/tooltip";

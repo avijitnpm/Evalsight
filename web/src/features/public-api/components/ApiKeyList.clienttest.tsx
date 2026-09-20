@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { type Role } from "@langfuse/shared/src/db";
+import { type Role } from "@evalsight/shared/src/db";
 
 const { projectApiKeys, mockSession } = vi.hoisted(() => ({
   projectApiKeys: [

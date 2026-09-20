@@ -1,14 +1,14 @@
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma, type Role } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { prisma, type Role } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import type { Session } from "next-auth";
 import {
   BatchExportFileFormat,
   BatchExportStatus,
   BatchTableNames,
   type Plan,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const __orgIds: string[] = [];
 

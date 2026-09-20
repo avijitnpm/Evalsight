@@ -5,7 +5,7 @@ import type { RulesTableStore } from "@/src/features/evals/v2/types/rules";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import { api } from "@/src/utils/api";
 import { trpcErrorToast } from "@/src/utils/trpcErrorToast";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 export function RulesOverviewSelectionBar({
   projectId,

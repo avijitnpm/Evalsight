@@ -8,8 +8,8 @@ import {
   getExperimentScoreOptions,
   getExperimentItemsCountFromEvents,
   getExperimentItemsFilterOptions,
-} from "@langfuse/shared/src/server";
-import { type FilterState } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { type FilterState } from "@evalsight/shared";
 import { randomUUID } from "crypto";
 import { env } from "@/src/env.mjs";
 

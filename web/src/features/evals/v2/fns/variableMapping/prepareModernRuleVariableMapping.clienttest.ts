@@ -1,7 +1,7 @@
 import {
   CODE_EVAL_TEMPLATE_VARIABLES,
   EvalTemplateType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 import { coverEvaluatorPromptVariables } from "./coverEvaluatorPromptVariables";
 import { prepareModernRuleVariableMapping } from "./prepareModernRuleVariableMapping";

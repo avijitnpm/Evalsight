@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { __testing, createMailTransport } from "@langfuse/shared/src/server";
+import { __testing, createMailTransport } from "@evalsight/shared/src/server";
 
 const { parseSesRegion } = __testing;
 

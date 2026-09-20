@@ -25,7 +25,7 @@ import { showErrorToast } from "@/src/features/notifications";
 import { type ReactCodeMirrorRef } from "@uiw/react-codemirror";
 import { CodeMirrorEditor } from "@/src/components/editor";
 import { useMediaTagChips } from "@/src/components/editor/mediaTagWidget";
-import { type Prisma } from "@langfuse/shared";
+import { type Prisma } from "@evalsight/shared";
 import { cn } from "@/src/utils/tailwind";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import { DatasetSchemaHoverCard } from "./DatasetSchemaHoverCard";

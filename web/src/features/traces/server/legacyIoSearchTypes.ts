@@ -1,4 +1,4 @@
-import type { TracingSearchType } from "@langfuse/shared";
+import type { TracingSearchType } from "@evalsight/shared";
 
 export const LEGACY_IO_SEARCH_TYPES = new Set<TracingSearchType>([
   "content",

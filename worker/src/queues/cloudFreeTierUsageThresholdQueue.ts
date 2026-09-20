@@ -3,7 +3,7 @@ import {
   instrumentAsync,
   logger,
   QueueJobs,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { handleCloudFreeTierUsageThresholdJob } from "../ee/usageThresholds/handleCloudFreeTierUsageThresholdJob";
 import { SpanKind } from "@opentelemetry/api";
 

@@ -8,7 +8,7 @@ import {
   createTracesCh,
   createTraceScore,
   getScoresForAnalyticsIntegrations,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 // LFE-11009: score-export trace enrichment must work from both the legacy
 // traces table and the events table, with matching 7d-lookback semantics.

@@ -1,7 +1,7 @@
 import { MultiSelectTagInput } from "@/src/components/design-system/MultiSelectTagInput/MultiSelectTagInput";
 import { useAllModels } from "@/src/features/dashboard/components/hooks";
-import { type FilterState } from "@langfuse/shared";
-import { type ViewVersion } from "@langfuse/shared/query";
+import { type FilterState } from "@evalsight/shared";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { useEffect, useState } from "react";
 
 export const ModelSelectorPopover = ({

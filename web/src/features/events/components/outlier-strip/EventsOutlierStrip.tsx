@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { useMemo, useState } from "react";
 import type * as React from "react";
-import { type FilterState, type QueryType } from "@langfuse/shared";
+import { type FilterState, type QueryType } from "@evalsight/shared";
 import { api } from "@/src/utils/api";
 import { useElementSize } from "@/src/hooks/useElementSize";
 import {

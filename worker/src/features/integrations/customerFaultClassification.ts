@@ -47,7 +47,7 @@ const BUCKET_FAULT_CODES = new Set<string>([
 ]);
 
 // Langfuse outbound-URL / SSRF validation rejections (OutboundUrlValidationError
-// from @langfuse/shared/.../outbound-url), split by cause. Every code here is a
+// from @evalsight/shared/.../outbound-url), split by cause. Every code here is a
 // deterministic property of the endpoint config, so it is safe to auto-disable
 // on. We deliberately omit `dns-lookup-failed`: resolvability depends on runtime
 // resolver state, not the config, so a transient DNS outage across the retry

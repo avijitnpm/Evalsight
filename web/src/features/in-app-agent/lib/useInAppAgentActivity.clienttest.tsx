@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { InAppAgentRunStatus } from "@langfuse/shared";
+import { InAppAgentRunStatus } from "@evalsight/shared";
 
 import {
   getInAppAgentActivityReceiptsStorageKey,

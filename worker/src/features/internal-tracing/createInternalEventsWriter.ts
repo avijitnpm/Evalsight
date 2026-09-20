@@ -3,9 +3,9 @@ import type {
   InternalEventsWriter,
   InternalTraceEventInput,
   InternalTraceExperimentContext,
-} from "@langfuse/shared/src/server";
-import { clickhouseClient, redis } from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { clickhouseClient, redis } from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { ClickhouseWriter } from "../../services/ClickhouseWriter";
 import { IngestionService } from "../../services/IngestionService";
 import { env, v4WritesToEventsTable } from "../../env";

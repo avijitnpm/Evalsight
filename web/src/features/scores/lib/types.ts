@@ -1,4 +1,4 @@
-import { type ScoreDataTypeType, type ScoreSourceType } from "@langfuse/shared";
+import { type ScoreDataTypeType, type ScoreSourceType } from "@evalsight/shared";
 
 export type ScoreData = {
   key: string;

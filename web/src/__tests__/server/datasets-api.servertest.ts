@@ -3,7 +3,7 @@ process.env.LANGFUSE_DATASET_SERVICE_READ_FROM_VERSIONED_IMPLEMENTATION =
   "true";
 process.env.LANGFUSE_DATASET_SERVICE_WRITE_TO_VERSIONED_IMPLEMENTATION = "true";
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   buildStableDatasetRunItemResponseEventsOnly,
   createStableExperimentId,
@@ -43,7 +43,7 @@ import {
   createDatasetItemFilterState,
   createDatasetItem,
   getDatasetItems,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import waitForExpect from "wait-for-expect";
 
 describe("/api/public/datasets and /api/public/dataset-items API Endpoints", () => {

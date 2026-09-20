@@ -1,7 +1,7 @@
 import {
   SCORE_CONFIG_NAME_MAX_LENGTH,
   SCORE_CONFIG_NAME_MIN_LENGTH,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 // Deliberately not reusing ScoreConfigNameSchema: its Unicode-aware regex is

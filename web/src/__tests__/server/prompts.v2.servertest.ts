@@ -1,5 +1,5 @@
 /* eslint-disable @repo/no-exotic-operators */
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { disconnectQueues, makeAPICall } from "@/src/__tests__/test-utils";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { createMocks } from "node-mocks-http";
@@ -11,7 +11,7 @@ import {
   type Prompt,
   PromptType,
   parsePromptDependencyTags,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { nanoid } from "nanoid";
 
 import { type PromptsMetaResponse } from "@/src/features/prompts/server/actions/getPromptsMeta";
@@ -20,7 +20,7 @@ import {
   getObservationById,
   MAX_PROMPT_NESTING_DEPTH,
   ChatMessageType,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "node:crypto";
 import waitForExpect from "wait-for-expect";
 import { createPrompt } from "@/src/features/prompts/server/actions/createPrompt";

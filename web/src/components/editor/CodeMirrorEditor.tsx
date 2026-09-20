@@ -32,7 +32,7 @@ import {
   UNCLOSED_VARIABLE_REGEX,
   PromptDependencyRegex,
   parsePromptDependencyTags,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { lightTheme } from "@/src/components/editor/light-theme";
 import { darkTheme } from "@/src/components/editor/dark-theme";
 import { autoScrollOnSelectionDrag } from "@/src/components/editor/autoScrollOnSelectionDrag";

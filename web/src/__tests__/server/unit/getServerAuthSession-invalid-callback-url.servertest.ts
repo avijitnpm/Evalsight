@@ -29,7 +29,7 @@ vi.mock("next-auth", () => ({
   getServerSession: mockGetServerSession,
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<Record<string, unknown>>()),
   instrumentAsync: mockInstrumentAsync,
 }));

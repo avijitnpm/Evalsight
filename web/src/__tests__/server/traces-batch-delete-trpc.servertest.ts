@@ -1,8 +1,8 @@
 const mockAddBatchAction = vi.fn();
 const mockGetBatchActionJobState = vi.fn();
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const originalModule = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const originalModule = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...originalModule,
     BatchActionQueue: {
@@ -18,7 +18,7 @@ import type { Session } from "next-auth";
 import { randomUUID } from "crypto";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { env } from "@/src/env.mjs";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import {
@@ -28,8 +28,8 @@ import {
   BatchActionStatus,
   createTraceDeleteBatchActionConfig,
   TraceDeleteBatchActionConfigSchema,
-} from "@langfuse/shared";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 
 const traceDeleteQuery = (userId: string) => ({
   filter: [

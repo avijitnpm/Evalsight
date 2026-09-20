@@ -2,7 +2,7 @@ import { SiPython, SiTypescript } from "react-icons/si";
 import {
   EvalTemplateSourceCodeLanguageEnum,
   type EvalTemplateSourceCodeLanguage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { Tabs } from "@/src/components/design-system/Tabs/Tabs";
 import { sourceCodeLanguageLabel } from "@/src/features/evals/v2/fns/evaluators/sourceCodeLanguageLabel";

@@ -1,6 +1,6 @@
-// Mock the problematic @langfuse/shared import before importing our functions
-vi.mock("@langfuse/shared", async () => {
-  const actual = await vi.importActual("@langfuse/shared");
+// Mock the problematic @evalsight/shared import before importing our functions
+vi.mock("@evalsight/shared", async () => {
+  const actual = await vi.importActual("@evalsight/shared");
   const { z } = (await vi.importActual("zod")) as any;
 
   const OpenAITextContentPart = z.object({

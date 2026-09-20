@@ -5,7 +5,7 @@ import {
   type FilterState,
   singleFilterList,
   type OrderByState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { api } from "@/src/utils/api";
 import {
   getLazyEvaluatorDisplayStatus,

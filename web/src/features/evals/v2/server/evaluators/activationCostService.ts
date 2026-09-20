@@ -5,14 +5,14 @@ import {
   LangfuseNotFoundError,
   validateEvaluatorFiltersForTarget,
   type FilterState,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   getLatestEvaluatorRunCost,
   getObservationsCountFromEventsTable,
   getObservationsWithModelDataFromEventsTable,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { findEvaluatorsByIds } from "./evaluatorRepository";
 import { toEvaluatorDefinition } from "./evaluatorService";
 import { testEvaluator } from "./testEvaluator";

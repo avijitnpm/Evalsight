@@ -1,6 +1,6 @@
 // Mock queue operations to avoid Redis dependency in tests
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     // Mock queue getInstance to return a no-op queue
@@ -26,8 +26,8 @@ import {
   LangfuseNotFoundError,
   InvalidRequestError,
   BaseError,
-} from "@langfuse/shared";
-import { ClickHouseResourceError } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { ClickHouseResourceError } from "@evalsight/shared/src/server";
 
 describe("MCP Error Formatting", () => {
   describe("formatErrorForUser", () => {

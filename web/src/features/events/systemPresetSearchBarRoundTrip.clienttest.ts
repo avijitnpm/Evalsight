@@ -5,7 +5,7 @@ import {
   TableViewPresetTableName,
   getSystemTableViewPresets,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { filterStateToQueryText, planCommit } from "@/src/features/search-bar";
 
 // Catalog guard for the LFE-14699 demote-on-user-edit no-op check

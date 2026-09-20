@@ -10,7 +10,7 @@
 // form (e.g. positionInTrace) are reported in `skipped`, never silently
 // dropped.
 
-import { type FilterState, type TracingSearchType } from "@langfuse/shared";
+import { type FilterState, type TracingSearchType } from "@evalsight/shared";
 
 import {
   INVERTED_COMPARISON,

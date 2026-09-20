@@ -1,4 +1,4 @@
-import type { ScoreDataTypeEnum } from "@langfuse/shared";
+import type { ScoreDataTypeEnum } from "@evalsight/shared";
 
 export type ScoreOutputDataType =
   | typeof ScoreDataTypeEnum.NUMERIC

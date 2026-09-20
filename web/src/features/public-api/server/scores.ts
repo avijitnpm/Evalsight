@@ -2,13 +2,13 @@ import {
   removeObjectKeys,
   ScoreDataTypeEnum,
   type ScoreDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export {
   _handleGenerateScoresForPublicApi,
   _handleGetScoresCountForPublicApi,
   type ScoreQueryType,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 type ScoreApiResult = Omit<ScoreDomain, "longStringValue"> & {
   stringValue?: string | null;

@@ -9,11 +9,11 @@ import {
 } from "vitest";
 import { setupServer } from "msw/node";
 import { http, HttpResponse, delay } from "msw";
-import type { SharedEnv } from "@langfuse/shared/src/env";
+import type { SharedEnv } from "@evalsight/shared/src/env";
 import {
   applyIngestionMasking,
   isIngestionMaskingEnabled,
-} from "@langfuse/shared/src/server/ee/ingestionMasking";
+} from "@evalsight/shared/src/server/ee/ingestionMasking";
 
 // Sample OTEL span data for testing
 const sampleSpanData = [

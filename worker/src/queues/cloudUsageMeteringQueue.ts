@@ -4,11 +4,11 @@ import {
   instrumentAsync,
   logger,
   QueueJobs,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { handleCloudUsageMeteringJob } from "../ee/cloudUsageMetering/handleCloudUsageMeteringJob";
 import { cloudUsageMeteringDbCronJobName } from "../ee/cloudUsageMetering/constants";
 import { CloudUsageMeteringDbCronJobStates } from "../ee/cloudUsageMetering/constants";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { SpanKind } from "@opentelemetry/api";
 
 export const cloudUsageMeteringQueueProcessor: Processor = async (job) => {

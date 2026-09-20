@@ -2,7 +2,7 @@ import { Agent } from "@mastra/core/agent";
 import type { MastraModelConfig } from "@mastra/core/llm";
 import { describe, expect, it } from "vitest";
 
-import { IN_APP_AGENT_REDIRECT_TOOL_NAME } from "@langfuse/shared/in-app-agent";
+import { IN_APP_AGENT_REDIRECT_TOOL_NAME } from "@evalsight/shared/in-app-agent";
 import { createRedirectActionTool } from "./tools";
 
 type OpenAIResponsesModel = Extract<

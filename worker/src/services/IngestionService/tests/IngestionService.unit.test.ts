@@ -14,9 +14,9 @@ vi.mock(
   }),
 );
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...actual,
     validateAndInflateScore: (...args: unknown[]) =>
@@ -34,7 +34,7 @@ import {
   createTraceScore,
   type ObservationEvent,
   type ScoreEventType,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TableName } from "../../ClickhouseWriter";
 
 describe("IngestionService unit tests", () => {

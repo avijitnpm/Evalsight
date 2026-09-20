@@ -12,7 +12,7 @@ import {
   processEventBatch,
   type ApiAccessLevel,
   redactLangfuseSecretKeys,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { telemetry } from "@/src/features/telemetry";
 import { clickHouseRouteForRequest } from "@/src/features/public-api/server/clickHouseRequestTags";
 import {
@@ -21,7 +21,7 @@ import {
   BaseError,
   InternalServerError,
   ForbiddenError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { isPrismaException } from "@/src/utils/exceptions";
 import { RateLimitService } from "@/src/features/public-api/server/RateLimitService";
 import * as opentelemetry from "@opentelemetry/api";
@@ -34,7 +34,7 @@ import {
   SDK_NAME_ATTRIBUTE,
   SDK_VERSION_ATTRIBUTE,
   extractSdkAttributes,
-} from "@langfuse/shared/instrumentation/bootstrap";
+} from "@evalsight/shared/instrumentation/bootstrap";
 import {
   shadowAuth,
   shadowAuthorize,

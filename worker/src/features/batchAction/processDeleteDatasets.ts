@@ -2,7 +2,7 @@ import {
   addToDeleteDatasetQueue,
   deleteDatasetsByIds,
   findDatasetIdsByIds,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export async function processDeleteDatasets(
   projectId: string,

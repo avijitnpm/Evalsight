@@ -4,7 +4,7 @@ import {
   isTraceScore,
 } from "@/src/features/scores/lib/helpers";
 import { useScoreCache } from "@/src/features/scores/contexts/ScoreCacheContext";
-import { type ScoreTarget } from "@langfuse/shared";
+import { type ScoreTarget } from "@evalsight/shared";
 import { showErrorToast } from "@/src/features/notifications";
 
 export function useScoreMutations({

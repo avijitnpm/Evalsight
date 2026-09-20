@@ -5,7 +5,7 @@ import {
   advanceSessionsExpiredAtForUser,
   getSessionLoginAt,
 } from "@/src/features/auth/lib/sessionExpiration";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 
 describe("session expiration", () => {
   const userIds: string[] = [];

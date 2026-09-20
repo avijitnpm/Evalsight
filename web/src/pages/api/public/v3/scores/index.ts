@@ -1,6 +1,6 @@
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
-import { GetScoresQueryV3, GetScoresResponseV3 } from "@langfuse/shared";
+import { GetScoresQueryV3, GetScoresResponseV3 } from "@evalsight/shared";
 import { listScoresV3ForPublicApi } from "@/src/features/public-api/server/scores-api-v3";
 import { EncodedScoresCursorV3 } from "@/src/features/public-api/types/scores";
 import { clampToDataAccessDays } from "@/src/features/entitlements/server/hasEntitlementLimit";

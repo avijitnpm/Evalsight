@@ -60,7 +60,7 @@ const h = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     posthogIntegration: {
       findFirst: vi.fn(async () => h.integration),
@@ -70,9 +70,9 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   return {
     ...actual,
     logger: h.logger,
@@ -100,7 +100,7 @@ vi.mock("../features/posthog/transformers", () => {
   };
 });
 
-vi.mock("@langfuse/shared/encryption", () => ({
+vi.mock("@evalsight/shared/encryption", () => ({
   decrypt: vi.fn(() => "phc_decrypted"),
 }));
 

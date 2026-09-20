@@ -1,7 +1,7 @@
 import { runFeedbackCorsMiddleware } from "@/src/features/feedback/server/corsMiddleware";
 import { sendToSlack } from "@/src/features/slack/server/slack-webhook";
 import { type NextApiRequest, type NextApiResponse } from "next";
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 
 // Legacy endpoint used by older self-hosted Langfuse versions.
 export default async function feedbackApiHandler(

@@ -1,4 +1,4 @@
-import { EvalTemplateSourceCodeLanguage } from "@langfuse/shared";
+import { EvalTemplateSourceCodeLanguage } from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
 import { api } from "@/src/utils/api";
 

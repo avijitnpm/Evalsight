@@ -1,7 +1,7 @@
 import { randomUUID } from "node:crypto";
-import { EvalTargetObject, type FilterState } from "@langfuse/shared";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { EvalTargetObject, type FilterState } from "@evalsight/shared";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import { afterAll, afterEach, beforeAll, describe, expect, it } from "vitest";
 import * as ruleRepository from "@/src/features/evals/v2/server/rules/ruleRepository";
 import { filtersMatch } from "@/src/features/evals/v2/server/rules/ruleFilterMatching";

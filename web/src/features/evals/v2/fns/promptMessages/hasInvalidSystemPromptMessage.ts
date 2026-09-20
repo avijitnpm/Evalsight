@@ -1,4 +1,4 @@
-import type { EvaluatorPromptMessage } from "@langfuse/shared";
+import type { EvaluatorPromptMessage } from "@evalsight/shared";
 
 export const EMPTY_PROMPT_MESSAGE_ERROR =
   "Add content to every prompt message before saving.";

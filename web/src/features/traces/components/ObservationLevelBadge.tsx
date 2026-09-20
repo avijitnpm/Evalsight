@@ -1,5 +1,5 @@
 import { type ComponentProps } from "react";
-import { type ObservationLevelType } from "@langfuse/shared";
+import { type ObservationLevelType } from "@evalsight/shared";
 
 import { Badge } from "@/src/components/design-system/Badge/Badge";
 

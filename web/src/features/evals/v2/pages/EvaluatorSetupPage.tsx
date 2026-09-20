@@ -10,7 +10,7 @@ import {
   type EvalTemplateType,
   type FilterState,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useStore } from "zustand";
 import { useShallow } from "zustand/react/shallow";
 import Page from "@/src/components/layouts/page";

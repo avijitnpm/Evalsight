@@ -1,11 +1,11 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   deleteDatasetsByIds,
   findDatasetIdsByIds,
   findDatasetIdsForBatchDeletion,
   findDatasetsForDeletion,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 import { afterAll, describe, expect, it } from "vitest";
 

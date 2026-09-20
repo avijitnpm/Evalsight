@@ -2,7 +2,7 @@ import {
   type ScoreSourceType,
   type FilterState,
   type ScoreDataTypeType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   extractTimeSeriesData,
   fillMissingValuesAndTransform,
@@ -15,7 +15,7 @@ import {
 } from "@/src/utils/date-range-utils";
 import React, { useMemo } from "react";
 import { NoDataOrLoading } from "@/src/components/NoDataOrLoading";
-import { type QueryType, type ViewVersion } from "@langfuse/shared/query";
+import { type QueryType, type ViewVersion } from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import { type DatabaseRow } from "@/src/server/api/services/sqlInterface";
 import { DashboardLineTimeSeriesChart } from "@/src/features/dashboard/components/DashboardLineTimeSeriesChart";

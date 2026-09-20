@@ -1,10 +1,10 @@
 import { cors, runMiddleware } from "@/src/features/public-api/server/cors";
-import { prisma } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 
 import { type NextApiRequest, type NextApiResponse } from "next";
 import { z } from "zod";
-import { type Role } from "@langfuse/shared";
+import { type Role } from "@evalsight/shared";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
 import { getSfdcService } from "@/src/ee/features/sfdc-sync/server";
 import { hasEntitlementBasedOnPlan } from "@/src/features/entitlements/server/hasEntitlement";

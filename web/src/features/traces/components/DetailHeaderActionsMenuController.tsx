@@ -12,7 +12,7 @@ import {
   buildEventsTablePathForSpanName,
 } from "@/src/features/events";
 import { copyTextToClipboard } from "@/src/utils/clipboard";
-import { type ObservationType } from "@langfuse/shared";
+import { type ObservationType } from "@evalsight/shared";
 import {
   useWebCalloutAction,
   WebCalloutMenuItem,

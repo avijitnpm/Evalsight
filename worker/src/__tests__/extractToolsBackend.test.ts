@@ -4,7 +4,7 @@ import {
   normalizeToolsForObservation,
   convertDefinitionsToMap,
   convertCallsToArrays,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 describe("extractToolsFromObservation", () => {
   describe("Tool metadata normalization", () => {

@@ -6,8 +6,8 @@ import {
 } from "@/src/features/media/validation";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
-import { ForbiddenError, InvalidRequestError } from "@langfuse/shared";
-import { instrumentAsync } from "@langfuse/shared/src/server";
+import { ForbiddenError, InvalidRequestError } from "@evalsight/shared";
+import { instrumentAsync } from "@evalsight/shared/src/server";
 
 export default withMiddlewares({
   POST: createAuthedProjectAPIRoute({

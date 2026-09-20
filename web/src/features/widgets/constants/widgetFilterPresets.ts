@@ -1,7 +1,7 @@
-import { type views } from "@langfuse/shared/query";
+import { type views } from "@evalsight/shared/query";
 import { type z } from "zod";
 import { BeakerIcon, type LucideIcon } from "lucide-react";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 /**
  * Widget filter preset definition.

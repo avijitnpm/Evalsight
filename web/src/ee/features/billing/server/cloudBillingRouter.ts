@@ -9,8 +9,8 @@ import {
 import { TRPCError } from "@trpc/server";
 import { throwIfNoOrganizationAccess } from "@/src/features/rbac";
 import { auditLog } from "@/src/features/audit-logs/server";
-import { logger } from "@langfuse/shared/src/server";
-import { type BillingProvider } from "@langfuse/shared";
+import { logger } from "@evalsight/shared/src/server";
+import { type BillingProvider } from "@evalsight/shared";
 import { resolveBillingService } from "./resolveBillingService";
 import { isCloudBillingEnabled } from "../utils/isCloudBilling";
 

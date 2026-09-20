@@ -14,10 +14,10 @@
  * the extra (+1) row is the client's "has more" sentinel.
  */
 import type { Session } from "next-auth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { createEvent, createEventsCh } from "@langfuse/shared/src/server";
+import { createEvent, createEventsCh } from "@evalsight/shared/src/server";
 import waitForExpect from "wait-for-expect";
 import { randomUUID } from "crypto";
 import superjson from "superjson";

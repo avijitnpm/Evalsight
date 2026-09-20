@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import { RESOURCE_LIMIT_ERROR_MESSAGE } from "@langfuse/shared";
+import { RESOURCE_LIMIT_ERROR_MESSAGE } from "@evalsight/shared";
 import {
   getChartLoadingProgress,
   getChartLoadingStateProps,

@@ -27,9 +27,9 @@ const mockValidateBlobStorageEndpoint = vi.hoisted(() => vi.fn());
 // fired (a cooldown-bypassed notification leaves no lastFailureNotificationSentAt
 // stamp to observe). Defaults to a no-op so real notification infra isn't needed.
 const mockDispatchProjectNotification = vi.hoisted(() => vi.fn());
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import("@langfuse/shared/src/server")>();
+    await importOriginal<typeof import("@evalsight/shared/src/server")>();
   if (mockValidateBlobStorageEndpoint.getMockImplementation() === undefined) {
     mockValidateBlobStorageEndpoint.mockImplementation(
       actual.validateBlobStorageEndpoint,
@@ -65,9 +65,9 @@ import {
   StorageService,
   StorageServiceFactory,
   BlobStorageIntegrationProcessingQueue,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { EXPORT_FRESHNESS_LAG_METRIC } from "../services/exportFreshnessLagMetric";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { Job, UnrecoverableError } from "bullmq";
 import {
   handleBlobStorageIntegrationProjectJob,
@@ -81,8 +81,8 @@ import {
   BlobStorageIntegrationFileType,
   BLOB_STORAGE_REGION_INVALID_MESSAGE,
   LEGACY_BLOB_EXPORTER_CUTOFF,
-} from "@langfuse/shared";
-import { encrypt } from "@langfuse/shared/encryption";
+} from "@evalsight/shared";
+import { encrypt } from "@evalsight/shared/encryption";
 
 // Skip tests that use Azurite in Azure mode due to known Azurite limitations
 // with multipart uploads. These tests use MinIO explicitly or are skipped.

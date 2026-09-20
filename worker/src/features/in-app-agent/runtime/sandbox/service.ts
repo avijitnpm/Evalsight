@@ -9,8 +9,8 @@ import {
   InAppAgentSandboxEditResultSchema,
   InAppAgentSandboxReadResultSchema,
   InAppAgentSandboxWriteResultSchema,
-} from "@langfuse/shared/in-app-agent";
-import { logger, recordIncrement } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/in-app-agent";
+import { logger, recordIncrement } from "@evalsight/shared/src/server";
 
 export async function createInAppAgentSandbox(params: {
   conversationId: string;

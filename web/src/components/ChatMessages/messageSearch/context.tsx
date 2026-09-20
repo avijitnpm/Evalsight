@@ -9,7 +9,7 @@ import {
   type ReactNode,
   type RefObject,
 } from "react";
-import { type ChatMessageWithId } from "@langfuse/shared";
+import { type ChatMessageWithId } from "@evalsight/shared";
 
 import {
   createMessageSearchController,

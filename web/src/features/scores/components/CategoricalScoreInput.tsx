@@ -3,7 +3,7 @@ import { Plus } from "lucide-react";
 import {
   type ScoreConfigCategoryDomain,
   type ScoreConfigDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { Button } from "@/src/components/ui/button";
 import { Combobox } from "@/src/components/ui/combobox";
 import { KeyboardShortcut } from "@/src/components/design-system/KeyboardShortcut/KeyboardShortcut";

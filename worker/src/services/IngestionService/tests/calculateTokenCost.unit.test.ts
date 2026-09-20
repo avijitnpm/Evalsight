@@ -2,9 +2,9 @@ import Decimal from "decimal.js";
 import { v4 as uuidv4 } from "uuid";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-import { Price } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
-import { createOrgProjectAndApiKey, logger } from "@langfuse/shared/src/server";
+import { Price } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
+import { createOrgProjectAndApiKey, logger } from "@evalsight/shared/src/server";
 
 import { IngestionService } from "../../IngestionService";
 import * as clickhouseWriteExports from "../../ClickhouseWriter";

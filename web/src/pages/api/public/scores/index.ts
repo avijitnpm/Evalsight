@@ -7,11 +7,11 @@ import {
   PostScoresBodyV1,
   PostScoresResponseV1,
   ForbiddenError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   createIngestionAttribution,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { ScoresApiService } from "@/src/features/public-api/server/scores-api-service";
 import { SCORES_DEPRECATION } from "@/src/features/public-api/server/deprecations";
 import { randomUUID } from "crypto";

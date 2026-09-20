@@ -1,6 +1,6 @@
 import { Job, Processor } from "bullmq";
 import { EvalTemplateType, JobExecutionStatus } from "@prisma/client";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   CodeEvalExecutionError,
   getCodeEvalUserVisibleError,
@@ -9,7 +9,7 @@ import {
   QueueName,
   TQueueJobTypes,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { processObservationEval } from "../features/evaluation/observationEval";
 import { createW3CTraceId } from "../features/utils";
 import { isUnrecoverableError } from "../errors/UnrecoverableError";

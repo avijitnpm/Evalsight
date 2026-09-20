@@ -7,6 +7,6 @@ export default async function teardown() {
   }
 
   const { ClickHouseClientManager } =
-    await import("@langfuse/shared/src/server/clickhouse");
+    await import("@evalsight/shared/src/server/clickhouse");
   await ClickHouseClientManager.getInstance().closeAllConnections();
 }

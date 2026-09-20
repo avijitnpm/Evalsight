@@ -11,8 +11,8 @@ import {
   queryClickhouse,
   sleep,
   type QueryStatus,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { IBackgroundMigration } from "../IBackgroundMigration";
 
 // ============================================================================

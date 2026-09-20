@@ -1,4 +1,4 @@
-import type { ColumnDefinition, FilterState } from "@langfuse/shared";
+import type { ColumnDefinition, FilterState } from "@evalsight/shared";
 
 import { InlineFilterBuilder } from "@/src/features/filters";
 import { useElementSize } from "@/src/hooks/useElementSize";

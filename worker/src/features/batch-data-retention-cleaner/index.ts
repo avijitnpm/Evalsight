@@ -1,7 +1,7 @@
 import { createHash } from "crypto";
 import pLimit from "p-limit";
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   commandClickhouse,
   convertDateToClickhouseDateTime,
@@ -12,7 +12,7 @@ import {
   recordGauge,
   recordIncrement,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { getRetentionCutoffDate } from "../utils";
 import {

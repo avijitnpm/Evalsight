@@ -1,5 +1,5 @@
 /* eslint-disable @repo/no-style-props */
-import { type FilterState, getGenerationLikeTypes } from "@langfuse/shared";
+import { type FilterState, getGenerationLikeTypes } from "@evalsight/shared";
 import {
   extractTimeSeriesData,
   fillMissingValuesAndTransform,
@@ -16,7 +16,7 @@ import {
   ModelSelectorPopover,
   useModelSelection,
 } from "@/src/features/dashboard/components/ModelSelector";
-import { type QueryType, type ViewVersion } from "@langfuse/shared/query";
+import { type QueryType, type ViewVersion } from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import type { DatabaseRow } from "@/src/server/api/services/sqlInterface";
 import { DashboardLineTimeSeriesChart } from "@/src/features/dashboard/components/DashboardLineTimeSeriesChart";

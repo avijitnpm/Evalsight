@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createScoresCh,
   getScoreById,
@@ -27,7 +27,7 @@ import {
   createSessionScore,
   createOrgProjectAndApiKey,
   getScoreStringValues,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 describe("Clickhouse Scores Repository Test", () => {

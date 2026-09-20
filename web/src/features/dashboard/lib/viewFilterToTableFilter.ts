@@ -1,5 +1,5 @@
-import { type FilterState } from "@langfuse/shared";
-import { type views } from "@langfuse/shared/query";
+import { type FilterState } from "@evalsight/shared";
+import { type views } from "@evalsight/shared/query";
 import { type z } from "zod";
 
 /**

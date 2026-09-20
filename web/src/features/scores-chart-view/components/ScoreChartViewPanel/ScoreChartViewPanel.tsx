@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useCallback, useState } from "react";
 import { AlertCircle, ChevronLeft, ChevronRight, Loader2 } from "lucide-react";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import type { DataPoint } from "@/src/features/widgets";
 import { Button } from "@/src/components/ui/button";
 // Chart type picker is view-agnostic (only depends on `DashboardWidgetChartType`),

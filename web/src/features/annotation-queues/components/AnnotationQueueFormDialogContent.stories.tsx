@@ -1,6 +1,6 @@
 import preview from "../../../../.storybook/preview";
 import { Dialog, DialogContent } from "@/src/components/ui/dialog";
-import { type ScoreConfigDomain } from "@langfuse/shared";
+import { type ScoreConfigDomain } from "@evalsight/shared";
 import { expect, fn, userEvent, waitFor, within } from "storybook/test";
 
 import { AnnotationQueueFormDialogContent } from "./AnnotationQueueFormDialogContent";

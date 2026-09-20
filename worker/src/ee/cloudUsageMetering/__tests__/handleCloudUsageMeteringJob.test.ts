@@ -33,13 +33,13 @@ const {
   mockTraceException: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   getBillingProvider: () => "stripe",
   parseDbOrg: (org: unknown) => org,
   Prisma: { DbNull: "DbNull" },
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     cronJobs: {
       upsert: mockCronJobsUpsert,
@@ -51,7 +51,7 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   CloudUsageMeteringQueue: {
     getInstance: () => ({ add: mockUsageMeteringQueueAdd }),
   },

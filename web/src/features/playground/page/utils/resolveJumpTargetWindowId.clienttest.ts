@@ -5,7 +5,7 @@ import {
   ChatMessageType,
   type ChatMessage,
   type PlaceholderMessage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { resolveJumpTargetWindowId } from "./resolveJumpTargetWindowId";
 

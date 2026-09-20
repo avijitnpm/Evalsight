@@ -8,7 +8,7 @@ const telemetry = vi.hoisted(() => ({
   traceException: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   getCurrentSpan: vi.fn(() => telemetry.span),
   instrumentAsync: vi.fn(
     (

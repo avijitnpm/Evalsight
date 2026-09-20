@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import { v4 } from "uuid";
-import { executeQuery } from "@langfuse/shared/query/server";
-import { type QueryType } from "@langfuse/shared/query";
+import { executeQuery } from "@evalsight/shared/query/server";
+import { type QueryType } from "@evalsight/shared/query";
 import {
   createOrgProjectAndApiKey,
   createTrace,
@@ -18,9 +18,9 @@ import {
   type ObservationRecordInsertType,
   type EventRecordInsertType,
   type ScoreRecordInsertType,
-} from "@langfuse/shared/src/server";
-import { getGenerationLikeTypes, type FilterCondition } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { getGenerationLikeTypes, type FilterCondition } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import type { Session } from "next-auth";

@@ -41,7 +41,7 @@ import {
   buildTracePath,
   getCachedInputCost,
   getCachedInputMetric,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { formatIntervalSeconds } from "@/src/utils/dates";
 import { Skeleton } from "@/src/components/ui/skeleton";
 import { createBadgeTableColumn } from "@/src/components/design-system/table/columns/createBadgeTableColumn";

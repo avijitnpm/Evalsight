@@ -56,7 +56,7 @@ vi.mock("@/src/ee/features/sso-settings/components/SSOSettings", () => ({
   SSOSettings: () => null,
 }));
 
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   isCloudPlan: vi.fn(() => false),
 }));
 

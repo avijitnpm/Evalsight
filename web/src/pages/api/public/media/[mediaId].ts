@@ -11,7 +11,7 @@ import {
 } from "@/src/features/media/validation";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
-import { ForbiddenError } from "@langfuse/shared";
+import { ForbiddenError } from "@evalsight/shared";
 
 export default withMiddlewares({
   GET: createAuthedProjectAPIRoute({

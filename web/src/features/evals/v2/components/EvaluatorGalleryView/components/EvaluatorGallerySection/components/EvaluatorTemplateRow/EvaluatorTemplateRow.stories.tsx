@@ -2,7 +2,7 @@ import { expect, fn } from "storybook/test";
 import {
   EvalTemplateSourceCodeLanguageEnum,
   EvalTemplateTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import preview from "../../../../../../../../../../.storybook/preview";
 import { EvaluatorTemplateRow } from "./EvaluatorTemplateRow";

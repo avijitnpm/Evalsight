@@ -9,8 +9,8 @@ import {
   type TracesTableUiReturnType,
   type ObservationRecordInsertType,
   type TraceRecordInsertType,
-} from "@langfuse/shared/src/server";
-import { type FilterState, type TracingSearchType } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { type FilterState, type TracingSearchType } from "@evalsight/shared";
 
 describe("Traces table API test", () => {
   it("should get a correct trace without observation", async () => {

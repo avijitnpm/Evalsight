@@ -16,7 +16,7 @@ import {
   decodeFiltersGeneric,
   computeSelectedValues,
   DEFAULT_SIDEBAR_HIDDEN_ENVIRONMENTS,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { validateFilters } from "@/src/components/table/table-view-presets/validation";
 import { traceFilterConfig } from "./config/traces-config";
 import { observationFilterConfig } from "./config/observations-config";

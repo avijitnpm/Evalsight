@@ -1,6 +1,6 @@
 import { getServerAuthSessionForRequest } from "@/src/server/auth";
 import { isProjectMemberOrAdmin } from "@/src/server/utils/checkProjectMembershipOrAdmin";
-import { ForbiddenError, UnauthorizedError } from "@langfuse/shared";
+import { ForbiddenError, UnauthorizedError } from "@evalsight/shared";
 import { hasProjectAccess } from "@/src/features/rbac";
 
 export type AuthorizeRequestResult = {

@@ -49,7 +49,7 @@ import {
   TableViewPresetTableName,
   type FilterState,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { joinTableCoreAndMetrics } from "@/src/components/table/utils/joinTableCoreAndMetrics";
 import { useTableDateRange } from "@/src/hooks/useTableDateRange";
 import { toAbsoluteTimeRange } from "@/src/utils/date-range-utils";

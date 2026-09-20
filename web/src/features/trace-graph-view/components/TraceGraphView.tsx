@@ -6,7 +6,7 @@ import React, {
   useRef,
 } from "react";
 import { StringParam, useQueryParam } from "use-query-params";
-import { ObservationType } from "@langfuse/shared";
+import { ObservationType } from "@evalsight/shared";
 
 import { ElkGraphRenderer } from "./ElkGraphRenderer";
 import { GraphViewModeSwitch } from "./GraphViewModeSwitch";

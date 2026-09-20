@@ -2,7 +2,7 @@ import { showSuccessToast } from "@/src/features/notifications/showSuccessToast"
 import { showErrorToast } from "@/src/features/notifications/showErrorToast";
 import { api } from "@/src/utils/api";
 import { copyTextToClipboard } from "@/src/utils/clipboard";
-import type { TableViewPresetState } from "@langfuse/shared";
+import type { TableViewPresetState } from "@evalsight/shared";
 
 type UseViewMutationsProps = {
   handleSetViewId: (viewId: string | null) => void;

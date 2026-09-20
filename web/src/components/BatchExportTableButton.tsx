@@ -17,7 +17,7 @@ import {
   type BatchExportFileFormat,
   type OrderByState,
   BatchTableNames,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import React from "react";
 import { api } from "@/src/utils/api";
 import { showSuccessToast } from "@/src/features/notifications/showSuccessToast";

@@ -38,7 +38,7 @@ vi.mock("@opentelemetry/api", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   QueueName: {
     TraceDelete: "trace-delete",
   },

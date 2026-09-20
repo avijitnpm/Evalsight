@@ -1,7 +1,7 @@
 import { expect, describe, it, beforeEach, afterEach, vi } from "vitest";
 import { randomUUID } from "crypto";
-import { prisma } from "@langfuse/shared/src/db";
-import { logger } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
 import { BatchTraceDeletionCleaner } from "../features/batch-trace-deletion-cleaner";
 import * as clickhouseTraceDelete from "../features/traces/processClickhouseTraceDelete";
 import * as postgresTraceDelete from "../features/traces/processPostgresTraceDelete";

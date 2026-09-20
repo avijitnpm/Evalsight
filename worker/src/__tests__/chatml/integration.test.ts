@@ -10,10 +10,10 @@ import {
   cleanLegacyOutput,
   extractAdditionalInput,
   ChatMlArraySchema,
-} from "@langfuse/shared/src/utils/chatml";
+} from "@evalsight/shared/src/utils/chatml";
 
-import { deepParseJson } from "@langfuse/shared";
-import { OtelIngestionProcessor } from "@langfuse/shared/src/server";
+import { deepParseJson } from "@evalsight/shared";
+import { OtelIngestionProcessor } from "@evalsight/shared/src/server";
 
 describe("ChatML Integration", () => {
   it("should handle OpenAI multimodal format", () => {

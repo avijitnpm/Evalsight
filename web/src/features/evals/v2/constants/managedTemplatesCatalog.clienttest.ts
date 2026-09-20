@@ -1,7 +1,7 @@
 import {
   observationVariableMappingList,
   PersistedEvalOutputDefinitionSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { managedTemplateToEvaluatorSetupDraft } from "@/src/features/evals/v2/fns/templateGallery/managedTemplateToEvaluatorSetupDraft";
 import { MANAGED_TEMPLATES_CATALOG } from "@/src/features/evals/v2/constants/managedTemplatesCatalog";

@@ -1,6 +1,6 @@
 import { useArgs } from "storybook/preview-api";
 import { fn } from "storybook/test";
-import { EvalTemplateSourceCodeLanguageEnum } from "@langfuse/shared";
+import { EvalTemplateSourceCodeLanguageEnum } from "@evalsight/shared";
 
 import preview from "../../../../../../../../.storybook/preview";
 import { EvaluatorCodeLanguageSelector } from "./EvaluatorCodeLanguageSelector";

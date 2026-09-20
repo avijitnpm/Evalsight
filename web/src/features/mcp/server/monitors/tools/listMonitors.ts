@@ -1,10 +1,10 @@
 import {
   ListMonitorsSchema,
   MonitorService,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 import { z } from "zod";
 
-import { buildMonitorUrl } from "@langfuse/shared/src/server";
+import { buildMonitorUrl } from "@evalsight/shared/src/server";
 
 import { defineTool } from "../../../core/define-tool";
 import { McpAdvancedFilterBaseSchema } from "../../../core/filter-schema";

@@ -3,7 +3,7 @@ import {
   ObservationTypeDomain,
   isNumericEventsTableColumnId,
   type timeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import {
   getEventFilterNumericRange,

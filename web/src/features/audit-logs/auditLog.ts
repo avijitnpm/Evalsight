@@ -2,7 +2,7 @@ import {
   prisma as _prisma,
   type Role,
   AuditLogRecordType,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 
 type AuditableResource =
   | "annotationQueue"

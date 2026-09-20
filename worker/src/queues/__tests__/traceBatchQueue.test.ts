@@ -11,15 +11,15 @@ import {
   recordGauge,
   recordIncrement,
   type TQueueJobTypes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import {
   recordTraceBatchActiveReads,
   traceBatchQueueProcessor,
 } from "../traceBatchQueue";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@langfuse/shared/src/server")>()),
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@evalsight/shared/src/server")>()),
   getTraceBatchEventStream: vi.fn(),
   getCurrentSpan: vi.fn(),
   recordDistribution: vi.fn(),

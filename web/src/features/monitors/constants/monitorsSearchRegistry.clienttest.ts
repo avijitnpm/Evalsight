@@ -6,7 +6,7 @@ import { planCommit } from "@/src/features/search-bar/lib/commit";
 import { parse } from "@/src/features/search-bar/lib/langQ";
 import { validateQuery } from "@/src/features/search-bar/lib/validate";
 import { createSearchBarStore } from "@/src/features/search-bar/store/searchBarStore";
-import { ListMonitorFilterSchema } from "@langfuse/shared/monitors";
+import { ListMonitorFilterSchema } from "@evalsight/shared/monitors";
 
 const registry = monitorsFieldRegistry(getMonitorFilterConfig(true));
 

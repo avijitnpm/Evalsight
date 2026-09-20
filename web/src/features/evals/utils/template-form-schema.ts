@@ -7,7 +7,7 @@ import {
   getCategoricalCategoryRuleViolations,
   getMinimumCategoricalCategoriesMessage,
   ScoreDataTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const categoricalOptionSchema = z.object({
   value: z.string().trim().min(1, "Enter a category value"),

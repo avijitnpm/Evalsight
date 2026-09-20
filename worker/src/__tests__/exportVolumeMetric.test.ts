@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 
 const recordIncrement = vi.fn();
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   recordIncrement: (...args: unknown[]) => recordIncrement(...args),
 }));
 

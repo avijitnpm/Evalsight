@@ -15,7 +15,7 @@ import {
 import { createDateTableColumn } from "@/src/components/design-system/table/columns/createDateTableColumn";
 import { createUserTableColumn } from "@/src/components/design-system/table/columns/createUserTableColumn";
 import { createTextTableColumn } from "@/src/components/design-system/table/columns/createTextTableColumn";
-import { BatchActionStatus } from "@langfuse/shared";
+import { BatchActionStatus } from "@evalsight/shared";
 
 type BatchActionRow = {
   id: string;

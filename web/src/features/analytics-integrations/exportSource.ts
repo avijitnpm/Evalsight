@@ -10,7 +10,7 @@ import {
   type ExportSourceBlockedReason,
   type ExportSourceContext,
   type ExportSourceOption,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // UI adapters over the export-source policy, shared by the blob-storage,
 // PostHog, and Mixpanel settings forms. Policy and rationale live in

@@ -1,12 +1,12 @@
-import { EvalTargetObject, getCodeEvalVariableMapping } from "@langfuse/shared";
-import { Prisma, prisma } from "@langfuse/shared/src/db";
+import { EvalTargetObject, getCodeEvalVariableMapping } from "@evalsight/shared";
+import { Prisma, prisma } from "@evalsight/shared/src/db";
 import {
   ChatMessageRole,
   ChatMessageType,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
-import type * as SharedServer from "@langfuse/shared/src/server";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import type * as EnvModule from "@/src/env.mjs";
 import type * as EvaluatorPreflightModule from "@/src/features/evals/server/evaluator-preflight";
 import type * as TestEvaluatorModule from "@/src/features/evals/v2/server/evaluators/testEvaluator";
@@ -51,7 +51,7 @@ const mocks = vi.hoisted(() => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
   ...(await importOriginal<typeof SharedServer>()),
   generateLangfuseAIText: mocks.generateLangfuseAIText,
   getRecentEvaluatorExecutionTraces: mocks.getRecentEvaluatorExecutionTraces,

@@ -7,7 +7,7 @@ import { lightTheme } from "@/src/components/editor/light-theme";
 import { darkTheme } from "@/src/components/editor/dark-theme";
 import { tolerateUnstableViewportPosAtCoords } from "@/src/components/editor/tolerateUnstableViewportPosAtCoords";
 import { cn } from "@/src/utils/tailwind";
-import { evaluateJsonPath } from "@langfuse/shared";
+import { evaluateJsonPath } from "@evalsight/shared";
 
 // JSONPath language mode for syntax highlighting
 const jsonPathLanguage = StreamLanguage.define({

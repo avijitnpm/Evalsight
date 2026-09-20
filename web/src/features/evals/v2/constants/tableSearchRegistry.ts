@@ -1,5 +1,5 @@
 import type { FilterConfig } from "@/src/features/filters/lib/filter-config";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import {
   fieldRegistryFromColumns,
   withFieldOptions,

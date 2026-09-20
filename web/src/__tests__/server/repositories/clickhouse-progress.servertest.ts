@@ -4,7 +4,7 @@ import {
   isProgressRow,
   isRow,
   isException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 async function getClickhouseMajorVersion(): Promise<number> {
   const rows = await queryClickhouse<{ v: string }>({

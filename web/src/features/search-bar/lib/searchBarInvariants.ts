@@ -34,7 +34,7 @@
 
 import type { FieldRegistry } from "./fields";
 import { type ScoreTypeContext, astToFilterState } from "./adapter";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { parse, serialize } from "./langQ";
 import { validateQuery } from "./validate";
 import { filterStateToQueryText } from "./filter-state-to-query";

@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import { EvalTargetObject } from "@langfuse/shared";
+import { EvalTargetObject } from "@evalsight/shared";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import {

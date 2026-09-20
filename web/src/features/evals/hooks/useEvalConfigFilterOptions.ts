@@ -4,7 +4,7 @@ import {
   type ExperimentEvalOptions,
   type ObservationEvalOptions,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useMemo } from "react";
 
 const EVAL_FILTER_OPTIONS_LOOKBACK_MS = 30 * 24 * 60 * 60 * 1000;

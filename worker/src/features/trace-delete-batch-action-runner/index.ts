@@ -3,13 +3,13 @@ import {
   BatchActionStatus,
   BatchExportTableName,
   TraceDeleteBatchActionConfigSchema,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   logger,
   recordGauge,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { PeriodicExclusiveRunner } from "../../utils/PeriodicExclusiveRunner";
 import { processTraceDeleteBatchAction } from "../batchAction/processTraceDeleteBatchAction";

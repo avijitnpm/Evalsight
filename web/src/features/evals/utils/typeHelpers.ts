@@ -1,7 +1,7 @@
 import {
   EvalTargetObject,
   type EvalTargetObject as EvalTargetObjectType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const partnerIdentifierToName = new Map([["ragas", "Ragas"]]);
 

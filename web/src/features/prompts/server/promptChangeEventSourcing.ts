@@ -1,11 +1,11 @@
-import { jsonSchemaNullable, type TriggerEventAction } from "@langfuse/shared";
+import { jsonSchemaNullable, type TriggerEventAction } from "@evalsight/shared";
 import {
   logger,
   type PromptResult,
   EntityChangeQueue,
   QueueJobs,
   QueueName,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 /**

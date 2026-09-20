@@ -4,13 +4,13 @@ import { RateLimiterRedis, RateLimiterRes } from "rate-limiter-flexible";
 import { type Cluster, type Redis } from "ioredis";
 
 import { env } from "@/src/env.mjs";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 import {
   createNewRedisInstance,
   logger,
   recordIncrement,
   redisQueueRetryOptions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const WEB_CALLOUT_RATE_LIMIT_REDIS_KEY_PREFIX =
   "rate-limit:web-callout-invoke";

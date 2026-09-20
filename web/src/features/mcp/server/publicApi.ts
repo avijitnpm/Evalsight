@@ -1,5 +1,5 @@
-import { CloudConfigSchema, type Plan } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { CloudConfigSchema, type Plan } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server";
 import type { ServerContext } from "../types";
 

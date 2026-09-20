@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from "react";
 import { StringParam, useQueryParams, withDefault } from "use-query-params";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import {
   type AggregationFn,
   type ChartViewConfig,

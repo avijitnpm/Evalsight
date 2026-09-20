@@ -6,7 +6,7 @@ vi.mock("@/src/features/audit-logs/auditLog", () => ({
   auditLog: auditLogMock,
 }));
 
-import { type Prisma, Role, SurveyName } from "@langfuse/shared/src/db";
+import { type Prisma, Role, SurveyName } from "@evalsight/shared/src/db";
 import {
   completeCloudSignupOnboarding,
   getCloudSignupOnboardingStatus,

@@ -1,5 +1,5 @@
 import { formatDistanceToNowStrict } from "date-fns";
-import { EvalTemplateTypeEnum, type EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateTypeEnum, type EvalTemplateType } from "@evalsight/shared";
 
 import type {
   CustomEvaluatorTemplate,

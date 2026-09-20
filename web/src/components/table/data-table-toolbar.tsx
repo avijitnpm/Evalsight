@@ -14,7 +14,7 @@ import {
   type TableViewPresetState,
   TableViewPresetTableName,
   type TracingSearchType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   type RowSelectionState,
   type ColumnOrderState,

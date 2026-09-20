@@ -1,4 +1,4 @@
-import type { CreateMonitor } from "@langfuse/shared/monitors";
+import type { CreateMonitor } from "@evalsight/shared/monitors";
 
 const evaluatorIdFilter = (evaluatorId: string) => ({
   column: "evaluatorId",

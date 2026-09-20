@@ -1,4 +1,4 @@
-import { logger, recordIncrement } from "@langfuse/shared/src/server";
+import { logger, recordIncrement } from "@evalsight/shared/src/server";
 import { WORKER_HOST_ID } from "../../utils/hostId";
 
 // Per-table attempt counter. Residual `started - success - failure - aborted`

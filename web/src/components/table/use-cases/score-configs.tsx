@@ -11,7 +11,7 @@ import {
   type ScoreConfigDataType,
   type Prisma,
   type ScoreConfigCategoryDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { usePaginationState } from "@/src/hooks/usePaginationState";
 import {
   isBooleanDataType,

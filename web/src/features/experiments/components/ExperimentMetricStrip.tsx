@@ -13,7 +13,7 @@ import {
 import DocPopup from "@/src/components/layouts/doc-popup";
 import { ScoreTag, SCORE_LEVEL_LABELS } from "@/src/components/score-tag";
 import { WidgetContent } from "@/src/features/widgets";
-import { type QueryType } from "@langfuse/shared/query";
+import { type QueryType } from "@evalsight/shared/query";
 import type {
   MetricOption,
   ScoreCoverageByLevel,

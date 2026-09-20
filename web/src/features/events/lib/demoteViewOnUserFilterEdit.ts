@@ -1,4 +1,4 @@
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import { type UrlUpdateType } from "use-query-params";
 
 export type ViewDemotionControllers = {

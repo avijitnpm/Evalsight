@@ -18,7 +18,7 @@ import {
   findMediaReferences,
   MEDIA_REFERENCE_PATTERN,
   MediaReferenceStringSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Extracts media references from live dataset item fields, deduped by media id.

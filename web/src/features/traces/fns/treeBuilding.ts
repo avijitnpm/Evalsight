@@ -28,7 +28,7 @@ import {
   type ObservationLevelType,
   ObservationLevel,
   type TraceDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type WithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 
 type TraceType = Omit<

@@ -24,7 +24,7 @@ import {
   SDK_VERSION_ATTRIBUTE,
   extractSdkAttributes,
   ioredisRequestHook,
-} from "@langfuse/shared/instrumentation/bootstrap";
+} from "@evalsight/shared/instrumentation/bootstrap";
 import { envDetector, resourceFromAttributes } from "@opentelemetry/resources";
 import { awsEcsDetector } from "@opentelemetry/resource-detector-aws";
 import { containerDetector } from "@opentelemetry/resource-detector-container";

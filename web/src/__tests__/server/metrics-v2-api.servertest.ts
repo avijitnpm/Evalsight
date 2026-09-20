@@ -11,7 +11,7 @@ import {
   createTraceScore,
   DateTimeFilter,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import waitForExpect from "wait-for-expect";
 import { isMetricsV2Available } from "@/src/pages/api/public/v2/metrics";

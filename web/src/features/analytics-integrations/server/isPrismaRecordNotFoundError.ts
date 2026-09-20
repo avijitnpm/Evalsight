@@ -1,4 +1,4 @@
-import { Prisma } from "@langfuse/shared/src/db";
+import { Prisma } from "@evalsight/shared/src/db";
 
 export const isPrismaRecordNotFoundError = (error: unknown): boolean =>
   error instanceof Prisma.PrismaClientKnownRequestError &&

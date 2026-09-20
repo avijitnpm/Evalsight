@@ -10,7 +10,7 @@ import { invalidateMonitorQueriesAfterDelete } from "@/src/features/monitors/fns
 import { showErrorToast, showSuccessToast } from "@/src/features/notifications";
 import { useHasProjectAccess } from "@/src/features/rbac";
 import { api, type APIError } from "@/src/utils/api";
-import { type Monitor } from "@langfuse/shared/monitors";
+import { type Monitor } from "@evalsight/shared/monitors";
 
 /** EditMonitorPage gates the edit-monitor route and defers all data fetching to EditMonitorPageContent so blocked users never trigger the monitor query. */
 export default function EditMonitorPage() {

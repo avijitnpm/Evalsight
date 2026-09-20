@@ -3,9 +3,9 @@ import {
   LangfuseConflictError,
   LangfuseNotFoundError,
   ServiceUnavailableError,
-} from "@langfuse/shared";
-import type { ApiAccessScope } from "@langfuse/shared/src/server";
-import type * as SharedServer from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import type { ApiAccessScope } from "@evalsight/shared/src/server";
+import type * as SharedServer from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 
 const { mockRateLimitRequest, mockRecordIncrement, mockLoggerWarn } =
@@ -15,9 +15,9 @@ const { mockRateLimitRequest, mockRecordIncrement, mockLoggerWarn } =
     mockLoggerWarn: vi.fn(),
   }));
 
-vi.mock("@langfuse/shared/src/server", async () => {
+vi.mock("@evalsight/shared/src/server", async () => {
   const actual = await vi.importActual<typeof SharedServer>(
-    "@langfuse/shared/src/server",
+    "@evalsight/shared/src/server",
   );
   return {
     ...actual,

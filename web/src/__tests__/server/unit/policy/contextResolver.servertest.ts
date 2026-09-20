@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
-import { type ApiKey, type PrismaClient } from "@langfuse/shared/src/db";
-import { InternalServerError } from "@langfuse/shared";
+import { type ApiKey, type PrismaClient } from "@evalsight/shared/src/db";
+import { InternalServerError } from "@evalsight/shared";
 
 import { authorize } from "@/src/features/auth/policy/authorize";
 import {

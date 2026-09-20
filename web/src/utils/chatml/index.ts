@@ -5,4 +5,4 @@ export {
   combineInputOutputMessages,
   normalizeInput,
   normalizeOutput,
-} from "@langfuse/shared";
+} from "@evalsight/shared";

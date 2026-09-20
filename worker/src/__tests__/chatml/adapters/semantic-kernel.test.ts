@@ -4,7 +4,7 @@ import {
   selectAdapter,
   SimpleChatMlArraySchema,
   type NormalizerContext,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const skMetadata = {
   scope: { name: "Microsoft.SemanticKernel.Diagnostics", version: "" },

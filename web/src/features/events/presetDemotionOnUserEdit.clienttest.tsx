@@ -10,7 +10,7 @@ import {
   encodeFiltersGeneric,
   type FilterState,
   type TableViewPresetState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useCallback, useRef } from "react";
 import { useStore } from "zustand";
 import { useEventsSearchBar } from "@/src/features/search-bar/hooks/useEventsSearchBar";

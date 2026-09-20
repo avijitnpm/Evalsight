@@ -3,7 +3,7 @@ import {
   BatchActionType,
   BatchTableNames,
   type FilterCondition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const mocks = vi.hoisted(() => {
   const emptyStream = () =>
@@ -23,7 +23,7 @@ const mocks = vi.hoisted(() => {
   };
 });
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     evaluationRule: { findMany: mocks.findEvaluationRules },
     evaluator: { findMany: mocks.findEvaluators },
@@ -31,7 +31,7 @@ vi.mock("@langfuse/shared/src/db", () => ({
   },
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   applyCommentFilters: mocks.applyCommentFilters,
   getEventsStreamForEval: mocks.getEventsStreamForEval,
   getCurrentSpan: vi.fn(() => undefined),
@@ -58,8 +58,8 @@ vi.mock("../features/batchAction/processBatchedObservationEval", () => ({
   processBatchedObservationEval: mocks.processBatchedObservationEval,
 }));
 
-import { prisma } from "@langfuse/shared/src/db";
-import type { BatchActionProcessingEventType } from "@langfuse/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
+import type { BatchActionProcessingEventType } from "@evalsight/shared/src/server";
 import { handleBatchActionJob } from "../features/batchAction/handleBatchActionJob";
 
 const rawCommentFilter: FilterCondition[] = [

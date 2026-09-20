@@ -8,8 +8,8 @@ import {
   type GetCommentsV1Query,
   type PostCommentsV1Body,
 } from "@/src/features/public-api/server";
-import { InvalidRequestError, LangfuseNotFoundError } from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+import { InvalidRequestError, LangfuseNotFoundError } from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 
 type CommentAuditScope = {
   projectId: string;

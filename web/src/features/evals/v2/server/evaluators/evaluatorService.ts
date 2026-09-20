@@ -13,8 +13,8 @@ import {
   InvalidRequestError,
   LangfuseConflictError,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
-import { Prisma, type PrismaClient } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { Prisma, type PrismaClient } from "@evalsight/shared/src/db";
 import {
   ChatMessageRole,
   ChatMessageType,
@@ -24,7 +24,7 @@ import {
   getTotalCostByEvaluatorIds,
   invalidateProjectEvalConfigCaches,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { resolveLangfuseAiFeatureAvailability } from "@/src/features/ai-features/server/availability";
 import { getEvaluatorDefinitionPreflightError } from "@/src/features/evals/server/evaluator-preflight";
 import {

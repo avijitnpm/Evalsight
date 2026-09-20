@@ -21,7 +21,7 @@ import {
   DatasetItemIOCell,
   TraceObservationIOCell,
 } from "@/src/features/datasets/components/DatasetIOCells";
-import { datasetRunItemsTableColsWithOptions } from "@langfuse/shared";
+import { datasetRunItemsTableColsWithOptions } from "@evalsight/shared";
 import { convertRunItemToItemsByRunUiTableRow } from "@/src/features/datasets/lib/convertRunItemDataToUiTableRow";
 import { type DatasetRunItemByRunRowData } from "@/src/features/datasets/lib/types";
 import { createDateTableColumn } from "@/src/components/design-system/table/columns/createDateTableColumn";

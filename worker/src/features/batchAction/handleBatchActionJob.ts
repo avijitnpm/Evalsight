@@ -11,7 +11,7 @@ import {
   findDatasetIdsForBatchDeletion,
   traceDeletionProcessor,
   applyCommentFilters,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   BatchActionType,
   BatchActionStatus,
@@ -21,7 +21,7 @@ import {
   EvalTemplateType,
   JobConfigState,
   normalizeEvaluationRuleTarget,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import Decimal from "decimal.js";
 import {
   getDatabaseReadStreamPaginated,
@@ -34,7 +34,7 @@ import {
   processAddSessionsToQueue,
   processAddTracesToQueue,
 } from "./processAddToQueue";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { randomUUID } from "node:crypto";
 import { processClickhouseScoreDelete } from "../scores/processClickhouseScoreDelete";
 import { getObservationStream } from "../database-read-stream/observation-stream";
@@ -43,7 +43,7 @@ import {
   getEventsStreamForAnnotationQueue,
 } from "../database-read-stream/event-stream";
 import { processAddObservationsToDataset } from "./processAddObservationsToDataset";
-import { ObservationAddToDatasetConfigSchema } from "@langfuse/shared";
+import { ObservationAddToDatasetConfigSchema } from "@evalsight/shared";
 import { processBatchedObservationEval } from "./processBatchedObservationEval";
 import { processDeleteDatasets } from "./processDeleteDatasets";
 

@@ -1,13 +1,13 @@
 /** @jest-environment node */
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createOrgProjectAndApiKey,
   DefaultViewService,
   getSystemTableViewPresets,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
-import { TableViewPresetTableName } from "@langfuse/shared";
+import { TableViewPresetTableName } from "@evalsight/shared";
 
 // System preset ids are part of the persisted contract: they live in
 // bookmarked `?viewId=` URLs and in `default_views` rows (view_id has no FK

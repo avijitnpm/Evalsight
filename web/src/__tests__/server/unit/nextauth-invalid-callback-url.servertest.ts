@@ -40,7 +40,7 @@ vi.mock("@/src/server/auth", () => ({
   getAuthOptions: mockGetAuthOptions,
 }));
 
-vi.mock("@langfuse/shared/src/server", () => ({
+vi.mock("@evalsight/shared/src/server", () => ({
   redis: null,
   logger: {
     debug: vi.fn(),

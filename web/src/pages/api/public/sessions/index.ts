@@ -1,5 +1,5 @@
 /* eslint-disable no-nested-ternary */
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   GetSessionsV1Query,
   GetSessionsV1Response,

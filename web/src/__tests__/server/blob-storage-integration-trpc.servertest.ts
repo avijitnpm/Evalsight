@@ -3,22 +3,22 @@ import type { Session } from "next-auth";
 
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { encrypt } from "@langfuse/shared/encryption";
-import { prisma } from "@langfuse/shared/src/db";
+import { encrypt } from "@evalsight/shared/encryption";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   BlobStorageIntegrationProcessingQueue,
   createOrgProjectAndApiKey,
   QueueJobs,
   StorageServiceFactory,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   OBSERVATION_FIELD_GROUPS_FULL,
   LEGACY_EXPORT_PROJECT_CUTOFF,
   LEGACY_BLOB_EXPORTER_CUTOFF,
   type Plan,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { env } from "@/src/env.mjs";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const PRE_CUTOFF = new Date(
@@ -35,8 +35,8 @@ const INTEGRATION_POST_CUTOFF = new Date(
   LEGACY_BLOB_EXPORTER_CUTOFF.getTime() + MS_PER_DAY,
 );
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...actual,
     BlobStorageIntegrationProcessingQueue: {

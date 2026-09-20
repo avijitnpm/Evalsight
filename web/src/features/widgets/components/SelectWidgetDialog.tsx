@@ -16,17 +16,17 @@ import { Tabs } from "@/src/components/design-system/Tabs/Tabs";
 import startCase from "lodash/startCase";
 import { getChartTypeDisplayName } from "@/src/features/widgets/chart-library/utils";
 import { ChartTypeIllustration } from "@/src/features/widgets/components/ChartTypeIllustration";
-import { type HomeDashboardPresetId } from "@langfuse/shared";
+import { type HomeDashboardPresetId } from "@evalsight/shared";
 import {
   isSuggestedWidgetView,
   type ViewVersion,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import {
   getSuggestedHomePresetIds,
   HOME_PRESET_METADATA,
 } from "@/src/features/dashboard/components/home-preset-registry";
 import { useReadPath } from "@/src/features/events";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import { InAppAgentWidgetComposer } from "@/src/features/in-app-agent/components/InAppAgentWidgetComposer";
 import { useInAppAiAgent } from "@/src/features/in-app-agent/components/InAppAiAgentProvider";
 

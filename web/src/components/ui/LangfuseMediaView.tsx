@@ -10,7 +10,7 @@ import {
   MediaReferenceStringSchema,
   OBSERVATION_FIELD_SIZE_LIMIT_MEDIA_SOURCE,
   type ParsedMediaReferenceType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   COMPACT_IMAGE_MAX_HEIGHT_REM,
   ResizableImage,

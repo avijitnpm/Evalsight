@@ -20,7 +20,7 @@ import {
   SelectValue,
 } from "@/src/components/ui/select";
 import type { FormUpsertModel } from "@/src/features/models/validation";
-import type { PricingTierCondition } from "@langfuse/shared";
+import type { PricingTierCondition } from "@evalsight/shared";
 
 type TierConditionsEditorProps = {
   tierIndex: number;

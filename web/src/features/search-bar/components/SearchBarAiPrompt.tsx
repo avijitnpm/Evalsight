@@ -18,7 +18,7 @@ import * as React from "react";
 import { ArrowLeft, ArrowRight, Loader2 } from "lucide-react";
 import { useStore } from "zustand";
 
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 import type { FieldRegistry } from "@/src/features/search-bar/lib/fields";
 import { KeyboardShortcut } from "@/src/components/design-system/KeyboardShortcut/KeyboardShortcut";
 import { showErrorToast } from "@/src/features/notifications";

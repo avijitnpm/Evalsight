@@ -1,5 +1,5 @@
-import { validateConfigAgainstBody } from "@langfuse/shared/src/server";
-import { type ScoreConfigDomain, type ScoreDomain } from "@langfuse/shared";
+import { validateConfigAgainstBody } from "@evalsight/shared/src/server";
+import { type ScoreConfigDomain, type ScoreDomain } from "@evalsight/shared";
 
 const baseTextConfig: ScoreConfigDomain = {
   id: "config-1",

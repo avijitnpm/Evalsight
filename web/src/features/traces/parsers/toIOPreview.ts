@@ -6,7 +6,7 @@ import type {
   NormalizedMessage,
   NormalizedMessagePart,
   ToolDefinition as NormalizedToolDefinition,
-} from "@langfuse/shared/src/utils/normalized-io";
+} from "@evalsight/shared/src/utils/normalized-io";
 import { extractAdditionalInput } from "@/src/utils/chatml";
 import {
   computeToolCallBookkeeping,

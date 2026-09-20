@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { useState } from "react";
 import { DataTable } from "@/src/components/table/data-table";
 import { type LangfuseColumnDef } from "@/src/components/table/types";
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 
 vi.mock("next/router", () => ({
   useRouter: () => ({ query: {} }),

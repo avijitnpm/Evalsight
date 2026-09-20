@@ -16,12 +16,12 @@ import {
   Prisma,
   type PrismaClient,
   Role,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   sendMembershipInvitationEmail,
   getUserProjectRoles,
   getUserProjectRolesCount,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import { getSfdcService } from "@/src/ee/features/sfdc-sync/server";
 import {

@@ -4,7 +4,7 @@ import {
   createConversationMessageAccumulator,
   redactSilentToolMessages,
   type PersistedConversationEvent,
-} from "@langfuse/shared/in-app-agent/server/persistence";
+} from "@evalsight/shared/in-app-agent/server/persistence";
 
 import {
   createInAppAgentDisplayState,

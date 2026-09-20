@@ -5,7 +5,7 @@ import {
   decodeFiltersGeneric,
   encodeFiltersGeneric,
   rangeToString,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 type BuildEventsTablePathForSpanNameParams = {
   currentPath: string;

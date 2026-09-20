@@ -1,5 +1,5 @@
-vi.mock("@langfuse/shared/src/server", async () => ({
-  ...(await vi.importActual("@langfuse/shared/src/server")),
+vi.mock("@evalsight/shared/src/server", async () => ({
+  ...(await vi.importActual("@evalsight/shared/src/server")),
   DefaultEvalModelService: {
     fetchValidModelConfig: vi.fn(),
   },
@@ -13,12 +13,12 @@ vi.mock("@langfuse/shared/src/server", async () => ({
 import {
   createNumericEvalOutputDefinition,
   LLMAdapter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   DefaultEvalModelService,
   getLLMErrorInfo,
   testModelCall,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   getEvaluatorDefinitionConfigurationError,
   getEvaluatorDefinitionPreflightError,

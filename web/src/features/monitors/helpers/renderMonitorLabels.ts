@@ -1,12 +1,12 @@
 import { startCase } from "lodash";
 import { type z } from "zod";
 
-import { type metricAggregations } from "@langfuse/shared";
+import { type metricAggregations } from "@evalsight/shared";
 import {
   type MonitorThresholdOperator,
   type MonitorView,
   type MonitorWindow,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 import { operatorLabels, viewLabels, windowLabels } from "./monitorLabels";
 

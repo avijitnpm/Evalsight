@@ -98,7 +98,7 @@ const nextConfig = {
   // Agent/browser tooling often targets 127.0.0.1 instead of localhost in dev.
   allowedDevOrigins: ["127.0.0.1"],
   staticPageGenerationTimeout: 500, // default is 60. Required for build process for amd
-  transpilePackages: ["@langfuse/shared"],
+  transpilePackages: ["@evalsight/shared"],
   reactStrictMode: true,
   serverExternalPackages: [
     "dd-trace",
@@ -138,7 +138,7 @@ const nextConfig = {
   },
   turbopack: {
     resolveAlias: {
-      "@langfuse/shared": "./packages/shared/src",
+      "@evalsight/shared": "./packages/shared/src",
     },
     rules: {
       "*.md": {

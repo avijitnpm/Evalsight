@@ -7,7 +7,7 @@ import {
   TracingSearchType,
   observationsTableCols,
   eventsTableCols,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getDistinctScoreNames,
   queryClickhouseStream,
@@ -31,7 +31,7 @@ import {
   toLevelAgnosticScoreFilter,
   scoreBooleansAggregation,
   type PreferredClickhouseService,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { Readable } from "stream";
 import { env } from "../../env";
 import {

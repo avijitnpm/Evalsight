@@ -2,7 +2,7 @@ import {
   getCurrentSpan,
   recordIncrement,
   type ApiAccessLevel,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 /** parityStat counts one authorization decision. */
 const parityStat = "langfuse.authz.parity";

@@ -8,15 +8,15 @@ import {
   type BatchActionQuery,
   type BatchActionType,
   createTraceDeleteBatchActionConfig,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   BatchActionQueue,
   logger,
   QueueJobs,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { TRPCError } from "@trpc/server";
 import { assertLegacyTracingIoSearchCanCreateBatchJob } from "@/src/features/traces/server/legacyIoSearch";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 
 type CreateBatchActionJob = {
   projectId: string;

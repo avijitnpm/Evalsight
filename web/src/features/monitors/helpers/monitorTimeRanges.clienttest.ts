@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { windowToMs } from "@langfuse/shared/monitors";
+import { windowToMs } from "@evalsight/shared/monitors";
 
 import {
   getMonitorFilterOptionsLookbackFrom,

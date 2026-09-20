@@ -1,16 +1,16 @@
 import { afterEach, beforeAll, describe, expect, it, vi } from "vitest";
 
-import { createOrgProjectAndApiKey } from "@langfuse/shared/src/server";
+import { createOrgProjectAndApiKey } from "@evalsight/shared/src/server";
 import {
   MonitorScheduler,
   type MonitorQueueEventInput,
-} from "@langfuse/shared/monitors/server";
+} from "@evalsight/shared/monitors/server";
 import {
   MonitorNoDataModeSchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/monitors";
+import { prisma } from "@evalsight/shared/src/db";
 import type { Prisma, PrismaClient } from "@prisma/client";
 
 type MonitorStatus = "ACTIVE" | "PAUSED" | "ERROR_BAD_QUERY";

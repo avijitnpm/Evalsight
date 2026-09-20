@@ -22,8 +22,8 @@ import {
   type IngestionAttribution,
   UNKNOWN_INGESTION_SDK_VALUE,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 
 import { env, v4WritesToEventsTable } from "../env";
 import { IngestionService } from "../services/IngestionService";

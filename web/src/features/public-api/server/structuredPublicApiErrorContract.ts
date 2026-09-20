@@ -10,8 +10,8 @@ import {
   MethodNotAllowedError,
   UnauthorizedError,
   type RateLimitResult,
-} from "@langfuse/shared";
-import { ClickHouseResourceError } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { ClickHouseResourceError } from "@evalsight/shared/src/server";
 import {
   createStructuredPublicApiError,
   StructuredPublicApiError,

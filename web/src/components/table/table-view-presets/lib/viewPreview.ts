@@ -2,7 +2,7 @@ import {
   type FilterState,
   type TableViewPresetState,
   formatSessionPositionInTraceFilterValue,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 function formatFilterLabel(filter: FilterState[number]) {
   return "key" in filter && filter.key

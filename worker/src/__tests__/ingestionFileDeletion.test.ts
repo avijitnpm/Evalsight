@@ -9,7 +9,7 @@ import {
   StorageService,
   StorageServiceFactory,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 import { env } from "../env";
 

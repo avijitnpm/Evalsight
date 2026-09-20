@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   CreateAnnotationScoreData,
   UpdateAnnotationScoreData,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Pins a deliberate decision in the BOOLEAN branch of the annotation score
 // schemas (packages/shared/src/features/annotation/types.ts): `value` is

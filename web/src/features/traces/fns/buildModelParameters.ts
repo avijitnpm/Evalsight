@@ -1,6 +1,6 @@
 /** The call's own parameters. Null when empty, so the table does not render. */
 
-import { type JsonNested } from "@langfuse/shared";
+import { type JsonNested } from "@evalsight/shared";
 
 export function buildModelParameters(
   modelParameters: JsonNested | null | undefined,

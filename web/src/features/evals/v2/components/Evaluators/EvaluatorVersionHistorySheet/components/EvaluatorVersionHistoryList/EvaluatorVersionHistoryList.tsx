@@ -1,4 +1,4 @@
-import { EvalTemplateTypeEnum } from "@langfuse/shared";
+import { EvalTemplateTypeEnum } from "@evalsight/shared";
 import { formatDistanceToNowStrict } from "date-fns";
 import { RotateCcw } from "lucide-react";
 

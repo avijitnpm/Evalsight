@@ -1,4 +1,4 @@
-import { prisma, Prisma } from "@langfuse/shared/src/db";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
 import { makeAPICall } from "@/src/__tests__/test-utils";
 import { v4 as uuidv4, v4 } from "uuid";
 import {
@@ -6,11 +6,11 @@ import {
   PromptType,
   LegacyPromptSchema,
   type LegacyValidatedPrompt,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   createOrgProjectAndApiKey,
   getObservationById,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { createPromptForApi } from "@/src/features/prompts/server/prompt-api-service";
 
 describe("/api/public/prompts API Endpoint", () => {

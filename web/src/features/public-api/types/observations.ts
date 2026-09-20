@@ -12,14 +12,14 @@ import {
   publicApiPaginationZod,
   singleFilterList,
   InvalidRequestError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   reduceUsageOrCostDetails,
   stringDateTime,
   type ObservationPriceFields,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { z } from "zod";
-import { useEventsTableSchema } from "@langfuse/shared/query";
+import { useEventsTableSchema } from "@evalsight/shared/query";
 
 // Re-export for convenience
 /**

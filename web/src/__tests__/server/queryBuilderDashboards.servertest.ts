@@ -6,9 +6,9 @@ import {
   createObservation,
   createObservationsCh,
   convertDateToClickhouseDateTime,
-} from "@langfuse/shared/src/server";
-import { executeQuery } from "@langfuse/shared/query/server";
-import { type QueryType } from "@langfuse/shared/query";
+} from "@evalsight/shared/src/server";
+import { executeQuery } from "@evalsight/shared/query/server";
+import { type QueryType } from "@evalsight/shared/query";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 
 describe("selfServeDashboards", () => {

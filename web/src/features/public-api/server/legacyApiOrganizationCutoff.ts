@@ -1,11 +1,11 @@
 import { type NextApiRequest } from "next";
-import { type ApiDeprecationInfo } from "@langfuse/shared";
+import { type ApiDeprecationInfo } from "@evalsight/shared";
 import {
   extractPublicApiCallerAttribution,
   logger,
   recordIncrement,
   type ApiAccessScopeWithOptionalApiKeyId,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import { env } from "@/src/env.mjs";
 import { clickHouseRouteForRequest } from "@/src/features/public-api/server/clickHouseRequestTags";

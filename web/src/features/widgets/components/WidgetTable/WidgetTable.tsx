@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from "react";
 import { Copy, CopyPlus, FileJson, Trash } from "lucide-react";
 import startCase from "lodash/startCase";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 
 import {
   Table,

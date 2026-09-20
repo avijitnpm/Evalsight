@@ -5,7 +5,7 @@ import {
   type FilterState,
   decodeFiltersGeneric,
   encodeFiltersGeneric,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { buildEventsTablePathForMetadataFilter } from "./eventsTablePaths";
 
 const PROJECT = "p1";

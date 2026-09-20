@@ -11,7 +11,7 @@ import {
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
   type AgUiMessage,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 
 import { TooltipProvider } from "@/src/components/ui/tooltip";
 import { ControlledInAppAgentWindow } from "./ControlledInAppAgentWindow";

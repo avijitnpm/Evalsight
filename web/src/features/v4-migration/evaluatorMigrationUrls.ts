@@ -1,4 +1,4 @@
-import { encodeFiltersGeneric, type FilterState } from "@langfuse/shared";
+import { encodeFiltersGeneric, type FilterState } from "@evalsight/shared";
 
 const DEPRECATED_EVALUATOR_FILTERS: FilterState = [
   {

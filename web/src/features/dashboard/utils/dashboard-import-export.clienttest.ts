@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import { HOME_DASHBOARD_PRESET_IDS } from "@langfuse/shared";
+import { HOME_DASHBOARD_PRESET_IDS } from "@evalsight/shared";
 import {
   buildDashboardExport,
   buildPresetExport,

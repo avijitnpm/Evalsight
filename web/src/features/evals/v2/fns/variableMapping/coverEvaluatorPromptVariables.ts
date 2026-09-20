@@ -1,4 +1,4 @@
-import type { ObservationVariableMapping } from "@langfuse/shared";
+import type { ObservationVariableMapping } from "@evalsight/shared";
 
 /**
  * Adds empty mapping rows for prompt variables the stored mapping does not

@@ -5,7 +5,7 @@ import {
   GetScoresResponseV2,
   filterAndValidateV2GetScoreList,
   InvalidRequestError,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ScoresApiService } from "@/src/features/public-api/server/scores-api-service";
 import { SCORES_DEPRECATION } from "@/src/features/public-api/server/deprecations";
 import { clampToDataAccessDays } from "@/src/features/entitlements/server/hasEntitlementLimit";

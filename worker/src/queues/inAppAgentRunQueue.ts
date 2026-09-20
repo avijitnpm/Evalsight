@@ -3,7 +3,7 @@ import {
   instrumentAsync,
   InAppAgentRunQueueEventSchema,
   QueueJobs,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { SpanKind } from "@opentelemetry/api";
 
 import { executeInAppAgentRun } from "../features/in-app-agent/executeInAppAgentRun";

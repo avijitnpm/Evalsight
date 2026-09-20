@@ -3,7 +3,7 @@ import {
   observationVariableMappingList,
   paginationLimitZod,
   singleFilterList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 export const RuleMetadataSchema = z.object({

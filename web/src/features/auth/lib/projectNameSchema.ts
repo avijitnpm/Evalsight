@@ -1,5 +1,5 @@
 import * as z from "zod";
-import { StringNoHTML } from "@langfuse/shared";
+import { StringNoHTML } from "@evalsight/shared";
 
 export const projectNameSchema = z.object({
   name: StringNoHTML.min(3, "Must have at least 3 characters").max(

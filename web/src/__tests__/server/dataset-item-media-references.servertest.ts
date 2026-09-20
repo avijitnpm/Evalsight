@@ -14,11 +14,11 @@ import {
 } from "@/src/features/public-api/types/datasets";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createDatasetItem,
   createManyDatasetItems,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 import { env } from "@/src/env.mjs";
 import { MediaContentType } from "@/src/features/media/validation";

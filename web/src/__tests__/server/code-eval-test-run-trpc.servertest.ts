@@ -1,12 +1,12 @@
 import { randomUUID } from "node:crypto";
 import { describe, expect, it, afterAll, vi } from "vitest";
-import type * as SharedEnvModule from "@langfuse/shared/src/env";
+import type * as SharedEnvModule from "@evalsight/shared/src/env";
 
 vi.hoisted(() => {
   process.env.LANGFUSE_CODE_EVAL_DISPATCHER = "insecure-local";
 });
 
-vi.mock("@langfuse/shared/src/env", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/env", async (importOriginal) => {
   const actual = await importOriginal<typeof SharedEnvModule>();
 
   return {
@@ -24,7 +24,7 @@ import { EvaluatorSourceCodeLanguage, EvalTemplateType } from "@prisma/client";
 import { env } from "@/src/env.mjs";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   createEvent,
   createEventsCh,
@@ -34,8 +34,8 @@ import {
   createTrace,
   createTracesCh,
   queryClickhouse,
-} from "@langfuse/shared/src/server";
-import { EvalTargetObject } from "@langfuse/shared";
+} from "@evalsight/shared/src/server";
+import { EvalTargetObject } from "@evalsight/shared";
 
 const orgIds: string[] = [];
 

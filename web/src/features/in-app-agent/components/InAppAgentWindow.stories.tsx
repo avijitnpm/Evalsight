@@ -6,7 +6,7 @@ import {
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
   type AgUiMessage,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   InAppAgentWindow,
   type InAppAgentWindowMessage,

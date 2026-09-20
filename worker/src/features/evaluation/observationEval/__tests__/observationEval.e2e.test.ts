@@ -20,15 +20,15 @@ import {
 import {
   EvalTargetObject,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const mocks = vi.hoisted(() => ({
   writeInternalTrace: vi.fn(),
 }));
 
 // Mock prisma for processObservationEval
-vi.mock("@langfuse/shared/src/db", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/db");
+vi.mock("@evalsight/shared/src/db", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/db");
 
   return {
     ...actual,
@@ -54,10 +54,10 @@ vi.mock("../../evalService", () => ({
 }));
 
 // Mock logger
-vi.mock("@langfuse/shared/src/server", async () => {
+vi.mock("@evalsight/shared/src/server", async () => {
   const actual = await vi.importActual<
-    typeof import("@langfuse/shared/src/server")
-  >("@langfuse/shared/src/server");
+    typeof import("@evalsight/shared/src/server")
+  >("@evalsight/shared/src/server");
   return {
     ...actual,
     logger: {
@@ -74,7 +74,7 @@ vi.mock("@langfuse/shared/src/server", async () => {
   };
 });
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { runLLMAsJudgeEvaluation } from "../../evalService";
 
 const mockEvalExecutionResult = {

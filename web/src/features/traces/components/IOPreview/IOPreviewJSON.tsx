@@ -25,7 +25,7 @@ import { CommentableJsonView } from "@/src/features/comments/components/Commenta
 import { InlineCommentBubble } from "@/src/features/comments/components/InlineCommentBubble";
 import { type CommentedPathsByField } from "@/src/features/traces/components/AdvancedJsonViewer/utils/commentRanges";
 import { type ExpansionState } from "@/src/features/traces/components/AdvancedJsonViewer/types";
-import { type Prisma, type ScoreDomain, deepParseJson } from "@langfuse/shared";
+import { type Prisma, type ScoreDomain, deepParseJson } from "@evalsight/shared";
 import {
   decodeUnicodeInJson,
   DECODE_UNICODE_MAX_NODES,

@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { Upload } from "lucide-react";
 
-import { type ViewVersion } from "@langfuse/shared/query";
-import { type TimeFilter, ObservationLevelDomain } from "@langfuse/shared";
+import { type ViewVersion } from "@evalsight/shared/query";
+import { type TimeFilter, ObservationLevelDomain } from "@evalsight/shared";
 import { api, type RouterOutputs } from "@/src/utils/api";
 import { Button } from "@/src/components/ui/button";
 import { normalizeSingleValueOptions } from "@/src/features/filters";

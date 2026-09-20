@@ -1,11 +1,11 @@
 /* eslint-disable no-nested-ternary */
 import type { Organization } from "@prisma/client";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   hasPaidBillingState,
   type ParsedOrganization,
   Role,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   sendUsageThresholdWarningEmail,
   sendUsageThresholdSuspensionEmail,
@@ -13,7 +13,7 @@ import {
   recordIncrement,
   traceException,
   getBillingCycleEnd,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   NOTIFICATION_THRESHOLDS,
   BLOCKING_THRESHOLD,

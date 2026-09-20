@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { ScoreDataTypeEnum } from "@langfuse/shared";
+import { ScoreDataTypeEnum } from "@evalsight/shared";
 
 import { buildScoreOutputDefinition } from "./buildScoreOutputDefinition";
 import { toScoreOutputFormState } from "./toScoreOutputFormState";

@@ -3,7 +3,7 @@ import type {
   ColumnDefinition,
   FilterState,
   SingleValueOption,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type { FilterConfig } from "./filter-config";
 import { partitionNoneOfEnvironmentValues } from "./managedEnvironmentPolicy";
 

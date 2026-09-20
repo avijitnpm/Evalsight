@@ -12,7 +12,7 @@ import {
   zipToolCallsFromRecord,
   type EvalTargetObject as EvalTargetObjectType,
   type ToolCallForEval,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 type PreviewDataFields = {
   input: unknown;

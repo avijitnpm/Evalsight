@@ -11,7 +11,7 @@
  * Fixed height component placed below NavigationHeader
  */
 
-import { ObservationLevel } from "@langfuse/shared";
+import { ObservationLevel } from "@evalsight/shared";
 import { useTraceData } from "@/src/features/traces/contexts/TraceDataContext";
 import { useViewPreferences } from "@/src/features/traces/contexts/ViewPreferencesContext";
 

@@ -5,7 +5,7 @@ import { showErrorToast } from "@/src/features/notifications";
 import { MediaContentType } from "@/src/features/media/validation";
 import { api } from "@/src/utils/api";
 import { safeRandomUUID } from "@/src/utils/safe-random-uuid";
-import { type DatasetItemMediaField } from "@langfuse/shared";
+import { type DatasetItemMediaField } from "@evalsight/shared";
 
 const SUPPORTED_CONTENT_TYPES = new Set<string>(
   Object.values(MediaContentType),

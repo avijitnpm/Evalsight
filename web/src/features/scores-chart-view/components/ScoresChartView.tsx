@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useMemo } from "react";
-import { type FilterState } from "@langfuse/shared";
-import { type ViewVersion } from "@langfuse/shared/query";
+import { type FilterState } from "@evalsight/shared";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { api } from "@/src/utils/api";
 import { mapLegacyUiTableFilterToView } from "@/src/features/dashboard/lib/dashboardUiTableToViewMapping";
 import { VIEW_BY_DATASET } from "@/src/features/scores-chart-view/constants/viewByDataset";

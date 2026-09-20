@@ -2,8 +2,8 @@ import {
   type ExportSourceContext,
   InvalidRequestError,
   validateExportSource,
-} from "@langfuse/shared";
-import { type AnalyticsIntegrationExportSource } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { type AnalyticsIntegrationExportSource } from "@evalsight/shared/src/db";
 
 /**
  * Write-time export-source gate shared by the blob-storage tRPC + REST upserts

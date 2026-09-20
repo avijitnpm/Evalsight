@@ -33,7 +33,7 @@ import { reportError } from "@/src/utils/reportError";
 import { isJsonParseSyntaxError } from "@/src/features/auth/lib/expectedAuthErrors";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics/usePostHogClientCapture";
 import useLocalStorage from "@/src/components/useLocalStorage";
-import { noUrlCheck, StringNoHTMLNonEmpty } from "@langfuse/shared";
+import { noUrlCheck, StringNoHTMLNonEmpty } from "@evalsight/shared";
 import { PASSWORD_SETUP_EMAIL_STORAGE_KEY } from "@/src/features/auth-credentials/lib/credentialsUtils";
 
 type NextAuthProvider = NonNullable<Parameters<typeof signIn>[0]>;

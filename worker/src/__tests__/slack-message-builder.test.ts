@@ -1,6 +1,6 @@
 import { afterEach, describe, it, expect } from "vitest";
 import { SlackMessageBuilder } from "../features/slack/slackMessageBuilder";
-import type { WebhookInput } from "@langfuse/shared/src/server";
+import type { WebhookInput } from "@evalsight/shared/src/server";
 import { env } from "../env";
 
 describe("SlackMessageBuilder", () => {

@@ -1,6 +1,6 @@
 import { type ReactNode } from "react";
 
-import { type EvalTemplateType } from "@langfuse/shared";
+import { type EvalTemplateType } from "@evalsight/shared";
 
 import { Label } from "@/src/components/ui/label";
 import { InfoTooltip } from "@/src/components/ui/InfoTooltip/InfoTooltip";

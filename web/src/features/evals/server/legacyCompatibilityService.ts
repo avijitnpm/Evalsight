@@ -14,16 +14,16 @@ import {
   type JobTimeScope,
   type OrderByState,
   type EvalTemplateSourceCodeLanguage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import type {
   Evaluator,
   EvaluatorVersion,
   PrismaClient,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import {
   orderByToPrismaSql,
   tableColumnsToSqlFilterAndPrefix,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { isEqual } from "lodash";
 import { isNotNullOrUndefined } from "@/src/utils/types";
 import {

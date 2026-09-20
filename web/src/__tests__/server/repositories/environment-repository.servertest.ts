@@ -16,8 +16,8 @@ import {
   createTracesCh,
   createTrace,
   getEnvironmentsForProject,
-} from "@langfuse/shared/src/server";
-import { env } from "@langfuse/shared/src/env";
+} from "@evalsight/shared/src/server";
+import { env } from "@evalsight/shared/src/env";
 import { randomUUID } from "crypto";
 
 describe("Clickhouse Project Repository Test", () => {

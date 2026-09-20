@@ -1,4 +1,4 @@
-import { type ApiDeprecationInfo } from "@langfuse/shared";
+import { type ApiDeprecationInfo } from "@evalsight/shared";
 import { OBSERVATIONS_API_V2_DOCS_URL } from "./rateLimitUpgradePaths";
 
 // Family-level deprecation signals for legacy (v3) public API

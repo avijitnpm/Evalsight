@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
 import {
@@ -8,15 +8,15 @@ import {
   PutLlmConnectionV1Response,
   transformDbLlmConnectionToAPI,
 } from "@/src/features/public-api/types/llm-connections";
-import { encrypt } from "@langfuse/shared/encryption";
+import { encrypt } from "@evalsight/shared/encryption";
 import { getDisplaySecretKey } from "@/src/features/llm-api-key/server/router";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
 import {
   InvalidRequestError,
   BEDROCK_USE_DEFAULT_CREDENTIALS,
   LLMAdapter,
-} from "@langfuse/shared";
-import { validateLlmConnectionBaseURL } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { validateLlmConnectionBaseURL } from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 
 export default withMiddlewares({

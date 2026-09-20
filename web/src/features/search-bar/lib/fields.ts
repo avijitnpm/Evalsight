@@ -23,7 +23,7 @@ import {
   type FilterState,
   type SingleValueOption,
   type TracingSearchType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import type { CompareOp } from "./ast";
 import { quoteIfNeeded, unquote } from "./quoting";
@@ -678,7 +678,7 @@ export function isDanglingDotPrefix(
 // One table consulted by the parser (span diagnostics), the validator (commit
 // gate), and the adapter (lowering guard), so the three layers cannot drift.
 // Everything allowed here lowers to a filter shape the events tRPC contract
-// accepts today (filterTypeCompatibility.ts in @langfuse/shared).
+// accepts today (filterTypeCompatibility.ts in @evalsight/shared).
 
 const COMPARISONS: ReadonlySet<CompareOp> = new Set([">", "<", ">=", "<="]);
 const STRING_OPS: ReadonlySet<CompareOp> = new Set(["exact", "~", "^", "$"]);

@@ -15,20 +15,20 @@ import {
   JobConfigState,
   PromptDomainSchema,
   WebhookActionConfigWithSecrets,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   WebhookInput,
   createOrgProjectAndApiKey,
   getActionByIdWithSecrets,
   redis,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   decrypt,
   encrypt,
   generateWebhookSignature,
-} from "@langfuse/shared/encryption";
-import { generateWebhookSecret } from "@langfuse/shared/encryption";
+} from "@evalsight/shared/encryption";
+import { generateWebhookSecret } from "@evalsight/shared/encryption";
 import { setupServer } from "msw/node";
 import { http, HttpResponse } from "msw";
 import { executeWebhook } from "../queues/webhooks";
@@ -1446,7 +1446,7 @@ describe("Webhook Integration Tests", () => {
 
       // Import the function to test it directly
       const { getConsecutiveAutomationFailures } =
-        await import("@langfuse/shared/src/server");
+        await import("@evalsight/shared/src/server");
 
       // Check that consecutive failures is 0 since there are no executions after the lastFailingExecutionId
       const failures = await getConsecutiveAutomationFailures({

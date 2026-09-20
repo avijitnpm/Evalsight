@@ -1,4 +1,4 @@
-import { BlobStorageExportMode } from "@langfuse/shared";
+import { BlobStorageExportMode } from "@evalsight/shared";
 
 /**
  * Resolve the inclusive lower bound for the *first* blob-export run (no

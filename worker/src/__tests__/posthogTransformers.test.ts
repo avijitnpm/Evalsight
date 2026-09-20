@@ -10,7 +10,7 @@ import type {
   AnalyticsGenerationEvent,
   AnalyticsScoreEvent,
   AnalyticsObservationEvent,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 describe("PostHog transformers", () => {
   const projectId = "test-project-id";

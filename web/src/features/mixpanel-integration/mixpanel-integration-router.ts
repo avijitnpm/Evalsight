@@ -11,7 +11,7 @@ import {
   createTRPCRouter,
   protectedProjectProcedure,
 } from "@/src/server/api/trpc";
-import { decrypt, encrypt } from "@langfuse/shared/encryption";
+import { decrypt, encrypt } from "@evalsight/shared/encryption";
 import { mixpanelIntegrationFormSchema } from "@/src/features/mixpanel-integration/types";
 import { TRPCError } from "@trpc/server";
 import { env } from "@/src/env.mjs";
@@ -20,7 +20,7 @@ import {
   AnalyticsIntegrationExportSource,
   LangfuseNotFoundError,
   LEGACY_ANALYTICS_EXPORTER_CUTOFF,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const mixpanelIntegrationRouter = createTRPCRouter({
   get: protectedProjectProcedure

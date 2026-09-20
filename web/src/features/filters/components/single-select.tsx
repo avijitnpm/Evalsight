@@ -18,7 +18,7 @@ import {
   PopoverTrigger,
 } from "@/src/components/ui/popover";
 import { cn } from "@/src/utils/tailwind";
-import { type FilterOption } from "@langfuse/shared";
+import { type FilterOption } from "@evalsight/shared";
 import { PropertyHoverCard } from "@/src/features/widgets/components/WidgetPropertySelectItem";
 
 /** SingleSelect picks exactly one option or one custom value from a searchable dropdown. */

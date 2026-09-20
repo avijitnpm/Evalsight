@@ -12,7 +12,7 @@ import {
   TraceBatchQueue,
   type QueueName,
   type TQueueJobTypes,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "../../env";
 import { PeriodicExclusiveRunner } from "../../utils/PeriodicExclusiveRunner";
 import {

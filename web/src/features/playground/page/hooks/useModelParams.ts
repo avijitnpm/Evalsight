@@ -8,7 +8,7 @@ import {
   supportedModels,
   type ModelParams,
   type UIModelParams,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ModelParamsContext } from "@/src/components/ModelParameters";
 import { getModelNameKey, getModelProviderKey } from "../storage/keys";
 import { getEnabledModelParamState } from "@/src/utils/getFinalModelParams";

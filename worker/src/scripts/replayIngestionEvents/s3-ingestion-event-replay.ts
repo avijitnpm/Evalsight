@@ -24,7 +24,7 @@ import {
   SecondaryIngestionQueue,
   TQueueJobTypes,
   UNKNOWN_INGESTION_SDK_VALUE,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 const INPUT_FILE = "events.csv";
 const OUTPUT_FILE = "events_filtered.csv";

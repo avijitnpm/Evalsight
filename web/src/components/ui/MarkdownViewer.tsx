@@ -31,7 +31,7 @@ import {
   isOpenAIImageContentPart,
   isMediaReferencePart,
   isAiSdkFileContentPart,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type z } from "zod";
 import { ResizableImage } from "@/src/components/ui/resizable-image";
 import { LangfuseMediaView } from "@/src/components/ui/LangfuseMediaView";

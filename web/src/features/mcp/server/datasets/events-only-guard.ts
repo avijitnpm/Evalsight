@@ -1,5 +1,5 @@
 import { env } from "@/src/env.mjs";
-import { LangfuseNotFoundError } from "@langfuse/shared";
+import { LangfuseNotFoundError } from "@evalsight/shared";
 
 /**
  * The dataset run (item) tools read from and write to the legacy

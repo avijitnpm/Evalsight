@@ -3,7 +3,7 @@ import {
   type EvalTemplateSourceCodeLanguage,
   EvalTemplateType,
   type EvalTemplate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const isCodeEvalTemplate = (
   template: Partial<Pick<EvalTemplate, "type">> | null | undefined,

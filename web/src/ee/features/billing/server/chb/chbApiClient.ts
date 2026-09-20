@@ -4,7 +4,7 @@ import { SpanKind, type Span } from "@opentelemetry/api";
 import { z } from "zod";
 
 import { env } from "@/src/env.mjs";
-import { instrumentAsync, logger } from "@langfuse/shared/src/server";
+import { instrumentAsync, logger } from "@evalsight/shared/src/server";
 
 import {
   ChbAccessTokenProvider,

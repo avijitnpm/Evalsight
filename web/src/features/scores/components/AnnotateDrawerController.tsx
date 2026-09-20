@@ -12,7 +12,7 @@ import {
   ScoreDataTypeArray,
   ScoreDataTypeEnum,
   type ScoreDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   toDomainArrayWithStringifiedMetadata,
   type WithStringifiedMetadata,

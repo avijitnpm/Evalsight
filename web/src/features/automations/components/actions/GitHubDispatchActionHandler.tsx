@@ -6,7 +6,7 @@ import {
   type AutomationDomain,
   type ActionCreate,
   type ActionDomain,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import { areGitHubDispatchUrlsEquivalent } from "../../githubDispatchUrl";
 

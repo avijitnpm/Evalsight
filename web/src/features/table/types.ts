@@ -4,7 +4,7 @@ import {
   type BatchActionType,
   type ActionId,
   type BatchExportTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type ReactElement } from "react";
 
 type BaseTableAction = {

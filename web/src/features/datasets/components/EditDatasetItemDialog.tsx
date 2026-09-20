@@ -19,7 +19,7 @@ import {
   useDatasetItemMediaUpload,
   type PendingMediaUpload,
 } from "../hooks/useDatasetItemMediaUpload";
-import type { DatasetItemDomain } from "@langfuse/shared";
+import type { DatasetItemDomain } from "@evalsight/shared";
 import {
   DatasetItemFields,
   type DatasetItemFormValues,

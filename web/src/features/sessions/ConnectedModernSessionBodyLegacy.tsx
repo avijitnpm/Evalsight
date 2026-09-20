@@ -1,7 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useEffect, useRef, useState } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 import { LazySessionTraceEventsRow } from "@/src/features/sessions/LazySessionTraceEventsRow";
 import { SessionVirtualizedRow } from "@/src/features/sessions/SessionVirtualizedRow";

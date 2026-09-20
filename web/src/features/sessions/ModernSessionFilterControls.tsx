@@ -4,7 +4,7 @@ import {
   type FilterState,
   type TableViewPresetState,
   TableViewPresetTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   type ColumnOrderState,
   type VisibilityState,

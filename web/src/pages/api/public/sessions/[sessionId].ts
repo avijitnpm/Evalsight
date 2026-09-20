@@ -1,12 +1,12 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import {
   GetSessionV1Query,
   GetSessionV1Response,
 } from "@/src/features/public-api/types/sessions";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
-import { LangfuseNotFoundError } from "@langfuse/shared";
-import { getTracesBySessionId } from "@langfuse/shared/src/server";
+import { LangfuseNotFoundError } from "@evalsight/shared";
+import { getTracesBySessionId } from "@evalsight/shared/src/server";
 import { legacyPublicApiRateLimitUpgradePaths } from "@/src/features/public-api/server/rateLimitUpgradePaths";
 import { SESSIONS_DEPRECATION } from "@/src/features/public-api/server/deprecations";
 

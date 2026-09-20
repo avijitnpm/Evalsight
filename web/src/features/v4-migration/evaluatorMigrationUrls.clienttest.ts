@@ -1,6 +1,6 @@
 // @vitest-environment node
 
-import { decodeFiltersGeneric } from "@langfuse/shared";
+import { decodeFiltersGeneric } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 
 import {

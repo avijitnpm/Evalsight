@@ -1,4 +1,4 @@
-import { type ColumnDefinition, type FilterState } from "@langfuse/shared";
+import { type ColumnDefinition, type FilterState } from "@evalsight/shared";
 import { useState } from "react";
 
 import { Button } from "@/src/components/ui/button";

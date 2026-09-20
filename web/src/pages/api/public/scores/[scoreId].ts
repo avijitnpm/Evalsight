@@ -7,8 +7,8 @@ import {
   GetScoreResponseV1,
   InternalServerError,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
-import { logger, traceException } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { logger, traceException } from "@evalsight/shared/src/server";
 import { ScoresApiService } from "@/src/features/public-api/server/scores-api-service";
 import { SCORES_DEPRECATION } from "@/src/features/public-api/server/deprecations";
 

@@ -11,11 +11,11 @@ import {
   getClientInitiatedNonStreamingLlmTimeoutMs,
   getLangfuseAITraceSinkParams,
   isLangfuseAITracingConfigured,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   getInAppAgentModelConfig,
   LANGFUSE_AI_MODEL_UNCONFIGURED_MESSAGE,
-} from "@langfuse/shared/in-app-agent/server/modelProvider";
+} from "@evalsight/shared/in-app-agent/server/modelProvider";
 import { env } from "@/src/env.mjs";
 import { CreateNaturalLanguageFilterCompletion } from "./validation";
 import { parseFiltersFromCompletion, getLangfuseClient } from "./utils";

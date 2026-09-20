@@ -6,7 +6,7 @@ import {
   classifyChartFilters,
   toChartFilters,
 } from "./chartFilterCompatibility";
-import { type FilterState } from "@langfuse/shared";
+import { type FilterState } from "@evalsight/shared";
 
 describe("chartFilterExclusionReason", () => {
   it("returns null for forwardable columns", () => {

@@ -1,11 +1,11 @@
-import { EvalTemplateType } from "@langfuse/shared";
+import { EvalTemplateType } from "@evalsight/shared";
 import {
   CodeEvalDispatcherErrorCodes,
   CodeEvalExecutionError,
   recordDistribution,
   recordIncrement,
   type EvaluatorLlmErrorClassification,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
   getCodeEvalTerminalErrorOutcome,
@@ -14,8 +14,8 @@ import {
   recordEvalTimeToFirstAttempt,
 } from "./evalExecutionMetrics";
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@langfuse/shared/src/server")>()),
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@evalsight/shared/src/server")>()),
   recordDistribution: vi.fn(),
   recordIncrement: vi.fn(),
 }));

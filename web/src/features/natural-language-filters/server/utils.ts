@@ -1,5 +1,5 @@
 import { Langfuse } from "langfuse";
-import { type FilterCondition, singleFilterList } from "@langfuse/shared";
+import { type FilterCondition, singleFilterList } from "@evalsight/shared";
 import { getProductBaseUrl } from "@/src/utils/base-url";
 
 let langfuseClient: Langfuse | null = null;

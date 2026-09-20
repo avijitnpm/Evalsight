@@ -5,7 +5,7 @@ import {
   extractObservationVariables,
   logger,
   recordIncrement,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { isEvalTargetEnvironmentAllowed } from "../isEvalTargetEnvironmentAllowed";
 import {
   getCodeEvalVariableMapping,
@@ -13,7 +13,7 @@ import {
   observationVariableMappingList,
   type EvalTemplateWithType,
   canRunEvalRule,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   EvalTemplateType,
   JobConfigState,
@@ -22,9 +22,9 @@ import {
   type JobConfiguration,
   type JobExecution,
 } from "@prisma/client";
-import { prisma, JobExecutionStatus } from "@langfuse/shared/src/db";
+import { prisma, JobExecutionStatus } from "@evalsight/shared/src/db";
 import { UnrecoverableError } from "../../../errors/UnrecoverableError";
-import { buildEvalExecutionData } from "@langfuse/shared/src/server";
+import { buildEvalExecutionData } from "@evalsight/shared/src/server";
 import {
   completeEvalExecution,
   type EvalExecutionResult,

@@ -3,7 +3,7 @@ import {
   chbPlanCodeToPlan,
   chbPlanCodes,
   type Plan,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { stripeProducts } from "./stripeCatalogue";
 

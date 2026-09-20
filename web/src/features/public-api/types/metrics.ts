@@ -4,8 +4,8 @@ import {
   paginationMetaResponseZod,
   publicApiPaginationZod,
   singleFilterList,
-} from "@langfuse/shared";
-import { stringDateTime } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { stringDateTime } from "@evalsight/shared/src/server";
 import { z } from "zod";
 import {
   dimension,
@@ -13,7 +13,7 @@ import {
   metric,
   views,
   viewsV2,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 
 /** publicGranularities is the base 6 granularities exposed on the public metrics API and MCP. */
 export const publicGranularities = granularities.extract([

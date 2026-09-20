@@ -8,8 +8,8 @@ const {
   mockGetEventsExactFilterOptionsForColumns: vi.fn(async () => []),
 }));
 
-vi.mock("@langfuse/shared/src/server", async () => {
-  const originalModule = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const originalModule = await vi.importActual("@evalsight/shared/src/server");
   return {
     ...originalModule,
     ScoreDeleteQueue: {
@@ -28,10 +28,10 @@ vi.mock("@langfuse/shared/src/server", async () => {
 });
 
 import type { Session } from "next-auth";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { ScoreConfigDataType } from "@langfuse/shared";
+import { ScoreConfigDataType } from "@evalsight/shared";
 import {
   createEvent,
   createEventsCh,
@@ -45,7 +45,7 @@ import {
   BatchActionQueue,
   QueueJobs,
   createOrgProjectAndApiKey,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import { observationScopeFilter } from "@/src/features/filters/config/scores-config";
 import { SCORES_FIELD_REGISTRY } from "@/src/features/scores/constants/scoresSearchRegistry";

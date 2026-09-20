@@ -1,9 +1,9 @@
 /* eslint-disable no-nested-ternary */
 import type { Session } from "next-auth";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import { v4TransitionRouter } from "@/src/features/v4/server/v4TransitionRouter";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import { queryClickhouse } from "@langfuse/shared/src/server";
+import { queryClickhouse } from "@evalsight/shared/src/server";
 
 vi.mock("@/src/server/auth", () => ({
   getServerAuthSession: vi.fn(),
@@ -189,9 +189,9 @@ const sharedEnvMock = vi.hoisted(() => ({
   CLICKHOUSE_EVENTS_READ_ONLY_URL: "https://clickhouse-main.example.com",
 }));
 
-vi.mock("@langfuse/shared/src/env", () => ({ env: sharedEnvMock }));
+vi.mock("@evalsight/shared/src/env", () => ({ env: sharedEnvMock }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => {
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => {
   const actual = await importOriginal();
   const { ROOT_CONTEXT } = await import("@opentelemetry/api");
 

@@ -1,4 +1,4 @@
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { formatFilterPreview } from "@/src/components/table/table-view-presets/lib/viewPreview";
 import { InlineFilterState } from "@/src/features/filters";
 

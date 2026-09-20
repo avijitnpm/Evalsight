@@ -2,7 +2,7 @@ import {
   eventsEvalFilterColumns,
   type ColumnDefinition,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { fn } from "storybook/test";
 
 import preview from "../../../../../../../../../../../.storybook/preview";

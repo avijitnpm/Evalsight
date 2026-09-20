@@ -5,12 +5,12 @@ import {
   recordDistribution,
   recordIncrement,
   uploadMediaForTrace,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   MediaAssociationOrigin,
   MediaContentType,
   OBSERVATION_FIELD_SIZE_LIMIT_MEDIA_SOURCE,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { env } from "../../env";
 

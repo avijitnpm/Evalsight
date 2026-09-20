@@ -6,14 +6,14 @@ import {
   orderByToPrismaSql,
   scoresTableUiColumnDefinitions,
   tracesTableUiColumnDefinitions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   InvalidRequestError,
   normalizeOrderByForTable,
   promptsTableCols,
   scoresTableCols,
   tracesTableCols,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // The test for the orderByToPrisma function
 describe("orderByToPrisma (Convert orderBy to Prisma.sql)", () => {

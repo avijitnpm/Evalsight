@@ -11,7 +11,7 @@ import {
   LLMAdapter,
   BEDROCK_USE_DEFAULT_CREDENTIALS,
   VERTEXAI_USE_DEFAULT_CREDENTIALS,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ChevronDown, PlusIcon, TrashIcon } from "lucide-react";
 import { z } from "zod";
 import { Button } from "@/src/components/ui/button";

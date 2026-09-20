@@ -9,7 +9,7 @@ import {
   LANGFUSE_HOME_DASHBOARD_ID,
   type ColumnDefinition,
   type FilterState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { useQueryFilterState } from "@/src/features/filters/hooks/useFilterState";
 import { useCallback, useEffect, useMemo, useRef } from "react";
 import { StringParam, useQueryParam } from "use-query-params";
@@ -30,7 +30,7 @@ import {
   useReadPath,
   type ResolvedReadPath,
 } from "@/src/features/events/hooks/useReadPath";
-import { type ViewVersion } from "@langfuse/shared/query";
+import { type ViewVersion } from "@evalsight/shared/query";
 import { useEnvironmentFilterOptionsCache } from "@/src/hooks/use-environment-filter-options-cache";
 import { NoDataOrLoading } from "@/src/components/NoDataOrLoading";
 import {

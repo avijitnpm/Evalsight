@@ -3,7 +3,7 @@ import { z } from "zod";
 import {
   IN_APP_AGENT_REDIRECT_TOOL_NAME,
   type AgUiMessage,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import type { InAppAgentUiMessage } from "../schema";
 
 /**

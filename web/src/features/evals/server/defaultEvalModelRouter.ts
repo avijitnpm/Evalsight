@@ -5,7 +5,7 @@ import {
 } from "@/src/server/api/trpc";
 import { z } from "zod";
 
-import { EvaluatorBlockReason, ZodModelConfig } from "@langfuse/shared";
+import { EvaluatorBlockReason, ZodModelConfig } from "@evalsight/shared";
 import {
   blockEvaluatorsUsingDefaultModel,
   DefaultEvalModelService,
@@ -13,7 +13,7 @@ import {
   finalizeEvaluatorBlocks,
   invalidateProjectEvalConfigCaches,
   unblockEvaluatorsUsingDefaultModel,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const defaultEvalModelRouter = createTRPCRouter({
   fetchDefaultModel: protectedProjectProcedure

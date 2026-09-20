@@ -37,7 +37,7 @@ import { type ChartProps } from "@/src/features/widgets/chart-library/chart-prop
 import { valueFormatter } from "@/src/features/widgets/chart-library/utils";
 import { formatMetricName } from "@/src/features/widgets/utils";
 
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 
 /**
  * Props interface for the PivotTable component

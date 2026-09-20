@@ -4,7 +4,7 @@ import {
   ObservationType,
   timeFilter,
   type ObservationOptions,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { protectedProjectProcedure } from "@/src/server/api/trpc";
 import {
   getCategoricalScoresGroupedByName,
@@ -19,7 +19,7 @@ import {
   getTracesGroupedByName,
   getTracesGroupedByTags,
   tracesTableUiColumnDefinitions,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const filterOptionsQuery = protectedProjectProcedure
   .input(

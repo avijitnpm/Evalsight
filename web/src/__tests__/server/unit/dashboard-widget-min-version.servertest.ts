@@ -3,7 +3,7 @@ import {
   validatePublicDashboardWidgetInput,
 } from "@/src/features/widgets/server/public-dashboard-widget-service";
 import { StructuredPublicApiError } from "@/src/features/public-api";
-import { env as sharedEnv } from "@langfuse/shared/src/env";
+import { env as sharedEnv } from "@evalsight/shared/src/env";
 
 const baseInput = {
   name: "API widget",

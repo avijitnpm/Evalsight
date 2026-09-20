@@ -12,7 +12,7 @@ import {
   InAppAgentSandboxToolNameSchema,
   InAppAgentSandboxToolResultSchemas,
   InAppAgentSandboxWriteArgsSchema,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import { type z } from "zod";
 import { assertUnreachable } from "@/src/utils/types";
 import { InAppAgentToolPayload } from "./InAppAgentToolPayload";

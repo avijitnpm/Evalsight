@@ -11,9 +11,9 @@ import {
   GetPromptByNameSchema,
   LangfuseNotFoundError,
   PRODUCTION_LABEL,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { auditLog } from "@/src/features/audit-logs/server";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 
 const getPromptNameHandler = async (
   req: NextApiRequest,

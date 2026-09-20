@@ -11,7 +11,7 @@ import {
   paginationZod,
   singleFilterList,
   timeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   toDomainArrayWithStringifiedMetadata,
   toDomainWithStringifiedMetadata,
@@ -36,7 +36,7 @@ import {
   MAX_OBSERVATIONS_PER_TRACE,
   applyCommentFilters,
   getLatestSdkVersionInfoFromEvents,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 import {
   AgentGraphDataSchema,

@@ -28,7 +28,7 @@ import { api } from "@/src/utils/api";
 import { getRelativeTimestampFromNow } from "@/src/utils/dates";
 import { cn } from "@/src/utils/tailwind";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { type CommentObjectType, CreateCommentData } from "@langfuse/shared";
+import { type CommentObjectType, CreateCommentData } from "@evalsight/shared";
 import { Spinner } from "@/src/components/design-system/Spinner/Spinner";
 import { ArrowUpToLine, Search, Trash, X } from "lucide-react";
 import { useSession } from "next-auth/react";

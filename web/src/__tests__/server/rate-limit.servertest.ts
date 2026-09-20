@@ -5,7 +5,7 @@ import {
 } from "@/src/features/public-api/server/RateLimitService";
 import { randomUUID } from "crypto";
 import type { Redis } from "ioredis";
-import type { ApiAccessScope } from "@langfuse/shared/src/server";
+import type { ApiAccessScope } from "@evalsight/shared/src/server";
 import {
   clearRedisKeysByPatternSafely,
   createRedisTestClient,

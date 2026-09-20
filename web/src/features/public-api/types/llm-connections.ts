@@ -9,7 +9,7 @@ import {
   LLMConnectionConfigSchema,
   OpenAIConfigSchema,
   VertexAIConfigSchema,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 // Base LLM connection response schema - strict to prevent secret leakage
 export const LlmConnectionResponse = z

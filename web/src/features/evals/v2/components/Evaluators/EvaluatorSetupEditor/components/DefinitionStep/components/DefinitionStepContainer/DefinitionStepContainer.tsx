@@ -1,6 +1,6 @@
 import { useStore } from "zustand";
 import { useShallow } from "zustand/react/shallow";
-import type { LLMAdapter } from "@langfuse/shared";
+import type { LLMAdapter } from "@evalsight/shared";
 
 import { DefinitionStep } from "@/src/features/evals/v2/components/Evaluators/EvaluatorSetupEditor/components/DefinitionStep/DefinitionStep";
 import { CodeEditor } from "@/src/features/evals/v2/components/Evaluators/EvaluatorSetupEditor/components/DefinitionStep/components/CodeEditor/CodeEditor";

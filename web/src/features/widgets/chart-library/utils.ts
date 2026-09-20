@@ -3,7 +3,7 @@ import {
   type FormatMetricOptions,
   type FormattedMetric,
 } from "./chart-props";
-import { type DashboardWidgetChartType } from "@langfuse/shared/src/db";
+import { type DashboardWidgetChartType } from "@evalsight/shared/src/db";
 import { compactNumberFormatter, numberFormatter } from "@/src/utils/numbers";
 
 export const toFullMetricString = (metric: FormattedMetric): string =>

@@ -1,7 +1,7 @@
 import {
   deepParseJsonIterative,
   extractValueFromObjectAsString,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export function extractVariableMappingValue(
   sourceObject: Record<string, unknown>,

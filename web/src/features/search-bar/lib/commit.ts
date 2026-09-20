@@ -7,7 +7,7 @@
 // one source of truth). Keeping it pure makes the commit semantics unit-
 // testable without rendering anything.
 
-import type { FilterState, TracingSearchType } from "@langfuse/shared";
+import type { FilterState, TracingSearchType } from "@evalsight/shared";
 
 import type { ASTNode } from "./ast";
 import { EVENTS_FIELD_REGISTRY, type FieldRegistry } from "./fields";

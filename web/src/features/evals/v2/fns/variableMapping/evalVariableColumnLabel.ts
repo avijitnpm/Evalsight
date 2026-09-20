@@ -1,4 +1,4 @@
-import { experimentTargetEvalVariableColumns } from "@langfuse/shared";
+import { experimentTargetEvalVariableColumns } from "@evalsight/shared";
 
 /** Display name of a sample-observation field, falling back to its raw id. */
 export function evalVariableColumnLabel(columnId: string | null) {

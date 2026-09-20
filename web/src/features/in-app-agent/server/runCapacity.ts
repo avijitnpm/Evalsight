@@ -1,12 +1,12 @@
 /* eslint-disable no-nested-ternary */
-import { BaseError, type Plan } from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import { BaseError, type Plan } from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import {
   IN_APP_AGENT_HEARTBEAT_STALE_MS,
   IN_APP_AGENT_QUEUE_TIMEOUT_MS,
   IN_APP_AGENT_RUN_MAX_DURATION_MS,
-} from "@langfuse/shared/in-app-agent/server/tunables";
-import { recordIncrement } from "@langfuse/shared/src/server";
+} from "@evalsight/shared/in-app-agent/server/tunables";
+import { recordIncrement } from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 
 /**

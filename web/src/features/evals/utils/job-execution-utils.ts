@@ -1,7 +1,7 @@
 import {
   JobExecutionStatus,
   type EvaluatorExecutionStatusCount,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { compactNumberFormatter } from "@/src/utils/numbers";
 
 export const generateJobExecutionCounts = (

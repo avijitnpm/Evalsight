@@ -1,4 +1,4 @@
-import { getCategoricalCategoryRuleViolations } from "@langfuse/shared";
+import { getCategoricalCategoryRuleViolations } from "@evalsight/shared";
 
 export const DUPLICATE_CATEGORY_NAMES_MESSAGE =
   "Category names must be unique.";

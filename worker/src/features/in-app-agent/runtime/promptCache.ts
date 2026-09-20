@@ -1,4 +1,4 @@
-import { isRecord } from "@langfuse/shared/in-app-agent/server/toolErrors";
+import { isRecord } from "@evalsight/shared/in-app-agent/server/toolErrors";
 
 type PromptCacheProvider =
   | "bedrock"

@@ -8,9 +8,9 @@ import {
   AnalyticsIntegrationExportSource,
   type Prisma,
   type PrismaClient,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import type { Session } from "next-auth";
-import { isForceV3ExperienceProject } from "@langfuse/shared/src/server";
+import { isForceV3ExperienceProject } from "@evalsight/shared/src/server";
 import {
   readExperimentPostUsageCache,
   readLegacyApiUsageCache,

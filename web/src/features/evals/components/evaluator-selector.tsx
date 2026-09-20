@@ -4,7 +4,7 @@ import {
   EvalTemplateSourceCodeLanguage,
   EvalTemplateType,
   type EvalTemplate,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { AlertCircle, CheckIcon } from "lucide-react";
 import {
   InputCommand,

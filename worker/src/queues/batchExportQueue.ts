@@ -4,11 +4,11 @@ import {
   BaseError,
   BatchExportStatus,
   LangfuseNotFoundError,
-} from "@langfuse/shared";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { prisma } from "@evalsight/shared/src/db";
 
-import { traceException, logger } from "@langfuse/shared/src/server";
-import { QueueName, TQueueJobTypes } from "@langfuse/shared/src/server";
+import { traceException, logger } from "@evalsight/shared/src/server";
+import { QueueName, TQueueJobTypes } from "@evalsight/shared/src/server";
 import { handleBatchExportJob } from "../features/batchExport/handleBatchExportJob";
 
 export const batchExportQueueProcessor = async (

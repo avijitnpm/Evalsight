@@ -2,7 +2,7 @@ import {
   type JobConfiguration,
   JobConfigState,
   singleFilterList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const resetEvalConfigBlockFields = {
   blockedAt: null,

@@ -5,7 +5,7 @@ import {
   EvalTargetObject,
   type FilterState,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { ChevronDown } from "lucide-react";
 import { useCallback, useMemo, useRef, useState } from "react";
 import { Button } from "@/src/components/ui/button";

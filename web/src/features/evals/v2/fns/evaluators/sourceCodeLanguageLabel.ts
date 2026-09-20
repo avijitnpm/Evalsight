@@ -1,7 +1,7 @@
 import {
   EvalTemplateSourceCodeLanguageEnum,
   type EvalTemplateSourceCodeLanguage,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const SOURCE_CODE_LANGUAGE_LABELS = {
   [EvalTemplateSourceCodeLanguageEnum.PYTHON]: "Python",

@@ -1,14 +1,14 @@
 import { env } from "@/src/env.mjs";
 import { createUserEmailPassword } from "@/src/features/auth-credentials/lib/credentialsServerUtils";
-import { prisma } from "@langfuse/shared/src/db";
-import { createAndAddApiKeysToDb } from "@langfuse/shared/src/server/auth/apiKeys";
+import { prisma } from "@evalsight/shared/src/db";
+import { createAndAddApiKeysToDb } from "@evalsight/shared/src/server/auth/apiKeys";
 import { hasEntitlementBasedOnPlan } from "@/src/features/entitlements/server/hasEntitlement";
 import { getOrganizationPlanServerSide } from "@/src/features/entitlements/server/getPlan";
-import { CloudConfigSchema } from "@langfuse/shared";
+import { CloudConfigSchema } from "@evalsight/shared";
 import {
   initializeClickhouseCompatibility,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 await initializeClickhouseCompatibility();
 

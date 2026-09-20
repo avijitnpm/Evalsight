@@ -1,6 +1,6 @@
 import { useId, useMemo } from "react";
 import { Star } from "lucide-react";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 import { Radio } from "@/src/components/design-system/Radio/Radio";
 import type { LangfuseColumnDef } from "@/src/components/table/types";

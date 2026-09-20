@@ -3,7 +3,7 @@ import {
   type FilterState,
   type SingleValueOption,
   type TimeFilter,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 import { api, type RouterOutputs } from "@/src/utils/api";
 import { normalizeSingleValueOptions } from "@/src/features/filters";

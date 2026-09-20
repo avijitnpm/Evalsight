@@ -14,8 +14,8 @@ import {
   QueueName,
   removeIngestionEventsFromS3AndDeleteClickhouseRefsForProject,
   TQueueJobTypes,
-} from "@langfuse/shared/src/server";
-import { prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/server";
+import { prisma } from "@evalsight/shared/src/db";
 import { Prisma } from "@prisma/client";
 import { env, v4WritesToEventsTable } from "../env";
 

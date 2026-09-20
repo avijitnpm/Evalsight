@@ -1,5 +1,5 @@
 import preview from "../../../../.storybook/preview";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 import { EvaluatorFilterCell } from "@/src/features/evals/components/EvaluatorFilterCell";
 
 const SHORT_FILTER = [

@@ -10,7 +10,7 @@ import {
   projectNoneRoleComment,
   projectRoleAccessRights,
   type Role,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   organizationRoleAccessRights,
   orgNoneRoleComment,

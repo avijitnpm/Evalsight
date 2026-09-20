@@ -1,4 +1,4 @@
-import { type MetadataDomain } from "@langfuse/shared";
+import { type MetadataDomain } from "@evalsight/shared";
 
 /**
  * Metadata serialized as string for client-side consumption.

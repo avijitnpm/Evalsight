@@ -5,11 +5,11 @@ import type { Session } from "next-auth";
 type SessionUser = NonNullable<Session["user"]>;
 type SessionOrg = SessionUser["organizations"][number];
 type SessionFeatureFlags = SessionUser["featureFlags"];
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { appRouter } from "@/src/server/api/root";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
 import { TRPCError } from "@trpc/server";
-import { createAndAddApiKeysToDb } from "@langfuse/shared/src/server";
+import { createAndAddApiKeysToDb } from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 
 describe("organization API keys trpc", () => {

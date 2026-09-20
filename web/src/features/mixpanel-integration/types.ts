@@ -1,4 +1,4 @@
-import { AnalyticsIntegrationExportSource } from "@langfuse/shared";
+import { AnalyticsIntegrationExportSource } from "@evalsight/shared";
 import { z } from "zod";
 
 export const MIXPANEL_REGIONS = [

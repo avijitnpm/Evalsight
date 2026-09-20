@@ -8,7 +8,7 @@ import {
   type ColumnDefinition,
   type FilterState,
   type OrderByState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { experimentsFilterConfig } from "@/src/features/experiments/components/table/filter-config";
 import { experimentItemsFilterConfig } from "@/src/features/experiments/config/experiment-items-filter-config";
 

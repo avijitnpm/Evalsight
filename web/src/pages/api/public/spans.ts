@@ -11,7 +11,7 @@ import {
   eventTypes,
   logger,
   processEventBatch,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { v4 } from "uuid";
 
 export default withMiddlewares({

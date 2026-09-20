@@ -5,7 +5,7 @@ import {
   zipToolCallsFromRecord,
   type BatchActionQuery,
   type ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type RouterOutputs } from "@/src/utils/api";
 
 type ObservationPreview = RouterOutputs["observations"]["byId"];

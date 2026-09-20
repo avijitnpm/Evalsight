@@ -19,10 +19,10 @@ import {
   ProjectDeleteQueue,
   getEnvironmentsForProject,
   invalidateCachedOrgApiKeys,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
-import { LangfuseConflictError, StringNoHTMLNonEmpty } from "@langfuse/shared";
-import type { PrismaClient } from "@langfuse/shared/src/db";
+import { LangfuseConflictError, StringNoHTMLNonEmpty } from "@evalsight/shared";
+import type { PrismaClient } from "@evalsight/shared/src/db";
 import { buildAdminOrgContext } from "@/src/features/organizations/server/adminOrgContext";
 import { emitChbProjectEvent } from "@/src/ee/features/billing/server/chb/chbProjectEvents";
 

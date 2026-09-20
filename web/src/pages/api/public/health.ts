@@ -7,7 +7,7 @@ import {
   contextWithLangfuseProps,
   logger,
   traceException,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import * as opentelemetry from "@opentelemetry/api";
 import { type NextApiRequest, type NextApiResponse } from "next";
 

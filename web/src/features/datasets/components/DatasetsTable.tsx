@@ -22,7 +22,7 @@ import {
   ActionId,
   BatchActionType,
   BatchExportTableName,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { createIOTableColumn } from "@/src/components/design-system/table/columns/createIOTableColumn";
 import { useRowHeightLocalStorage } from "@/src/components/table/data-table-row-height-switch";
 import { createDateTableColumn } from "@/src/components/design-system/table/columns/createDateTableColumn";

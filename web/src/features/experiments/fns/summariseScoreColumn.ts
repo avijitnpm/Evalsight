@@ -1,4 +1,4 @@
-import { type AggregatedScoreData } from "@langfuse/shared";
+import { type AggregatedScoreData } from "@evalsight/shared";
 
 /** The score's declared type, which decides what an aggregate of it can mean. */
 export type ScoreColumnDataType = "NUMERIC" | "BOOLEAN" | "CATEGORICAL";

@@ -2,7 +2,7 @@ import {
   EvaluatorPromptMessagesSchema,
   InvalidRequestError,
   publicApiPaginationLimitZod,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 import {
   PUBLIC_EVALUATOR_TYPE_CODE,

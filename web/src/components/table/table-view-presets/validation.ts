@@ -3,7 +3,7 @@ import {
   type FilterState,
   type ColumnDefinition,
   type OrderByState,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { normalizeFilterColumnNames } from "@/src/features/filters/lib/filter-transform";
 import type { FilterStateMigration } from "@/src/features/filters/lib/filter-config";
 

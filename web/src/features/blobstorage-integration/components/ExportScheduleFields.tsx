@@ -12,7 +12,7 @@ import { SelectInput } from "@/src/components/design-system/SelectInput/SelectIn
 import {
   BlobStorageExportMode,
   BlobStorageIntegrationFileType,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { type BlobStorageFormControl } from "@/src/features/blobstorage-integration/components/formValues";
 
 // Frequency, file type, and export mode (with the custom start date when the

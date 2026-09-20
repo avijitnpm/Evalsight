@@ -24,7 +24,7 @@ vi.mock("@/src/features/posthog-analytics/usePostHogClientCapture", () => ({
 
 // deepParseJson is the only runtime import from the shared barrel here; stub it
 // so the test stays light and deterministic (identity is fine for these cases).
-vi.mock("@langfuse/shared", () => ({
+vi.mock("@evalsight/shared", () => ({
   deepParseJson: (value: unknown) => value,
 }));
 

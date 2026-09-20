@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { MediaContentType } from "@langfuse/shared";
+import { MediaContentType } from "@evalsight/shared";
 
 vi.mock("@/src/features/posthog-analytics/usePostHogClientCapture", () => ({
   usePostHogClientCapture: () => vi.fn(),

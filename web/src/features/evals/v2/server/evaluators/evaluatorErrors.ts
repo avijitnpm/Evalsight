@@ -1,4 +1,4 @@
-import { BaseError, LangfuseConflictError } from "@langfuse/shared";
+import { BaseError, LangfuseConflictError } from "@evalsight/shared";
 
 export class EvaluatorVersionConflictError extends LangfuseConflictError {
   constructor() {

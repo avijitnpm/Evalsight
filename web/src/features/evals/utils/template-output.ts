@@ -2,7 +2,7 @@ import {
   PersistedEvalOutputDefinitionSchema,
   resolvePersistedEvalOutputDefinition,
   ScoreDataTypeEnum,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 export const getTemplateResultType = (outputDefinition: unknown) => {
   if (typeof outputDefinition !== "object" || outputDefinition === null) {

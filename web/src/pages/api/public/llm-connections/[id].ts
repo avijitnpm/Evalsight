@@ -1,4 +1,4 @@
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { withMiddlewares } from "@/src/features/public-api/server/withMiddlewares";
 import { createAuthedProjectAPIRoute } from "@/src/features/public-api/server/createAuthedProjectAPIRoute";
 import {
@@ -6,14 +6,14 @@ import {
   DeleteLlmConnectionV1Response,
 } from "@/src/features/public-api/types/llm-connections";
 import { auditLog } from "@/src/features/audit-logs/auditLog";
-import { EvaluatorBlockReason, LangfuseNotFoundError } from "@langfuse/shared";
+import { EvaluatorBlockReason, LangfuseNotFoundError } from "@evalsight/shared";
 import {
   blockEvaluatorsUsingDefaultModel,
   blockEvaluatorsUsingProvider,
   EMPTY_EVALUATOR_BLOCK,
   EvaluatorBlockSource,
   finalizeEvaluatorBlocks,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export default withMiddlewares({
   DELETE: createAuthedProjectAPIRoute({

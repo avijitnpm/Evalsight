@@ -19,8 +19,8 @@ import {
 import { UnrecoverableError } from "../../../../errors/UnrecoverableError";
 
 // Mock prisma
-vi.mock("@langfuse/shared/src/db", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/db");
+vi.mock("@evalsight/shared/src/db", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/db");
 
   return {
     ...actual,
@@ -53,8 +53,8 @@ vi.mock("../../codeBased", () => ({
 }));
 
 // Mock logger
-vi.mock("@langfuse/shared/src/server", async () => {
-  const actual = await vi.importActual("@langfuse/shared/src/server");
+vi.mock("@evalsight/shared/src/server", async () => {
+  const actual = await vi.importActual("@evalsight/shared/src/server");
   const { extractObservationVariables } =
     await import("../../../../../../packages/shared/src/server/evals/extractObservationVariables");
   const { buildDeterministicEvalScoreIds } =
@@ -73,7 +73,7 @@ vi.mock("@langfuse/shared/src/server", async () => {
   };
 });
 
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { executeCodeBasedEvaluation } from "../../codeBased";
 import {
   createMockEvalExecutionDeps,

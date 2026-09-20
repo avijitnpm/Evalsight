@@ -1,4 +1,4 @@
-import { BatchEvalSourceTable, type FilterState } from "@langfuse/shared";
+import { BatchEvalSourceTable, type FilterState } from "@evalsight/shared";
 import { endOfDay, startOfDay, subDays, subHours, subMonths } from "date-fns";
 import { useCallback, useRef, useState } from "react";
 import type {

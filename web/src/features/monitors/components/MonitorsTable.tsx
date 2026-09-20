@@ -31,14 +31,14 @@ import { usePaginationState } from "@/src/hooks/usePaginationState";
 import useProjectIdFromURL from "@/src/hooks/useProjectIdFromURL";
 import { api, type RouterInputs, type RouterOutputs } from "@/src/utils/api";
 import { cn } from "@/src/utils/tailwind";
-import { type FilterState, TableViewPresetTableName } from "@langfuse/shared";
+import { type FilterState, TableViewPresetTableName } from "@evalsight/shared";
 import {
   type ListMonitorFilter,
   ListMonitorFilterSchema,
   type Monitor,
   MonitorSeveritySchema,
   type UpdateMonitor,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 import { MonitorSeverityBadge } from "./MonitorSeverityBadge";
 import {

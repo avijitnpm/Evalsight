@@ -3,7 +3,7 @@ import { getPromptByName } from "@/src/features/prompts/server/actions/getPrompt
 import { ApiAuthService } from "@/src/features/public-api/server/apiAuth";
 import { cors, runMiddleware } from "@/src/features/public-api/server/cors";
 import { isZodError } from "@/src/features/public-api/server/withMiddlewares";
-import { prisma } from "@langfuse/shared/src/db";
+import { prisma } from "@evalsight/shared/src/db";
 import { isPrismaException } from "@/src/utils/exceptions";
 import { type NextApiRequest, type NextApiResponse } from "next";
 import {
@@ -15,8 +15,8 @@ import {
   GetPromptSchema,
   LegacyCreatePromptSchema,
   PRODUCTION_LABEL,
-} from "@langfuse/shared";
-import { redis, traceException, logger } from "@langfuse/shared/src/server";
+} from "@evalsight/shared";
+import { redis, traceException, logger } from "@evalsight/shared/src/server";
 import { RateLimitService } from "@/src/features/public-api/server/RateLimitService";
 import { telemetry } from "@/src/features/telemetry";
 

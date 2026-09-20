@@ -10,7 +10,7 @@ import {
 import { type Extension } from "@codemirror/state";
 import { useMemo, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
-import { MEDIA_REFERENCE_PATTERN } from "@langfuse/shared";
+import { MEDIA_REFERENCE_PATTERN } from "@evalsight/shared";
 import {
   classifyMediaValue,
   type MediaDescriptor,

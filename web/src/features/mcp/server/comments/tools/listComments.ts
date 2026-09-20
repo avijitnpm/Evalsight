@@ -1,4 +1,4 @@
-import { CommentObjectType, publicApiPaginationZod } from "@langfuse/shared";
+import { CommentObjectType, publicApiPaginationZod } from "@evalsight/shared";
 import { z } from "zod";
 import { listCommentsForApi } from "@/src/features/comments/server/publicCommentService";
 import {
@@ -6,7 +6,7 @@ import {
   GetCommentsV1Response,
 } from "@/src/features/public-api/server";
 import { defineTool } from "../../../core/define-tool";
-import { buildCommentObjectUrl } from "@langfuse/shared/src/server";
+import { buildCommentObjectUrl } from "@evalsight/shared/src/server";
 import { runMcpTool } from "../../../core/run-mcp-tool";
 
 const ListCommentsBaseSchema = z

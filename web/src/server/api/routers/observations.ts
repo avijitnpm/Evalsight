@@ -2,8 +2,8 @@ import {
   createTRPCRouter,
   protectedGetTraceProcedure,
 } from "@/src/server/api/trpc";
-import { LangfuseNotFoundError, parseIO } from "@langfuse/shared";
-import { getObservationById } from "@langfuse/shared/src/server";
+import { LangfuseNotFoundError, parseIO } from "@evalsight/shared";
+import { getObservationById } from "@evalsight/shared/src/server";
 import { z } from "zod";
 import { toDomainWithStringifiedMetadata } from "@/src/utils/clientSideDomainTypes";
 

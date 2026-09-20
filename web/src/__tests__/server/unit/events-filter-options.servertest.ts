@@ -22,7 +22,7 @@ import { describe, expect, it, vi } from "vitest";
 import { eventsRouter } from "@/src/features/events/server/eventsRouter";
 import { partitionEventFilterOptionsFilter } from "@/src/features/events/server/eventsService";
 import { createInnerTRPCContext } from "@/src/server/api/trpc";
-import type { FilterState } from "@langfuse/shared";
+import type { FilterState } from "@evalsight/shared";
 
 const projectId = "project-id";
 const session = {

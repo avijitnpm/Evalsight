@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { ForbiddenError } from "@langfuse/shared";
+import { ForbiddenError } from "@evalsight/shared";
 
 import { authorize } from "@/src/features/auth/policy/authorize";
 import {

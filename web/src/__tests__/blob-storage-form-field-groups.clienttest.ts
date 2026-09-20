@@ -12,7 +12,7 @@ import {
   BlobStorageIntegrationFileType,
   BlobStorageIntegrationType,
   EXPORT_FIELD_GROUP_OPTIONS,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 const VALID_BASE: BlobStorageIntegrationFormSchema = {
   type: BlobStorageIntegrationType.S3,

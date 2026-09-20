@@ -1,5 +1,5 @@
 import { describe, test, expect, beforeEach, afterAll } from "vitest";
-import { getQueuePrefix } from "@langfuse/shared/src/server";
+import { getQueuePrefix } from "@evalsight/shared/src/server";
 
 // Import env by resolving the actual filesystem path, bypassing the package
 // exports map. This ensures we get the same env object that redis.js uses
@@ -8,7 +8,7 @@ import { getQueuePrefix } from "@langfuse/shared/src/server";
 const path = require("path");
 const envPath = path.resolve(
   __dirname,
-  "../../node_modules/@langfuse/shared/dist/src/env.js",
+  "../../node_modules/@evalsight/shared/dist/src/env.js",
 );
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { env } = require(envPath);

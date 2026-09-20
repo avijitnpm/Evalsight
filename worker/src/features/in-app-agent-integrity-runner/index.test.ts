@@ -3,8 +3,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import {
   InAppAgentRunErrorCode,
   InAppAgentRunStatus,
-} from "@langfuse/shared/in-app-agent";
-import { IN_APP_AGENT_HEARTBEAT_STALE_MS } from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent";
+import { IN_APP_AGENT_HEARTBEAT_STALE_MS } from "@evalsight/shared/in-app-agent/server/tunables";
 
 const mocks = vi.hoisted(() => ({
   recordGauge: vi.fn(),
@@ -15,18 +15,18 @@ const mocks = vi.hoisted(() => ({
   cleanupTerminalRunMcpApiKeys: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/server", async (importOriginal) => ({
-  ...(await importOriginal<typeof import("@langfuse/shared/src/server")>()),
+vi.mock("@evalsight/shared/src/server", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@evalsight/shared/src/server")>()),
   logger: { debug: vi.fn(), error: vi.fn(), info: vi.fn(), warn: vi.fn() },
   recordGauge: mocks.recordGauge,
   redis: {},
 }));
 
-vi.mock("@langfuse/shared/src/server/auth/apiKeys", () => ({
+vi.mock("@evalsight/shared/src/server/auth/apiKeys", () => ({
   deleteInAppAgentMcpApiKeyFromDb: vi.fn(),
 }));
 
-vi.mock("@langfuse/shared/src/db", () => ({
+vi.mock("@evalsight/shared/src/db", () => ({
   prisma: {
     inAppAgentRun: {
       findMany: mocks.runFindMany,
@@ -37,10 +37,10 @@ vi.mock("@langfuse/shared/src/db", () => ({
 }));
 
 vi.mock(
-  "@langfuse/shared/in-app-agent/server/runLifecycle",
+  "@evalsight/shared/in-app-agent/server/runLifecycle",
   async (importOriginal) => ({
     ...(await importOriginal<
-      typeof import("@langfuse/shared/in-app-agent/server/runLifecycle")
+      typeof import("@evalsight/shared/in-app-agent/server/runLifecycle")
     >()),
     reconcileConversationRuns: mocks.reconcileConversationRuns,
     cleanupTerminalRunMcpApiKeys: mocks.cleanupTerminalRunMcpApiKeys,

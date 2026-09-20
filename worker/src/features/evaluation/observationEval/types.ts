@@ -6,13 +6,13 @@ import {
   EvalTemplateType,
   JobConfiguration,
   JobExecutionStatus,
-} from "@langfuse/shared/src/db";
-import { type EvalExecutionMode } from "@langfuse/shared";
+} from "@evalsight/shared/src/db";
+import { type EvalExecutionMode } from "@evalsight/shared";
 import type {
   EvalTargetObject,
   FilterState,
   ObservationVariableMapping,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 
 /**
  * Re-export ObservationForEval as the canonical observation type for eval operations.
@@ -20,7 +20,7 @@ import type {
  *
  * @see packages/shared/src/features/evals/observationForEval.ts for schema definition
  */
-export { type ObservationForEval } from "@langfuse/shared";
+export { type ObservationForEval } from "@evalsight/shared";
 
 /**
  * Observation eval job configuration.

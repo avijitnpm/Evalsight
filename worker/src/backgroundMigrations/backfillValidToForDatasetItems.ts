@@ -1,6 +1,6 @@
 import { IBackgroundMigration } from "./IBackgroundMigration";
-import { logger } from "@langfuse/shared/src/server";
-import { prisma, Prisma } from "@langfuse/shared/src/db";
+import { logger } from "@evalsight/shared/src/server";
+import { prisma, Prisma } from "@evalsight/shared/src/db";
 import { parseArgs } from "node:util";
 import { backfillValidToForDatasetItems } from "./utils/datasetItems";
 

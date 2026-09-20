@@ -9,7 +9,7 @@
  *
  */
 
-import { sendCloudSpendAlertEmail, logger } from "@langfuse/shared/src/server";
+import { sendCloudSpendAlertEmail, logger } from "@evalsight/shared/src/server";
 import { env } from "../env";
 
 const TEST_EMAILS: string[] = [

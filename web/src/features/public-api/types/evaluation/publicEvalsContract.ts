@@ -13,7 +13,7 @@ import {
   booleanObjectFilter,
   positionInTraceFilter,
   langfuseObjects,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { z } from "zod";
 
 const PUBLIC_EVALUATOR_TYPES = ["llm_as_judge", "code"] as const;

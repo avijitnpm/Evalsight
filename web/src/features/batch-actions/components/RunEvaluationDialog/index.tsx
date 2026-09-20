@@ -8,7 +8,7 @@ import {
   BatchEvalSourceTable as SourceTable,
   extractVariables,
   observationVariableMappingList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import { api, sendAsPostOption } from "@/src/utils/api";
 import {
   Dialog,

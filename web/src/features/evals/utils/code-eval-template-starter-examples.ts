@@ -1,4 +1,4 @@
-import type { ToolCallForEval } from "@langfuse/shared";
+import type { ToolCallForEval } from "@evalsight/shared";
 
 // Compact contract metadata drives editor completions and type-checks hover-doc
 // coverage. Keep the executable declarations below readable for users.

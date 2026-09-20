@@ -1,6 +1,6 @@
 import { Worker } from "worker_threads";
-import { Model } from "@langfuse/shared";
-import { logger, recordIncrement } from "@langfuse/shared/src/server";
+import { Model } from "@evalsight/shared";
+import { logger, recordIncrement } from "@evalsight/shared/src/server";
 import path from "path";
 import { env } from "../../env";
 

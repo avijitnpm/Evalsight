@@ -2,8 +2,8 @@ import { TRPCError } from "@trpc/server";
 
 import { env } from "@/src/env.mjs";
 import { type WebCalloutInvokeInput } from "@/src/features/web-callouts/types";
-import { LangfuseNotFoundError } from "@langfuse/shared";
-import { type PrismaClient } from "@langfuse/shared/src/db";
+import { LangfuseNotFoundError } from "@evalsight/shared";
+import { type PrismaClient } from "@evalsight/shared/src/db";
 import {
   getObservationById,
   getObservationByIdFromEventsTable,
@@ -12,7 +12,7 @@ import {
   getTracesIdentifierForSession,
   getTracesIdentifierForSessionFromEvents,
   logger,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 export const assertTargetBelongsToProject = async ({
   prisma,

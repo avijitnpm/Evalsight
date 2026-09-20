@@ -1,4 +1,4 @@
-import { ForbiddenError } from "@langfuse/shared";
+import { ForbiddenError } from "@evalsight/shared";
 import { describe, expect, it } from "vitest";
 
 import {

@@ -1,4 +1,4 @@
-import type { LLMAdapter, ModelConfig } from "@langfuse/shared";
+import type { LLMAdapter, ModelConfig } from "@evalsight/shared";
 
 import type { JudgeModel } from "@/src/features/evals/v2/judgeModel";
 

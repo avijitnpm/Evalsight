@@ -8,7 +8,7 @@ import {
   MonitorSeveritySchema,
   MonitorStatusSchema,
   MonitorThresholdOperatorSchema,
-} from "@langfuse/shared/monitors";
+} from "@evalsight/shared/monitors";
 
 import { __test } from "./MonitorForm";
 

@@ -6,8 +6,8 @@ import {
   InvalidRequestError,
   validateExportSource,
   type ExportSourceContext,
-} from "@langfuse/shared";
-import { type Prisma } from "@langfuse/shared/src/db";
+} from "@evalsight/shared";
+import { type Prisma } from "@evalsight/shared/src/db";
 
 import { env } from "@/src/env.mjs";
 import { assertExportSourceAllowed } from "@/src/features/analytics-integrations/server/assertExportSourceAllowed";

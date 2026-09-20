@@ -7,7 +7,7 @@ import {
   createTrace,
   createTracesCh,
   getGenerationsForAnalyticsIntegrations,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 
 // Regression for the legacy observations-based analytics export: generation
 // usage units must be sourced from usage_details (input/output/total), never

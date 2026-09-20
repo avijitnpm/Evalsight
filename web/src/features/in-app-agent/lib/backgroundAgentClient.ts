@@ -6,7 +6,7 @@ import {
   InAppAgentRunStatus,
   type AgUiContext,
   type AgUiMessage,
-} from "@langfuse/shared/in-app-agent";
+} from "@evalsight/shared/in-app-agent";
 import {
   InAppAgentWatchFrameSchema,
   type InAppAgentWatchFrame,

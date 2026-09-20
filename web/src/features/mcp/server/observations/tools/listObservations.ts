@@ -17,11 +17,11 @@ import {
   stringOptionsFilter,
   timeFilter,
   type ColumnDefinition,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   getObservationsV2FromEventsTableForPublicApi,
   buildObservationUrl,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { z } from "zod";
 import {
   EncodedObservationsCursorV2,

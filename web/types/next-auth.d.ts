@@ -4,9 +4,9 @@ import {
   type Project as PrismaProject,
   type Organization as PrismaOrganization,
   type Role,
-} from "@langfuse/shared/src/db";
+} from "@evalsight/shared/src/db";
 import { type Flags } from "@/src/features/feature-flags/types";
-import { type CloudConfigSchema, type Plan } from "@langfuse/shared";
+import { type CloudConfigSchema, type Plan } from "@evalsight/shared";
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`

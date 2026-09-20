@@ -1,10 +1,10 @@
-import { QueryBuilder, executeQuery } from "@langfuse/shared/query/server";
+import { QueryBuilder, executeQuery } from "@evalsight/shared/query/server";
 import {
   getValidAggregationsForMeasureType,
   metricAggregations,
   validateQuery,
   type QueryType,
-} from "@langfuse/shared/query";
+} from "@evalsight/shared/query";
 import { env } from "@/src/env.mjs";
 import {
   createTrace,
@@ -16,7 +16,7 @@ import {
   createEvent,
   createEventsCh,
   clickhouseClient,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { randomUUID } from "crypto";
 
 describe("queryBuilder", () => {

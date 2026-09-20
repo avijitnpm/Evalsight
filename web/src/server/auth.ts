@@ -6,8 +6,8 @@ import {
   type Session,
 } from "next-auth";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import { prisma } from "@langfuse/shared/src/db";
-import { isInAppAgentInstanceEnabled } from "@langfuse/shared/in-app-agent/server/modelProvider";
+import { prisma } from "@evalsight/shared/src/db";
+import { isInAppAgentInstanceEnabled } from "@evalsight/shared/in-app-agent/server/modelProvider";
 import {
   hashPassword,
   verifyPassword,
@@ -60,7 +60,7 @@ import {
   MULTI_TENANT_SSO_DOMAIN_MISMATCH_MESSAGE,
 } from "@/src/features/auth/constants";
 import { z } from "zod";
-import { CloudConfigSchema, projectRoleAccessRights } from "@langfuse/shared";
+import { CloudConfigSchema, projectRoleAccessRights } from "@evalsight/shared";
 import {
   CustomSSOProvider,
   GitHubEnterpriseProvider,
@@ -71,7 +71,7 @@ import {
   logger,
   resolveProjectRole,
   isLangfuseAITracingConfigured,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import {
   getOrganizationPlanServerSide,
   getSelfHostedInstancePlanServerSide,

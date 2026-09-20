@@ -4,7 +4,7 @@ vi.mock("@/src/features/natural-language-filters/server/utils", () => ({
   getLangfuseClient: vi.fn(),
 }));
 
-import { logger } from "@langfuse/shared/src/server";
+import { logger } from "@evalsight/shared/src/server";
 import { getLangfuseClient } from "@/src/features/natural-language-filters/server/utils";
 import {
   buildFieldCatalog,

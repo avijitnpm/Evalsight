@@ -1,7 +1,7 @@
 import {
   getCodeEvalVariableMapping,
   observationVariableMappingList,
-} from "@langfuse/shared";
+} from "@evalsight/shared";
 import {
   buildEvalExecutionData,
   compileLangfuseMediaMessages,
@@ -18,7 +18,7 @@ import {
   resolveConfiguredCodeEvalDispatcher,
   runCodeBasedEvaluationDispatch,
   type ExtractedVariable,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { getObservationForEvalById } from "@/src/features/evals/server/getObservationForEvalById";
 import type { NormalizedEvaluatorDefinition } from "./evaluatorTypes";
 import {

@@ -1,4 +1,4 @@
-import { commandClickhouse, logger } from "@langfuse/shared/src/server";
+import { commandClickhouse, logger } from "@evalsight/shared/src/server";
 import { env } from "../env";
 import {
   BaseChunkTodo,

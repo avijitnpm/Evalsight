@@ -12,7 +12,7 @@ import {
   getObservationsWithPromptName,
   getObservationsWithPromptNameFromEvents,
   toClickhouseDateTime,
-} from "@langfuse/shared/src/server";
+} from "@evalsight/shared/src/server";
 import { env } from "@/src/env.mjs";
 import { v4 } from "uuid";
 
