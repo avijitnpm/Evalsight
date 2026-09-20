@@ -2,38 +2,27 @@ import { type Flag } from "@/src/features/feature-flags/types";
 import { type ProjectScope } from "@langfuse/shared";
 import {
   BellRing,
-  Database,
   LayoutDashboard,
-  LifeBuoy,
   ListTree,
   type LucideIcon,
   Settings,
   UsersIcon,
-  TerminalIcon,
   Lightbulb,
   Grid2X2,
-  Sparkle,
   FileJson,
   Search,
   Home,
   SquarePercent,
-  ClipboardPen,
   Clock,
-  Beaker,
 } from "lucide-react";
 import { type ReactNode } from "react";
 import { type Entitlement } from "@/src/features/entitlements/constants/entitlements";
 import { type Session } from "next-auth";
 import { type OrganizationScope } from "@/src/features/rbac/constants/organizationAccessRights";
-import { SupportButton } from "@/src/components/nav/support-button";
-import { V4MigrationNavItem } from "@/src/features/v4-migration/V4MigrationNavItem";
-import { V4SidebarToggle } from "@/src/features/events/components/V4SidebarToggle";
-import { BookACallButton } from "@/src/components/nav/book-a-call-button";
 import { SidebarMenuButton } from "@/src/components/ui/sidebar";
 import { KeyboardShortcut } from "@/src/components/design-system/KeyboardShortcut/KeyboardShortcut";
 import { useCommandMenu } from "@/src/features/command-k-menu/CommandMenuProvider";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics/usePostHogClientCapture";
-import { CloudStatusMenu } from "@/src/features/cloud-status-notification/components/CloudStatusMenu";
 import { type ProductModule } from "@/src/ee/features/ui-customization/productModuleSchema";
 import { matchesPathname } from "@/src/components/layouts/app-layout/utils/pathClassification";
 
@@ -164,14 +153,6 @@ export const ROUTES: Route[] = [
     section: RouteSection.Main,
   },
   {
-    title: "Playground",
-    href: "/project/[projectId]/playground",
-    icon: TerminalIcon,
-    productModule: "playground",
-    group: RouteGroup.PromptManagement,
-    section: RouteSection.Main,
-  },
-  {
     title: "Scores",
     href: `/project/[projectId]/scores`,
     group: RouteGroup.Evaluation,
@@ -189,77 +170,6 @@ export const ROUTES: Route[] = [
     legacyPathname: `/project/[projectId]/evals/legacy`,
   },
   {
-    title: "Human Annotation",
-    href: `/project/[projectId]/annotation-queues`,
-    projectRbacScopes: ["annotationQueues:read"],
-    group: RouteGroup.Evaluation,
-    section: RouteSection.Main,
-    icon: ClipboardPen,
-  },
-  {
-    title: "Datasets",
-    href: `/project/[projectId]/datasets`,
-    icon: Database,
-    productModule: "datasets",
-    projectRbacScopes: ["datasets:read"],
-    group: RouteGroup.Evaluation,
-    section: RouteSection.Main,
-  },
-  {
-    title: "Experiments",
-    href: `/project/[projectId]/experiments`,
-    icon: Beaker,
-    featureFlag: "experimentsV4Enabled",
-    group: RouteGroup.Evaluation,
-    section: RouteSection.Main,
-  },
-  {
-    // Keep Action required first in the secondary nav so it is not sandwiched
-    // between regular items like Upgrade Plan and Settings.
-    title: "Update",
-    href: "",
-    section: RouteSection.Secondary,
-    show: ({ projectId, v4UpgradeUiAvailable }) =>
-      v4UpgradeUiAvailable && projectId !== undefined,
-    menuNode: <V4MigrationNavItem />,
-  },
-  {
-    title: "Cloud Status",
-    section: RouteSection.Secondary,
-    href: "",
-    show: ({ isLangfuseCloud, hasActiveCloudIncident }) =>
-      isLangfuseCloud && hasActiveCloudIncident,
-    menuNode: <CloudStatusMenu />,
-  },
-  {
-    title: "V4 Preview",
-    href: "",
-    section: RouteSection.Secondary,
-    featureFlag: "v4BetaToggleVisible",
-    // v4-upgrade users get this toggle inside the migration panel instead.
-    show: ({ canToggleV4, forceV3Experience, v4UpgradeUiAvailable }) =>
-      canToggleV4 && (!v4UpgradeUiAvailable || forceV3Experience),
-    menuNode: <V4SidebarToggle />,
-  },
-  {
-    title: "Upgrade Plan",
-    icon: Sparkle,
-    href: "/project/[projectId]/settings/billing",
-    section: RouteSection.Secondary,
-    entitlements: ["cloud-billing"],
-    organizationRbacScope: "langfuseCloudBilling:CRUD",
-    show: ({ organization }) => organization?.plan === "cloud:hobby",
-  },
-  {
-    title: "Upgrade Plan",
-    icon: Sparkle,
-    href: "/organization/[organizationId]/settings/billing",
-    section: RouteSection.Secondary,
-    entitlements: ["cloud-billing"],
-    organizationRbacScope: "langfuseCloudBilling:CRUD",
-    show: ({ organization }) => organization?.plan === "cloud:hobby",
-  },
-  {
     title: "Settings",
     href: "/project/[projectId]/settings",
     icon: Settings,
@@ -270,19 +180,6 @@ export const ROUTES: Route[] = [
     href: "/organization/[organizationId]/settings",
     icon: Settings,
     section: RouteSection.Secondary,
-  },
-  {
-    title: "Book a call",
-    section: RouteSection.Secondary,
-    href: "",
-    menuNode: <BookACallButton />,
-  },
-  {
-    title: "Support",
-    icon: LifeBuoy,
-    section: RouteSection.Secondary,
-    href: "", // Empty pathname since this is a dropdown
-    menuNode: <SupportButton />,
   },
 ];
 

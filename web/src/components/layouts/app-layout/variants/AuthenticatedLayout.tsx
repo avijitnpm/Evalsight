@@ -21,10 +21,6 @@ import { AppSidebar } from "@/src/components/nav/AppSidebar/AppSidebar";
 import { SidebarPresenceProvider } from "@/src/components/nav/sidebar-presence";
 import { Toaster } from "@/src/components/ui/sonner";
 import { Layer } from "@/src/components/design-system/Layer/Layer";
-import {
-  VersionUpdateBanner,
-  useVersionUpdatePrompt,
-} from "@/src/features/version-update";
 import { AppContentWithRightDrawer } from "../right-drawer/AppContentWithRightDrawer";
 import { ThemeToggle } from "@/src/features/theming/ThemeToggle";
 import {
@@ -52,10 +48,6 @@ import { usePostHogClientCapture } from "@/src/features/posthog-analytics/usePos
 import { useSession } from "next-auth/react";
 import { useQueryProjectOrOrganization } from "@/src/features/projects/hooks";
 import { useHasOrganizationAccess } from "@/src/features/rbac/utils/checkOrganizationAccess";
-import {
-  PaymentBannerView,
-  usePaymentBanner,
-} from "@/src/features/payment-banner";
 import { useTopBannerHeight } from "@/src/features/top-banner";
 
 const DISMISSED_SIDEBAR_NOTIFICATIONS_KEY = "dismissed-sidebar-notifications";
@@ -64,16 +56,6 @@ const CommandMenu = dynamic(
   () =>
     import("@/src/features/command-k-menu/CommandMenu").then((mod) => ({
       default: mod.CommandMenu,
-    })),
-  {
-    ssr: false,
-  },
-);
-
-const PreviewDeploymentBanner = dynamic(
-  () =>
-    import("@/src/features/preview-deployment-banner").then((mod) => ({
-      default: mod.PreviewDeploymentBanner,
     })),
   {
     ssr: false,
@@ -124,8 +106,6 @@ export function AuthenticatedLayout({
   const router = useRouter();
   useProjectCookie(router);
   const uiCustomization = useUiCustomization();
-  const versionUpdatePrompt = useVersionUpdatePrompt();
-  const paymentBanner = usePaymentBanner();
   const topBannerRef = useTopBannerHeight();
   // Account-level entry: use the raw flag (same as account settings tabs), not
   // project-scoped force-v3 suppression.
@@ -270,25 +250,7 @@ export function AuthenticatedLayout({
               ref={topBannerRef}
               className="fixed top-0 z-51 flex w-full flex-col"
             >
-              {paymentBanner && (
-                <PaymentBannerView
-                  organizationName={paymentBanner.organizationName}
-                  billingSettingsHref={paymentBanner.billingSettingsHref}
-                  severity={paymentBanner.severity}
-                />
-              )}
-              {env.NEXT_PUBLIC_PREVIEW_PR_URL && (
-                <PreviewDeploymentBanner
-                  prUrl={env.NEXT_PUBLIC_PREVIEW_PR_URL}
-                />
-              )}
             </div>
-            {versionUpdatePrompt.isVisible && (
-              <VersionUpdateBanner
-                onReload={versionUpdatePrompt.reload}
-                onDismiss={versionUpdatePrompt.dismiss}
-              />
-            )}
             <div className="pt-banner-offset flex min-h-0 flex-1">
               <ConnectedAppSidebar
                 navItems={navigation.mainNavigation}
