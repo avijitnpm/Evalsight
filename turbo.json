@@ -70,17 +70,17 @@
       "cache": false,
       "dependsOn": ["^db:generate"]
     },
-    "@langfuse/shared#db:generate": {
+    "@evalsight/shared#db:generate": {
       "inputs": ["packages/shared/prisma/schema.prisma"],
       "cache": false,
       "dependsOn": ["^db:generate"],
       "outputLogs": "errors-only"
     },
-    "@langfuse/shared#db:seed": {
+    "@evalsight/shared#db:seed": {
       "cache": false,
       "outputLogs": "errors-only"
     },
-    "@langfuse/shared#db:seed:examples": {
+    "@evalsight/shared#db:seed:examples": {
       "cache": false,
       "outputLogs": "errors-only"
     },
@@ -130,12 +130,12 @@
     },
     // Worker tests load the compiled addon, which no install step produces.
     "worker#test": {
-      "dependsOn": ["^test", "db:generate", "@langfuse/native#build"]
+      "dependsOn": ["^test", "db:generate", "@evalsight/native#build"]
     },
     // ESLint does not load the native addon, so avoid compiling it during lint.
     "worker#lint": {
       "dependsOn": [
-        "@langfuse/shared#build",
+        "@evalsight/shared#build",
         "@repo/eslint-config#build",
         "@repo/eslint-plugin#build",
         "@repo/langfuse-skills#build",
@@ -147,11 +147,11 @@
       "persistent": true,
       // The worker loads the Rust addon at startup, so it must be compiled
       // before tsx starts the process.
-      "dependsOn": ["db:generate", "@langfuse/native#build"]
+      "dependsOn": ["db:generate", "@evalsight/native#build"]
     },
     // `napi build` compiles a host-specific binary and Cargo already caches
     // incrementally in target/, so never replay this task from the turbo cache.
-    "@langfuse/native#build": {
+    "@evalsight/native#build": {
       "dependsOn": [],
       "cache": false,
       "outputs": []

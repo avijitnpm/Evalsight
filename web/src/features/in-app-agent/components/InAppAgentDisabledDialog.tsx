@@ -31,7 +31,7 @@ export function InAppAgentDisabledDialog({
               onOpenChange(false);
             }}
           >
-            The Langfuse Assistant requires AI features to be enabled for this
+            The EvalSight Assistant requires AI features to be enabled for this
             organization.
           </AIFeaturesDisabledNotice>
         </DialogBody>

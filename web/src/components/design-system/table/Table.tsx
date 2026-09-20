@@ -1,5 +1,5 @@
 /* eslint-disable boundaries/dependencies */
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 import {
   type ColumnDef,
   flexRender,

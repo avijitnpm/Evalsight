@@ -6,9 +6,9 @@ type LangfuseIconProps = {
   alt?: string;
 };
 
-export const LangfuseIcon = ({
+export const BrandIcon = ({
   size = 32,
-  alt = "Langfuse",
+  alt = "EvalSight",
 }: LangfuseIconProps) => (
   // eslint-disable-next-line @next/next/no-img-element
   <img
@@ -18,3 +18,5 @@ export const LangfuseIcon = ({
     alt={alt}
   />
 );
+
+export const LangfuseIcon = BrandIcon;

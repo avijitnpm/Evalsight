@@ -1,9 +1,9 @@
-import { LangfuseIcon } from "@/src/components/design-system/LangfuseIcon/LangfuseIcon";
+import { BrandIcon } from "@/src/components/design-system/LangfuseIcon/LangfuseIcon";
 import { env } from "@/src/env.mjs";
 import { cn } from "@/src/utils/tailwind";
 import { PlusIcon } from "lucide-react";
 
-export const LangfuseLogo = ({
+export const BrandLogo = ({
   logoLightModeHref,
   logoDarkModeHref,
 }: {
@@ -17,7 +17,7 @@ export const LangfuseLogo = ({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={logoLightModeHref}
-          alt="Langfuse Logo"
+          alt="EvalSight Logo"
           className={cn(
             "group-data-[collapsible=icon]:hidden dark:hidden",
             "max-h-4 max-w-14",
@@ -26,14 +26,14 @@ export const LangfuseLogo = ({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={logoDarkModeHref}
-          alt="Langfuse Logo"
+          alt="EvalSight Logo"
           className={cn(
             "hidden group-data-[collapsible=icon]:hidden dark:block",
             "max-h-4 max-w-14",
           )}
         />
         <PlusIcon size={8} className="group-data-[collapsible=icon]:hidden" />
-        <LangfuseIcon size={16} />
+        <BrandIcon size={16} />
       </div>
     );
   }
@@ -44,17 +44,19 @@ export const LangfuseLogo = ({
       <img
         className="-ml-1.5 h-5 max-w-22 translate-y-px group-data-[collapsible=icon]:hidden dark:hidden"
         src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-black.svg`}
-        alt="Langfuse Logo"
+        alt="EvalSight Logo"
       />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="-ml-1.5 hidden h-5 max-w-22 translate-y-px group-data-[collapsible=icon]:hidden dark:block"
         src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-white.svg`}
-        alt="Langfuse Logo"
+        alt="EvalSight Logo"
       />
       <div className="hidden scale-120 group-data-[collapsible=icon]:block">
-        <LangfuseIcon size={28} />
+        <BrandIcon size={28} />
       </div>
     </div>
   );
 };
+
+export const LangfuseLogo = BrandLogo;

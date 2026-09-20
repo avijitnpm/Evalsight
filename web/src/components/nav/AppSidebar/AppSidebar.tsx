@@ -50,7 +50,7 @@ import {
 } from "@/src/components/ui/dropdown-menu";
 import { Button } from "@/src/components/ui/button";
 import { StatusBadge } from "@/src/components/ui/StatusBadge/StatusBadge";
-import { planLabels, type Plan } from "@langfuse/shared";
+import { planLabels, type Plan } from "@evalsight/shared";
 import { Avatar } from "@/src/components/design-system/Avatar/Avatar";
 import {
   Card,
@@ -550,10 +550,10 @@ const DemoBadge = () => {
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="Your Langfuse Organizations">
+            <SidebarMenuButton asChild tooltip="Your EvalSight Organizations">
               <Link href="/">
                 <Grid2X2 className="h-4 w-4" />
-                <span>Your Langfuse Orgs</span>
+                <span>Your EvalSight Orgs</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

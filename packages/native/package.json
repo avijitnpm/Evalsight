@@ -1,7 +1,7 @@
 {
-  "name": "@langfuse/native",
+  "name": "@evalsight/native",
   "version": "0.0.0",
-  "description": "Rust native addon (napi-rs) loaded by the Langfuse worker",
+  "description": "Rust native addon (napi-rs) loaded by the EvalSight worker",
   "license": "MIT",
   "private": true,
   "main": "index.js",
@@ -21,7 +21,7 @@
     "lint:fix": "cargo fmt && cargo clippy --all-targets --fix --allow-dirty -- -D warnings"
   },
   "napi": {
-    "binaryName": "langfuse-native",
+    "binaryName": "evalsight-native",
     "targets": [
       "x86_64-unknown-linux-musl",
       "aarch64-unknown-linux-musl",

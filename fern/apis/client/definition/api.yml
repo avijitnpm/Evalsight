@@ -1,4 +1,4 @@
-name: langfuse
+name: evalsight
 error-discrimination:
   strategy: status-code
 auth: bearer

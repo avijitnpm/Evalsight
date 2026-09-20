@@ -1,7 +1,7 @@
 /* eslint-disable @repo/no-exotic-operators */
 import { EventType } from "@ag-ui/core";
 import { MastraAgent } from "@ag-ui/mastra";
-import { IN_APP_AGENT_SYSTEM_PROMPT_TEMPLATE } from "@langfuse/shared/in-app-agent/server/systemPrompt";
+import { IN_APP_AGENT_SYSTEM_PROMPT_TEMPLATE } from "@evalsight/shared/in-app-agent/server/systemPrompt";
 import { Agent } from "@mastra/core/agent";
 import type {
   ProcessInputStepArgs,
@@ -14,9 +14,9 @@ import type { Langfuse } from "langfuse";
 import {
   type AgUiEvent,
   type InAppAgentToolApprovalRequest,
-} from "@langfuse/shared/in-app-agent";
-import { getToolFailureMessage } from "@langfuse/shared/in-app-agent/server/toolErrors";
-import { IN_APP_AGENT_MAX_STEPS } from "@langfuse/shared/in-app-agent/server/tunables";
+} from "@evalsight/shared/in-app-agent";
+import { getToolFailureMessage } from "@evalsight/shared/in-app-agent/server/toolErrors";
+import { IN_APP_AGENT_MAX_STEPS } from "@evalsight/shared/in-app-agent/server/tunables";
 import type { AgUiRunAgentInput, ResumeForwardedProps } from "./types";
 import { createManualToolApprovalRunInput } from "./human-in-the-loop";
 import type {
@@ -38,7 +38,7 @@ import {
 import {
   toPublicInAppAgentEvent,
   type CompletedInAppAgentMcpToolCall,
-} from "@langfuse/shared/in-app-agent/server/toolResults";
+} from "@evalsight/shared/in-app-agent/server/toolResults";
 import {
   createInAppAgentMcpRunOverride,
   filterInAppAgentAvailableLangfuseMcpTools,
@@ -47,16 +47,16 @@ import {
   type InAppAgentToolPolicy,
   withInAppAgentToolApproval,
   withInAppAgentToolApprovalSidecars,
-} from "@langfuse/shared/in-app-agent/server/mcpPolicy";
+} from "@evalsight/shared/in-app-agent/server/mcpPolicy";
 import { LANGFUSE_IN_APP_AGENT_SKILLS } from "./skills";
 import type { InAppAgentSandbox } from "./sandbox";
-import { DEFAULT_SIDEBAR_HIDDEN_ENVIRONMENTS } from "@langfuse/shared";
-import { logger } from "@langfuse/shared/src/server";
+import { DEFAULT_SIDEBAR_HIDDEN_ENVIRONMENTS } from "@evalsight/shared";
+import { logger } from "@evalsight/shared/src/server";
 import {
   IN_APP_AGENT_MCP_TOOL_OVERRIDE_HEADER,
   IN_APP_AGENT_REDIRECT_TOOL_NAME,
-} from "@langfuse/shared/in-app-agent";
-import type { InAppAgentModelConfig } from "@langfuse/shared/in-app-agent/server/modelProvider";
+} from "@evalsight/shared/in-app-agent";
+import type { InAppAgentModelConfig } from "@evalsight/shared/in-app-agent/server/modelProvider";
 import { applyPromptCacheToCall } from "./promptCache";
 import {
   createInAppAgentLanguageModel,
@@ -64,7 +64,7 @@ import {
   type InAppAgentLanguageModel,
 } from "./model";
 
-const ASSISTANT_TITLE = "Langfuse Assistant";
+const ASSISTANT_TITLE = "EvalSight Assistant";
 const IN_APP_AGENT_SYSTEM_PROMPT_NAME = "in-app-agent-system-prompt";
 const LANGFUSE_DOCS_MCP_URL = "https://langfuse.com/api/mcp";
 const IN_APP_AGENT_MCP_USER_AGENT = "langfuse-in-app-agent";

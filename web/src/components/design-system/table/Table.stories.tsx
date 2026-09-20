@@ -1,4 +1,4 @@
-import { type OrderByState } from "@langfuse/shared";
+import { type OrderByState } from "@evalsight/shared";
 import { useState } from "react";
 import preview from "../../../../.storybook/preview";
 import { expect, fn, userEvent, within } from "storybook/test";

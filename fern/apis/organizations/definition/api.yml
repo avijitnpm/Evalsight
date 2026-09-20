@@ -1,8 +1,8 @@
-name: langfuse-organizations
+name: evalsight-organizations
 docs: |
   ## General Notes
 
-  This admin API is only available on self-hosted instances, not on Langfuse Cloud.
+  This admin API is only available on self-hosted instances, not on EvalSight Cloud.
   An administrator must set the `ADMIN_API_KEY` environment variable to use this API.
 
   ## Authentication
