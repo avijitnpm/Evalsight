@@ -35,12 +35,12 @@ export const TopbarBrand = ({
   return (
     <Link
       href="/"
-      aria-label="Langfuse home"
+      aria-label="EvalSight home"
       className={cn("flex shrink-0 items-center gap-1", className)}
     >
       {logoLight && logoDark ? (
-        // Custom logo (max aspect ratio 1:3 per docs) + the Langfuse mark,
-        // matching LangfuseLogo's customized layout.
+        // Custom logo (max aspect ratio 1:3 per docs) + the EvalSight mark,
+        // matching BrandLogo's customized layout.
         <>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -63,13 +63,13 @@ export const TopbarBrand = ({
           <img
             className="max-h-5 max-w-24 dark:hidden"
             src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-black.svg`}
-            alt="Langfuse Logo"
+            alt="EvalSight Logo"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="hidden max-h-5 max-w-24 dark:block"
             src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-white.svg`}
-            alt="Langfuse Logo"
+            alt="EvalSight Logo"
           />
         </>
       ) : (

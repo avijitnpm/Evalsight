@@ -269,11 +269,11 @@ jobs:
           cp .env.dev.example .env
       - name: lint web
         # Three packages with four ESLint workers leave headroom on 16 vCPUs.
-        run: pnpm turbo run lint --filter=!ai-gateway --filter=!@langfuse/native --concurrency=3 -- --concurrency=4
+        run: pnpm turbo run lint --filter=!ai-gateway --filter=!@evalsight/native --concurrency=3 -- --concurrency=4
       # Rust packages lint with cargo, which rejects the trailing ESLint flag
       # above, so they run outside that invocation (ai-gateway in its own job).
       - name: lint native addon (rustfmt, clippy)
-        run: pnpm --filter @langfuse/native run lint
+        run: pnpm --filter @evalsight/native run lint
       - name: typecheck
         run: pnpm run typecheck --filter=!ai-gateway
 
@@ -560,7 +560,7 @@ jobs:
         # The clickhouse binary isn't installed yet, so the SQL-equivalence
         # tests skip here (they run for real in the dedicated step below); every
         # other shared test hard-fails as usual.
-        run: pnpm --filter @langfuse/shared run test
+        run: pnpm --filter @evalsight/shared run test
       - name: Install ClickHouse binary for SQL-equivalence tests
         # `clickhouse format` (from clickhouse-common-static) normalizes SQL for
         # the equivalence snapshots. Its output is version-specific, so pin the
@@ -590,8 +590,8 @@ jobs:
         # warning but must not fail the job (`|| echo` swallows the exit code).
         # Make it a required check once the suite has proven stable.
         run: |
-          pnpm --filter @langfuse/shared run test .golden.test \
-            || echo "::warning title=SQL-equivalence tests failed::Query-AST SQL-equivalence snapshots drifted or the tests failed (non-blocking). Regenerate with: pnpm --filter @langfuse/shared run test .golden.test -u"
+          pnpm --filter @evalsight/shared run test .golden.test \
+            || echo "::warning title=SQL-equivalence tests failed::Query-AST SQL-equivalence snapshots drifted or the tests failed (non-blocking). Regenerate with: pnpm --filter @evalsight/shared run test .golden.test -u"
 
   test-docker-build:
     name: test-docker-build (${{ matrix.component }})
