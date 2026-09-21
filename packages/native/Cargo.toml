@@ -1,5 +1,5 @@
 [package]
-name = "langfuse-native"
+name = "evalsight-native"
 version = "0.0.0"
 edition = "2021"
 # napi-rs 3 needs at least Rust 1.88.

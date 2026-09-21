@@ -19,7 +19,7 @@ const sharedExclude = [
   "**/dist/**",
 ];
 
-// The server suite spends more time importing the heavy @langfuse/shared
+// The server suite spends more time importing the heavy @evalsight/shared
 // module graph per test file than running tests (measured in CI: 371s
 // cumulative import vs 264s tests). Files that do not touch process-global
 // state therefore run with `isolate: false` (project "server") so each
@@ -37,7 +37,7 @@ const allServerTestFiles = globSync("src/**/server/**/*.servertest.{ts,tsx}", {
   exclude: ["**/node_modules/**", "src/__e2e__/**"],
 });
 const SHARED_SOURCE_IDENTITY_PATTERN =
-  /@langfuse\/shared\/(?:in-app-agent|src\/env)/;
+  /@evalsight\/shared\/(?:in-app-agent|src\/env)/;
 // Derive membership from imports so new tests cannot silently miss aliases.
 const sharedSourceTestFiles = allServerTestFiles.filter((file) =>
   SHARED_SOURCE_IDENTITY_PATTERN.test(
@@ -87,44 +87,44 @@ const sharedSourcePath = (path: string) =>
 const sharedSourceResolve = {
   alias: [
     {
-      find: /^@langfuse\/shared\/in-app-agent\/server\/(.+)$/,
+      find: /^@evalsight\/shared\/in-app-agent\/server\/(.+)$/,
       replacement: sharedSourcePath("in-app-agent/server/$1"),
     },
     {
-      find: /^@langfuse\/shared\/in-app-agent$/,
+      find: /^@evalsight\/shared\/in-app-agent$/,
       replacement: sharedSourcePath("in-app-agent/index.ts"),
     },
     // The runtime source reaches the rest of shared via relative imports
     // (../../../server etc.), so shared's other entry points must resolve
     // to the same source files — otherwise tests would load a second dist
-    // copy of shared (split singletons, vi.mock("@langfuse/shared/src/
+    // copy of shared (split singletons, vi.mock("@evalsight/shared/src/
     // server") missing the runtime's imports).
     {
-      find: /^@langfuse\/shared\/src\/(.+)$/,
+      find: /^@evalsight\/shared\/src\/(.+)$/,
       replacement: sharedSourcePath("$1"),
     },
     {
-      find: /^@langfuse\/shared\/encryption$/,
+      find: /^@evalsight\/shared\/encryption$/,
       replacement: sharedSourcePath("encryption/index.ts"),
     },
     {
-      find: /^@langfuse\/shared\/query$/,
+      find: /^@evalsight\/shared\/query$/,
       replacement: sharedSourcePath("features/query/index.ts"),
     },
     {
-      find: /^@langfuse\/shared\/query\/server$/,
+      find: /^@evalsight\/shared\/query\/server$/,
       replacement: sharedSourcePath("features/query/server/index.ts"),
     },
     {
-      find: /^@langfuse\/shared\/monitors$/,
+      find: /^@evalsight\/shared\/monitors$/,
       replacement: sharedSourcePath("features/monitors/index.ts"),
     },
     {
-      find: /^@langfuse\/shared\/monitors\/server$/,
+      find: /^@evalsight\/shared\/monitors\/server$/,
       replacement: sharedSourcePath("features/monitors/server.ts"),
     },
     {
-      find: /^@langfuse\/shared$/,
+      find: /^@evalsight\/shared$/,
       replacement: sharedSourcePath("index.ts"),
     },
   ],
@@ -202,7 +202,7 @@ export default defineConfig({
       deps: {
         // next-query-params is inlined so vi.mock("next/router") also
         // intercepts the adapter's own router import in clienttests.
-        inline: [/@langfuse\//, "next-query-params"],
+        inline: [/@evalsight\//, "next-query-params"],
       },
     },
     projects: [

@@ -500,14 +500,14 @@ jobs:
           cp .env.dev.example .env
       - name: generate prisma client
         # The Storybook Vitest browser project imports the real production cell
-        # components, which transitively pull in `@langfuse/shared` modules that
+        # components, which transitively pull in `@evalsight/shared` modules that
         # build Zod schemas from Prisma enums at import time (e.g.
         # packages/shared/src/features/monitors/types.ts: `z.enum(MonitorSeverity)`).
         # Without a generated `@prisma/client`, those enums are `undefined` and
         # the story file fails to import ("Cannot convert undefined or null to
         # object"). Mirror `tests-shared`, which generates the client for the
         # same reason. `prisma generate` only reads the schema; it needs no DB.
-        run: pnpm --filter=shared run db:generate
+        run: pnpm --filter @evalsight/shared run db:generate
       - name: Install playwright
         run: bash scripts/ci/install-playwright.sh
       - name: run Storybook tests
@@ -555,7 +555,7 @@ jobs:
         run: |
           cp .env.dev.example .env
       - name: generate prisma client
-        run: pnpm --filter=shared run db:generate
+        run: pnpm --filter @evalsight/shared run db:generate
       - name: run shared tests
         # The clickhouse binary isn't installed yet, so the SQL-equivalence
         # tests skip here (they run for real in the dedicated step below); every
@@ -610,11 +610,11 @@ jobs:
       matrix:
         include:
           - component: web
-            service: langfuse-web
+            service: evalsight-web
             runner: blacksmith-8vcpu-ubuntu-2404
             health_url: http://localhost:3000/api/public/health
           - component: worker
-            service: langfuse-worker
+            service: evalsight-worker
             runner: blacksmith-4vcpu-ubuntu-2404
             health_url: http://localhost:3030/api/health
     steps:
@@ -645,10 +645,10 @@ jobs:
           docker compose -f "$DOCKER_COMPOSE_FILE" build --print > /tmp/bake.json
           if [ "${{ matrix.component }}" = "web" ]; then
             docker buildx bake -f /tmp/bake.json \
-              --set "langfuse-web.args.NEXT_IGNORE_BUILD_ERRORS=true" \
-              langfuse-web
+              --set "evalsight-web.args.NEXT_IGNORE_BUILD_ERRORS=true" \
+              evalsight-web
           else
-            docker buildx bake -f /tmp/bake.json langfuse-worker
+            docker buildx bake -f /tmp/bake.json evalsight-worker
           fi
       - name: Start compose services and wait for healthchecks
         run: |
@@ -672,7 +672,7 @@ jobs:
 
           ss -ltnp | tee /tmp/docker-diagnostics/host-listeners.txt || true
 
-          for service in langfuse-web langfuse-worker postgres redis minio clickhouse; do
+          for service in evalsight-web evalsight-worker postgres redis minio clickhouse; do
             container_id="$(docker compose -f "$DOCKER_COMPOSE_FILE" ps -q "$service" || true)"
             if [ -z "$container_id" ]; then
               echo "No container found for ${service}" | tee -a /tmp/docker-diagnostics/missing-containers.txt
@@ -821,7 +821,7 @@ jobs:
           timeout 120 bash -c 'until [ -f /tmp/migrate-installed ]; do sleep 1; done' \
             || { cat /tmp/migrate-install.log; exit 1; }
           pnpm run db:migrate
-          pnpm --filter=shared ch:up
+          pnpm --filter @evalsight/shared ch:up
       - name: Provide ClickHouse client via dev container for dev-tables setup
         if: matrix.deploy-mode == ''
         # The clickhouse-server container already ships the client binary;
@@ -829,13 +829,13 @@ jobs:
         run: |
           sudo tee /usr/local/bin/clickhouse > /dev/null <<'EOF'
           #!/bin/bash
-          exec docker exec -i langfuse-clickhouse clickhouse "$@"
+          exec docker exec -i ${CLICKHOUSE_CONTAINER_NAME:-evalsight-clickhouse} clickhouse "$@"
           EOF
           sudo chmod +x /usr/local/bin/clickhouse
       - name: Setup Dev Tables
         if: matrix.deploy-mode == ''
         run: |
-          pnpm --filter=shared ch:dev-tables
+          pnpm --filter @evalsight/shared ch:dev-tables
       - name: Start Langfuse
         run: (pnpm run start&)
         env:
@@ -982,8 +982,8 @@ jobs:
       - name: Seed DB
         run: |
           pnpm run db:migrate
-          pnpm --filter=shared run db:seed
-          pnpm run --filter=shared ch:up
+          pnpm --filter @evalsight/shared run db:seed
+          pnpm --filter @evalsight/shared ch:up
       - name: Provide ClickHouse client via dev container for dev-tables setup
         if: matrix.deploy-mode == ''
         # The clickhouse-server container already ships the client binary;
@@ -991,13 +991,13 @@ jobs:
         run: |
           sudo tee /usr/local/bin/clickhouse > /dev/null <<'EOF'
           #!/bin/bash
-          exec docker exec -i langfuse-clickhouse clickhouse "$@"
+          exec docker exec -i ${CLICKHOUSE_CONTAINER_NAME:-evalsight-clickhouse} clickhouse "$@"
           EOF
           sudo chmod +x /usr/local/bin/clickhouse
       - name: Setup Dev Tables
         if: matrix.deploy-mode == ''
         run: |
-          pnpm --filter=shared ch:dev-tables
+          pnpm --filter @evalsight/shared ch:dev-tables
       - name: Build
         run: pnpm --filter=worker... run build
       - name: run tests
@@ -1068,8 +1068,8 @@ jobs:
       - name: Seed DB
         run: |
           pnpm run db:migrate
-          pnpm --filter=shared run db:seed
-          pnpm run --filter=shared ch:up
+          pnpm --filter @evalsight/shared run db:seed
+          pnpm --filter @evalsight/shared ch:up
       - name: Build
         run: pnpm --filter=worker... run build
       - name: run llm connection tests
@@ -1200,8 +1200,8 @@ jobs:
           timeout 120 bash -c 'until [ -f /tmp/migrate-installed ]; do sleep 1; done' \
             || { cat /tmp/migrate-install.log; exit 1; }
           pnpm run db:migrate
-          pnpm --filter=shared run ch:up
-          pnpm --filter=shared run db:seed
+          pnpm --filter @evalsight/shared run ch:up
+          pnpm --filter @evalsight/shared run db:seed
       - name: Wait for playwright install
         run: |
           timeout 600 bash -c 'until [ -f /tmp/playwright-install.exit ]; do sleep 1; done' \
@@ -1300,8 +1300,8 @@ jobs:
           timeout 120 bash -c 'until [ -f /tmp/migrate-installed ]; do sleep 1; done' \
             || { cat /tmp/migrate-install.log; exit 1; }
           pnpm run db:migrate
-          pnpm --filter=shared run ch:up
-          pnpm --filter=shared run db:seed:examples
+          pnpm --filter @evalsight/shared run ch:up
+          pnpm --filter @evalsight/shared run db:seed:examples
       - name: Run server
         run: (pnpm run start&)
       - name: Check worker health
@@ -1382,8 +1382,8 @@ jobs:
       - name: Migrate and seed
         run: |
           pnpm run db:migrate
-          pnpm --filter=shared run ch:up
-          pnpm --filter=shared run db:seed
+          pnpm --filter @evalsight/shared run ch:up
+          pnpm --filter @evalsight/shared run db:seed
       # Turbo starts the native addon and AI Gateway builds in parallel. They
       # may use different workspace-pinned Rust toolchains, so install both
       # serially before either build can trigger rustup.
