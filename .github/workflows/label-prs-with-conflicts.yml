@@ -23,7 +23,7 @@ jobs:
           # The token should only have the following permissions:
           # - Issues: read/write
           # - Pull requests: read-only.
-          GH_TOKEN: ${{ secrets.PR_LABELER_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           EVENT_NAME: ${{ github.event_name }}
           LABEL_NAME: has-conflicts

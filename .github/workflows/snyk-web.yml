@@ -33,7 +33,7 @@ jobs:
             --file=web/Dockerfile \
             --sarif-file-output=snyk.sarif
       - name: Normalize SARIF file
-        if: always()
+      if: always() && hashFiles('snyk.sarif') != ''
         run: |
           if [ -f snyk.sarif ]; then
             # Snyk emits invalid security-severity values. upload-sarif requires a numeric string.
