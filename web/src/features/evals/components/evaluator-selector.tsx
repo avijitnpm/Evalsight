@@ -232,7 +232,7 @@ export function EvaluatorSelector({
 
         {filteredTemplates.langfuse.length > 0 && (
           <>
-            <InputCommandGroup heading="Langfuse managed evaluators">
+            <InputCommandGroup heading="EvalSight managed evaluators">
               {filteredTemplates.langfuse.map((template) => {
                 const isInvalid = isTemplateInvalid(template);
 

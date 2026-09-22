@@ -13,9 +13,9 @@ const message = (
     <Bot className="mt-0.5 h-4 w-4 shrink-0 sm:mt-0" />
     <span>
       <span className="font-bold">
-        Langfuse works great with your AI agents.
+        EvalSight works great with your AI agents.
       </span>{" "}
-      Connect your tools to your Langfuse data.
+      Connect your tools to your EvalSight data.
     </span>
   </div>
 );

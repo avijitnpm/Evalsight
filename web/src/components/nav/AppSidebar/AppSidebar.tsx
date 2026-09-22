@@ -21,20 +21,12 @@ import Link from "next/link";
 import { LangfuseLogo } from "@/src/components/design-system/LangfuseLogo/LangfuseLogo";
 import { type RouteGroup } from "@/src/components/layouts/routes";
 import {
-  ArrowUp,
-  ArrowUp10,
-  BadgeCheck,
   ChevronsUpDown,
   ChevronDownIcon,
   ExternalLink,
   Grid2X2,
-  HardDriveDownload,
-  Info,
-  Map,
-  Newspaper,
   X,
 } from "lucide-react";
-import { SiGithub } from "react-icons/si";
 import { VERSION } from "@/src/constants";
 import {
   DropdownMenu,
@@ -49,7 +41,6 @@ import {
   DropdownMenuTrigger,
 } from "@/src/components/ui/dropdown-menu";
 import { Button } from "@/src/components/ui/button";
-import { StatusBadge } from "@/src/components/ui/StatusBadge/StatusBadge";
 import { planLabels, type Plan } from "@evalsight/shared";
 import { Avatar } from "@/src/components/design-system/Avatar/Avatar";
 import {
@@ -568,132 +559,16 @@ const VersionLabel = ({ state }: { state: SidebarVersionState }) => {
     state.deployment === "self-hosted"
       ? selfHostedPlanLabels[state.plan]
       : null;
-  const backgroundMigrationStatus =
-    state.deployment === "self-hosted" &&
-    state.migration.status === "in-progress"
-      ? state.migration.phase
-      : null;
-  const update =
-    state.deployment === "self-hosted" &&
-    state.release.status === "update-available"
-      ? state.release
-      : null;
   const versionText = `${VERSION}${
     selfHostedPlanLabel ? ` ${selfHostedPlanLabel.short}` : ""
   }`;
-  const color = React.useMemo(() => {
-    if (!update) return undefined;
-    if (update.updateType === "major") return "text-dark-red";
-    if (update.updateType === "minor") return "text-dark-yellow";
-    if (update.updateType === "patch") return undefined;
-    return assertUnreachable(update.updateType);
-  }, [update]);
 
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          variant="ghost"
-          size="xs"
-          className="h-5 max-w-full min-w-0 translate-y-0.5 py-0 text-[0.625rem] leading-none"
-        >
-          <span className="truncate" title={versionText}>
-            {versionText}
-          </span>
-          {backgroundMigrationStatus && (
-            <StatusBadge
-              type={backgroundMigrationStatus}
-              showText={false}
-              variant="transparent"
-            />
-          )}
-          {update && !backgroundMigrationStatus && (
-            <ArrowUp className={`h-3 w-3 ${color}`} />
-          )}
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent onClick={(e) => e.stopPropagation()}>
-        {update ? (
-          <>
-            <DropdownMenuLabel>
-              New {update.updateType} version: {update.latestRelease}
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-          </>
-        ) : state.deployment === "self-hosted" ? (
-          <>
-            <DropdownMenuLabel>This is the latest release</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-          </>
-        ) : null}
-        {selfHostedPlanLabel && (
-          <>
-            <DropdownMenuLabel className="flex items-center font-normal">
-              <BadgeCheck size={16} className="mr-2" />
-              {selfHostedPlanLabel.long}
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-          </>
-        )}
-        <DropdownMenuItem asChild>
-          <Link
-            href="https://github.com/langfuse/langfuse/releases"
-            target="_blank"
-          >
-            <SiGithub size={16} className="mr-2" />
-            Releases
-          </Link>
-        </DropdownMenuItem>
-        {state.deployment === "self-hosted" && (
-          <DropdownMenuItem asChild>
-            <Link href="/background-migrations">
-              <ArrowUp10 size={16} className="mr-2" />
-              Background Migrations
-              {backgroundMigrationStatus && (
-                <StatusBadge
-                  type={backgroundMigrationStatus}
-                  showText={false}
-                  variant="transparent"
-                />
-              )}
-            </Link>
-          </DropdownMenuItem>
-        )}
-        <DropdownMenuItem asChild>
-          <Link href="https://langfuse.com/changelog" target="_blank">
-            <Newspaper size={16} className="mr-2" />
-            Changelog
-          </Link>
-        </DropdownMenuItem>
-        <DropdownMenuItem asChild>
-          <Link href="https://langfuse.com/roadmap" target="_blank">
-            <Map size={16} className="mr-2" />
-            Roadmap
-          </Link>
-        </DropdownMenuItem>
-        {state.deployment === "self-hosted" && (
-          <DropdownMenuItem asChild>
-            <Link href="https://langfuse.com/pricing-self-host" target="_blank">
-              <Info size={16} className="mr-2" />
-              Compare Versions
-            </Link>
-          </DropdownMenuItem>
-        )}
-        {update && (
-          <>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem asChild>
-              <Link
-                href="https://langfuse.com/docs/deployment/self-host#update"
-                target="_blank"
-              >
-                <HardDriveDownload size={16} className="mr-2" />
-                Update
-              </Link>
-            </DropdownMenuItem>
-          </>
-        )}
-      </DropdownMenuContent>
-    </DropdownMenu>
+    <span
+      className="h-5 max-w-full min-w-0 translate-y-0.5 truncate py-0 text-[0.625rem] leading-none text-muted-foreground"
+      title={versionText}
+    >
+      {versionText}
+    </span>
   );
 };

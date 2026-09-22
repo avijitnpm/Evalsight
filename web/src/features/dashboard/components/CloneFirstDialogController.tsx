@@ -15,7 +15,7 @@ import { usePostHogClientCapture } from "@/src/features/posthog-analytics";
 import type { DashboardPlacement } from "@/src/features/widgets";
 
 /**
- * Clone-first flow for Langfuse-managed (read-only) dashboards: any edit
+ * Clone-first flow for EvalSight-managed (read-only) dashboards: any edit
  * attempt routes here instead of being blocked. Confirming clones the
  * dashboard into the project (optionally carrying the attempted change via
  * `pendingDefinition` and setting the clone as the project's Home) and
@@ -176,13 +176,13 @@ function CloneFirstDialogContent({
             <span className="text-foreground font-bold">
               &ldquo;{dashboardName}&rdquo;
             </span>{" "}
-            is maintained by Langfuse and can&rsquo;t be edited directly.
+            is maintained by EvalSight and can&rsquo;t be edited directly.
             We&rsquo;ll create your own editable copy in this project
             {pendingDefinition ? " with your change applied" : ""}
             {setAsHome ? " and show it on your Home page from now on" : ""}.
           </p>
           <p>
-            Langfuse-maintained tiles on the copy can be rearranged or removed;
+            EvalSight-maintained tiles on the copy can be rearranged or removed;
             editing their content will become available in a future release.
           </p>
           {existingClone && (

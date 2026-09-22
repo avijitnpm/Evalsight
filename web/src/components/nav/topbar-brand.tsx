@@ -62,13 +62,13 @@ export const TopbarBrand = ({
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="max-h-5 max-w-24 dark:hidden"
-            src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-black.svg`}
+            src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/wordart-black.svg`}
             alt="EvalSight Logo"
           />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="hidden max-h-5 max-w-24 dark:block"
-            src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-white.svg`}
+            src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/wordart-white.svg`}
             alt="EvalSight Logo"
           />
         </>

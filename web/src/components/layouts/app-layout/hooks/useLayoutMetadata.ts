@@ -28,19 +28,21 @@ export function useLayoutMetadata(
     const basePath = env.NEXT_PUBLIC_BASE_PATH ?? "";
 
     // Determine page title from active route
-    const title = activePathName ? `${activePathName} | Langfuse` : "Langfuse";
+    const title = activePathName ? `${activePathName} | EvalSight` : "EvalSight";
 
     // Use dev favicon in DEV region for visual distinction
     // Using SVG for modern browsers with PNG fallback specified in sizes
     const faviconPath =
-      region === "DEV" ? `${basePath}/icon-dev.svg` : `${basePath}/icon.svg`;
+      region === "DEV"
+        ? `${basePath}/assets/icon-dev.svg`
+        : `${basePath}/assets/icon.svg`;
 
     return {
       title,
       faviconPath,
       // PNG icons with sizes for broader browser compatibility
-      favicon256Path: `${basePath}/icon256.png`,
-      appleTouchIconPath: `${basePath}/apple-touch-icon.png`,
+      favicon256Path: `${basePath}/assets/icon256.png`,
+      appleTouchIconPath: `${basePath}/assets/apple-touch-icon.png`,
     };
   }, [activePathName, region]);
 }

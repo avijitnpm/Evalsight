@@ -30,7 +30,7 @@ export default function HfSpaces({ deploymentDomain }: PageProps) {
   return (
     <>
       <Head>
-        <title>Langfuse on Hugging Face</title>
+        <title>EvalSight on Hugging Face</title>
       </Head>
       <div className="flex flex-1 flex-col py-6 sm:min-h-full sm:justify-center sm:px-6 sm:py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
@@ -46,7 +46,7 @@ export default function HfSpaces({ deploymentDomain }: PageProps) {
             />
           </div>
           <h2 className="text-primary mt-4 text-center text-2xl leading-9 font-bold tracking-tight">
-            Langfuse on Hugging Face
+            EvalSight on Hugging Face
           </h2>
         </div>
 

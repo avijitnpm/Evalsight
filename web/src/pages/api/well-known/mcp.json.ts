@@ -11,11 +11,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const payload = {
     $schema:
       "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
-    title: "Langfuse",
-    description: "Use Langfuse over MCP.",
-    websiteUrl: "https://langfuse.com",
+    title: "EvalSight",
+    description: "Use EvalSight over MCP.",
+    websiteUrl: "https://github.com/avijitnpm/Evalsight",
     repository: {
-      url: "https://github.com/langfuse/langfuse",
+      url: "https://github.com/avijitnpm/Evalsight",
       source: "github",
     },
     remotes: [

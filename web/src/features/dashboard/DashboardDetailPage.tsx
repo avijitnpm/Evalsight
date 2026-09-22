@@ -591,7 +591,7 @@ function DashboardDetailView({ readPath }: { readPath: ResolvedReadPath }) {
         });
         showErrorToast(
           "No widget in clipboard",
-          "The clipboard does not contain a Langfuse widget JSON. Copy one via a widget's ⋯ menu first.",
+          "The clipboard does not contain a EvalSight widget JSON. Copy one via a widget's ⋯ menu first.",
           "WARNING",
         );
         return;
@@ -769,7 +769,7 @@ function DashboardDetailView({ readPath }: { readPath: ResolvedReadPath }) {
         if (imported.skippedPresetCount > 0) {
           showErrorToast(
             "Some cards were skipped",
-            `${imported.skippedPresetCount} preset card(s) in the file are not available in this Langfuse version.`,
+            `${imported.skippedPresetCount} preset card(s) in the file are not available in this EvalSight version.`,
             "WARNING",
           );
         }
@@ -838,7 +838,7 @@ function DashboardDetailView({ readPath }: { readPath: ResolvedReadPath }) {
         });
         showErrorToast(
           "Unsupported file",
-          "Only Langfuse dashboard or widget JSON files can be dropped here.",
+          "Only EvalSight dashboard or widget JSON files can be dropped here.",
           "WARNING",
         );
         return;
@@ -1192,7 +1192,7 @@ function DashboardDetailView({ readPath }: { readPath: ResolvedReadPath }) {
                     title:
                       (dashboard.data?.name || "Dashboard") +
                       (dashboard.data?.owner === "LANGFUSE"
-                        ? " (Langfuse Maintained)"
+                        ? " (EvalSight Maintained)"
                         : ""),
                     titleContent:
                       hasCUDAccess && dashboard.data ? (
@@ -1374,7 +1374,7 @@ function DashboardDetailView({ readPath }: { readPath: ResolvedReadPath }) {
                         <div className="border-primary bg-background rounded-lg border-2 border-dashed px-8 py-6 text-center shadow-lg">
                           <p className="font-bold">Drop to import</p>
                           <p className="text-muted-foreground text-sm">
-                            Langfuse dashboard or widget JSON
+                            EvalSight dashboard or widget JSON
                           </p>
                         </div>
                       </div>

@@ -631,9 +631,9 @@ export function DashboardWidget({
             <Badge
               variant="secondary"
               className="shrink-0"
-              title="Maintained by Langfuse — editing creates your own copy"
+              title="Maintained by EvalSight — editing creates your own copy"
             >
-              Langfuse
+              EvalSight
             </Badge>
           )}
         </span>

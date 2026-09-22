@@ -444,7 +444,7 @@ const Onboarding = () => {
         <CardDescription>
           {canCreateOrgs
             ? "Create an organization to get started. Alternatively, ask your organization admin to invite you."
-            : "You need to get invited to an organization to get started with Langfuse."}
+            : "You need to get invited to an organization to get started with EvalSight."}
         </CardDescription>
       </CardContent>
       <CardFooter className="flex gap-4">

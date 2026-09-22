@@ -12,7 +12,7 @@ export const BrandIcon = ({
 }: LangfuseIconProps) => (
   // eslint-disable-next-line @next/next/no-img-element
   <img
-    src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/icon.svg`}
+    src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/icon.svg`}
     width={size}
     height={size}
     alt={alt}

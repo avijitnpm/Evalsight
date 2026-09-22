@@ -111,7 +111,7 @@ export default function UsersPage() {
         help: {
           description: (
             <>
-              Attribute data in Langfuse to a user by adding a userId to your
+              Attribute data in EvalSight to a user by adding a userId to your
               traces. See{" "}
               <a
                 href="https://langfuse.com/docs/observability/features/users"
@@ -459,7 +459,7 @@ const UsersTable = ({
       header: "User ID",
       headerTooltip: {
         description:
-          "The unique identifier for the user that was logged in Langfuse. See docs for more details on how to set this up.",
+          "The unique identifier for the user that was logged in EvalSight. See docs for more details on how to set this up.",
         href: "https://langfuse.com/docs/observability/features/users",
       },
       size: 150,

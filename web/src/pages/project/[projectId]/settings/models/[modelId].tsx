@@ -175,7 +175,7 @@ export default function ModelDetailPage() {
                 Maintained by
               </div>
               <div className="mt-1 text-sm">
-                {isLangfuseModel ? "Langfuse" : "User"}
+                {isLangfuseModel ? "EvalSight" : "User"}
               </div>
             </div>
 

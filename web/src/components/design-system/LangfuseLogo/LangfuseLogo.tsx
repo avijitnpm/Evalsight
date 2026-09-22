@@ -43,13 +43,13 @@ export const BrandLogo = ({
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="-ml-1.5 h-5 max-w-22 translate-y-px group-data-[collapsible=icon]:hidden dark:hidden"
-        src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-black.svg`}
+        src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/wordart-black.svg`}
         alt="EvalSight Logo"
       />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         className="-ml-1.5 hidden h-5 max-w-22 translate-y-px group-data-[collapsible=icon]:hidden dark:block"
-        src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/wordart-white.svg`}
+        src={`${env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/wordart-white.svg`}
         alt="EvalSight Logo"
       />
       <div className="hidden scale-120 group-data-[collapsible=icon]:block">
